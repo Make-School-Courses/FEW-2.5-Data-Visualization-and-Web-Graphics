@@ -1,5 +1,17 @@
 # FEW-2.5-Building-JavaScript-Libraries 
 
+---
+
+Prerequisites: FEW 2.2
+Projects: D3 Project, Canvas Project
+
+Learn how to create effective visualizations and graphics on the web.  The course covers programming in JavaScript D3 to display and visualize data as well as how to manage, transform, and normalizing data for display on the screen.  Students will also learn how to create complex drawings and animations on the web using SVG and Canvas. SVG looks at vector graphics and the SVG language while Canvas builds complex graphics with pixels.  
+
+Tools:  JavaScript, HTML, CSS, D3, Canvas, SVG
+
+---
+
+
 ## Course Description
 
 JavaScript is arguably the most important language today. It is used 
