@@ -1,16 +1,12 @@
-# FEW-2.5 Data Visualization with JavaScript
+# Title
 
 ## Course Description
 
-Learn how to create effective visualizations and graphics on the web.  The course covers programming in JavaScript D3 to display and visualize data as well as how to manage, transform, and normalizing data for display on the screen.  Students will also learn how to create complex drawings and animations on the web using SVG and Canvas. SVG looks at vector graphics and the SVG language
+Describe your course here. A short elevator pitch for the course. This will be listed as the course description in the course catalog.
 
-Tools: JavaScript, HTML, CSS, D3, Canvas, SVG
+### Why you should know this (optional)
 
-### Why you should take this course
-
-You should take this class if you have a desire to express ideas visually on a computer screen. If you have a fascination with data and trends taking this class will give you the tools and oppotunities to express these ideas in your work. 
-
-If you want to practice the craft of making web applications with HTML, CSS, and JavScript this class will give you ample oppotunity to stretch these skills in new directions. 
+Explain why students should care to learn the material presented in this class.
 
 ## Course Specifics
 
@@ -24,14 +20,22 @@ Class Sessions:  14 classes, 7 labs
 
 ## Prerequisites  
 
-- Prerequisites: FEW 1.2
+- [Prerequisite 1]()
+- [Prerequisite 2]()
 
 ## Learning Outcomes
 
-- Analyze Data to express it's meaning
-- Normalize data to express it's range and value on the screen
-- Implement standard and non-standard visual displays
-- Use JavaScript, Canvas, and SVG to express ideas graphically
+**[INSTRUCTOR NOTE: PLEASE LIST (5-8) LEARNING OUTCOMES]**
+
+Students by the end of the course will be able to ...
+
+1. Identify & Describe
+1. Explain
+1. Compare & Contrast
+1. Design & Implement
+1. Practice
+
+
 
 ## Schedule
 ---
