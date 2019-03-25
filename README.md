@@ -24,7 +24,7 @@ Class Sessions:  14 classes, 7 labs
 
 ## Prerequisites  
 
-- Prerequisites: FEW 1.2
+- [FEW 1.2](https://github.com/Make-School-Courses/FEW-1.2-JavaScript-Foundations)
 
 ## Learning Outcomes
 
