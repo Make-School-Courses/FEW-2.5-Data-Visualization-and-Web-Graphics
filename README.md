@@ -2,7 +2,7 @@
 
 ## Course Description
 
-Learn how to create effective visualizations and graphics on the web.  The course covers programming in JavaScript D3 to display and visualize data as well as how to manage, transform, and normalizing data for display on the screen.  Students will also learn how to create complex drawings and animations on the web using SVG and Canvas. SVG looks at vector graphics and the SVG language
+Learn how to create effective visualizations and graphics on the web.  The course covers programming in JavaScript D3 to display and visualize data as well as how to manage, transform, and normalizing data for display on the screen.  Students will also learn how to create complex drawings and animations on the web using SVG and Canvas. SVG looks at vector graphics and the SVG language.
 
 Tools: JavaScript, HTML, CSS, D3, Canvas, SVG
 
@@ -34,15 +34,10 @@ Class Sessions:  14 classes, 7 labs
 - Use JavaScript, Canvas, and SVG to express ideas graphically
 
 ## Schedule
----
-### **[INSTRUCTOR NOTE: PLEASE REMOVE THIS BEFORE APRIL 1]**
-If you teach **M/W** or **Tu/Th**, please pick from a template below and delete the other one
 
----
-### M/W Template **[PLEASE REMOVE THIS HEADER BEFORE APRIL 1]**
 **Course Dates:** Monday, April 1 – Wednesday, May 15, 2019 (7 weeks)
 
-**Class Times:** Monday and Wednesday at 3:30–5:20pm (14 class sessions)
+**Class Times:** Monday and Wednesday at 1:30–1:20pm (14 class sessions)
 
 | Class |          Date          |                 Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
@@ -61,37 +56,15 @@ If you teach **M/W** or **Tu/Th**, please pick from a template below and delete 
 | 13 |  Monday, May 13                          | Final Class (presentations, etc) |
 | 14 |  Wednesday, May 15                       | Final Exams/Presentations |
 
-### Tu/Th Template **[PLEASE REMOVE THIS HEADER BEFORE APRIL 1]**
-**Course Dates:** Tuesday, April 2 – Thursday, May 16, 2019 (7 weeks)
-
-**Class Times:** Tuesday and Thursday at 3:30–5:20pm (14 class sessions)
-
-| Class |          Date          |                 Topics                  |
-|:-----:|:----------------------:|:---------------------------------------:|
-|  1 |  Tuesday, April 2                        | [Lesson 1] |
-|  2 |  Thursday, April 4                       | [Lesson 2] |
-|  3 |  Tuesday, April 9                        | [Lesson 3] |
-|  4 |  Thursday, April 11                      | [Lesson 4] |
-|  5 |  Tuesday, April 16                       | [Lesson 5] |
-|  6 |  Thursday, April 18                      | [Lesson 6] |
-|  7 |  Tuesday, April 23                       | [Lesson 7] |
-|  8 |  Thursday, April 25                      | [Lesson 8] |
-|  9 |  Tuesday, April 30                       | [Lesson 9] |
-| 10 |  Thursday, May 2                         | [Lesson 10] |
-| 11 |  Tuesday, May 7                          | [Lesson 11] |  
-| 12 |  Thursday, May 9                         | [Lesson 12] |
-| 13 |  Tuesday, May 14                         | Final Class (presentations, etc) |
-| 14 |  Thursday, May 16                        | Final Exams/Presentations |
-
-[Lesson 1]: Lessons/Lesson1.md
-[Lesson 2]: Lessons/Lesson2.md
-[Lesson 3]: Lessons/Lesson3.md
-[Lesson 4]: Lessons/Lesson4.md
-[Lesson 5]: Lessons/Lesson5.md
-[Lesson 6]: Lessons/Lesson6.md
-[Lesson 7]: Lessons/Lesson7.md
-[Lesson 8]: Lessons/Lesson8.md
-[Lesson 9]: Lessons/Lesson9.md
+[Lesson 1]: Lessons/Lesson-01.md
+[Lesson 2]: Lessons/Lesson-02.md
+[Lesson 3]: Lessons/Lesson-03.md
+[Lesson 4]: Lessons/Lesson-04.md
+[Lesson 5]: Lessons/Lesson-05.md
+[Lesson 6]: Lessons/Lesson-06.md
+[Lesson 7]: Lessons/Lesson-07.md
+[Lesson 8]: Lessons/Lesson-08.md
+[Lesson 9]: Lessons/Lesson-09.md
 [Lesson 10]: Lessons/Lesson10.md
 [Lesson 11]: Lessons/Lesson11.md
 [Lesson 12]: Lessons/Lesson12.md
@@ -108,8 +81,18 @@ If you teach **M/W** or **Tu/Th**, please pick from a template below and delete 
 
 ### Projects
 
-- [Sample Project](Sample_Project.md)
-    -   [Sample Project Rubric](Sample_Rubric.md)
+- [Visualization 1](Visualization-1.md)
+    - [Sample Project Rubric](Visualization-1-Rubric.md)
+- [Visualization 2](Visualization-2.md)
+    - [Sample Project Rubric](Visualization-2-Rubric.md)
+- [Visualization 3](Visualization-3.md)
+    - [Sample Project Rubric](Visualization-3-Rubric.md)
+- [Visualization 4](Visualization-4.md)
+    - [Sample Project Rubric](Visualization-4-Rubric.md)
+- [Visualization 5](Visualization-5.md)
+    - [Sample Project Rubric](Visualization-5-Rubric.md)
+- [Visualization 6](Visualization-6.md)
+    - [Sample Project Rubric](Visualization-6-Rubric.md)
 
 **All projects will require a minimum of 10 commits, and must take place throughout the entirety of the course**
 
@@ -137,7 +120,7 @@ Through this requirement, we hope to encourage you to think about projects with 
 ### Other Class assignments
 
 ## Evaluation
-**[MAKE SPECIFIC TO YOUR COURSE SO IT IS SUPER CLEAR]**
+
 To pass this course you must meet the following requirements:
 
 - Complete all required tutorials 
