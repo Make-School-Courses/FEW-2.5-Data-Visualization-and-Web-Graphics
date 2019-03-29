@@ -70,9 +70,10 @@ Using the Titanic dataset
 - element.style
 	- height, width
 	- backgroundColor
-	- ...
+	- border
+	- borderRadius
 
-## Wrap Up
+## After Class
 
 - Start on Visualization 1
 
