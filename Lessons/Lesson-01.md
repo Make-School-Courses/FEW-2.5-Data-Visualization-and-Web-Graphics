@@ -93,7 +93,7 @@ Using the Titanic dataset
 
 Start on Visualization 1. Your goal is to make one visualization per week. The first week will use the Titanic Dataset. 
 
-Before you can visualize data you need to have data. Follow this [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/tree/master#count-the-men-and-women) and solve all of the challenges. 
+Before you can visualize data you need to have data. Follow this [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/tree/master) and solve all of the challenges. 
 
 When you're finsihed you know how to: 
 
