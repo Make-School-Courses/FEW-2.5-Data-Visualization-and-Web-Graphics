@@ -69,15 +69,7 @@ Class Sessions:  14 classes, 7 labs
 [Lesson 11]: Lessons/Lesson11.md
 [Lesson 12]: Lessons/Lesson12.md
 
-## Class Assignments [REMOVE HEADER IF YOU LIKE]
-- List (with links) of all course-level assignments (i.e. tutorials, challenge sets, contractor project, custom projects, etc)
-- Under each assignment link the rubric used to evaluate it or describe how it is evaluated.
-- Projects should be linked to a project page which has a description & requirements.
-
-### Tutorials
-**[REWORD AS RELEVANT TO YOUR COURSE]** Tutorials are to help you get started in a topic.  They are graded on completion only.
-
-- [Do Cool Stuff Tutorial]()
+## Class Assignments
 
 ### Projects
 
