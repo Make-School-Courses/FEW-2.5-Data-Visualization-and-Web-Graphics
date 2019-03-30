@@ -13,10 +13,13 @@ If you are interested in data, what is means, and how it communicates to people 
 ## Learning Objectives
 
 - Define data visualization
-- Identify the min, max, and range for a set of values
-- Use map, filter, and reduce
-- Create DOM elements with JavaScript
-- Define RGBA and HSLA colors
+- Load Data from JS
+	- Identify and avoid CORs problems
+- Idenitfy values in the Titanic dataset
+- Extract data relevant values 
+	- map, filter, reduce
+	- min, max, average
+- Display data in the DOM
 
 ## Overview 
 
@@ -25,7 +28,7 @@ If you are interested in data, what is means, and how it communicates to people 
 - Titanic Dataset
 	- What does it contain?
 	- How can this be visualized? 
-		- min, max, range, and normalization
+		- min, max, average
 	- Styles 
 		- width
 		- height
@@ -49,19 +52,32 @@ Let's clarify what you are expected to make.
 		- CORS !? 
 			- What is CORS
 			- How to to deal with it
+			
+## The Titanic Dataset 
+
+Take a look at the [Titanic Dataset](https://www.kaggle.com/c/titanic/data). This link points to the Titanic dataset on Kaggle. There is also a copy in tutorial repo. 
+
+Take a look at the data, ask yourself what you see? 
+
+- There is a record for each passenger
+- Each passenger has fields for a range of data points
+	- age, fare, pclass, sex, etc. 
+
+What values can you find here? What would you want to know from this? 
+
+Pair and dicuss. Come up with a list of things you find interesting. List as many things as you can. 
+
+Write the list on the board. 
 
 ## Exercise
 
 Using the Titanic dataset
 
 - Find the min, max, and range
-- Normalize 
 - Filter
+- Counting values
 - Make elements on screen that visualize information 
-	- Make an element for each passenger
-		- Normalize values and set style properties
-	- Make an element for each embarkation
-		- Agregate and normalize data
+- Agregate data
 
 ## Display things on the screen
 

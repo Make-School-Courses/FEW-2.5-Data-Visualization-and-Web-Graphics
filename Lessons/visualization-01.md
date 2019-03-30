@@ -22,5 +22,14 @@ While the end goal of data visualization is to showing meaningful trends and pat
 
 ## What should you do? 
 
+Use the Titanic dataset to make pictures on the screen. The dataset has a list of objects each with values. You need to create an object on the screen and use the values to set the style properties of the object.
+
+Here is a more detailed step by step outline 
+
 - Load the titanic dataset using `fetch()`
   - You'll need to use a local server to avoid CORS errors!
+- 
+
+## Resources 
+
+- https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-with-HTML-CSS-JS-Tutorial
