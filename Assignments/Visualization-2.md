@@ -10,7 +10,8 @@ Interaction is the stock and trade of front end development. You should know how
 
 This visualization should use the Titanic dataset. You can visualize the data in any way you like. Don't worry about making the data understandable, instead strive to make it intersting to look at. 
 
-Your visualization should have interactions. These can be anything you can think of. Consider any of the following ideas: 
+You can show anything you want in any way you like from the data. The goal, still, is to make something interating to look at more than to tell a story or make the data understandable. 
+
 
 - Buttons show and hide elements
 	- By gender
@@ -22,10 +23,23 @@ Your visualization should have interactions. These can be anything you can think
 	- Fare
 	- Embarkation
 	- Passenger Class 
+- Hide and show elements
+	- Show/Hide passengers by gender
+	- Show/Hide passengers by survivial
+	- Show/Hide passengers by class
+	- Show/Hide passengers by embarkation
+- Sort passengers 
+	- Sort on survival 
+	- Sort on gender
+	- Sort on fare
+	- Sort on age
+- Change a property 
 
 You can also think of your own ideas.
 
-Bonus points for making things move! 
+Use buttons, toggle buttons, and/or button groups. 
 
+Add some animation by setting the transition property on elements and changing the their styles. 
 
+Add your visualization to your Github Pages collection of visualizations. 
 	

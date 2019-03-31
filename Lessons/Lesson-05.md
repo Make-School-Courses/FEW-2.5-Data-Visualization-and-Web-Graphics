@@ -2,17 +2,20 @@
 
 This session will work with canvas. HTML offers some interesting possibilities but also has some limitations. Canvas gives you the power to draw wiht pixels directly to the screen. 
 
+## Why? 
 
 
+## Canvas Intro
 
-- Canvas Basics 
-	- Drawing with Canvas 
-		- Rectangles 
-		- Coordinates on the the grid 
-		- stroke and fill styles 
+What is canvas? 
 
+### Drawing things with canvas
 
+reactangles 
 
+coords 
+
+strokes and fills
 
 
 

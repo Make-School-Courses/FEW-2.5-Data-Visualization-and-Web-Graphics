@@ -1,17 +1,32 @@
 # Canvas Part 2, Circle Math
 
+Dawing circles and caluclating coords in circles 
 
 
+## Why? 
 
+Not sure but it's probably useful! 
 
+## Intro
 
-- Using Canvas drawing and stroking paths 
-- Circle Math
-	- Raians and PI
-	- Math.PI
-	- Math.sin(), Math.cos()
+Some circle math
+
+PI
+
+Radians
+
+sine 
+
+cosine 
+
+## Circle with JS
+
+Math.PI
+Math.sin()
+Math.cos()
 
 Drawing arcs 
+
 
 
 

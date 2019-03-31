@@ -1,57 +1,9 @@
-# Sorting and Filtering data interactively
+# SVG
 
-The earlier class brushed on the topic of sorting and filtering in this class we will cover sorting and filtering data interactively. 
-
-## Why?
-
-Everything you do will work with collections of objects. This is really just an extension of all of those things. Looking at ways to structure data will build your toolbox of skills that you can apply to many future projects. 
-
-## Objectives 
-
-1. Build collections of elements and data
-1. Apply changes to all members of a collection
-1. Sort and filter collections 
-
-## Make a list of elements 
-
-## Loop through elements 
-
-for loop vs forEach
-
-## Sorting and Filtering 
+Dawing circles and caluclating coords in circles 
 
 
-### Sort 
-
-
-### Filter
-
-
-## Storing data with elements 
-
-pros and cons
-
-## Storing an element with data
-
-pros and cons 
-
-## Changing the properties of an element 
-
-
-
-## Animating changes
-
-
-
-
-
-
-
-
-
-
-
-
+## Why? 
 
 
 

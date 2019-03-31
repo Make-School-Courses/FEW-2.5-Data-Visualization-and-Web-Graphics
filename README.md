@@ -74,17 +74,11 @@ Class Sessions:  14 classes, 7 labs
 ### Projects
 
 - [Visualization 1](Visualization-1.md)
-    - [Sample Project Rubric](Visualization-1-Rubric.md)
 - [Visualization 2](Visualization-2.md)
-    - [Sample Project Rubric](Visualization-2-Rubric.md)
 - [Visualization 3](Visualization-3.md)
-    - [Sample Project Rubric](Visualization-3-Rubric.md)
 - [Visualization 4](Visualization-4.md)
-    - [Sample Project Rubric](Visualization-4-Rubric.md)
 - [Visualization 5](Visualization-5.md)
-    - [Sample Project Rubric](Visualization-5-Rubric.md)
 - [Visualization 6](Visualization-6.md)
-    - [Sample Project Rubric](Visualization-6-Rubric.md)
 
 **All projects will require a minimum of 10 commits, and must take place throughout the entirety of the course**
 
