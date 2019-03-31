@@ -8,9 +8,9 @@ Tools: JavaScript, HTML, CSS, D3, Canvas, SVG
 
 ### Why you should take this course
 
-You should take this class if you have a desire to express ideas visually on a computer screen. If you have a fascination with data and trends taking this class will give you the tools and oppotunities to express these ideas in your work. 
+You should take this class if you have a desire to express ideas visually on a computer screen. If you have a fascination with data and trends taking this class will give you the tools and opportunities to express these ideas in your work. 
 
-If you want to practice the craft of making web applications with HTML, CSS, and JavScript this class will give you ample oppotunity to stretch these skills in new directions. 
+If you want to practice the craft of making web applications with HTML, CSS, and javascript this class will give you ample opportunity to stretch these skills in new directions. 
 
 ## Course Specifics
 
@@ -29,7 +29,7 @@ Class Sessions:  14 classes, 7 labs
 ## Learning Outcomes
 
 - Analyze Data to express it's meaning
-- Normalize data to express it's range and value on the screen
+- Normalize data to express its range and value on the screen
 - Implement standard and non-standard visual displays
 - Use JavaScript, Canvas, and SVG to express ideas graphically
 
@@ -37,7 +37,7 @@ Class Sessions:  14 classes, 7 labs
 
 **Course Dates:** Monday, April 1 – Wednesday, May 15, 2019 (7 weeks)
 
-**Class Times:** Monday and Wednesday at 1:30–1:20pm (14 class sessions)
+**Class Times:** Monday and Wednesday from 1:30–1:20 pm (14 class sessions)
 
 | Class |          Date          |                 Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
@@ -80,7 +80,9 @@ Class Sessions:  14 classes, 7 labs
 - [Visualization 5](Visualization-5.md)
 - [Visualization 6](Visualization-6.md)
 
-**All projects will require a minimum of 10 commits, and must take place throughout the entirety of the course**
+**All projects will require a minimum of 10 commits and must take place throughout the entirety of the course**
+
+**All Homework projects should be hosted on GitHub pages.** 
 
 - **Good Example:** 40+ commits throughout the length of the course, looking for a healthy spattering of commits each week (such as 3-5 per day).
 - **Bad Example:** 10 commits on one day during the course and no others. Students who do this will be at severe risk of not passing the class.
@@ -88,7 +90,7 @@ Class Sessions:  14 classes, 7 labs
 
 #### Why are we doing this?
 
-We want to encourage best practices that you will see working as a professional software engineer. Breaking up a project by doing a large amount of commits helps engineers in the following ways:
+We want to encourage best practices that you will see working as a professional software engineer. Breaking up a project by doing a large number of commits helps engineers in the following ways:
 
 - It's much easier to retrace your steps if you break your project/product/code up into smaller pieces
 - It helps with being able to comprehend the larger problem, and also will help with your debugging (i.e. finding exactly when you pushed that piece of broken code)
@@ -100,8 +102,8 @@ Through this requirement, we hope to encourage you to think about projects with 
 
 -  **Passing the exam is a requirement for passing the class.**
 - You will have 2 hours to complete this exam - it will be in class using paper and pencil, or a format of the instructor's choosing
-- There are no retakes of the exam.
-- If you have a disability that needs an accommodation such as extended time or a different format, please take advantage of our [accommodations program](make.sc/disability-policy).
+- There are no retakes for the exam.
+- If you have a disability that needs accommodation such as extended time or a different format, please take advantage of our [accommodations program](make.sc/disability-policy).
 
 ### Other Class assignments
 
@@ -116,7 +118,7 @@ To pass this course you must meet the following requirements:
 - Make up all classwork from all absences
 
 ## Attendance
-Just like any job, attendance at Make School is required and a key component of your success. Attendance is being onsite from 9:30 to 5:30 each day, attending all scheduled sessions including classes, huddles, coaching and school meetings, and working in the study labs when not in a scheduled session. Working onsite allows you to learn with your peers, have access to support from TAs, instructors and others, and is vital to your learning.
+Just like any job, attendance at Make School is required and a key component of your success. Attendance is being on site from 9:30 to 5:30 each day, attending all scheduled sessions including classes, huddles, coaching, and school meetings, and working in the study labs when not in a scheduled session. Working onsite allows you to learn with your peers, have access to support from TAs, instructors, and others, and is vital to your learning.
 
 Attendance requirements for scheduled sessions are:
 - No more than two no call no shows per term in any scheduled session.
