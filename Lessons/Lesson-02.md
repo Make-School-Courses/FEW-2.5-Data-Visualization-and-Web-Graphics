@@ -250,6 +250,12 @@ Remember to be visible an element must the child of an element that is a descend
 
 `parent.appendChild(el)`
 
+### Interview Questions 
+
+- Generate one element for each record in the Titanic Dataset
+- Create one element for each male passenger
+- Create one element for each female passenger 
+
 ### Styling elements 
 
 All CSS styles of an element are accessible through that element's `style` property. The styles are named with a camelCase version of the CSS style name. For example:
