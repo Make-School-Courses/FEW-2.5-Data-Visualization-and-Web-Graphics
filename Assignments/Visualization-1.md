@@ -4,11 +4,28 @@
 
 Your goal is to create a visualization with HTML, CSS, and Javascript from the Titanic dataset. 
 
-For this assignment the goal is to make the interesting visualization that you can. Don't worry about telling a story or making the data understandable. Instead focus on making the visuals interesting to look at. 
+For this assignment the goal is to make the most interesting visualization that you can. Don't worry about telling a story or making the data understandable. Instead focus on making visuals that are interesting to look at. 
+
+Use the size shape and color to make your work interesting. 
+
+You should be writing code to make this work. Don't import an libraries. We will be talking about using libraries in class later. For now we to understand how to things with raw JS. 
+
+## Getting started
+
+Follow these two tutorials:
+
+- [Working with Data](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data)
+- [Visualizations with HTML, CSS, and JS](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-with-HTML-CSS-JS-Tutorial)
+
 
 ### What is a visualization?
 
 A visualization is a single web page that displays data graphically. 
 
-The goal is to turn numbers into pictures. 
+The goal is to turn numbers into shapes and colors. 
 
+| Area     | 0  |  1 |  2  |
+|:------   |:---|:---|:----|
+| Asthetic | Uses few styles. Like background color and width or height | Uses a range of colors, adds radius and other styles | Uses a wide range of styles. Uses interesting shapes| 
+| Depth    | Displays 2 values from the dataset | Displays 3 or 4 data points | Displays 5 or more data points |
+| Code quality | There is code... | Code uses functions and is organized well | Code makes use of functions to do minimize reducancy |

@@ -1,16 +1,18 @@
-# Animation and Interaction
+# Sorting and Filtering data interactively
 
-Showing data in static form is a good start, but sometimes you can say more by adding motion and interaction.
-
-
+The earlier class brushed on the topic of sorting and filtering in this class we will cover sorting and filtering data interactively. 
 
 
 
-- Buttons 
-	- toggle button
-	- button group
-- Transitions
-- Color
+
+
+- Keeping a list of elements and the data 
+- sorting the list 
+- sorting a copy of the list 
+- Filtering 
+	- hiding and showing elements 
+
+
 
 
 

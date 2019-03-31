@@ -1,19 +1,17 @@
-# Animation and Interaction
-
-Showing data in static form is a good start, but sometimes you can say more by adding motion and interaction.
+# Canvas Part 2, Circle Math
 
 
 
 
 
-- Buttons 
-	- toggle button
-	- button group
-- Transitions
-- Color
 
+- Using Canvas drawing and stroking paths 
+- Circle Math
+	- Raians and PI
+	- Math.PI
+	- Math.sin(), Math.cos()
 
-
+Drawing arcs 
 
 
 

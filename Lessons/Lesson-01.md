@@ -79,6 +79,11 @@ Using the Titanic dataset
 - Make elements on screen that visualize information 
 - Agregate data
 
+### Interview Questions 
+
+- You need to get all of the ages from the Titanic Dataset?
+- You need to filter datapoints where the age is missing?
+
 ## Display things on the screen
 
 - document.createElement()
@@ -91,16 +96,9 @@ Using the Titanic dataset
 
 ## After Class
 
-Start on Visualization 1. Your goal is to make one visualization per week. The first week will use the Titanic Dataset. 
+Start on [Visualization 1](./Assignments/Visualization-1.md). Your goal is to make one visualization per week. The first week will use the Titanic Dataset. 
 
 Before you can visualize data you need to have data. Follow this [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/tree/master) and solve all of the challenges. 
-
-When you're finsihed you know how to: 
-
-- load data from JSON
-- extract useful values
-	- have some helper functions
-- Display data in the DOM
 
 ## Additional Resources
 
