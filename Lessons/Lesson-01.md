@@ -47,6 +47,9 @@ Some examples
 - [Info Graphic](https://venngage.com/blog/what-is-an-infographic/)
 - Data visualizations Examples
 	- [What is data visualization](https://www.tableau.com/learn/articles/data-visualization)
+	- [Tableau Best Data viz examples](https://www.tableau.com/learn/articles/best-beautiful-data-visualization-examples)
+	- [Best Data Visualizations 2018](https://visme.co/blog/best-data-visualizations/)
+		- [James Round](https://www.jamesrounddesign.com)
 	- [Data visualization](https://datavizcatalogue.com)
 	- [Examples](https://www.maptive.com/17-impressive-data-visualization-examples-need-see/)
 	
@@ -67,6 +70,17 @@ Use the links above to answer the questions
 	 - CORS
 		- What is CORS
 		- How to deal with it
+		
+### CORS 
+
+CORS - Cross Origin Resource Sharing, is a a security feature built into the browser. It's also a headache for developers. In a nutshell it prevents JavaScript in the browser from reading files on your file system. 
+
+The easy solution for you is to run your work from a local server. This is the solution that will work for all of the work in this class and will usually solve common CORS errors. 
+
+For more info read these articles. 
+	
+- https://medium.com/@baphemot/understanding-cors-18ad6b478e2b
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
  
 ## The Titanic Dataset 
 

@@ -73,12 +73,12 @@ Class Sessions:  14 classes, 7 labs
 
 ### Projects
 
-- [Visualization 1](Visualization-1.md)
-- [Visualization 2](Visualization-2.md)
-- [Visualization 3](Visualization-3.md)
-- [Visualization 4](Visualization-4.md)
-- [Visualization 5](Visualization-5.md)
-- [Visualization 6](Visualization-6.md)
+- [Visualization 1](Assignments/Visualization-1.md)
+- [Visualization 2](Assignments/Visualization-2.md)
+- [Visualization 3](Assignments/Visualization-3.md)
+- [Visualization 4](Assignments/Visualization-4.md)
+- [Visualization 5](Assignments/Visualization-5.md)
+- [Visualization 6](Assignments/Visualization-6.md)
 
 **All projects will require a minimum of 10 commits and must take place throughout the entirety of the course**
 
