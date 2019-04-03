@@ -94,6 +94,8 @@ The most common way data is displayed after showing it numerically is by drawing
 	<div style="width: 20px; height: 85%; background-color: red; margin: 5px"></div>
 </div>
 
+This block draws a group of rectangles and sizes the height wiht %. They are arranged horizontally using flex.
+
 ```HTML
 <div style="width: 200px; height: 200px; border:1px solid; display: flex; flex-direction: row; align-items: flex-end">
 	<div style="width: 20px; height: 37%; background-color: red; margin: 5px"></div>
@@ -108,6 +110,12 @@ The most common way data is displayed after showing it numerically is by drawing
 
 Besides setting the height and width what else can you do?
 
+## Transform 
+
+CSS transform is a powerful tool that provides methods to translate (move, left right, up or down), rotate, skew, and scale elements. When using transform you combine all transforms on same line for example: 
+
+`transform: translate(10px, 30px) rotate(45deg) skew(10deg) scale(1.5);`
+
 ### Transform Rotate
 
 Use transform: rotate to create other shapes from a rectangle like a diamond. 
@@ -117,6 +125,8 @@ height: 100px;
 background-color: red; 
 transform: rotate(45deg)">
 </div>
+
+Here the div is rotated with `transform: rotate(45deg);` Rotation works with units of radians (`rad`) or degrees (`deg`). There is also [Gradians](https://en.wikipedia.org/wiki/Gradian) (grad).  
 
 ```CSS
 width: 100px; 
@@ -236,25 +246,132 @@ border-radius: 50% 0 50% 0;
 transform: rotate(45deg);
 ```
 
+## Strokes 
+
+Add a stroke to add some dimension to your shapes. 
+
+<div style="width: 100px; 
+height: 100px; 
+background-color: red; 
+border-radius: 50%;
+transform: rotate(45deg);
+border: 12px solid">
+</div>
+
+```CSS
+width: 100px; 
+height: 100px; 
+background-color: red;
+border-radius: 50%;
+transform: rotate(45deg);
+border: 12px solid;
+```
+
+
+<div style="width: 100px; 
+height: 100px; 
+background-color: red; 
+border-radius: 50% 0 50% 0;
+transform: rotate(45deg);
+border: 12px solid">
+</div>
+
+```CSS
+width: 100px; 
+height: 100px; 
+background-color: red;
+border-radius: 50% 0 50% 0;
+transform: rotate(45deg);
+border: 12px solid;
+```
+
+## Compound Shapes 
+
+Nest a one shape inside another for more complex images. A nested element will always render on top of it's parent. If the parent it rotated the position of the inner element will be effected. 
+
+If you need to make a lot of these better to make a function that returns the structure and all of the base styles, or pass colors and size parameters to the function and get a configured object. 
+
+<div style="width: 100px; 
+height: 100px; 
+background-color: red; 
+border-radius: 50% 0 50% 0;
+transform: rotate(45deg);
+border: 12px solid;
+display: flex;
+justify-content: center;
+align-items: center">
+	<div style="width: 50px; 
+	height: 50px; 
+	background-color:#000;
+	border-radius:50%;
+	border: 10px solid #fff;">
+		<div style="width:20px; 
+		height: 20px;
+		background: #fff;
+		border-radius:50%;
+		position: relative;
+		left: 15px;
+		top:-5px"></div>
+	</div>
+</div>
+
+```CSS
+/* Outer "eye" shape */
+width: 100px; 
+height: 100px; 
+background-color: red; 
+border-radius: 50% 0 50% 0;
+transform: rotate(45deg);
+border: 12px solid;
+display: flex;
+justify-content: center;
+align-items: center;
+
+	/* Inner "pupil" shape */
+	width: 50px; 
+	height: 50px; 
+	background-color:#000;
+	border-radius:50%;
+	border: 10px solid #fff;
+
+		/* Inner inner "highlight" */
+		width:20px; 
+		height: 20px;
+		background: #fff;
+		border-radius:50%;
+		position: relative;
+		left: 15px;
+		top:-5px
+```
+
 ## Generating dynamic elements
 
-Your goal is to generate all of this HTML with JavaScript and abstract the process into functions that do the work for you. This way you can just supply a dataset, usually an array of values and have the your function do the work of creating DOM elements and assigning CSS styles. 
+**Your goal is to generate all of this HTML with JavaScript** and abstract the process into functions that do the work for you. This way you can just supply a dataset, usually an array of values and have the your function do the work of creating DOM elements and assigning CSS styles.
 
 ### Creating DOM elements
 
-use `document.createElement()` to create a new DOM element. 
+Use `document.createElement()` to create a new DOM element. 
 
 `const el = document.createElement('div')`
 
-Remember to be visible an element must the child of an element that is a descendant of the body tag. Add an element as a child of another element with `parent.appendChild(el)`. For example: 
+Remember **to be visible an element must be the child of an element that is a descendant of the body tag**. Add an element as a child of another element with `parent.appendChild(el)`. For example: 
 
 `parent.appendChild(el)`
 
 ### Interview Questions 
 
-- Generate one element for each record in the Titanic Dataset
-- Create one element for each male passenger
-- Create one element for each female passenger 
+Think in terms of interview questions. How would what we are doing in class translate to an interview problem? 
+
+- Easy 
+	- Generate one element for each record in the Titanic Dataset
+	- Create one element for each male passenger
+	- Create one element for each female passenger
+- Moderate 
+	- Create two elements that show the ratio of passengers who survived vs those that didn't. (easy solution make a bar graph)
+	- Create elements showing the ratio of passengers by `pclass` (easy solution make a bar graph)
+- Hard
+	- Show the ratio of men and women who survived vs men and women who did not survive.
+	- Show the ratio of passengers who survived vs those that did not by embarkation.
 
 ### Styling elements 
 
