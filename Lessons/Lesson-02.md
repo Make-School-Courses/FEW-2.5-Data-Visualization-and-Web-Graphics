@@ -350,7 +350,9 @@ align-items: center;
 
 ### Creating DOM elements
 
-Use `document.createElement()` to create a new DOM element. 
+Use `document.createElement('div')` to create a new DOM element. 
+
+// <div></div>
 
 `const el = document.createElement('div')`
 
@@ -428,10 +430,11 @@ I wrote this code by hand and it was a lot of work and not very accurate. You wa
 
 ## After Class 
 
-- Finish Data [Visualization 1](Assignments/Visualization-1.md)
+- Finish Data [Visualization 1](https://github.com/Make-School-Courses/FEW-2.5-Data-Visualization-and-Web-Graphics/blob/master/Assignments/Visualization-1.md)
 
 ## Resources 
 
+- [Visualization with HTML, CSS, and JS](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-with-HTML-CSS-JS-Tutorial)
 - [document.createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
 - [Node.appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
 - [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
