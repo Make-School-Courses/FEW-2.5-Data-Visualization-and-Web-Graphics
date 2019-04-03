@@ -373,7 +373,7 @@ Think in terms of interview questions. How would what we are doing in class tran
 	- Show the ratio of men and women who survived vs men and women who did not survive.
 	- Show the ratio of passengers who survived vs those that did not by embarkation.
 
-### Styling elements 
+### Styling elements
 
 All CSS styles of an element are accessible through that element's `style` property. The styles are named with a camelCase version of the CSS style name. For example:
 
