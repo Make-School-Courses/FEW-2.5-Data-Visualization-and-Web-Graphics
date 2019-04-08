@@ -43,6 +43,8 @@ createDistribution(d) // returns:
 // {0: 1, 1: 2, 3: 1, 6: 3, 7: 2, 8: 3, 9: 3, 10: 1, 11: 1, 12: 3}
 // This says the number 7 appears 2 times in d. 
 // The numbers 8 and 9 appear 3 times etc. 
+console.log(createDistribution('javascript'.split('')))
+// {j: 1, a: 2, v: 1, s: 1, c: 1, r:1, p: 1, t:1}
 ```
 
 ## sorting 
