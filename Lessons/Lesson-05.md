@@ -18,6 +18,8 @@ Canvas is the only way to draw something. Anytime you are working with images an
 
 What is canvas? Canvas is a rectangular area filled with pixels. The canvas object has methods that allow you to access the pixel data and draw images. 
 
+See the sample code for these concepts here: [lesson-05.html](../lesson-05.html).
+
 ### Drawing things with canvas
 
 context - All of the drawing methods are accessed through the context. The context is a single shared object that acts like a toolbox. 
