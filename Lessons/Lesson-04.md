@@ -14,6 +14,7 @@ Everything you do will work with collections of objects. This is really just an 
 1. Use CSS transform: translate, rotate, scale
 1. Use CSS transform: translate3d
 1. Create a distribution of values 
+1. Identifying context and using closures
 
 ## Distributions
 
@@ -181,6 +182,24 @@ The order transforms are applied matters! The example above translates 300px to 
 - [rotate(angle)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate)
 - [rotate3d(angleX, angleY, angleZ)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d)
 - [skew(angleX, angleY)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew)
+
+## Using closures for fun and profit!
+
+When a function is created within another function that function captures variables in it's outer scope. This often goes un-noticed, sometimes create un-expected results, and often can be used to your advantage!
+
+An example of colsure working for you. Imagine you have an array of data and you want to create an array div elements. You'd like to add a couple functions to each of these new elements that set change appearance of the element the method is called on. 
+
+```JS
+// Data is an array of objects 
+const data = [{a:45, b:88, c:'group-a'}, {}, ...]
+
+data.forEach((item) => {
+	const el = document.createElement('div')
+	el.setHeight = () => {
+		el.style.height = `${item.a}%`
+	}
+})
+```
 
 ## After Class
 

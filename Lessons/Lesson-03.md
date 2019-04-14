@@ -97,7 +97,7 @@ el.style.backgroundColor = '#f0f' // Colors can be animated!
 
 ## After Class
 
-- Start Data [Visualization 2](Assignments/Visualization-3.md)
+- Start Data [Visualization 2](Assignments/Visualization-2.md)
 - Follow the [buttons and interaction tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Buttons-and-Interaction)
 
 ## Additional Resources
