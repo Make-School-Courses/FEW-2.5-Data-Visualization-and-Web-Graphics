@@ -1,4 +1,4 @@
-# Working with Canvas
+# FEW 2.5 Working with Canvas
 
 This session will work with canvas. HTML offers some interesting possibilities but also has some limitations. Canvas gives you the power to draw with pixels directly to the screen. 
 
@@ -13,6 +13,17 @@ Canvas is the only way to draw something. Anytime you are working with images an
     - Use data to draw circles anywhere on the screen
     - Use data to draw arcs anywhere with any radius
 - Use trigonometry concepts to describe circles and arcs
+- Using GitHub Pages
+
+## Your work on GitHub Pages 
+
+Use GitHub Pages to host your work. Each of your visualizations should exist on GitHub Pages. 
+
+Follow the guide [here](https://pages.github.com) to setup your GitHub Pages. 
+
+Add a link to your GitHub Pages repo in the project tracker. 
+
+Here are some [example visualizations](https://github.com/soggybag/data-visualizations) on GitHub Pages. 
 
 ## Canvas Intro
 
@@ -108,6 +119,8 @@ Why? Scope! Variables defined with `const` or `let` are block scoped!
     const step = 600 / 12
     ...
 }
+
+console.log(i) // undefined
 ```
 
 In the example above `i` and `step` would only be available inside the `{ block }`
@@ -124,8 +137,8 @@ mySet.add(1)
 mySet.add(2)
 mySet.add(3)
 mySet.add(1)
-console.log(mySet) // Set(3) {1, 2, 3}
-// Count the set 
+console.log(mySet) // Set(3) [1, 2, 3]
+// Count the set -> mySet.length 0
 console.log(mySet.size) // 3
 // Iterate over the set 
 mySet.forEach((val, key) => {

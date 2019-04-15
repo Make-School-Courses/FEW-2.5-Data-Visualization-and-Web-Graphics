@@ -2,9 +2,22 @@
 
 Visualization with canvas.
 
-Your goal with this assignment is to create a visualization. You must use canvas for this assignment. Think of things that make canvas useful and unique.
+Your goal with this assignment is to create a visualization. **You must use canvas** for this assignment. 
 
-Add to your gihub pages. 
+Think of things that make canvas useful and unique and concentrate on these things. 
+
+- Lines
+- Arcs
+
+Think about writing functions to generate different types of graphs from arrays of numbers provided in parameters. 
+
+- Bar Graph
+- Line Graph
+- Scatter plot
+- Pie Chart 
+- Donut Chart
+
+Add to your githHub pages. 
 
 | Area         | 0                 |               1 |               2  |
 |:-------------|:------------------|:----------------|:-----------------|
