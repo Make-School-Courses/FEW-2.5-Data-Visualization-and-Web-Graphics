@@ -13,28 +13,51 @@
 	}
 	
 	
+	
+	// Pie chart 
+//	const pieData = []
+//	for (let i = 0; i < 5; i += 1) {
+//		pieData.push(Math.random())
+//	}
+//	
+//	const total = pieData.reduce((a, v) => a + v)
+//	pieData.push(Math.PI * 2 - total)
+//	
+//	
+//	let lastAngle = 0
+//	pieData.forEach((val, i) => {
+//		ctx.beginPath()
+//		ctx.arc(300, 300, 150, lastAngle, lastAngle + val)
+//		ctx.lineWidth = 300
+//		const hue = 360 / pieData.length * i
+//		ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`
+//		ctx.stroke()
+//		lastAngle += val
+//	})
+//	
+	
 	// ----------------------------------------------------
 	// Draw some circles in a circle 
 	
 	{
-		let i = 0 // Count the steps 
-		const step = Math.PI * 2 / data.size // Calculate the size of a step
-		const radius = 230 // Define the radius 
-		const centerX = 300 // define the center of the circle
-		const centerY = 300
-		
-		data.forEach((val) => {
-			// Calculate where to place a circle
-			const x = Math.cos(step * i) * radius + centerX
-			const y = Math.sin(step * i) * radius + centerY
-			// Draw the circle
-			ctx.beginPath()
-			ctx.arc(x, y, 20, 0, Math.PI * 2)
-			ctx.fillStyle = 'red'
-			ctx.fill()
-			// Increment the count
-			i += 1
-		})
+//		let i = 0 // Count the steps 
+//		const step = Math.PI * 2 / data.size // Calculate the size of a step
+//		const radius = 230 // Define the radius 
+//		const centerX = 300 // define the center of the circle
+//		const centerY = 300
+//		
+//		data.forEach((val) => {
+//			// Calculate where to place a circle
+//			const x = Math.cos(step * i) * radius + centerX
+//			const y = Math.sin(step * i) * radius + centerY
+//			// Draw the circle
+//			ctx.beginPath()
+//			ctx.arc(x, y, 20, 0, Math.PI * 2)
+//			ctx.fillStyle = 'red'
+//			ctx.fill()
+//			// Increment the count
+//			i += 1
+//		})
 	}
 	
 	
@@ -46,7 +69,7 @@
 //		const centerX = 300 
 //		const centerY = 300
 //		
-//		const radius1 = 50  // inner radius 
+//		const radius1 = 0  // inner radius 
 //		const radius2 = 230 // outer radius
 //		
 //		data.forEach((val) => {
@@ -99,36 +122,36 @@
 	// Draw a spiral - radius changes with the step
 	// use a larger data set to make this interesting
 	{
-//		const data = new Set()
-//		for (let i = 0; i < 100; i += 1) {
-//			data.add(Math.random())
-//		}
-//		
-//		let i = 0 
-//		const step = Math.PI * 2 / data.size 
-//		const radius = 280  
-//		const centerX = 300 
-//		const centerY = 300
-//		
-//		const turns = 3
-//		
-//		data.forEach((val) => {
-//			
-//			const spiral = radius / data.size * i
-//			
-//			const x = Math.cos(step * i * turns) * spiral + centerX
-//			const y = Math.sin(step * i * turns) * spiral + centerY
-//			
-//			ctx.beginPath()
-//			
-//			const r = val * 40
-//			ctx.arc(x, y, r, 0, Math.PI * 2)
-//			const hue = 360 / data.size * i
-//			ctx.fillStyle = `hsla(${hue}, 50%, 50%, 0.5)`
-//			ctx.fill()
-//			
-//			i += 1
-//		})
+		const data = new Set()
+		for (let i = 0; i < 100; i += 1) {
+			data.add(Math.random())
+		}
+		
+		let i = 0 
+		const step = Math.PI * 2 / data.size 
+		const radius = 280  
+		const centerX = 300 
+		const centerY = 300
+		
+		const turns = 2.5
+		
+		data.forEach((val) => {
+			
+			const spiral = radius / data.size * i
+			
+			const x = Math.cos(step * i * turns) * spiral + centerX
+			const y = Math.sin(step * i * turns) * spiral + centerY
+			
+			ctx.beginPath()
+			
+			const r = val * 40
+			ctx.arc(x, y, r, 0, Math.PI * 2)
+			const hue = 360 / data.size * i
+			ctx.fillStyle = `hsla(${hue}, 50%, 50%, 0.5)`
+			ctx.fill()
+			
+			i += 1
+		})
 	}
 	
 	
