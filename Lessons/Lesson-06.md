@@ -9,9 +9,9 @@ Not sure but it's probably useful! Circle are cool, you'll see them everywhere, 
 ## Learning Objectives
 
 - Use Math functions and simple trigonometry
-	- Math.PI
-	- Math.sin()
-	- Math.cos()
+	- `Math.PI`
+	- `Math.sin()`
+	- `Math.cos()`
 
 ## Intro
 
@@ -61,10 +61,9 @@ Just add the offset to the x and y. In this case the center of the clock face is
 
 ## After Class
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+- Continue working on visualization 3
 
 ## Additional Resources
 
-- 
+- [Example code](../lesson-06.html)
+- [Sine/Cosine](https://en.wikipedia.org/wiki/Sine)
