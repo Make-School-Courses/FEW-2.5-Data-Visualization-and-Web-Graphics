@@ -10,8 +10,8 @@ Not sure but it's probably useful! Circle are cool, you'll see them everywhere, 
 
 - Use Math functions and simple trigonometry
 	- `Math.PI`
-	- `Math.sin()`
-	- `Math.cos()`
+	- `Math.sin(radians)` -1 to +1
+	- `Math.cos(radians)` -1 to +1
 
 ## Intro
 
