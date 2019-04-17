@@ -146,7 +146,7 @@ mySet.forEach((val, key) => {
 })
 // Check if an value exists 
 console.log(mySet.has(1)) // true
-console.log(mySet.has(5))    // false
+console.log(mySet.has(5)) // false
 // Remove an element from the set
 mySet.delete(2) // returns true 
 console.log(mySet.has(2))    // false

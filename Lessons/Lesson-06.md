@@ -1,75 +1,63 @@
-# Canvas Part 2, Circle Math
+# FEW 2.5 Canvas Part 2, Circle Math
 
-Dawing circles and caluclating coords in circles 
-
+Drawing circles and caluclating coords in circles. 
 
 ## Why? 
 
-Not sure but it's probably useful! 
+Not sure but it's probably useful! Circle are cool, you'll see them everywhere, one day you'll have to draw one. Might as well learn how today! 
+
+## Learning Objectives
+
+- Use Math functions and simple trigonometry
+	- Math.PI
+	- Math.sin()
+	- Math.cos()
 
 ## Intro
 
-Some circle math
+Sometimes you'll want to place things in a circle. Imagine the numbers around a clock. If you had to make this yourself you'd need to place each of the numbers equally spaced around a enter point. 
 
-PI
+To do this use `Math.sin()` and `Math.cos()`. Each of these takes a value in radians and return a number between -1 and +1. Multiply the return value by the radius. 
 
-Radians
+A full circle is `Math.PI * 2`. 
 
-sine 
+Think about the clock. To get the position of each hour divide the circle by 12. 
 
-cosine 
+`const step = Math.PI * 2 / 12`
 
-## Circle with JS
+Decide what the radius of your clock face is. Imagine it's 200px. 
 
-Math.PI
-Math.sin()
-Math.cos()
+```JS
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12]
+const step = Math.PI * 2 / numbers.length
+const radius = 200
+numbers.forEach((n, i) => {
+	const x = Math.sin(step * i) * radius
+	const y = Math.cos(step * i) * radius
 
-Drawing arcs 
+	// draw number at x, y
+})
+```
 
+The center of the clock face would be at 0, 0 with the numbers arranged in a 200 pixels radius circle around that point. Imagine the center of the clock in the upper left corner. 
 
+You usuallt don't want to place everything in the upper left corner. To move the center of the clock face anywhere on the canvas you'll need to offset the x and y values. 
 
+```JS
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12]
+const step = Math.PI * 2 / numbers.length
+const radius = 200
+const offsetX = 300
+const offsetY = 250
+numbers.forEach((n, i) => {
+	const x = Math.sin(step * i) * radius + offsetX
+	const y = Math.cos(step * i) * radius + offsetY
 
+	// draw number at x, y
+})
+```
 
-
-## Learning Objectives/Competencies
-
-1. Identify and describe
-1. Define 
-1. Desgin 
-1. Implement 
-
-## Initial Exercise
-
-- Funny comic
-- Prime the Pump (e.g. think and jot, think pair share, etc)
-- Productivity Tip/Tool
-- Review of current event (e.g. tech news relevant to your track/topic)
-- Quiz on homework or topic(s) of past class
-
-## Overview/TT I 
-
-- Why learn this? 
-- Industry examples of usage
-- Best practices
-- Personal anecdote 
-
-## In Class Activity I
-
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
-
-## Overview/TT II (optional)
-
-## In Class Activity II (optional)
+Just add the offset to the x and y. In this case the center of the clock face is at 300, 250 on the canvas. 
 
 ## After Class
 
@@ -79,4 +67,4 @@ Drawing arcs
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+- 
