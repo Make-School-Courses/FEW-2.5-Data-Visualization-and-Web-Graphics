@@ -1,12 +1,20 @@
 # FEW 2.5 Visualization 4
 
-Visualization with canvas.
+Viisualization with libraries. Choose Chart.js or Chartist. Make at least three graphs. Use three different graph types:
 
-Your goal with this assignment is to create a visualization. You must use canvas for this assignment. Think of things that make canvas useful and unique. 
+- Line 
+- Bar
+- Polar
+- Bubble 
+- Scatter
+- Radar
+- Pie
 
-Use circles 
+Think about what type of data fits a type of chart. Do your best to match this with the three chart types you choose. 
 
-Add to your gihub pages. 
+Use the CDN to link to the library you have chosen. 
+
+Add your visualizations to your GitHub Pages site. 
 
 | Area         | 0                 |               1 |               2  |
 |:-------------|:------------------|:----------------|:-----------------|

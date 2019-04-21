@@ -13,27 +13,53 @@
 	}
 	
 	
+//	// -----------------------------------------------
+//	// Pie chart 
+//	const pieData = []
+//	for (let i = 0; i < 5; i += 1) {
+//		pieData.push(Math.random())
+//	}
+//	
+//	const total = pieData.reduce((a, v) => a + v)
+//	pieData.push(Math.PI * 2 - total)
+//	
+//	
+//	let lastAngle = 0
+//	pieData.forEach((val, i) => {
+//		ctx.beginPath()
+//		ctx.arc(300, 300, 150, lastAngle, lastAngle + val)
+//		ctx.lineWidth = 300
+//		const hue = 360 / pieData.length * i
+//		ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`
+//		ctx.stroke()
+//		lastAngle += val
+//	})
+	
+	
 	// -----------------------------------------------
-	// Pie chart 
-	const pieData = []
-	for (let i = 0; i < 5; i += 1) {
-		pieData.push(Math.random())
-	}
-	
-	const total = pieData.reduce((a, v) => a + v)
-	pieData.push(Math.PI * 2 - total)
-	
-	
-	let lastAngle = 0
-	pieData.forEach((val, i) => {
-		ctx.beginPath()
-		ctx.arc(300, 300, 150, lastAngle, lastAngle + val)
-		ctx.lineWidth = 300
-		const hue = 360 / pieData.length * i
-		ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`
-		ctx.stroke()
-		lastAngle += val
-	})
+	// Pie chart 2
+//	const pieData = []
+//	for (let i = 0; i < 5; i += 1) {
+//		pieData.push(Math.random())
+//	}
+//	
+//	const total = pieData.reduce((a, v) => a + v)
+//	pieData.push(Math.PI * 2 - total)
+//	
+//	
+//	let lastAngle = 0
+//	pieData.forEach((val, i) => {
+//		ctx.beginPath()
+//		
+//		const w = val * 100 + 10
+//		
+//		ctx.arc(300, 300, w / 2, lastAngle, lastAngle + val)
+//		ctx.lineWidth = w
+//		const hue = 360 / pieData.length * i
+//		ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`
+//		ctx.stroke()
+//		lastAngle += val
+//	})
 	
 	
 	// ----------------------------------------------------
@@ -69,7 +95,7 @@
 //		const centerX = 300 
 //		const centerY = 300
 //		
-//		const radius1 = 0  // inner radius 
+//		const radius1 = 50  // inner radius 
 //		const radius2 = 230 // outer radius
 //		
 //		data.forEach((val) => {
