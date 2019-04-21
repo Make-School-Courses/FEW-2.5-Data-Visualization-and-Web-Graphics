@@ -66,21 +66,28 @@ Labels and colors may take a little be of thought and some strategy.
 
 Be sure to read the documentation! Seriously, everything you need know is probably there. Both libraries have 
 
+- [Chart JS Docs](https://www.chartjs.org/docs/latest/)
+- [Chartist Docs](https://gionkunz.github.io/chartist-js/api-documentation.html)
+
 ## Making Charts
 
 Your goal is to make some charts with these libraries. Look at the types of charts available to us: 
 
-- Line
-- Bar
-- Radar
-- Doughnut & Pie 
-- Polar
-- Bubble 
-- Scatter
-- Area
-- Mixed
+- [Line](https://www.chartjs.org/docs/latest/charts/line.html)
+- [Bar](https://www.chartjs.org/docs/latest/charts/bar.html)
+- [Radar](https://www.chartjs.org/docs/latest/charts/radar.html)
+- [Doughnut & Pie](https://www.chartjs.org/docs/latest/charts/doughnut.html) 
+- [Polar](https://www.chartjs.org/docs/latest/charts/polar.html)
+- [Bubble](https://www.chartjs.org/docs/latest/charts/bubble.html) 
+- [Scatter](https://www.chartjs.org/docs/latest/charts/scatter.html)
+- [Area](https://www.chartjs.org/docs/latest/charts/area.html)
+- [Mixed](https://www.chartjs.org/docs/latest/charts/mixed.html)
 
 Discussion: what type of data works best for which type of chart? 
+
+## Examples 
+
+Read the notes in these [examples](../lesson-07.html). 
 
 ## After Class
 
@@ -88,4 +95,15 @@ Discussion: what type of data works best for which type of chart?
 
 ## Additional Resources
 
-- 
+- [Chart JS Docs](https://www.chartjs.org/docs/latest/)
+- [Chartist Docs](https://gionkunz.github.io/chartist-js/api-documentation.html)
+- [examples](../lesson-07.html)
+- [Line](https://www.chartjs.org/docs/latest/charts/line.html)
+- [Bar](https://www.chartjs.org/docs/latest/charts/bar.html)
+- [Radar](https://www.chartjs.org/docs/latest/charts/radar.html)
+- [Doughnut & Pie](https://www.chartjs.org/docs/latest/charts/doughnut.html) 
+- [Polar](https://www.chartjs.org/docs/latest/charts/polar.html)
+- [Bubble](https://www.chartjs.org/docs/latest/charts/bubble.html) 
+- [Scatter](https://www.chartjs.org/docs/latest/charts/scatter.html)
+- [Area](https://www.chartjs.org/docs/latest/charts/area.html)
+- [Mixed](https://www.chartjs.org/docs/latest/charts/mixed.html)
