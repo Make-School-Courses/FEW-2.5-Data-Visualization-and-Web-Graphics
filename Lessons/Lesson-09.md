@@ -1,10 +1,30 @@
-# Libraries 
+# FEW 2.5 D3 Intro 
 
-Using libraries for data
-
-Chart JS
+D3 is a library that has been around for a long time. It's more of a toolkit for making visualizations with JavaScript. It's the first namer that comes when conversation turns to making data visualizations with JS. 
 
 ## Why? 
+
+It's the tool that wrote the book on data visualization with JS. You can do just about anything with D3. It has huge flexibility and deep toolset. It also has a steep learning curve. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

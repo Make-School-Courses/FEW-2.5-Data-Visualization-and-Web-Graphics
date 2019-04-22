@@ -1,4 +1,4 @@
-# D3
+# FEW 2.5 D3 workshop
 
 D3
 
