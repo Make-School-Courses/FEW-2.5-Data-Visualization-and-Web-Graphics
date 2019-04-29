@@ -7,9 +7,6 @@ D3
 
 
 
-
-
-
 ## Learning Objectives/Competencies
 
 1. Identify and describe
