@@ -1,12 +1,12 @@
 # FEW 2.5 Visualization 5
 
-Visualization with canvas.
+Visualization with D3. 
 
-Your goal with this assignment is to create a visualization. You must use canvas for this assignment. Think of things that make canvas useful and unique. 
+Your goal is to create a data visualization using D3. D3 has a steep learning curve and many features which make it a little overwhelming to get started with. Don't worry about this. 
 
-Use circles 
+Start with a one of hte example on the D3 page [here](https://github.com/d3/d3/wiki/Gallery). Choose one of these examples and recreate it with a different dataset. 
 
-Add to your gihub pages. 
+Add to your visualization to your GitHub pages. 
 
 | Area         | 0                 |               1 |               2  |
 |:-------------|:------------------|:----------------|:-----------------|

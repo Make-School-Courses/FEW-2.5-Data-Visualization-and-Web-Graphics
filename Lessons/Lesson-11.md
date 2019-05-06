@@ -1,52 +1,48 @@
 # FEW 2.5 D3 workshop
 
-D3
+D3 Scales provide a system for normalizing and scaling values for display on the screen. 
 
 
 ## Why? 
 
-
+Scaling and nomralizing data is an important task you'll do it all the time. D3's scale tools provide great functionality. 
 
 ## Learning Objectives/Competencies
 
-1. Identify and describe
-1. Define 
-1. Desgin 
-1. Implement 
+1. Identify scales and uses for normalizing
+1. Define a scale for each axis 
+1. Use the d3.scaleLinear() and 
+1. Differentiate between scaleLinear and scaleOrdinal
 
-## Initial Exercise
+## Scale and normalization
 
-- Funny comic
-- Prime the Pump (e.g. think and jot, think pair share, etc)
-- Productivity Tip/Tool
-- Review of current event (e.g. tech news relevant to your track/topic)
-- Quiz on homework or topic(s) of past class
+Scaling and normalizing allows us to convert values of any range into values that can be displayed on the screen. 
 
-## Overview/TT I 
+Scaling and normalizing works best when working with numbers. Sometimes you'll have values that don't normalize easily. For example names of countries and key words don't translate easily to numbers. Also there are situations where you want to categorize values into buckets. D3 scaleOrdinal does this for you. 
 
-- Why learn this? 
-- Industry examples of usage
-- Best practices
-- Personal anecdote 
+Use scaleOrdinal for:
 
-## In Class Activity I
+- Converting values to colors
+- Converting values into key words
+- Converting keywords into a values, colors, or other things
 
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
+Read the docs for youself
 
-## Overview/TT II (optional)
+- https://d3-wiki.readthedocs.io/zh_CN/master/Ordinal-Scales/
 
-## In Class Activity II (optional)
+A simple example of oridnal scale
 
-## After Class
+- https://bl.ocks.org/d3indepth/fabe4d1adbf658c0b73c74d3ea36d465
+
+Examples of using Scale: 
+
+- https://d3indepth.com/scales/
+
+## Example Code
+
+Take a look at the example in the D3 Tutorial here: 
+
+- https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
 
 - Continue working on your current tutorial
 - Complete reading
@@ -54,4 +50,7 @@ D3
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+- https://d3-wiki.readthedocs.io/zh_CN/master/Ordinal-Scales/
+- https://bl.ocks.org/d3indepth/fabe4d1adbf658c0b73c74d3ea36d465
+- https://d3indepth.com/scales/
+- https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
