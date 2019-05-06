@@ -1,10 +1,10 @@
-# FEW 2.5 Visualization 5
+# FEW 2.5 Visualization 6
 
 Visualization with D3. 
 
-Your goal is to create a data visualization using D3. D3 has a steep learning curve and many features which make it a little overwhelming to get started with. Don't worry about this. 
+Your goal is make another visualization with D3. Choose a different dataset for this example. 
 
-Start with a one of hte example on the D3 page [here](https://github.com/d3/d3/wiki/Gallery). Choose one of these examples and recreate it with a different dataset. 
+Use D3's scale methods to scale and normalize data. Look at scaleOrdinal and try and make use of it in this visualization. 
 
 Add to your visualization to your GitHub pages.
 
