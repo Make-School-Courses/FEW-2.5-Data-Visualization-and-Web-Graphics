@@ -65,9 +65,9 @@ Class Sessions:  14 classes, 7 labs
 [Lesson 7]: Lessons/Lesson-07.md
 [Lesson 8]: Lessons/Lesson-08.md
 [Lesson 9]: Lessons/Lesson-09.md
-[Lesson 10]: Lessons/Lesson10.md
-[Lesson 11]: Lessons/Lesson11.md
-[Lesson 12]: Lessons/Lesson12.md
+[Lesson 10]: Lessons/Lesson-10.md
+[Lesson 11]: Lessons/Lesson-11.md
+[Lesson 12]: Lessons/Lesson-12.md
 
 ## Class Assignments
 
