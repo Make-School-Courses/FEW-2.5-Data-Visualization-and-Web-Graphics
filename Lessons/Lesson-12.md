@@ -33,17 +33,17 @@ While it is great you don't have work out the math yourself you do have to under
 ## Discussion
 
 - What is geojson?
+	- https://geojson.org/
 - Why do we need special proection models?
+	- https://d3indepth.com/geographic/
 
-https://d3indepth.com/geographic/
+## Mapping with D3 tutorial
 
-## In Class Activity I
-
-This is a great tutorial on mapping with D3. It uses v5 so it's up to date. 
+This is a great tutorial on mapping with D3. It uses v5 so it's up to date. Besides that it was written by a cartographer! 
 
 - https://petrichor.studio/2018/05/21/get-started-creating-d3-maps/
 
-Read the blog post. Then create a map of your own.
+Read the blog post. Then create a map of your own. Use the sample code provided in the codepen example to recreate the example on your desktop. 
 
 Be sure to follow up with the links at the bottom of the post these have valuable info on creating and using maps. 
 
@@ -54,7 +54,6 @@ Be sure to follow up with the links at the bottom of the post these have valuabl
 ## Additional Resources
 
 - https://petrichor.studio/2018/05/21/get-started-creating-d3-maps/
-- How are spherical coordinates mapped onto a flat surface. 
 - https://github.com/d3/d3-geo
 - https://observablehq.com/@d3/projection-comparison
 - https://observablehq.com/collection/@d3/d3-geo
