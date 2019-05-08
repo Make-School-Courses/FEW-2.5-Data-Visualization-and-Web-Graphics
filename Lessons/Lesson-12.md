@@ -47,6 +47,12 @@ Read the blog post. Then create a map of your own. Use the sample code provided 
 
 Be sure to follow up with the links at the bottom of the post these have valuable info on creating and using maps. 
 
+- Challenges
+	- Make the map work from files on your desktop
+	- Try different projections
+		- https://github.com/d3/d3-geo#geoAzimuthalEqualArea
+	- Edit the CSS to change the color of the fill and stroke
+
 ## After Class
 
 - Complete your final visualization
