@@ -4,7 +4,9 @@
 
 Use your graphing skills to compare cereals find the relationship between ingredients and the rating.
 
-The dataset contains 80 cereals. Each cereal has a rating and a list of ingredients. Your goal is to graph the data in three graphs and try to show what ingredients make a cereal popular. 
+Imagein you have been hired by a company that wants to develop a new cereal and they are doing competitive analysis. You are m aking a presentation that will show what is available today and make inferences as to why some products are more popular than others.  
+
+The dataset contains 80 cereals. Each cereal has a **rating** and a list of **ingredients**. Your goal is to graph the data in three graphs and try to show what ingredients make a cereal popular. 
 
 ## Cereal Data 
 
