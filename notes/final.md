@@ -60,5 +60,3 @@ Your graph/Chart should inlcude an interactive element. Here are some suggestion
 - Buttons choose the data displayed
 - Buttons change the type of chart/graph
 
-
-
