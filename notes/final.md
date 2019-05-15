@@ -35,9 +35,13 @@ Use the cereal.json data. This data set has the following information for 80 bre
   ...
   ```
 
-https://www.kaggle.com/crawford/80-cereals/downloads/80-cereals.zip/2
+Read more about the data: 
 
-Refernce the link above to get more insight into the cereal data.  
+https://www.kaggle.com/crawford/80-cereals/
+
+Download the data here: 
+
+https://www.kaggle.com/crawford/80-cereals/downloads/80-cereals.zip/
 
 ## Make Three visualizations 
 
