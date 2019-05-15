@@ -1,8 +1,10 @@
 # FEW 2.5 Data Visualization Final Assessment
 
+## Use the cereal data to compare cereals. 
 
+Use your graphing skills to compare cereals find the relationship between ingredients and the rating.
 
-------
+The dataset contains 80 cereals. Each cereal has a rating and a list of ingredients. Your goal is to graph the data in three graphs and try to show what ingredients make a cereal popular. 
 
 ## Cereal Data 
 
@@ -33,7 +35,9 @@ Use the cereal.json data. This data set has the following information for 80 bre
 
 https://www.kaggle.com/crawford/80-cereals/downloads/80-cereals.zip/2
 
-Use the cereal data to compare cereals. 
+Refernce the link above to get more insight into the cereal data.  
+
+## Make Three visualizations 
 
 Make three graphs each a different type. For example: 
 
@@ -42,8 +46,17 @@ Make three graphs each a different type. For example:
 - Scatter Plot
 - Area
 - Radar
+- Custom graph/Chart *
+	* You can make a custom graph that isn't one of these types but something of your own invention if you like. It should show something meaningful related to the data. 
 
-You can make a custom graph that isn't one of these types but something of your own invention if you like.
+You can use Chart JS, D3, or your system to show data. 
 
-You can use D3, ChartJS, or make your custom system. 
+## Extra credit: Interactive 
+
+Your graph/Chart should inlcude an interactive element. Here are some suggestions you can implement one of these or make up your own. 
+
+- Buttons choose the data displayed
+- Buttons change the type of chart/graph
+
+
 
