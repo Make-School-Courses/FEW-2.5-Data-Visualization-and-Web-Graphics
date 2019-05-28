@@ -28,6 +28,8 @@ Class Sessions:  14 classes, 7 labs
 
 ## Learning Outcomes
 
+Students by the end of the course will be able to ...
+
 - Analyze Data to express it's meaning
 - Normalize data to express its range and value on the screen
 - Implement standard and non-standard visual displays
