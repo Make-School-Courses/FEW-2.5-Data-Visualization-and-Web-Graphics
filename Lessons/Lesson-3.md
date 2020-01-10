@@ -19,7 +19,6 @@
 | 1:45        | 0:05      | Wrap up review objectives |
 | TOTAL       | 1:50      | -                         |
 
-
 <!-- > -->
 
 ## Why you should know this or industry application (optional) (5 min)

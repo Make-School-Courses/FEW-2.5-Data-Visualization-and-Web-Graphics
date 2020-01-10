@@ -1,4 +1,4 @@
-# FEW-2.5 Data Visualization with JavaScript
+# FEW 2.5 
 
 ## Course Description
 
@@ -6,23 +6,13 @@ Learn how to create effective visualizations and graphics on the web.  The cours
 
 Tools: JavaScript, HTML, CSS, D3, Canvas, SVG
 
-### Why you should take this course
+### Why you should know this (optional)
 
 You should take this class if you have a desire to express ideas visually on a computer screen. If you have a fascination with data and trends taking this class will give you the tools and opportunities to express these ideas in your work. 
 
 If you want to practice the craft of making web applications with HTML, CSS, and javascript this class will give you ample opportunity to stretch these skills in new directions. 
 
-## Course Specifics
-
-Weeks to Completion:  7 <br>
-Total Seat Hours:  37.5 hours <br>
-Total Out-of-Class Hours: 75 hours <br>
-Total Hours: 112.5 hours <br>
-Units:  3 units <br>
-Delivery Method:  Residential <br>
-Class Sessions:  14 classes, 7 labs
-
-## Prerequisites  
+## Prerequisites:  
 
 - [FEW 1.2](https://github.com/Make-School-Courses/FEW-1.2-JavaScript-Foundations)
 
@@ -35,105 +25,54 @@ Class Sessions:  14 classes, 7 labs
 
 ## Schedule
 
-**Course Dates:** Monday, April 1 – Wednesday, May 15, 2019 (7 weeks)
+**Course Dates:** Monday, January 20 – Wednesday, March 4, 2020 (7 weeks)
 
-**Class Times:** Monday and Wednesday from 1:30–1:20 pm (14 class sessions)
+**Class Times:** Monday and Wednesday at 3:30–5:20pm (13 class sessions)
 
-| Class |          Date          |                 Topics                  |
-|:-----:|:----------------------:|:---------------------------------------:|
-|  1 |  Monday, April 1          | [Lesson 1] |
-|  2 |  Wednesday, April 3       | [Lesson 2] |
-|  3 |  Monday, April 8          | [Lesson 3] |
-|  4 |  Wednesday, April 10      | [Lesson 4] |
-|  5 |  Monday, April 15         | [Lesson 5] |
-|  6 |  Wednesday, April 17      | [Lesson 6] |
-|  7 |  Monday, April 22         | [Lesson 7] |
-|  8 |  Wednesday, April 24      | [Lesson 8] |
-|  9 |  Monday, April 29         | [Lesson 9] |
-| 10 |  Wednesday, May 1         | [Lesson 10] |
-| 11 |  Monday, May 6            | [Lesson 11] |  
-| 12 |  Wednesday, May 8         | [Lesson 12] |
-| 13 |  Monday, May 13           | Final Class (presentations, etc) |
-| 14 |  Wednesday, May 15        | Final Exams/Presentations |
+| Class | Date | Topics | Assignments |
+|:-----:|:----:|:------:|:-----------:|
+|  - |  Mon, January 20  | **NO CLASS** - MLK Day | - |
+|  1 |  Wed, January 22  | [Lesson 1] | [Data Visualization 1](Assignments/Data-Visualization-1.md) |
+|  2 |  Mon, January 27  | [Lesson 2] |  |
+|  3 |  Wed, January 29  | [Lesson 3] |  |
+|  4 |  Mon, February 3  | [Lesson 4] |  |
+|  5 |  Wed, February 5  | [Lesson 5] |  |
+|  6 |  Mon, February 10 | [Lesson 6] |  |
+|  7 |  Wed, February 12 | [Lesson 7] |  |
+|  8 |  Mon, February 17 | [Lesson 8] |  |
+|  9 |  Wed, February 19 | [Lesson 9] |  |
+| 10 |  Mon, February 24 | [Lesson 10]|  |
+| 11 |  Wed, February 26 | [Lesson 11]|  |
+| 12 |  Mon, March 2     | [Lesson 12]|  |
+| 13 |  Wed, March 4     | Final Exam/Presentations |  |
 
-[Lesson 1]: Lessons/Lesson-01.md
-[Lesson 2]: Lessons/Lesson-02.md
-[Lesson 3]: Lessons/Lesson-03.md
-[Lesson 4]: Lessons/Lesson-04.md
-[Lesson 5]: Lessons/Lesson-05.md
-[Lesson 6]: Lessons/Lesson-06.md
-[Lesson 7]: Lessons/Lesson-07.md
-[Lesson 8]: Lessons/Lesson-08.md
-[Lesson 9]: Lessons/Lesson-09.md
-[Lesson 10]: Lessons/Lesson-10.md
-[Lesson 11]: Lessons/Lesson-11.md
-[Lesson 12]: Lessons/Lesson-12.md
+## Assignment Schedule 
 
-## Class Assignments
-
-### Projects
-
-- [Visualization 1](Assignments/Visualization-1.md)
-- [Visualization 2](Assignments/Visualization-2.md)
-- [Visualization 3](Assignments/Visualization-3.md)
-- [Visualization 4](Assignments/Visualization-4.md)
-- [Visualization 5](Assignments/Visualization-5.md)
-- [Visualization 6](Assignments/Visualization-6.md)
-
-**All projects will require a minimum of 10 commits and must take place throughout the entirety of the course**
-
-**All Homework projects should be hosted on GitHub pages.** 
-
-- **Good Example:** 40+ commits throughout the length of the course, looking for a healthy spattering of commits each week (such as 3-5 per day).
-- **Bad Example:** 10 commits on one day during the course and no others. Students who do this will be at severe risk of not passing the class.
-- **Unacceptable Example:** 2 commits the day before a project is due. Students who do this should not expect to pass the class. 
-
-#### Why are we doing this?
-
-We want to encourage best practices that you will see working as a professional software engineer. Breaking up a project by doing a large number of commits helps engineers in the following ways:
-
-- It's much easier to retrace your steps if you break your project/product/code up into smaller pieces
-- It helps with being able to comprehend the larger problem, and also will help with your debugging (i.e. finding exactly when you pushed that piece of broken code)
-- It allows for more streamlined, iterative communication in your team, as it's much easier to hand off a small change to someone (updating a function) than a huge one (changed the architecture of the project)
-
-Through this requirement, we hope to encourage you to think about projects with an iterative, modular mindset. Doing so will allow you to break projects down into smaller milestones that come together to make your fully-realized solution.
-
-### Final Exam
-
--  **Passing the exam is a requirement for passing the class.**
-- You will have 2 hours to complete this exam - it will be in class using paper and pencil, or a format of the instructor's choosing
-- There are no retakes for the exam.
-- If you have a disability that needs accommodation such as extended time or a different format, please take advantage of our [accommodations program](make.sc/disability-policy).
-
-### Other Class assignments
+| Assignment | Date Assigned | Due Date | Submission Form |
+|:----------:|:-------------:|:--------:|:---------------:|
+| [Data Visualization 1](Assignments/Data-Visualization-1.md) |  Wed, January 22  |  Mon, February 3  | [Submit Assignment](makeschool.com) |
+| [Data Visualization 1](Assignments/Data-Visualization-1.md) | Mon, February 3 | day, Date | [Submit Assignment](makeschool.com) |
+| [Link to Assignment](makeschool.com) | day, Date | day, Date | [Submit Assignment](makeschool.com) |
+| [Link to Assignment](makeschool.com) | day, Date | day, Date | [Submit Assignment](makeschool.com) |
 
 ## Evaluation
 
 To pass this course you must meet the following requirements:
 
-- Complete all required tutorials 
+- Complete all required assignments 
 - Pass all projects according to the associated project rubric
-- Pass the final summative assessment >=75%
+- Pass the final summative assessment according to the rubric as specified in this class
+    - This will be further explained in the [study guide](ADD_STUDY_GUIDE_LNK)
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
 
-## Attendance
-Just like any job, attendance at Make School is required and a key component of your success. Attendance is being on site from 9:30 to 5:30 each day, attending all scheduled sessions including classes, huddles, coaching, and school meetings, and working in the study labs when not in a scheduled session. Working onsite allows you to learn with your peers, have access to support from TAs, instructors, and others, and is vital to your learning.
-
-Attendance requirements for scheduled sessions are:
-- No more than two no call no shows per term in any scheduled session.
-- No more than four excused absences per term in any scheduled session.
-
-Failure to meet these requirements will result in a PIP (Participation Improvement Plan).  Failure to improve after the PIP is cause for not being allowed to continue at Make School. 
-
-
 ## Make School Course Policies
 
-[Academic Honesty](https://make.sc/academic-honesty)<br>
-[Accommodations for Students](https://make.sc/accommodations-for-students)<br>
-[Attendance Policy](https://make.sc/attendance-policy)  
-[Diversity and Inclusion Policy](https://make.sc/diversity-and-inclusion-policy)<br>
-[Grading System](https://make.sc/grading-system)
-<br>
-[Title IX Policy](https://make.sc/title-ix-policy)<br>
-[Program Learning Outcomes](https://make.sc/program-learning-outcomes)
+- [Program Learning Outcomes](https://make.sc/program-learning-outcomes) - What you will achieve after finishing Make School, all courses are designed around these outcomes.
+- [Grading System](https://make.sc/grading-system) - How grading is done at Make School
+- [Diversity and Inclusion Statement](https://make.sc/diversity-and-inclusion-statement) - Learn about Diversity and Inclusion at Make School
+- [Academic Honesty](https://make.sc/academic-honesty-policy) - Our policies around plagerism, cheating, and other forms of academic misconduct 
+- [Attendance Policy](https://make.sc/attendance-policy) - What we expect from you in terms of attendance for all classes at Make School
+- [Course Credit Policy](https://make.sc/course-credit-policy) - Our policy for how you obtain credit for your courses
+- [Disability Services (Academic Accommodations)](https://make.sc/disability-services) - Services and accommodations we provide for students
+- [Student Handbook](https://make.sc/student-handbook) - Guidelines, policies, and resources for all Make School students

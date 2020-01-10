@@ -1,56 +1,110 @@
-# FEW 2.5 D3 workshop
+<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+# Class - Lesson Title
 
-D3 Scales provide a system for normalizing and scaling values for display on the screen. 
+<!-- Put a link to the slides so that students can find them -->
+
+➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore')
+
+<!-- > -->
+
+## Minute-by-Minute [OPTIONAL]
+
+| **Elapsed** | **Time**  | **Activity**              |
+| ----------- | --------- | ------------------------- |
+| 0:00        | 0:05      | Objectives                |
+| 0:05        | 0:15      | Overview                  |
+| 0:20        | 0:30      | In Class Activity I       |
+| 0:50        | 0:10      | BREAK                     |
+| 1:00        | 0:45      | In Class Activity II      |
+| 1:45        | 0:05      | Wrap up review objectives |
+| TOTAL       | 1:50      | -                         |
 
 
-## Why? 
+<!-- > -->
 
-Scaling and nomralizing data is an important task you'll do it all the time. D3's scale tools provide great functionality. 
+## Why you should know this or industry application (optional) (5 min)
 
-## Learning Objectives/Competencies
+Explain why students should care to learn the material presented in this class.
 
-1. Identify scales and uses for normalizing
-1. Define a scale for each axis 
-1. Use the d3.scaleLinear() and 
-1. Differentiate between scaleLinear and scaleOrdinal
+<!-- > -->
 
-## Scale and normalization
+## Learning Objectives (5 min)
 
-Scaling and normalizing allows us to convert values of any range into values that can be displayed on the screen. 
+1. Identify and describe
+1. Define
+1. Design
+1. Implement
 
-Scaling and normalizing works best when working with numbers. Sometimes you'll have values that don't normalize easily. For example names of countries and key words don't translate easily to numbers. Also there are situations where you want to categorize values into buckets. D3 scaleOrdinal does this for you. 
+<!-- > -->
 
-Use scaleOrdinal for:
+## Initial Exercise (15 min)
 
-- Converting values to colors
-- Converting values into key words
-- Converting keywords into a values, colors, or other things
+- Funny comic
+- Prime the Pump (e.g. think and jot, think pair share, etc)
+- Productivity Tip/Tool
+- Review of current event (e.g. tech news relevant to your track/topic)
+- Quiz on homework or topic(s) of past class
+- Concept Test
 
-Read the docs for youself
+<!-- > -->
 
-- https://d3-wiki.readthedocs.io/zh_CN/master/Ordinal-Scales/
+# Topic 1
 
-A simple example of oridnal scale
+<!-- v -->
 
-- https://bl.ocks.org/d3indepth/fabe4d1adbf658c0b73c74d3ea36d465
+## Overview/TT I (20 min)
 
-Examples of using Scale: 
+- Why learn this?
+- Industry examples of usage
+- Best practices
+- Personal anecdote
 
-- https://d3indepth.com/scales/
+<aside class="notes">
+Place more detailed information or speaker notes in "aside" elements - it will appear in GitHub Pages but not in the slides.
+</aside>
 
-## Example Code
+<!-- v -->
 
-Take a look at the example in the D3 Tutorial here: 
+## In Class Activity I (30 min)
 
-- https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
+- I do, We do, You do
+- Reading & Discussion Questions in small groups
+- Draw a picture/diagram
+- Complete Challenges solo or in pair
+- Q&A about tutorials
+- Pair up and code review
+- Pair program
+- Formative assessment
+- Form into groups
+- etc (get creative :D)
+
+<!-- > -->
+
+<!-- .slide: data-background="#087CB8" -->
+## [**10m**] BREAK
+
+<!-- > -->
+
+# Topic 2
+
+<!-- v -->
+
+## Overview/TT II (optional) (20 min)
+
+<!-- v -->
+
+## In Class Activity II (optional) (30 min)
+
+<!-- > -->
+
+## Wrap Up (5 min)
 
 - Continue working on your current tutorial
 - Complete reading
 - Complete challenges
 
+<!-- > -->
+
 ## Additional Resources
 
-- https://d3-wiki.readthedocs.io/zh_CN/master/Ordinal-Scales/
-- https://bl.ocks.org/d3indepth/fabe4d1adbf658c0b73c74d3ea36d465
-- https://d3indepth.com/scales/
-- https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
+1. Links to additional readings and videos

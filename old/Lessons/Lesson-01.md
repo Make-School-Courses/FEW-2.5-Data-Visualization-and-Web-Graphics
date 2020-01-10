@@ -2,7 +2,7 @@
 
 The goal of this lesson is to get started with data visualization. You will look at the features of making information visible and represented graphically using HTML, CSS, and JavaScript. 
 
-## Why do you need to know this? 
+## Why do you need to know this?
 
 Being able to display things on the screen is a core feature of computer software. It's what connects people to the computer. Having this skill in your back pocket is important for making software that is engaging and compelling to your users. 
 
@@ -21,7 +21,7 @@ If you are interested in data, what it means, and how it communicates to people 
     - min, max, average
 - Display data in the DOM
 
-## Overview 
+## Overview
 
 - What is data visualization?
     - Some examples of Data visualization
@@ -111,8 +111,18 @@ Using the Titanic dataset
 ### Interview Questions 
 
 - Get the fare from the first record
+- How many passenger classes? 
+- How many survived?
+- How many died?
+- How many passengers in each class?
+- How many died in each class? 
 - Get all of the ages from the Titanic Dataset
 - Filter datapoints where the age is missing
+- How many passengers from Queenstown
+- How many people travelled with nanny?
+- How many siblings? 
+- What is the survival rate of siblings vs only children? 
+- How many ages were estimated? 
 
 ## Display things on the screen
 
@@ -123,6 +133,11 @@ Using the Titanic dataset
     - backgroundColor
     - border
     - borderRadius
+
+**Challenges**
+
+- Make make a div for each passenger
+    - Give it a height, width, and background-color
 
 ## After Class
 
