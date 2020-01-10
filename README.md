@@ -2,9 +2,7 @@
 
 ## Course Description
 
-Learn how to create effective visualizations and graphics on the web.  The course covers programming in JavaScript D3 to display and visualize data as well as how to manage, transform, and normalizing data for display on the screen.  Students will also learn how to create complex drawings and animations on the web using SVG and Canvas. SVG looks at vector graphics and the SVG language.
-
-Tools: JavaScript, HTML, CSS, D3, Canvas, SVG
+This course covers programming in JavaScript D3 to display and visualize data as well as how to manage, transform, and normalize data for display on the screen. Students will learn how to create effective visualizations, complex drawings and animations on the web using SVG for vector graphics and Canvas for pixel based graphics.
 
 ### Why you should know this (optional)
 
@@ -17,6 +15,8 @@ If you want to practice the craft of making web applications with HTML, CSS, and
 - [FEW 1.2](https://github.com/Make-School-Courses/FEW-1.2-JavaScript-Foundations)
 
 ## Learning Outcomes
+
+Students by the end of the course will be able to ...
 
 - Analyze Data to express it's meaning
 - Normalize data to express its range and value on the screen
