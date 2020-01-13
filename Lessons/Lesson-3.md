@@ -15,6 +15,7 @@
 | 0:05        | 0:15      | Overview                  |
 | 0:20        | 0:30      | In Class Activity I       |
 | 0:50        | 0:10      | BREAK                     |
+| 0:50        | 0:10      | Lab                       |
 | 1:00        | 0:45      | In Class Activity II      |
 | 1:45        | 0:05      | Wrap up review objectives |
 | TOTAL       | 1:50      | -                         |
