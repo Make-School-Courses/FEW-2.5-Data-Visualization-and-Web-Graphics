@@ -11,14 +11,14 @@
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:30      | In Class Activity I       |
-| 0:50        | 0:10      | BREAK                     |
-| 0:50        | 0:10      | Lab                       |
-| 1:00        | 0:45      | In Class Activity II      |
-| 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | -                         |
+| 0:00        | 0:05      | Overview + Learning Outcomes                |
+| 0:05        | 0:30      | Buttons                  |
+| 0:35        | 0:20      | Colors       |
+| 0:55        | 0:20      | Motion       |
+| 1:15        | 0:10      | BREAK                     |
+| 1:25        | 1:15      | Lab                       |
+| 2:40        | 0:05      | Wrap up + Homework Overview |
+| TOTAL       | 2:45      | -                         |
 
 <!-- > -->
 
@@ -167,4 +167,5 @@ The goal of this lab is to get more practice with buttons and interactions. To d
 
 ## After Class
 
-Start Data [Visualization 2](Assignments/Visualization-2.md)
+- Finish the [buttons and interaction tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Buttons-and-Interaction)
+- Start Data [Visualization 2](Assignments/Visualization-2.md)
