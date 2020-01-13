@@ -1,5 +1,5 @@
 <!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# Class - Lesson Title
+# FEW 2.5 - Displaying Data graphically
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -7,76 +7,465 @@
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:30      | In Class Activity I       |
-| 0:50        | 0:10      | BREAK                     |
-| 1:00        | 0:45      | In Class Activity II      |
-| 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | -                         |
+| 0:00        | 0:10      | Overview + Learning Outcomes                |
+| 0:10        | 0:05      | Normalization                  |
+| 0:15        | 0:05      | Rectangles       |
+| 0:20        | 0:05      | Transform                     |
+| 0:25        | 0:10      | Rounding Corners / Circles      |
+| 0:35        | 0:05      | Strokes |
+| 0:40        | 0:10      | Compound Shapes |
+| 0:50        | 0:40      | Generating dynamic elements |
+| 1:30        | 0:10      | BREAK |
+| 1:40        | 0:10      | Absolute Position |
+| 1:50        | 0:50      | Lab |
+| 2:40        | 0:05      | Wrapup + homework overview |
+| TOTAL       | 2:45      | -                         |
 
 
 <!-- > -->
 
-## Why you should know this or industry application (optional) (5 min)
+## Overview
 
-Explain why students should care to learn the material presented in this class.
-
-<!-- > -->
-
-## Learning Objectives (5 min)
-
-1. Identify and describe
-1. Define
-1. Design
-1. Implement
+This class you will take the values generated in the previous class and turn them into shapes on the screen. The goal of this lesson is to create DOM elements and apply styles. The values applied to styles will come from the Titanic data.
 
 <!-- > -->
 
-## Initial Exercise (15 min)
+## Why you should know this?
 
-- Funny comic
-- Prime the Pump (e.g. think and jot, think pair share, etc)
-- Productivity Tip/Tool
-- Review of current event (e.g. tech news relevant to your track/topic)
-- Quiz on homework or topic(s) of past class
-- Concept Test
+Displaying data is interesting and useful. You can convey a lot more information that is easier to grasp and show relations with images in some cases these would not be apparent with numbers.
+
+Beyond data science being able to draw shapes in HTML is a key skill to creating interesting and copelling user interfaces. Everything covered here can be used in almost all aspects of web application development.
 
 <!-- > -->
 
-# Topic 1
+## Learning Objectives
+
+- Create elements with JS
+- Build basic visualizations with JS
+- Use JS to apply CSS styles
+- Create elements dynamically
+- Normalize data for graphic representation
+
+<!-- > -->
+
+## Normalization
+
+Values are almost always associated with a unit. For example
+
+- $ dollars
+- bpm beat per minute
+- Miles
+
+To display things on the screen we need to convert units like $ into px or another unit used in CSS.
 
 <!-- v -->
 
-## Overview/TT I (20 min)
+To do this, it's best to normalize data into a decimal value from 0 to 1.
 
-- Why learn this?
-- Industry examples of usage
-- Best practices
-- Personal anecdote
+In order to do _that_, it's often necessary to know the max value of your dataset and the range.
 
-<aside class="notes">
-Place more detailed information or speaker notes in "aside" elements - it will appear in GitHub Pages but not in the slides.
-</aside>
+To normalize values: divide all of the values in a dataset by the max value.  
+
+### Example:
+
+88 / 100 is 0.88, meaning 88 is 88% of 100
+
+This works for any number.
+
+56 / 121 is 0.4628099174 in other words 56 is ~46% of 121.
+
+The two values above could now be used to create values that display on the screen. For example:
+
+```JavaScript
+const maxValue = 100
+const value = 88
+const normalizedValue = value / maxValue
+
+el.style.width = `${normalizedValue}%` // Convert to a percent
+el.style.height = `${normalizedValue * 500}px` // convert to px
+el.style.color = `hsl(${normalizedValue * 360}, 50%, 50%)` // Convert to a color
+
+```
+
+<!-- > -->
+
+## Drawing shapes with HTML and CSS
+
+There is a limit to what can be drawn with HTML and CSS, a wide range of shapes is possible. With a single div you can create a rectangle. With the rectangle you have the following options
+
+- round the corners
+- set a stroke
+- rotate
+- skew
+
+## Rectangles
+
+The default shape is the rectangle. Anything you create on the computer is going to be a rectangle.
+
+Draw a rectangle:
+
+```html
+<div style="width: 100px;
+height: 100px;
+background-color: red;">
+</div>
+```
+
+```css
+width: 100px;
+height: 100px;
+background-color: red;
+```
 
 <!-- v -->
 
-## In Class Activity I (30 min)
+### Bar Graphs
+The most common way data is displayed after showing it numerically is by drawing bar graphs. A bar graph is easily created with HTML and CSS.
 
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
+```html
+<div style="width: 200px; height: 200px; border:1px solid; display: flex; flex-direction: row; align-items: flex-end">
+	<div style="width: 20px; height: 37%; background-color: red; margin: 5px"></div>
+	<div style="width: 20px; height: 48%; background-color: red; margin: 5px"></div>
+	<div style="width: 20px; height: 66%; background-color: red; margin: 5px"></div>
+	<div style="width: 20px; height: 55%; background-color: red; margin: 5px"></div>
+	<div style="width: 20px; height: 77%; background-color: red; margin: 5px"></div>
+	<div style="width: 20px; height: 90%; background-color: red; margin: 5px"></div>
+	<div style="width: 20px; height: 85%; background-color: red; margin: 5px"></div>
+</div>
+```
+
+This block draws a group of rectangles and sizes the height with `%`. They are arranged horizontally using `flex`.
+
+Besides setting the height and width what else do you think we can do?
+
+<!-- > -->
+
+## Transform
+
+CSS transform is a powerful tool that provides methods to translate (move, left right, up or down), rotate, skew, and scale elements. When using transform you combine all transforms on the same line for example:
+
+`transform: translate(10px, 30px) rotate(45deg) skew(10deg) scale(1.5);`
+
+<!-- v -->
+
+### Transform Rotate
+
+Use transform: rotate to create other shapes from a rectangle like a diamond.
+
+```html
+<div style="width: 100px;
+height: 100px;
+background-color: red;
+transform: rotate(45deg)">
+</div>
+```
+
+Here the div is rotated with `transform: rotate(45deg);` Rotation works with units of radians (`rad`) or degrees (`deg`). There is also [Gradians](https://en.wikipedia.org/wiki/Gradian) (grad).  
+
+```CSS
+width: 100px;
+height: 100px;
+background-color: red;
+transform: rotate(45deg);
+```
+
+<!-- > -->
+
+## Rounding Corners
+
+How do we make circles from rectangles?
+
+Any of the four corners can have a radius. Round them all and you get a circle. Round a combination of the corners to get other shapes.
+
+<!-- v -->
+### Circles
+
+Round all four corners to get a circle.
+
+```html
+<div style="width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50%">
+</div>
+```
+
+```css
+width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50%;
+```
+
+<!-- v -->
+### Eyes, Droplets and Leaves
+
+Rounding two or three corners to get shapes that look like eyes, lemmons, leaves, droplets, or map pointers.
+
+In this case you may also want to rotate the element to orient the shape correctly.
+
+**Take the code below and see what it draws!**
+
+```html
+<div style="width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 0">
+</div>\
+```
+
+```css
+width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 0;
+```
+
+```html
+<div style="width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 0 0 0">
+</div>
+```
+
+```css
+width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 0 0 0;
+```
+
+```html
+<div style="width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 50% 50% 0">
+</div>
+```
+
+```css
+width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 50% 50% 0;
+```
+
+```html
+<div style="width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 50% 50% 0;
+transform: rotate(135deg)">
+</div>
+```
+
+```css
+width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 50% 50% 0;
+transform: rotate(135deg);
+```
+
+```html
+<div style="width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 50% 50% 0;
+transform: rotate(-45deg)">
+</div>
+```
+
+```css
+width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 50% 50% 0;
+transform: rotate(-45deg);
+```
+
+```html
+<div style="width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 0 50% 0;
+transform: rotate(45deg)">
+</div>
+```
+
+```css
+width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 0 50% 0;
+transform: rotate(45deg);
+```
+
+<!-- > -->
+
+## Strokes
+
+Add a stroke to add some dimension to your shapes:
+
+```html
+<div style="width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50%;
+transform: rotate(45deg);
+border: 12px solid">
+</div>
+```
+
+```css
+width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50%;
+transform: rotate(45deg);
+border: 12px solid;
+```
+
+```html
+<div style="width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 0 50% 0;
+transform: rotate(45deg);
+border: 12px solid">
+</div>
+```
+
+```css
+width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 0 50% 0;
+transform: rotate(45deg);
+border: 12px solid;
+```
+
+<!-- > -->
+
+## Compound Shapes
+
+Nest one shape inside another for more complex images. A nested element will always render on top of its parent. Note that if the parent rotates its position, the position of the inner element _will_ be effected.
+
+```html
+<div style="width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 0 50% 0;
+transform: rotate(45deg);
+border: 12px solid;
+display: flex;
+justify-content: center;
+align-items: center">
+	<div style="width: 50px;
+	height: 50px;
+	background-color:#000;
+	border-radius:50%;
+	border: 10px solid #fff;">
+		<div style="width:20px;
+		height: 20px;
+		background: #fff;
+		border-radius:50%;
+		position: relative;
+		left: 15px;
+		top:-5px"></div>
+	</div>
+</div>
+```
+
+```css
+/* Outer "eye" shape */
+width: 100px;
+height: 100px;
+background-color: red;
+border-radius: 50% 0 50% 0;
+transform: rotate(45deg);
+border: 12px solid;
+display: flex;
+justify-content: center;
+align-items: center;
+
+	/* Inner "pupil" shape */
+	width: 50px;
+	height: 50px;
+	background-color:#000;
+	border-radius:50%;
+	border: 10px solid #fff;
+
+		/* Inner inner "highlight" */
+		width:20px;
+		height: 20px;
+		background: #fff;
+		border-radius:50%;
+		position: relative;
+		left: 15px;
+		top:-5px
+```
+
+<!-- > -->
+
+## Generating dynamic elements
+
+**Your goal is to generate all of this HTML with JavaScript** and abstract the process into functions that do the work for you. This way you can just supply a dataset, usually an array of values and have your function do the work of creating DOM elements and assigning CSS styles.
+
+<!-- v -->
+
+### Creating DOM elements
+
+Use `document.createElement('div')` to create a new DOM element.
+
+// <div></div>
+
+`const el = document.createElement('div')`
+
+Remember **to be visible an element must be the child of an element that is a descendant of the body tag**. Add an element as a child of another element with `parent.appendChild(el)`. For example:
+
+`parent.appendChild(el)`
+
+<!-- v -->
+
+### Activity - Interview Questions
+
+Think in terms of interview questions. How would what we are doing in class translate to an interview problem?
+
+**Attempt 2 of the questions below**
+
+- Easy
+	- Generate one element for each record in the Titanic Dataset
+	- Create one element for each male passenger
+	- Create one element for each female passenger
+- Moderate
+	- Create two elements that show the ratio of passengers who survived vs those that didn't. (easy solution make a bar graph)
+	- Create elements showing the ratio of passengers by `pclass` (easy solution make a bar graph)
+- Hard
+	- Show the ratio of men and women who survived vs men and women who did not survive.
+	- Show the ratio of passengers who survived vs those that did not by embarkation.
+
+<!-- v -->
+
+### Styling elements
+
+All CSS styles of an element are accessible through that element's `style` property. The styles are named with a camelCase version of the CSS style name. For example:
+
+```JavaScript
+el.style.width = '20px'
+el.style.height = '160px'
+el.style.backgroundColor = 'red'
+...
+```
+
+NOTE! Almost every CSS property requires a unit. You must include these when setting a value with JS. This means usually the value will be a string with a value and a unit.
+
+Notice CSS `background-color` becomes `backgroundColor` in JS.
 
 <!-- > -->
 
@@ -85,26 +474,66 @@ Place more detailed information or speaker notes in "aside" elements - it will a
 
 <!-- > -->
 
-# Topic 2
+## Absolute Position
 
-<!-- v -->
+To position elements anywhere on the screen with numeric values, you'll want to use CSS `position: absolute`. Absolute position lets you set the a position using `left`, `top`, `right`, and `bottom`. The easiest way to work with these is to use `left` and `top` and imagine you are setting the position of an element by measuring its position from the top left of the screen.
 
-## Overview/TT II (optional) (20 min)
+Sometimes you'll want to position an element using coordinates of a parent. In other words you want to measure `top` and `left` from the top left of the parent. To do this set the parent's position to `position: relative`.
 
-<!-- v -->
+Here is an example:
 
-## In Class Activity II (optional) (30 min)
+```html
+<div style="width: 200px; height: 200px; border:1px solid; position: relative">
+	<div style="position: absolute; left: 10px; top: 6px; border-radius: 50%; width: 20px; height: 20px; background-color: red;"></div>
+	<div style="position: absolute; left: 35px; top: 40px; border-radius: 50%; width: 20px; height: 20px; background-color: red;"></div>
+	<div style="position: absolute; left: 62px; top: 60px; border-radius: 50%; width: 20px; height: 20px; background-color: red;"></div>
+	<div style="position: absolute; left: 90px; top: 50px; border-radius: 50%; width: 20px; height: 20px; background-color: red;"></div>
+	<div style="position: absolute; left: 116px; top: 85px; border-radius: 50%; width: 20px; height: 20px; background-color: red;"></div>
+	<div style="position: absolute; left: 152px; top: 80px; border-radius: 50%; width: 20px; height: 20px; background-color: red;"></div>
+	<div style="position: absolute; left: 170px; top: 120px; border-radius: 50%; width: 20px; height: 20px; background-color: red;"></div>
+</div>
+```
+
+Notice each of the circles is a div with a style of `border-radius: 50%`. This makes them circles.
+
+The container div has been assigned the style `position: relative`. This makes the descendants use this div to determine where left, top, right, and bottom is.
+
+Each of the child divs has `position: absolute` with this the left and top can set to position the element.
+
+I wrote this code by hand and it was a lot of work and not very accurate. You want to automate this as much as you can. You will need to write code that sets the style of an element one property at a time.
 
 <!-- > -->
 
-## Wrap Up (5 min)
+## Lab
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+For this lab, you will work on writing functions to automate your visualizations. Keep these functions in a `utils.js` file that you can copy and reuse for your various assignments.
+
+These functions should take in color and size parameters, and return a configured object. You can make one of these functions for each shape for ease of creation for your assignments:
+- Rectangle
+- Rounded Rectangles
+- Circle
+- Eyes
+- Droplets
+- Leaves
+
+**Stretch Challenges**
+- Create functions for compound shapes, or any other shapes you may use
+- Have your functions take in a position parameter
+- Have your functions take in a stroke parameter
 
 <!-- > -->
 
-## Additional Resources
+## After Class
 
-1. Links to additional readings and videos
+- Finish Data [Visualization 1](https://github.com/Make-School-Courses/FEW-2.5-Data-Visualization-and-Web-Graphics/blob/master/Assignments/Visualization-1.md)
+
+<!-- > -->
+
+## Resources
+
+- [Visualization with HTML, CSS, and JS](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-with-HTML-CSS-JS-Tutorial)
+- [document.createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+- [Node.appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
+- [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
+- [CSS border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
+- [CSS position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
