@@ -1,5 +1,5 @@
 <!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# Class - Lesson Title
+# FEW 2.5 - Animation and Interaction
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -7,7 +7,7 @@
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
@@ -22,61 +22,135 @@
 
 <!-- > -->
 
-## Why you should know this or industry application (optional) (5 min)
+## Overview
 
-Explain why students should care to learn the material presented in this class.
-
-<!-- > -->
-
-## Learning Objectives (5 min)
-
-1. Identify and describe
-1. Define
-1. Design
-1. Implement
+Showing data in the static form is a good start, but sometimes you can say more by adding motion and interaction.
 
 <!-- > -->
 
-## Initial Exercise (15 min)
+## Why do you need to know this?
 
-- Funny comic
-- Prime the Pump (e.g. think and jot, think pair share, etc)
-- Productivity Tip/Tool
-- Review of current event (e.g. tech news relevant to your track/topic)
-- Quiz on homework or topic(s) of past class
-- Concept Test
+User interaction is a prime directive for front end developers. Handling complex user interaction is something every front end developer should know how to do.
 
 <!-- > -->
 
-# Topic 1
+## Learning Objectives
+
+1. Handle user interaction
+1. Use systems to manage user options and handle UI state
+1. Use querySelector, and querySelectorAll to work with DOM elements and collections of elements
+
+<!-- > -->
+
+## Buttons
+
+A button handles one action and usually runs the same code every time you click or tap it.
+
+For example a doorbell, or a login button.
+
+Essentially a button usually allows for one choice or action.
 
 <!-- v -->
 
-## Overview/TT I (20 min)
+## Toggle Buttons
 
-- Why learn this?
-- Industry examples of usage
-- Best practices
-- Personal anecdote
+A toggle button is a button that will be in one of two states. It might run one of two different blocks of code with each interaction.
 
-<aside class="notes">
-Place more detailed information or speaker notes in "aside" elements - it will appear in GitHub Pages but not in the slides.
-</aside>
+For example a light switch, or a checkbox.
+
+A toggle button needs to track its state. For example, a light switch needs to know whether it's in the on state or the off state, or a checkbox needs to know whether it's checked or not.
+
+Essentially a toggle button allows for two choices or actions that alternate.
 
 <!-- v -->
 
-## In Class Activity I (30 min)
+## Button Group
 
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
+In this case, I'm referring to a group of buttons where only one can be selected at a time. Imagine this as a set of choices where a user can choose one option.
+
+This is similar to radio buttons.
+
+Think of a button group as a set of N choices where only one can be chosen at any time.
+
+<!-- v -->
+
+### Buttons and data viz
+
+You'll be creating a visualization that has some interaction this week. **Your goal is to think of ways you can modify your visualization, and choose the right button/interaction for it.**
+
+<!-- v -->
+
+## Button Activity
+
+Using the same [Titanic Dataset](https://www.kaggle.com/c/titanic/data) we used in the first lesson, use a a toggle button to easily filter between showing the number of people who survived, and the number who died
+
+<!-- > -->
+
+## Color
+
+Color can be represented in a few ways in JS:
+
+- hex colors: `#0f0` or `#00ff00`
+- keyword colors: `red` or `blue`
+- rgb: `rgb(0, 255, 0)`
+- rgba: `rgba(0, 255, 0, 0.5)`
+- hsl: `hsl(120, 50%, 77%)`
+- hsla: `hsla(120, 50%, 77%, 0.6)`
+
+In all cases, it comes down to string manipulation. For any color you want to generate, you'll need to generate a string similar to one of the strings above and assign that to a style property.
+
+If you're generating colors in sequence, HSL has the advantage that the hue is separate from the other color components. Hue has a range of 360 degrees.
+
+```JavaScript
+// This generates 12 colors equally spaced around the color wheel:
+const numberOfColors = 12
+const step = 360 / numberOfColors
+for (let i = 0; i < numberOfColors; i += 1) {
+    const hue = step * i
+    const colorString = `hsl(${hue}, 70%, 50%)`
+    ...
+}
+```
+
+Use RGBA or HSLA when you need to transparent colors. The last value is the alpha (transparency) of the color.
+
+<!-- > -->
+
+## Color Activity
+
+For the same Titanic dataset, create a bar graph that shows the number of passengers from each of the 3 `embarked` cities (C = Cherbourg, Q = Queenstown, S = Southampton). Make sure each bar is a different color
+
+<!-- > -->
+
+## Motion
+
+Motion can be easily added to any element using a CSS transition. An element that has a transition time will have it's properties change over the time of the transition.
+
+For example:
+
+```JavaScript
+const el = document.createElement('div')
+el.style.width = '100px'
+el.style.height = '100px'
+el.style.backgroundColor = '#f00'
+
+el.style.transition = '1000ms' // All changes happen over 1000 milliseconds
+
+...
+
+// Making a change some time in the future triggers an animation
+el.style.width = '400px' // Change from 100px to 400px happens over 1000ms
+
+...
+
+el.style.backgroundColor = '#f0f' // Colors can be animated!
+```
+
+<!-- > -->
+
+## Motion Activity
+
+Take the bar graph you made in the last activity and have the colors animate once they're generated! Get a nice spectrum going!
 
 <!-- > -->
 
@@ -85,26 +159,12 @@ Place more detailed information or speaker notes in "aside" elements - it will a
 
 <!-- > -->
 
-# Topic 2
+## Lab
 
-<!-- v -->
-
-## Overview/TT II (optional) (20 min)
-
-<!-- v -->
-
-## In Class Activity II (optional) (30 min)
+The goal of this lab is to get more practice with buttons and interactions. To do this, you will work on the [buttons and interaction tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Buttons-and-Interaction) for the lab session.
 
 <!-- > -->
 
-## Wrap Up (5 min)
+## After Class
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
-
-<!-- > -->
-
-## Additional Resources
-
-1. Links to additional readings and videos
+Start Data [Visualization 2](Assignments/Visualization-2.md)
