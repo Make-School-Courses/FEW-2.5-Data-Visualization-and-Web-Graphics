@@ -27,7 +27,7 @@ Students by the end of the course will be able to ...
 
 **Course Dates:** Monday, January 20 – Wednesday, March 4, 2020 (7 weeks)
 
-**Class Times:** Monday and Wednesday at 3:30–5:20pm (13 class sessions)
+**Class Times:** Monday and Wednesday at 9:30–12:15pm (13 class sessions)
 
 | Class | Date | Topics | Assignments |
 |:-----:|:----:|:------:|:-----------:|
