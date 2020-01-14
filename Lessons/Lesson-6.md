@@ -1,5 +1,5 @@
 <!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# Class - Lesson Title
+# FEW 2.5 - Canvas Part 2, Circle Math
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -7,7 +7,7 @@
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
@@ -22,18 +22,24 @@
 
 <!-- > -->
 
-## Why you should know this or industry application (optional) (5 min)
+## Overview
 
-Explain why students should care to learn the material presented in this class.
+Today we'll learn how to draw circles and calculate coords in circles.
+
+### Why?
+
+Circles are used all the time in visualizations (pie chart, scatter plot, dot plot, cluster analysis, etc.) and it's important to know how to draw them in order to properly convey your analysis.
+
+Plus they're cool!
 
 <!-- > -->
 
-## Learning Objectives (5 min)
+## Learning Objectives
 
-1. Identify and describe
-1. Define
-1. Design
-1. Implement
+- Use Math functions and simple trigonometry
+	- `Math.PI`
+	- `Math.sin(radians)` -1 to +1
+	- `Math.cos(radians)` -1 to +1
 
 <!-- > -->
 
@@ -48,35 +54,57 @@ Explain why students should care to learn the material presented in this class.
 
 <!-- > -->
 
-# Topic 1
+## Intro
 
-<!-- v -->
+Sometimes you'll want to place things in a circle. Imagine the numbers around a clock. If you had to make this yourself you'd need to place each of the numbers equally spaced around a center point.
 
-## Overview/TT I (20 min)
+To do this, use `Math.sin()` and `Math.cos()`. Each of these takes a value in radians and return a number between -1 and +1. Multiply the return value by the radius.
 
-- Why learn this?
-- Industry examples of usage
-- Best practices
-- Personal anecdote
+A full circle is `Math.PI * 2`.
 
-<aside class="notes">
-Place more detailed information or speaker notes in "aside" elements - it will appear in GitHub Pages but not in the slides.
-</aside>
+Think about the clock. To get the position of each hour divide the circle by 12.
 
-<!-- v -->
+`const step = Math.PI * 2 / 12`
 
-## In Class Activity I (30 min)
+Decide what the radius of your clock face is. Imagine it's 200px.
 
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
+```JS
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12]
+const step = Math.PI * 2 / numbers.length
+const radius = 200
+numbers.forEach((n, i) => {
+	const x = Math.sin(step * i) * radius
+	const y = Math.cos(step * i) * radius
+
+	// draw number at x, y
+})
+```
+
+The center of the clock face would be at 0, 0 with the numbers arranged in a 200 pixels radius circle around that point. Imagine the center of the clock in the upper left corner.
+
+You usually don't want to place everything in the upper left corner. To move the center of the clock face anywhere on the canvas you'll need to offset the x and y values.
+
+```JS
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12]
+const step = Math.PI * 2 / numbers.length
+const radius = 200
+const offsetX = 300
+const offsetY = 250
+numbers.forEach((n, i) => {
+	const x = Math.sin(step * i) * radius + offsetX
+	const y = Math.cos(step * i) * radius + offsetY
+
+	// draw number at x, y
+})
+```
+
+Just add the offset to the x and y. In this case the center of the clock face is at 300, 250 on the canvas.
+
+<!-- > -->
+
+## Playing with Circles
+
+Check out the [Example code](../lesson-06.html) linked here and see how you can manipulate the circles!
 
 <!-- > -->
 
@@ -85,26 +113,11 @@ Place more detailed information or speaker notes in "aside" elements - it will a
 
 <!-- > -->
 
-# Topic 2
-
-<!-- v -->
-
-## Overview/TT II (optional) (20 min)
-
-<!-- v -->
-
-## In Class Activity II (optional) (30 min)
-
-<!-- > -->
-
-## Wrap Up (5 min)
-
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+## Lab
 
 <!-- > -->
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+- [Example code](../lesson-06.html)
+- [Sine/Cosine](https://en.wikipedia.org/wiki/Sine)
