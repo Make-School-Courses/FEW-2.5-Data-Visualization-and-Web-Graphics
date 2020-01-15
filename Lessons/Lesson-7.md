@@ -1,5 +1,5 @@
 <!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# Class - Lesson Title
+# FEW 2.5 - Graphing charting libraries
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -7,76 +7,119 @@
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:30      | In Class Activity I       |
-| 0:50        | 0:10      | BREAK                     |
-| 1:00        | 0:45      | In Class Activity II      |
-| 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | -                         |
+| 0:00        | 0:05      | Overview and Learning Outcomes                |
+| 0:05        | 0:10      | CDNs                  |
+| 0:15        | 1:00      | ChartJS       |
+| 1:15        | 0:10      | BREAK                     |
+| 1:25        | 1:15      | Lab      |
+| 2:40        | 0:05      | Wrap up and review homework |
+| TOTAL       | 2:45      | -                         |
 
 
 <!-- > -->
 
-## Why you should know this or industry application (optional) (5 min)
+## Overview
 
-Explain why students should care to learn the material presented in this class.
-
-<!-- > -->
-
-## Learning Objectives (5 min)
-
-1. Identify and describe
-1. Define
-1. Design
-1. Implement
+Libraries save time in development. Besides using libraries you may want to write your own. We wrote code to create charts and graphs earlier now it's time to see what types of preexisting solutions exist.
 
 <!-- > -->
 
-## Initial Exercise (15 min)
+## Why you should know this?
 
-- Funny comic
-- Prime the Pump (e.g. think and jot, think pair share, etc)
-- Productivity Tip/Tool
-- Review of current event (e.g. tech news relevant to your track/topic)
-- Quiz on homework or topic(s) of past class
-- Concept Test
+These libraries do the things that you did earlier in this class. All of the methods and classes in these libraries started with same goals you had and built on the same concepts you worked through earlier in the term.
+
+Looking at how others implement APIs that do the same kinds of things you are working on and have experience with is great for learning and furthering your ability.
+
+You may also find that you need to solve a problem with a library in the future.
 
 <!-- > -->
 
-# Topic 1
+## Learning Objectives
+
+- Use Libraries to create charts and graphs
+- Compare APIs with professional level tools
+- Identify similarities in APIs and solutions
+- Use CDN for hosting libraries
+
+<!-- > -->
+
+## Content Delivery Networks CDNs
+
+Content Delivery Networks host files that you can link to. While you could host files on your own using a CDN provides these advantages:
+
+- Decreased server load - Files are stored across multiple servers.
+- Speeds Content load times - Data loads faster when it's spread across multiple servers
+- Caching - cached files don't need to be loaded again
+- Easier File Management - Files on the CDN are files you don't have to manage.
+
+CDNs also have a some disadvantages:
+
+- Some restrictions
+- Loss of control
+
+
+<!-- > -->
+
+## ChartJS
+
+[Chart JS](https://www.chartjs.org) describes itself as:
+
+> Simple yet flexible JavaScript charting for designers & developers
+
+This is a library that does many of the things you did earlier in the term. ChartJS uses canvas.
 
 <!-- v -->
 
-## Overview/TT I (20 min)
+## Documentation
 
-- Why learn this?
-- Industry examples of usage
-- Best practices
-- Personal anecdote
+Be sure to read the documentation! Seriously, everything you need know is probably there. Both libraries have
 
-<aside class="notes">
-Place more detailed information or speaker notes in "aside" elements - it will appear in GitHub Pages but not in the slides.
-</aside>
+- [Chart JS Docs](https://www.chartjs.org/docs/latest/)
 
 <!-- v -->
 
-## In Class Activity I (30 min)
+## Making Charts
 
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
+Look at the types of charts available to us in ChartJS:
+
+- [Line](https://www.chartjs.org/docs/latest/charts/line.html)
+- [Bar](https://www.chartjs.org/docs/latest/charts/bar.html)
+- [Radar](https://www.chartjs.org/docs/latest/charts/radar.html)
+- [Doughnut & Pie](https://www.chartjs.org/docs/latest/charts/doughnut.html)
+- [Polar](https://www.chartjs.org/docs/latest/charts/polar.html)
+- [Bubble](https://www.chartjs.org/docs/latest/charts/bubble.html)
+- [Scatter](https://www.chartjs.org/docs/latest/charts/scatter.html)
+- [Area](https://www.chartjs.org/docs/latest/charts/area.html)
+- [Mixed](https://www.chartjs.org/docs/latest/charts/mixed.html)
+
+**Discussion:** what type of data works best for which type of chart?
+
+<!-- v -->
+
+## Examples
+
+Read the notes in these [examples](../lesson-07.html).
+
+<!-- v -->
+
+## ChartJS Activity
+
+You need to make graphs with ChartJS! You supply an array of values and some other options and the library draws the chart.
+
+First you will need to find some data to use in JSON format. For the most part this is not usable directly with either library. You will need to write code that extracts the values you want to graph, and supply these to the library.
+
+You will also need to generate some other values. These other values are things like:
+
+- Width and height of the chart
+- Array of labels
+- Array of colors
+- A DOM element where the chart will appear
+
+Width, height and DOM elements are easy to come up with. Labels and colors may take a little bit of thought strategy.
 
 <!-- > -->
 
@@ -85,26 +128,51 @@ Place more detailed information or speaker notes in "aside" elements - it will a
 
 <!-- > -->
 
-# Topic 2
+# Lab
 
-<!-- v -->
+Finish the ChartJS activity if you haven't already.
 
-## Overview/TT II (optional) (20 min)
+If you have finished it, work on the below activity:
 
-<!-- v -->
+Chartist is similar to ChartJS but uses SVG instead of canvas. You will need to make graphs using the same data as the ChartJS activity, or you can use a new JSON data source.
 
-## In Class Activity II (optional) (30 min)
+Make sure to read the documentation!
+
+- [Chartist Docs](https://gionkunz.github.io/chartist-js/api-documentation.html)
+
+Copied below is the same requirements from the ChartJS activity for reference:
+
+First you will need to find some data to use in JSON format. For the most part this is not usable directly with either library. You will need to write code that extracts the values you want to graph, and supply these to the library.
+
+You will also need to generate some other values. These other values are things like:
+
+- Width and height of the chart
+- Array of labels
+- Array of colors
+- A DOM element where the chart will appear
+
+Width, height and DOM elements are easy to come up with. Labels and colors may take a little bit of thought strategy.
 
 <!-- > -->
 
-## Wrap Up (5 min)
+## After Class
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+- Finish both ChartJS and Chartist activities
+- Start working on visualization 4
 
 <!-- > -->
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+- [Chart JS Docs](https://www.chartjs.org/docs/latest/)
+- [Chartist Docs](https://gionkunz.github.io/chartist-js/api-documentation.html)
+- [examples](../lesson-07.html)
+- [Line](https://www.chartjs.org/docs/latest/charts/line.html)
+- [Bar](https://www.chartjs.org/docs/latest/charts/bar.html)
+- [Radar](https://www.chartjs.org/docs/latest/charts/radar.html)
+- [Doughnut & Pie](https://www.chartjs.org/docs/latest/charts/doughnut.html)
+- [Polar](https://www.chartjs.org/docs/latest/charts/polar.html)
+- [Bubble](https://www.chartjs.org/docs/latest/charts/bubble.html)
+- [Scatter](https://www.chartjs.org/docs/latest/charts/scatter.html)
+- [Area](https://www.chartjs.org/docs/latest/charts/area.html)
+- [Mixed](https://www.chartjs.org/docs/latest/charts/mixed.html)
