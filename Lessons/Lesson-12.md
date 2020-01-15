@@ -1,5 +1,5 @@
 <!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# Class - Lesson Title
+# FEW 2.5 - D3 Maps
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -7,76 +7,96 @@
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:30      | In Class Activity I       |
-| 0:50        | 0:10      | BREAK                     |
-| 1:00        | 0:45      | In Class Activity II      |
-| 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | -                         |
+| 0:00        | 0:05      | Overview + Learning Outcomes                |
+| 0:05        | 0:15      | How to measure the world                  |
+| 0:20        | 0:15      | Maps + Discussion       |
+| 0:35        | 0:45      | Mapping with D3 tutorial       |
+| 1:20        | 0:10      | BREAK                     |
+| 1:30        | 1:10      | Lab      |
+| 2:40        | 0:05      | Wrap up  |
+| TOTAL       | 2:45      | -                         |
 
 
 <!-- > -->
 
-## Why you should know this or industry application (optional) (5 min)
+## Overview
 
-Explain why students should care to learn the material presented in this class.
-
-<!-- > -->
-
-## Learning Objectives (5 min)
-
-1. Identify and describe
-1. Define
-1. Design
-1. Implement
+D3 is pretty amazing it seems to do everything even map the United States or the world! Today we'll learn how to work with maps in D3!
 
 <!-- > -->
 
-## Initial Exercise (15 min)
+## Why you should know this
 
-- Funny comic
-- Prime the Pump (e.g. think and jot, think pair share, etc)
-- Productivity Tip/Tool
-- Review of current event (e.g. tech news relevant to your track/topic)
-- Quiz on homework or topic(s) of past class
-- Concept Test
+It's quite possible you may need to create a map and put things on it. While Google maps is amazing it's different tool for different uses. Google maps are also limited in the customization that is allowed. We can do a lot more with D3, let's learn how!
 
 <!-- > -->
 
-# Topic 1
+## Learning Objectives
+
+1. Identify and describe geojson
+1. Describe and use map projection
+
+<!-- > -->
+
+## How to measure the world?
+
+The world is a globe and we've divided it into latitude and longitude.
+
+**Read the following articles to better understand latitude and longitude**
+
+- https://www.maptools.com/tutorials/lat_lon/definitions
+- https://gisgeography.com/utm-universal-transverse-mercator-projection/
+
+**In pairs, discuss why you would use latitude and longitude, and when you would use UTM**
+
+Fun site: find geo-coordinates for your home town:
+
+- https://www.latlong.net/
+
+<!-- > -->
+
+## Maps
+
+Computer screens are flat. Maps displayed on computer screens are flat. If the world is described in coordinates, and the map is a globe, then it needs to be projected onto a flat surface. This is accomplished through some tricky math involving trigonometry.
+
+_Luckily D3 provides a suite of functions that handle map projections for you!_
+
+While it is great you don't have work out the math yourself you do have to understand that these projections are not perfect. Flattening a sphere onto a flat surface will always be imperfect.
 
 <!-- v -->
 
-## Overview/TT I (20 min)
+## Discussion
 
-- Why learn this?
-- Industry examples of usage
-- Best practices
-- Personal anecdote
+In pairs, discuss the following:
 
-<aside class="notes">
-Place more detailed information or speaker notes in "aside" elements - it will appear in GitHub Pages but not in the slides.
-</aside>
+- What is geojson?
+	- https://geojson.org/
+- Why do we need special projection models?
+	- https://d3indepth.com/geographic/
 
-<!-- v -->
+We'll discuss as a class after 5 minutes of paired discussion
 
-## In Class Activity I (30 min)
+<!-- > -->
 
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
+## Mapping with D3 tutorial
+
+This is a great tutorial on mapping with D3. It uses v5 so it's up to date. Besides that it was written by a cartographer!
+
+- https://petrichor.studio/2018/05/21/get-started-creating-d3-maps/
+
+**Read the blog post. Then create a map of your own. Use the sample code provided in the codepen example to recreate the example on your desktop.**
+
+Be sure to follow up with the links at the bottom of the post, as these have valuable info on creating and using maps.
+
+- Challenges
+	- Make the map work using the same TopoJSON that the tutorial uses
+	- Try different projections
+		- https://github.com/d3/d3-geo#geoAzimuthalEqualArea
+	- Edit the CSS to change the color of the fill and stroke
 
 <!-- > -->
 
@@ -85,26 +105,22 @@ Place more detailed information or speaker notes in "aside" elements - it will a
 
 <!-- > -->
 
-# Topic 2
+## Lab
 
-<!-- v -->
-
-## Overview/TT II (optional) (20 min)
-
-<!-- v -->
-
-## In Class Activity II (optional) (30 min)
+Work on your final project/presentations
 
 <!-- > -->
 
-## Wrap Up (5 min)
+## After Class
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+Complete your final visualization
 
 <!-- > -->
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+- https://petrichor.studio/2018/05/21/get-started-creating-d3-maps/
+- https://github.com/d3/d3-geo
+- https://observablehq.com/@d3/projection-comparison
+- https://observablehq.com/collection/@d3/d3-geo
+- https://d3indepth.com/geographic/
