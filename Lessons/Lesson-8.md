@@ -3,7 +3,7 @@
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-8.html ':ignore')
+➡️ [**Slides**](../FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-8.html ':ignore')
 
 <!-- > -->
 
