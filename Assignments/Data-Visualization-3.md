@@ -1,6 +1,6 @@
 # FEW 2.5 Visualization 3
 
-**Due Date:** Wednesday, 3/4, Before class starts
+**Due Date:** Wednesday, 3/4, 9:30am
 
 Visualization with D3.
 

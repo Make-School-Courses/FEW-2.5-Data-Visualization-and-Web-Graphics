@@ -525,7 +525,7 @@ These functions should take in color and size parameters, and return a configure
 
 ## After Class
 
-- Finish Data [Visualization 1](https://github.com/Make-School-Courses/FEW-2.5-Data-Visualization-and-Web-Graphics/blob/master/Assignments/Visualization-1.md)
+- Finish [Visualization 1](Assignments/Data-Visualization-1.md) by EOD next Wednesday
 
 <!-- > -->
 

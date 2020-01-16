@@ -168,4 +168,4 @@ The goal of this lab is to get more practice with buttons and interactions. To d
 ## After Class
 
 - Finish the [buttons and interaction tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Buttons-and-Interaction)
-- Start Data [Visualization 2](Assignments/Visualization-2.md)
+- Finish [Visualization 1](Assignments/Data-Visualization-1.md) by 11:59pm tonight

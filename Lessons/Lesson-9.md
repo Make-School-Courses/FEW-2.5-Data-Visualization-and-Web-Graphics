@@ -279,4 +279,4 @@ Choose an example or tutorial from D3 site and recreate that example with your o
 
 ## After class
 
-Finish your D3 example, or start a new one and complete it
+- Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am

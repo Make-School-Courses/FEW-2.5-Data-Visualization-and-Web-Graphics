@@ -225,7 +225,7 @@ You might remember these interview questions from a previous lesson. We're going
 
 ## After Class
 
-Start working on this week's [visualization](../Assignments/visualization-3.md).
+- Continue working on [Visualization 2](Assignments/Data-Visualization-2.md), due 2/12 11:59pm
 
 <!-- > -->
 

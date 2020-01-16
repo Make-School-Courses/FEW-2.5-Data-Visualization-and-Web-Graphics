@@ -157,8 +157,7 @@ Width, height and DOM elements are easy to come up with. Labels and colors may t
 
 ## After Class
 
-- Finish both ChartJS and Chartist activities
-- Start working on visualization 4
+- Finish [Visualization 2](Assignments/Data-Visualization-2.md), due TONIGHT, 11:59pm
 
 <!-- > -->
 

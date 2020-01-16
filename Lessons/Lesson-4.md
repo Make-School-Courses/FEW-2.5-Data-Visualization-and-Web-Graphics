@@ -285,4 +285,4 @@ Check out this [YouTube dataset](https://www.kaggle.com/datasnaek/youtube-new), 
 
 ## After Class
 
-Complete [Visualization 2](Assignments/Visualization-2.md)
+- Start [Visualization 2](Assignments/Data-Visualization-2.md), due 2/12 11:59pm

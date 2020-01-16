@@ -117,11 +117,17 @@ Here's some guidelines to consider when working with SVGs:
 
 <!-- > -->
 
-## Wrap Up 
+## Wrap Up
 
 - Continue working on your current tutorial
 - Complete reading
 - Complete challenges
+
+<!-- > -->
+
+## After Class
+
+- Start working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am
 
 <!-- > -->
 

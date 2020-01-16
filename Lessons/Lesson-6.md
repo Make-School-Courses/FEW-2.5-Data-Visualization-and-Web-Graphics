@@ -117,6 +117,12 @@ Check out the [Example code](../lesson-06.html) linked here and see how you can 
 
 <!-- > -->
 
+## After class
+
+- Continue working on [Visualization 2](Assignments/Data-Visualization-2.md), due 2/12 11:59pm
+
+<!-- > -->
+
 ## Additional Resources
 
 - [Example code](../lesson-06.html)

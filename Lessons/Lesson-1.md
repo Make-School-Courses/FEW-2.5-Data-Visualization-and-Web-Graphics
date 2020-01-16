@@ -214,7 +214,7 @@ Work through the following activities in this order to practice your JS visualiz
 
 ## After Class
 
-Start on [Visualization 1](Assignments/Visualization-1.md). This first assignment will use the Titanic Dataset.
+Start on [Visualization 1](Assignments/Data-Visualization-1.md). This first assignment will use the Titanic Dataset.
 
 Before you can visualize data you need to have data. Follow this [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/tree/master) and solve all of the challenges.
 

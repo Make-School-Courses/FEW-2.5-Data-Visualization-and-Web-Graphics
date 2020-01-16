@@ -113,7 +113,7 @@ Work on your final project/presentations
 
 ## After Class
 
-Complete your final visualization
+- Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am **Before Class!**
 
 <!-- > -->
 

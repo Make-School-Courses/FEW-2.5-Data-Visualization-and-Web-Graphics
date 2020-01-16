@@ -105,6 +105,12 @@ Place more detailed information or speaker notes in "aside" elements - it will a
 
 <!-- > -->
 
+## After Class
+
+- Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am
+
+<!-- > -->
+
 ## Additional Resources
 
 1. Links to additional readings and videos
