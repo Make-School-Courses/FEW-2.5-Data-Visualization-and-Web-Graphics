@@ -10,7 +10,10 @@ Start with a one of the example on the D3 page [here](https://github.com/d3/d3/w
 
 Add to your visualization to your GitHub pages.
 
-**Stretch Challenge:** Use D3's scale methods to scale and normalize data. Look at scaleOrdinal and try and make use of it in this visualization.
+**Stretch Challenges:**
+
+- Use D3's scale methods to scale and normalize data. Look at scaleOrdinal and try and make use of it in this visualization.
+- Use maps in your D3 visualization
 
 | Expectation | Doe not meet | Meets | Exceeds |
 |:-------------|:------------------|:----------------|:-----------------|

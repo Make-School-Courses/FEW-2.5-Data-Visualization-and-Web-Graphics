@@ -1,5 +1,5 @@
 <!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# Class - Lesson Title
+# FEW 2.5 - D3 Scales
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -7,76 +7,85 @@
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:30      | In Class Activity I       |
-| 0:50        | 0:10      | BREAK                     |
-| 1:00        | 0:45      | In Class Activity II      |
-| 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | -                         |
+| 0:00        | 0:05      | Overview + Learning Outcomes                |
+| 0:05        | 0:10      | Scale and normalization                  |
+| 0:15        | 0:20      | Get started with scaleOrdinal       |
+| 0:35        | 0:55      | Example code                     |
+| 1:30        | 0:10      | Break      |
+| 1:40        | 1:00      | Lab      |
+| 2:40        | 0:05      | Wrap up  |
+| TOTAL       | 2:45      | -                         |
 
+
+<!-- > -->
+
+## Overview
+
+D3 Scales provide a system for normalizing and scaling values for display on the screen.
 
 <!-- > -->
 
 ## Why you should know this or industry application (optional) (5 min)
 
-Explain why students should care to learn the material presented in this class.
+Scaling and normalizing data is an important task you'll do it all the time. D3's scale tools provide great functionality.
 
 <!-- > -->
 
-## Learning Objectives (5 min)
+## Learning Objectives
 
-1. Identify and describe
-1. Define
-1. Design
-1. Implement
-
-<!-- > -->
-
-## Initial Exercise (15 min)
-
-- Funny comic
-- Prime the Pump (e.g. think and jot, think pair share, etc)
-- Productivity Tip/Tool
-- Review of current event (e.g. tech news relevant to your track/topic)
-- Quiz on homework or topic(s) of past class
-- Concept Test
+1. Identify scales and uses for normalizing
+1. Define a scale for each axis
+1. Use the d3.scaleLinear() and
+1. Differentiate between scaleLinear and scaleOrdinal
 
 <!-- > -->
 
-# Topic 1
+## Scale and normalization
+
+Scaling and normalizing allows us to convert values of any range into values that can be displayed on the screen.
+
+Scaling and normalizing works best when working with numbers. Sometimes you'll have values that don't normalize easily. For example names of countries and key words don't translate easily to numbers. Also there are situations where you want to categorize values into buckets. [D3 scaleOrdinal](https://observablehq.com/@d3/d3-scaleordinal) does this for you.
 
 <!-- v -->
 
-## Overview/TT I (20 min)
+Use scaleOrdinal for:
 
-- Why learn this?
-- Industry examples of usage
-- Best practices
-- Personal anecdote
+- Converting values to colors
+- Converting values into key words
+- Converting keywords into a values, colors, or other things
 
-<aside class="notes">
-Place more detailed information or speaker notes in "aside" elements - it will appear in GitHub Pages but not in the slides.
-</aside>
+<!-- > -->
 
-<!-- v -->
+## Get Started with scaleOrdinal
 
-## In Class Activity I (30 min)
+Go through and review the following links on your own:
 
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
+- [Documentation](https://d3-wiki.readthedocs.io/zh_CN/master/Ordinal-Scales/)
+- [scaleOrdinal Examples](https://bl.ocks.org/d3indepth/fabe4d1adbf658c0b73c74d3ea36d465)
+- [Scales functions in D3](https://d3indepth.com/scales/)
+
+With a partner, answer the following questions:
+
+1. What is the scaleOrdinal example doing?
+1. What is one thing you learned about scaleOrdinal from the documentation?
+1. In your own words, describe how the scale functions work in D3
+
+<!-- > -->
+
+## Example Code
+
+Take a look at the D3 examples here:
+
+- https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
+
+With the above examples, do the following challenges:
+
+1. Run all 7 examples and review the code. Make your own edits to see how to manipulate scaleOrdinal and scale functions
+1. Make 3 significant edits to each one that either manipulate the data, or show it in a different format/visualization
 
 <!-- > -->
 
@@ -85,27 +94,17 @@ Place more detailed information or speaker notes in "aside" elements - it will a
 
 <!-- > -->
 
-# Topic 2
+## Lab
 
-<!-- v -->
+Create one data visualization using scaleOrdinal and D3 Scales with a data source of your choosing. Use the previous examples to help you get started. You should build with either HTML/CSS or SVG.
 
-## Overview/TT II (optional) (20 min)
+**Stretch Challenge:** Do another visualization in the remaining format (i.e. do one in SVG if you previously did HTML/CSS)
 
-<!-- v -->
-
-## In Class Activity II (optional) (30 min)
+Work on your final project with remaining time.
 
 <!-- > -->
 
-## Wrap Up (5 min)
-
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
-
-<!-- > -->
-
-## After Class
+## After class
 
 - Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am
 
@@ -113,4 +112,7 @@ Place more detailed information or speaker notes in "aside" elements - it will a
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+- https://d3-wiki.readthedocs.io/zh_CN/master/Ordinal-Scales/
+- https://bl.ocks.org/d3indepth/fabe4d1adbf658c0b73c74d3ea36d465
+- https://d3indepth.com/scales/
+- https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
