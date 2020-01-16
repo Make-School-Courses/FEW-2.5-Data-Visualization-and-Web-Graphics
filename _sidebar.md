@@ -1,17 +1,17 @@
 - **[Syllabus](README.md)**
 - **Lessons**
-  - [Lesson 1](Lessons/Lesson1.md)
-  - [Lesson 2](Lessons/Lesson2.md)
-  - [Lesson 3](Lessons/Lesson1.md)
-  - [Lesson 4](Lessons/Lesson1.md)
-  - [Lesson 5](Lessons/Lesson1.md)
-  - [Lesson 6](Lessons/Lesson1.md)
-  - [Lesson 7](Lessons/Lesson1.md)
-  - [Lesson 8](Lessons/Lesson1.md)
-  - [Lesson 9](Lessons/Lesson1.md)
-  - [Lesson 10](Lessons/Lesson1.md)
-  - [Lesson 11](Lessons/Lesson1.md)
-  - [Lesson 12](Lessons/Lesson1.md)
-  - Final Class (Presentations, Demos, etc)
-  - Final Exam/Presentations
-- **[Project](Assignments/Sample_Project.md)**
+  - [Intro to Data Visualization](Lessons/Lesson-1.md)
+  - [Displaying Data graphically](Lessons/Lesson-2.md)
+  - [Animation and Interaction](Lessons/Lesson-3.md)
+  - [Sorting and Filtering data interactively](Lessons/Lesson-4.md)
+  - [Working with Canvas](Lessons/Lesson-5.md)
+  - [Canvas Part 2, Circle Math](Lessons/Lesson-6.md)
+  - [Graphing charting libraries](Lessons/Lesson-7.md)
+  - [SVG](Lessons/Lesson-8.md)
+  - [D3](Lessons/Lesson-9.md)
+  - [D3 Scales](Lessons/Lesson-10.md)
+  - [D3 Maps](Lessons/Lesson-11.md)
+- **Projects**
+    - [Data Visualization 1](Assignments/Data-Visualization-1.md)
+    - [Data Visualization 2](Assignments/Data-Visualization-2.md)
+    - [Final Data Visualization](Assignments/Data-Visualization-3.md)

@@ -430,7 +430,7 @@ I wrote this code by hand and it was a lot of work and not very accurate. You wa
 
 ## After Class 
 
-- Finish Data [Visualization 1](https://github.com/Make-School-Courses../FEW-2.5-Data-Visualization-and-Web-Graphics/blob/master/Assignments/Visualization-1.md)
+- Finish Data [Visualization 1](https://github.com/Make-School-Courseshttps://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/blob/master/Assignments/Visualization-1.md)
 
 ## Resources 
 
