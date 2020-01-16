@@ -1,12 +1,29 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Syllabus Template Slides</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./assets/Reveal/makeschool.css" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # FEW 2.5 - Intro to Data Visualization
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](/Syllabus-Template/Slides/Lesson-1.html ':ignore')
-
-<!-- > -->
-
+➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore')
+</script></section><section  data-markdown><script type="text/template">
 ## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
@@ -21,15 +38,11 @@
 | 2:40       | 0:05      | Wrap-up + homework overview            |
 | TOTAL       | 2:45      |             |
 
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Welcome to Data Visualization!
 
 The goal of this lesson is to get started with data visualization. You will look at the features of making information visible and represented graphically using HTML, CSS, and JavaScript.
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Why you should know this or industry application
 
 Being able to display things on the screen is a core feature of computer software. It's what connects people to the computer. Having this skill in your back pocket is important for making software that is engaging and compelling to your users.
@@ -37,9 +50,7 @@ Being able to display things on the screen is a core feature of computer softwar
 The skills learned to make data visualizations will translate to making you a better programmer and give you new ideas on how to approach visual problems on the computer.
 
 If you are interested in data, what it means, and how it communicates to people this class will give you an opportunity to explore and create.
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Learning Objectives
 
 - Define data visualization
@@ -50,9 +61,7 @@ If you are interested in data, what it means, and how it communicates to people 
     - map, filter, reduce
     - min, max, average
 - Display data in the DOM
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Overview
 
 - What is data visualization?
@@ -66,9 +75,7 @@ If you are interested in data, what it means, and how it communicates to people 
         - height
         - backgroundColor
         - Using Flex
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 ## Infographic vs Data Visualization
 
 Let's clarify what you are expected to make.
@@ -86,18 +93,14 @@ Some examples
 		- [James Round](https://www.jamesrounddesign.com)
 	- [Data visualization](https://datavizcatalogue.com)
 	- [Examples](https://www.maptive.com/17-impressive-data-visualization-examples-need-see/)
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Activity
 
 Use the previous links to answer the following questions
 
 - What is data visualization?
 - What is data?
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 ## Getting started
 
 - JSON
@@ -108,9 +111,7 @@ Use the previous links to answer the following questions
 	 - CORS
 		- What is CORS
 		- How to deal with it
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## CORS
 
 CORS - Cross Origin Resource Sharing, is a a security feature built into the browser. It's also a headache for developers. In a nutshell it prevents JavaScript in the browser from reading files on your file system.
@@ -121,9 +122,7 @@ For more info read these articles.
 
 - https://medium.com/@baphemot/understanding-cors-18ad6b478e2b
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 ## The Titanic Dataset
 
 Take a look at the [Titanic Dataset](https://www.kaggle.com/c/titanic/data). This link points to the Titanic dataset on Kaggle. There is also a copy in the tutorial repo.
@@ -139,9 +138,7 @@ What values can you find here? What would you want to know from this?
 Pair and discuss. Come up with a list of things you find interesting. List as many things as you can.
 
 Write the list on the board.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Exercise
 
 Using the Titanic dataset, we will be practicing the following techniques using JS:
@@ -151,9 +148,7 @@ Using the Titanic dataset, we will be practicing the following techniques using 
 - Counting values
 - Make elements on screen that visualize information
 - Aggregate data
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ### Interview Questions
 
 - Get the fare from the first record
@@ -169,9 +164,7 @@ Using the Titanic dataset, we will be practicing the following techniques using 
 - How many siblings were there?
 - What is the survival rate of siblings vs only children?
 - How many ages were estimated?
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 ## Display things on the screen
 
 It's one thing to find the answer to questions, but this class is about visualizing the answer, so we need a way to put our information on the screen! Below are some useful methods to do this:
@@ -183,21 +176,15 @@ It's one thing to find the answer to questions, but this class is about visualiz
     - backgroundColor
     - border
     - borderRadius
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Challenges
 
 - Make make a div for each passenger
     - Give it a height, width, and background-color
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Lab Activity
 
 Work through the following activities in this order to practice your JS visualization skills:
@@ -209,17 +196,13 @@ Work through the following activities in this order to practice your JS visualiz
     1. How many movies had a release year of 2005? 2019?
     1. How many TV shows had more than 3 seasons?
     1. How many Comedies does India have?
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## After Class
 
 Start on [Visualization 1](Assignments/Data-Visualization-1.md). This first assignment will use the Titanic Dataset.
 
 Before you can visualize data you need to have data. Follow this [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/tree/master) and solve all of the challenges.
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Additional Resources
 
 - [Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
@@ -230,3 +213,54 @@ Before you can visualize data you need to have data. Follow this [Tutorial](http
 - [document.createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
 - [Node.appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
 - [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
+</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>

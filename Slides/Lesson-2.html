@@ -1,12 +1,29 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Syllabus Template Slides</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./assets/Reveal/makeschool.css" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # FEW 2.5 - Displaying Data graphically
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](/Syllabus-Template/Slides/Lesson-2.html ':ignore')
-
-<!-- > -->
-
+➡️ [**Slides**](/Syllabus-Template/Slides/Lesson2.html ':ignore')
+</script></section><section  data-markdown><script type="text/template">
 ## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
@@ -25,23 +42,17 @@
 | 2:40        | 0:05      | Wrapup + homework overview |
 | TOTAL       | 2:45      | -                         |
 
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Overview
 
 This class you will take the values generated in the previous class and turn them into shapes on the screen. The goal of this lesson is to create DOM elements and apply styles. The values applied to styles will come from the Titanic data.
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Why you should know this?
 
 Displaying data is interesting and useful. You can convey a lot more information that is easier to grasp and show relations with images in some cases these would not be apparent with numbers.
 
 Beyond data science being able to draw shapes in HTML is a key skill to creating interesting and copelling user interfaces. Everything covered here can be used in almost all aspects of web application development.
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Learning Objectives
 
 - Create elements with JS
@@ -49,9 +60,7 @@ Beyond data science being able to draw shapes in HTML is a key skill to creating
 - Use JS to apply CSS styles
 - Create elements dynamically
 - Normalize data for graphic representation
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 ## Normalization
 
 Values are almost always associated with a unit. For example
@@ -61,9 +70,7 @@ Values are almost always associated with a unit. For example
 - Miles
 
 To display things on the screen we need to convert units like $ into px or another unit used in CSS.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 To do this, it's best to normalize data into a decimal value from 0 to 1.
 
 In order to do _that_, it's often necessary to know the max value of your dataset and the range.
@@ -90,9 +97,7 @@ el.style.height = `${normalizedValue * 500}px` // convert to px
 el.style.color = `hsl(${normalizedValue * 360}, 50%, 50%)` // Convert to a color
 
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Drawing shapes with HTML and CSS
 
 There is a limit to what can be drawn with HTML and CSS, a wide range of shapes is possible. With a single div you can create a rectangle. With the rectangle you have the following options
@@ -120,9 +125,7 @@ width: 100px;
 height: 100px;
 background-color: red;
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ### Bar Graphs
 The most common way data is displayed after showing it numerically is by drawing bar graphs. A bar graph is easily created with HTML and CSS.
 
@@ -141,17 +144,13 @@ The most common way data is displayed after showing it numerically is by drawing
 This block draws a group of rectangles and sizes the height with `%`. They are arranged horizontally using `flex`.
 
 Besides setting the height and width what else do you think we can do?
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Transform
 
 CSS transform is a powerful tool that provides methods to translate (move, left right, up or down), rotate, skew, and scale elements. When using transform you combine all transforms on the same line for example:
 
 `transform: translate(10px, 30px) rotate(45deg) skew(10deg) scale(1.5);`
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ### Transform Rotate
 
 Use transform: rotate to create other shapes from a rectangle like a diamond.
@@ -172,17 +171,13 @@ height: 100px;
 background-color: red;
 transform: rotate(45deg);
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Rounding Corners
 
 How do we make circles from rectangles?
 
 Any of the four corners can have a radius. Round them all and you get a circle. Round a combination of the corners to get other shapes.
-
-<!-- v -->
-### Circles
+</script></section><section data-markdown><script type="text/template">### Circles
 
 Round all four corners to get a circle.
 
@@ -200,9 +195,7 @@ height: 100px;
 background-color: red;
 border-radius: 50%;
 ```
-
-<!-- v -->
-### Eyes, Droplets and Leaves
+</script></section><section data-markdown><script type="text/template">### Eyes, Droplets and Leaves
 
 Rounding two or three corners to get shapes that look like eyes, lemmons, leaves, droplets, or map pointers.
 
@@ -305,9 +298,7 @@ background-color: red;
 border-radius: 50% 0 50% 0;
 transform: rotate(45deg);
 ```
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 ## Strokes
 
 Add a stroke to add some dimension to your shapes:
@@ -349,9 +340,7 @@ border-radius: 50% 0 50% 0;
 transform: rotate(45deg);
 border: 12px solid;
 ```
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Compound Shapes
 
 Nest one shape inside another for more complex images. A nested element will always render on top of its parent. Note that if the parent rotates its position, the position of the inner element _will_ be effected.
@@ -410,15 +399,11 @@ align-items: center;
 		left: 15px;
 		top:-5px
 ```
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 ## Generating dynamic elements
 
 **Your goal is to generate all of this HTML with JavaScript** and abstract the process into functions that do the work for you. This way you can just supply a dataset, usually an array of values and have your function do the work of creating DOM elements and assigning CSS styles.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ### Creating DOM elements
 
 Use `document.createElement('div')` to create a new DOM element.
@@ -430,9 +415,7 @@ Use `document.createElement('div')` to create a new DOM element.
 Remember **to be visible an element must be the child of an element that is a descendant of the body tag**. Add an element as a child of another element with `parent.appendChild(el)`. For example:
 
 `parent.appendChild(el)`
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ### Activity - Interview Questions
 
 Think in terms of interview questions. How would what we are doing in class translate to an interview problem?
@@ -449,9 +432,7 @@ Think in terms of interview questions. How would what we are doing in class tran
 - Hard
 	- Show the ratio of men and women who survived vs men and women who did not survive.
 	- Show the ratio of passengers who survived vs those that did not by embarkation.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ### Styling elements
 
 All CSS styles of an element are accessible through that element's `style` property. The styles are named with a camelCase version of the CSS style name. For example:
@@ -466,14 +447,10 @@ el.style.backgroundColor = 'red'
 NOTE! Almost every CSS property requires a unit. You must include these when setting a value with JS. This means usually the value will be a string with a value and a unit.
 
 Notice CSS `background-color` becomes `backgroundColor` in JS.
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Absolute Position
 
 To position elements anywhere on the screen with numeric values, you'll want to use CSS `position: absolute`. Absolute position lets you set the a position using `left`, `top`, `right`, and `bottom`. The easiest way to work with these is to use `left` and `top` and imagine you are setting the position of an element by measuring its position from the top left of the screen.
@@ -501,9 +478,7 @@ The container div has been assigned the style `position: relative`. This makes t
 Each of the child divs has `position: absolute` with this the left and top can set to position the element.
 
 I wrote this code by hand and it was a lot of work and not very accurate. You want to automate this as much as you can. You will need to write code that sets the style of an element one property at a time.
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Lab
 
 For this lab, you will work on writing functions to automate your visualizations. Keep these functions in a `utils.js` file that you can copy and reuse for your various assignments.
@@ -520,15 +495,11 @@ These functions should take in color and size parameters, and return a configure
 - Create functions for compound shapes, or any other shapes you may use
 - Have your functions take in a position parameter
 - Have your functions take in a stroke parameter
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## After Class
 
 - Finish [Visualization 1](Assignments/Data-Visualization-1.md) by EOD next Wednesday
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Resources
 
 - [Visualization with HTML, CSS, and JS](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-with-HTML-CSS-JS-Tutorial)
@@ -537,3 +508,54 @@ These functions should take in color and size parameters, and return a configure
 - [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
 - [CSS border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
 - [CSS position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>

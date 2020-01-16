@@ -1,12 +1,29 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Syllabus Template Slides</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./assets/Reveal/makeschool.css" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # FEW 2.5 - Animation and Interaction
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](/Syllabus-Template/Slides/Lesson-3.html ':ignore')
-
-<!-- > -->
-
+➡️ [**Slides**](/Syllabus-Template/Slides/Lesson3.html ':ignore')
+</script></section><section  data-markdown><script type="text/template">
 ## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
@@ -19,29 +36,21 @@
 | 1:25        | 1:15      | Lab                       |
 | 2:40        | 0:05      | Wrap up + Homework Overview |
 | TOTAL       | 2:45      | -                         |
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Overview
 
 Showing data in the static form is a good start, but sometimes you can say more by adding motion and interaction.
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Why do you need to know this?
 
 User interaction is a prime directive for front end developers. Handling complex user interaction is something every front end developer should know how to do.
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Learning Objectives
 
 1. Handle user interaction
 1. Use systems to manage user options and handle UI state
 1. Use querySelector, and querySelectorAll to work with DOM elements and collections of elements
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 ## Buttons
 
 A button handles one action and usually runs the same code every time you click or tap it.
@@ -49,9 +58,7 @@ A button handles one action and usually runs the same code every time you click 
 For example a doorbell, or a login button.
 
 Essentially a button usually allows for one choice or action.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Toggle Buttons
 
 A toggle button is a button that will be in one of two states. It might run one of two different blocks of code with each interaction.
@@ -61,9 +68,7 @@ For example a light switch, or a checkbox.
 A toggle button needs to track its state. For example, a light switch needs to know whether it's in the on state or the off state, or a checkbox needs to know whether it's checked or not.
 
 Essentially a toggle button allows for two choices or actions that alternate.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Button Group
 
 In this case, I'm referring to a group of buttons where only one can be selected at a time. Imagine this as a set of choices where a user can choose one option.
@@ -71,21 +76,15 @@ In this case, I'm referring to a group of buttons where only one can be selected
 This is similar to radio buttons.
 
 Think of a button group as a set of N choices where only one can be chosen at any time.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ### Buttons and data viz
 
 You'll be creating a visualization that has some interaction this week. **Your goal is to think of ways you can modify your visualization, and choose the right button/interaction for it.**
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Button Activity
 
 Using the same [Titanic Dataset](https://www.kaggle.com/c/titanic/data) we used in the first lesson, use a a toggle button to easily filter between showing the number of people who survived, and the number who died
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 ## Color
 
 Color can be represented in a few ways in JS:
@@ -113,15 +112,11 @@ for (let i = 0; i < numberOfColors; i += 1) {
 ```
 
 Use RGBA or HSLA when you need to transparent colors. The last value is the alpha (transparency) of the color.
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Color Activity
 
 For the same Titanic dataset, create a bar graph that shows the number of passengers from each of the 3 `embarked` cities (C = Cherbourg, Q = Queenstown, S = Southampton). Make sure each bar is a different color
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Motion
 
 Motion can be easily added to any element using a CSS transition. An element that has a transition time will have it's properties change over the time of the transition.
@@ -145,27 +140,70 @@ el.style.width = '400px' // Change from 100px to 400px happens over 1000ms
 
 el.style.backgroundColor = '#f0f' // Colors can be animated!
 ```
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Motion Activity
 
 Take the bar graph you made in the last activity and have the colors animate once they're generated! Get a nice spectrum going!
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Lab
 
 The goal of this lab is to get more practice with buttons and interactions. To do this, you will work on the [buttons and interaction tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Buttons-and-Interaction) for the lab session.
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## After Class
 
 - Finish the [buttons and interaction tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Buttons-and-Interaction)
 - Finish [Visualization 1](Assignments/Data-Visualization-1.md) by 11:59pm tonight
+</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
