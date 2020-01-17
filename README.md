@@ -4,7 +4,7 @@
 
 This course covers programming in JavaScript D3 to display and visualize data as well as how to manage, transform, and normalize data for display on the screen. Students will learn how to create effective visualizations, complex drawings and animations on the web using SVG for vector graphics and Canvas for pixel based graphics.
 
-### Why you should know this (optional)
+### Why you should know this
 
 You should take this class if you have a desire to express ideas visually on a computer screen. If you have a fascination with data and trends taking this class will give you the tools and opportunities to express these ideas in your work.
 
