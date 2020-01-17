@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+
 # FEW 2.5 - Displaying Data graphically
 
 <!-- Put a link to the slides so that students can find them -->
@@ -20,6 +20,15 @@
 | 0:40        | 0:10      | Compound Shapes |
 | 0:50        | 0:40      | Generating dynamic elements |
 | 1:30        | 0:10      | BREAK |
+
+... More below!
+
+<!-- v -->
+
+...
+
+| **Elapsed** | **Time**  | **Activity**              |
+| ----------- | --------- | ------------------------- |
 | 1:40        | 0:10      | Absolute Position |
 | 1:50        | 0:50      | Lab |
 | 2:40        | 0:05      | Wrapup + homework overview |
@@ -68,7 +77,9 @@ To do this, it's best to normalize data into a decimal value from 0 to 1.
 
 In order to do _that_, it's often necessary to know the max value of your dataset and the range.
 
-To normalize values: divide all of the values in a dataset by the max value.  
+To normalize values: divide all of the values in a dataset by the max value.
+
+<!-- v -->
 
 ### Example:
 
@@ -78,7 +89,9 @@ This works for any number.
 
 56 / 121 is 0.4628099174 in other words 56 is ~46% of 121.
 
-The two values above could now be used to create values that display on the screen. For example:
+The two values above could now be used to create values that display on the screen. See the below example:
+
+<!-- v -->
 
 ```JavaScript
 const maxValue = 100
@@ -101,6 +114,8 @@ There is a limit to what can be drawn with HTML and CSS, a wide range of shapes 
 - set a stroke
 - rotate
 - skew
+
+<!-- v -->
 
 ## Rectangles
 
@@ -139,6 +154,8 @@ The most common way data is displayed after showing it numerically is by drawing
 ```
 
 This block draws a group of rectangles and sizes the height with `%`. They are arranged horizontally using `flex`.
+
+<!-- v -->
 
 Besides setting the height and width what else do you think we can do?
 
@@ -182,6 +199,7 @@ How do we make circles from rectangles?
 Any of the four corners can have a radius. Round them all and you get a circle. Round a combination of the corners to get other shapes.
 
 <!-- v -->
+
 ### Circles
 
 Round all four corners to get a circle.
@@ -207,6 +225,8 @@ border-radius: 50%;
 Rounding two or three corners to get shapes that look like eyes, lemmons, leaves, droplets, or map pointers.
 
 In this case you may also want to rotate the element to orient the shape correctly.
+
+<!-- v -->
 
 **Take the code below and see what it draws!**
 
@@ -240,6 +260,8 @@ background-color: red;
 border-radius: 50% 0 0 0;
 ```
 
+<!-- v -->
+
 ```html
 <div style="width: 100px;
 height: 100px;
@@ -271,6 +293,8 @@ background-color: red;
 border-radius: 50% 50% 50% 0;
 transform: rotate(135deg);
 ```
+
+<!-- v -->
 
 ```html
 <div style="width: 100px;
@@ -331,6 +355,8 @@ transform: rotate(45deg);
 border: 12px solid;
 ```
 
+<!-- v -->
+
 ```html
 <div style="width: 100px;
 height: 100px;
@@ -381,6 +407,8 @@ align-items: center">
 	</div>
 </div>
 ```
+
+<!-- v -->
 
 ```css
 /* Outer "eye" shape */
@@ -439,6 +467,8 @@ Think in terms of interview questions. How would what we are doing in class tran
 
 **Attempt 2 of the questions below**
 
+<!-- v -->
+
 - Easy
 	- Generate one element for each record in the Titanic Dataset
 	- Create one element for each male passenger
@@ -480,6 +510,8 @@ To position elements anywhere on the screen with numeric values, you'll want to 
 
 Sometimes you'll want to position an element using coordinates of a parent. In other words you want to measure `top` and `left` from the top left of the parent. To do this set the parent's position to `position: relative`.
 
+<!-- v -->
+
 Here is an example:
 
 ```html
@@ -494,9 +526,13 @@ Here is an example:
 </div>
 ```
 
+<!-- v -->
+
 Notice each of the circles is a div with a style of `border-radius: 50%`. This makes them circles.
 
 The container div has been assigned the style `position: relative`. This makes the descendants use this div to determine where left, top, right, and bottom is.
+
+<!-- v -->
 
 Each of the child divs has `position: absolute` with this the left and top can set to position the element.
 
@@ -508,6 +544,8 @@ I wrote this code by hand and it was a lot of work and not very accurate. You wa
 
 For this lab, you will work on writing functions to automate your visualizations. Keep these functions in a `utils.js` file that you can copy and reuse for your various assignments.
 
+<!-- v -->
+
 These functions should take in color and size parameters, and return a configured object. You can make one of these functions for each shape for ease of creation for your assignments:
 - Rectangle
 - Rounded Rectangles
@@ -515,6 +553,8 @@ These functions should take in color and size parameters, and return a configure
 - Eyes
 - Droplets
 - Leaves
+
+<!-- v -->
 
 **Stretch Challenges**
 - Create functions for compound shapes, or any other shapes you may use

@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+      <div class="slides"><section  data-markdown><script type="text/template">
 # FEW 2.5 - Working with Canvas
 
 <!-- Put a link to the slides so that students can find them -->
@@ -84,7 +84,7 @@ The horizontal axis is **x**
 The vertical axis is **y**
 
 Usually, functions will ask for an x and y value to position something.
-
+</script></section><section data-markdown><script type="text/template">
 **Paths** - Using the drawing tools you will often be creating paths. Paths are not visible until you stroke and or fill them with pixels.
 
 Usually you will begin a new path, draw a path, stroke and fill the path, then close the path. In code that might look like:
@@ -97,7 +97,7 @@ ctx.lineWidth = 13 // set the width of a stroke
 ctx.strokeStyle = 'red' // set the color of the stroke
 ctx.stroke() // draw the stroke
 ```
-
+</script></section><section data-markdown><script type="text/template">
 **Rectangles** - You can draw rectangles with `moveTo()` and `lineTo()` the `rect()` function is a short cut.
 
 ```JS
@@ -106,7 +106,7 @@ ctx.rect(200, 120, 100, 140) // draw a rectangle
 ctx.fillStyle = 'red' // set the fill style
 ctx.fill() // fill the rectangle
 ```
-
+</script></section><section data-markdown><script type="text/template">
 **Strokes and Fills** - When you want to see a path on the screen you'll need to stroke or fill it. To do this set the `fillStyle`, and or `strokeStyle` to the color, and the `lineWidth`, then call `fill()` or `stroke()`
 
 **Arcs and Circles** - Use the `arc()` method to draw arcs and circles.
@@ -122,7 +122,7 @@ Note that the angle is in radians!
 Circles are measured in **radians**. A complete circle is 2 * PI. Half a circle would be PI.
 
 ![Radians](../images/radians.png)
-
+</script></section><section data-markdown><script type="text/template">
 If you want to draw an arc that represents a value follow this guide:
 
 - Normalize your value (convert it to a range of 0 - 1 by dividing by the largest value in the set)
@@ -130,11 +130,11 @@ If you want to draw an arc that represents a value follow this guide:
     - If you want 100% to be a full circle multiply by `Math.PI * 2`
     - If you want 100% to be a half circle multiply by `Math.PI`
 - Decide on the starting angle. The default will start drawing from 0 in the diagram above and follow the arrow. Find the starting position in the diagram and add that value to both the starting angle and ending angle.
-
+</script></section><section data-markdown><script type="text/template">
 ![Radians](../images/radians-2.png)
 
 ![Radians](../images/radians-3.png)
-</script></section></section><section  data-markdown><script type="text/template">
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Blocks
 
 A block is a block of code. Often you define these as part of a function, if statements, and loops. The block is defined with `{}`.
@@ -152,8 +152,8 @@ You can also define standalone blocks that are not part of `statement`.
 ```JS
 { ...block... }
 ```
-
-Why? Scope! Variables defined with `const` or `let` are block scoped!
+</script></section><section data-markdown><script type="text/template">
+Why do this? **Scope!** Variables defined with `const` or `let` are block scoped!
 
 ```JS
 {
@@ -166,7 +166,7 @@ console.log(i) // undefined
 ```
 
 In the example above `i` and `step` would only be available inside the `{ block }`
-</script></section><section  data-markdown><script type="text/template">
+</script></section></section><section  data-markdown><script type="text/template">
 ## Sets
 
 A **set** is like an array but may only contain unique values. Sets are more efficient than arrays and may add a slight performance boost in some cases.
@@ -198,28 +198,28 @@ The examples in the code sample for this class uses Set.
 </script></section><section  data-markdown><script type="text/template">
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section ><section data-markdown><script type="text/template">
 ## Lab
 
 You might remember these interview questions from a previous lesson. We're going to answer those same questions on the Titanic dataset, but this time using Canvas!
 
 **Attempt at least 4 of the questions below. Stretch challenge to get more**
-
+</script></section><section data-markdown><script type="text/template">
 - Easy
 	- Generate one element for each record in the Titanic Dataset
 	- Create one element for each male passenger
 	- Create one element for each female passenger
 - Moderate
-	- Create two elements that show the ratio of passengers who survived vs those that didn't. (easy solution make a bar graph)
-	- Create elements showing the ratio of passengers by `pclass` (easy solution make a bar graph)
+	- Create two elements that show the ratio of passengers who survived vs those that didn't.
+	- Create elements showing the ratio of passengers by `pclass`
 - Hard
 	- Show the ratio of men and women who survived vs men and women who did not survive.
 	- Show the ratio of passengers who survived vs those that did not by embarkation.
-</script></section><section  data-markdown><script type="text/template">
+</script></section></section><section  data-markdown><script type="text/template">
 ## After Class
 
 - Continue working on [Visualization 2](Assignments/Data-Visualization-2.md), due 2/12 11:59pm
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section ><section data-markdown><script type="text/template">
 ## Resources
 
 - [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/prototype)
@@ -227,6 +227,7 @@ You might remember these interview questions from a previous lesson. We're going
     - [Set.add()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/add)
     - [Set.delete()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/delete)
     - [Set.has()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/has)
+</script></section><section data-markdown><script type="text/template">
 - [Canvas](https://developer.mozilla.org/en-US/docs/Glossary/Canvas)
     - [ctx.arc()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc)
     - [ctx.lineWidth](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineWidth)
@@ -235,7 +236,7 @@ You might remember these interview questions from a previous lesson. We're going
     - [arc.lineTo()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineTo)
     - [ctx.moveTo()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/moveTo)
     - [ctx.rec()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/rect)
-</script></section></div>
+</script></section></section></div>
     </div>
 
     <script src="./js/reveal.js"></script>

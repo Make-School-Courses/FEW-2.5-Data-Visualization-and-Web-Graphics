@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+
 # FEW 2.5 - SVG
 
 <!-- Put a link to the slides so that students can find them -->
@@ -41,31 +41,22 @@ You should learn them because they an important tool that will give you more cap
 
 <!-- > -->
 
-## Initial Exercise (15 min)
-
-- Funny comic
-- Prime the Pump (e.g. think and jot, think pair share, etc)
-- Productivity Tip/Tool
-- Review of current event (e.g. tech news relevant to your track/topic)
-- Quiz on homework or topic(s) of past class
-- Concept Test
-
-<!-- > -->
-
 ## SVG
 
 SVG is a file format and a language. You can create SVG files in popular apps like Sketch.
 
 Think of SVG as a language that describes a drawing. The computer reads an SVG file calculates the shapes and paths in the description, then fills the shapes and strokes the paths with pixels.
 
-Pros:
+<!-- v -->
+
+**Pros:**
 
 - Smaller file size
 - Separate elements
 - Elements are accessible from code
 - Crisp and scalable/responsive images
 
-Cons:
+**Cons:**
 
 - More processor overhead
 - Images can't create some detail available to raster images
@@ -79,6 +70,8 @@ You can save the files and import them like images.
 `<img src="my-image.svg">`
 
 When using SVG in this way images are rendered but you don't have access to underlying SVG code.
+
+<!-- v -->
 
 You can also use SVG code directly in your work. just copy and paste some SVG code into an HTML document or write the code from scratch!
 
@@ -98,6 +91,8 @@ You can also use SVG code directly in your work. just copy and paste some SVG co
 ```
 
 The code above draws a star.
+
+<!-- v -->
 
 Generally speaking you usually don't want to write SVG code from scratch. Instead, use an application such as Sketch.
 

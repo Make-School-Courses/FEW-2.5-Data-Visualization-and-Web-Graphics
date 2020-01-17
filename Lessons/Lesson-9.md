@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+
 # FEW 2.5 - D3 Intro
 
 <!-- Put a link to the slides so that students can find them -->
@@ -144,10 +144,6 @@ d3.select('body')
 
 The `style()` method takes two parameters. First is the style attribute to set, and second is either a function or a primitive value.
 
-When the second parameter is a primitive value, the value is returned. Look at: padding, background-color, and margin.
-
-When the second parameter is a function, the function receives a data value and returns a value. See the width. Here the value is normalized and returned as a %.
-
 ```JS
 d3.select('body')
 	.selectAll('div')
@@ -155,15 +151,20 @@ d3.select('body')
 	.enter()
 	.append('div')
 	.text((d) => d)
+	// When the second parameter is a primitive value, the value is returned.
+	// Look at: padding, background-color, and margin.
 	.style('padding', '1em')
 	.style('background-color', 'red')
 	.style('margin', '1px')
+	// When the second parameter is a function, the function receives
+	// a data value and returns a value.
+	// See the width. Here the value is normalized and returned as a %.
 	.style('width', (d) => `${d / 10 * 100}%`)
 ```
 
 <!-- > -->
 
-# Loading Data
+## Loading Data
 
 D3 has its own data loaders built in. D3 works with: JSON, CSV, and a few other data types. Read more [here](https://github.com/d3/d3/blob/master/API.md#fetches-d3-fetch).
 
@@ -192,6 +193,8 @@ The earlier example used HTML, created HTML elements, and set CSS styles on thos
 
 SVG and HTML are closely related. Imagine HTML as a language for sharing and displaying text documents, and SVG as a language for sharing and displaying graphical images. Both languages share the same parent language.  
 
+<!-- v -->
+
 Remember these SVG tags to get started:
 
 - rect - Rectangle
@@ -204,6 +207,10 @@ Remember these SVG tags to get started:
 - and [many more...](https://developer.mozilla.org/en-US/docs/Web/SVG/Element)
 
 Take a look at the list of SVG tags what do you see there?
+
+<!-- v -->
+
+### Activity
 
 **Pair up and explore a section of the SVG tag list.**
 
@@ -258,9 +265,14 @@ d3.select('#svg')
 	.attr('width', (d) => d.c * 50)
 	.attr('transform', (d, i) => `translate(${500 / 50 * i}, ${500 - d.a * 500})`)
 ```
+
+<!-- v -->
+
+### Activity
+
 Answer the following questions:
 
-- What happened here?
+- What happened in the examples above?
 - How would you incorporate data from another source?
 - How would you modify the appearance?
 
@@ -273,9 +285,11 @@ Answer the following questions:
 
 ## Lab
 
-Choose an example or tutorial from D3 site and recreate that example with your own dataset.
+Choose an example or tutorial from the D3 site and recreate that example with your own dataset.
 
 **Stretch Challenge:** Recreate a second example. The goal here is to get familiar with D3 to use later in your projects
+
+<!-- > -->
 
 ## After class
 

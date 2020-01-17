@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+
 # FEW 2.5 - D3 Maps
 
 <!-- Put a link to the slides so that students can find them -->
@@ -51,6 +51,8 @@ The world is a globe and we've divided it into latitude and longitude.
 - https://www.maptools.com/tutorials/lat_lon/definitions
 - https://gisgeography.com/utm-universal-transverse-mercator-projection/
 
+<!-- v -->
+
 **In pairs, discuss why you would use latitude and longitude, and when you would use UTM**
 
 Fun site: find geo-coordinates for your home town:
@@ -90,13 +92,16 @@ This is a great tutorial on mapping with D3. It uses v5 so it's up to date. Besi
 
 **Read the blog post. Then create a map of your own. Use the sample code provided in the codepen example to recreate the example on your desktop.**
 
+<!-- v -->
+
 Be sure to follow up with the links at the bottom of the post, as these have valuable info on creating and using maps.
 
-- Challenges
-	- Make the map work using the same TopoJSON that the tutorial uses
-	- Try different projections
-		- https://github.com/d3/d3-geo#geoAzimuthalEqualArea
-	- Edit the CSS to change the color of the fill and stroke
+**Challenges**
+
+- Make the map work using the same TopoJSON that the tutorial uses
+- Try different projections
+	- https://github.com/d3/d3-geo#geoAzimuthalEqualArea
+- Edit the CSS to change the color of the fill and stroke
 
 <!-- > -->
 

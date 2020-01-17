@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+
 # FEW 2.5 - Intro to Data Visualization
 
 <!-- Put a link to the slides so that students can find them -->
@@ -76,6 +76,8 @@ Let's clarify what you are expected to make.
 - An infographic provides information in the form of an image. These are often more comic strip and less abstract. The goal is to inform.
 - A data visualization is more abstract showing data in visual form.
 
+<!-- v -->
+
 Some examples
 
 - [Info Graphic](https://venngage.com/blog/what-is-an-infographic/)
@@ -136,9 +138,7 @@ Take a look at the data, ask yourself what you see?
 
 What values can you find here? What would you want to know from this?
 
-Pair and discuss. Come up with a list of things you find interesting. List as many things as you can.
-
-Write the list on the board.
+Pair and discuss. Come up with a list of things you find interesting. **Write the list on the board.**
 
 <!-- v -->
 
@@ -166,6 +166,13 @@ Using the Titanic dataset, we will be practicing the following techniques using 
 - Filter datapoints where the age is missing
 - How many passengers from Queenstown
 - How many people travelled with nanny?
+
+**... more questions below!**
+
+<!-- v -->
+
+...
+
 - How many siblings were there?
 - What is the survival rate of siblings vs only children?
 - How many ages were estimated?

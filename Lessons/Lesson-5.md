@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+
 # FEW 2.5 - Working with Canvas
 
 <!-- Put a link to the slides so that students can find them -->
@@ -80,6 +80,8 @@ The vertical axis is **y**
 
 Usually, functions will ask for an x and y value to position something.
 
+<!-- v -->
+
 **Paths** - Using the drawing tools you will often be creating paths. Paths are not visible until you stroke and or fill them with pixels.
 
 Usually you will begin a new path, draw a path, stroke and fill the path, then close the path. In code that might look like:
@@ -93,6 +95,8 @@ ctx.strokeStyle = 'red' // set the color of the stroke
 ctx.stroke() // draw the stroke
 ```
 
+<!-- v -->
+
 **Rectangles** - You can draw rectangles with `moveTo()` and `lineTo()` the `rect()` function is a short cut.
 
 ```JS
@@ -101,6 +105,8 @@ ctx.rect(200, 120, 100, 140) // draw a rectangle
 ctx.fillStyle = 'red' // set the fill style
 ctx.fill() // fill the rectangle
 ```
+
+<!-- v -->
 
 **Strokes and Fills** - When you want to see a path on the screen you'll need to stroke or fill it. To do this set the `fillStyle`, and or `strokeStyle` to the color, and the `lineWidth`, then call `fill()` or `stroke()`
 
@@ -120,6 +126,8 @@ Circles are measured in **radians**. A complete circle is 2 * PI. Half a circle 
 
 ![Radians](../images/radians.png)
 
+<!-- v -->
+
 If you want to draw an arc that represents a value follow this guide:
 
 - Normalize your value (convert it to a range of 0 - 1 by dividing by the largest value in the set)
@@ -127,6 +135,8 @@ If you want to draw an arc that represents a value follow this guide:
     - If you want 100% to be a full circle multiply by `Math.PI * 2`
     - If you want 100% to be a half circle multiply by `Math.PI`
 - Decide on the starting angle. The default will start drawing from 0 in the diagram above and follow the arrow. Find the starting position in the diagram and add that value to both the starting angle and ending angle.
+
+<!-- v -->
 
 ![Radians](../images/radians-2.png)
 
@@ -152,7 +162,9 @@ You can also define standalone blocks that are not part of `statement`.
 { ...block... }
 ```
 
-Why? Scope! Variables defined with `const` or `let` are block scoped!
+<!-- v -->
+
+Why do this? **Scope!** Variables defined with `const` or `let` are block scoped!
 
 ```JS
 {
@@ -210,13 +222,15 @@ You might remember these interview questions from a previous lesson. We're going
 
 **Attempt at least 4 of the questions below. Stretch challenge to get more**
 
+<!-- v -->
+
 - Easy
 	- Generate one element for each record in the Titanic Dataset
 	- Create one element for each male passenger
 	- Create one element for each female passenger
 - Moderate
-	- Create two elements that show the ratio of passengers who survived vs those that didn't. (easy solution make a bar graph)
-	- Create elements showing the ratio of passengers by `pclass` (easy solution make a bar graph)
+	- Create two elements that show the ratio of passengers who survived vs those that didn't.
+	- Create elements showing the ratio of passengers by `pclass`
 - Hard
 	- Show the ratio of men and women who survived vs men and women who did not survive.
 	- Show the ratio of passengers who survived vs those that did not by embarkation.
@@ -236,6 +250,9 @@ You might remember these interview questions from a previous lesson. We're going
     - [Set.add()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/add)
     - [Set.delete()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/delete)
     - [Set.has()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/has)
+
+<!-- v -->
+
 - [Canvas](https://developer.mozilla.org/en-US/docs/Glossary/Canvas)
     - [ctx.arc()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc)
     - [ctx.lineWidth](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineWidth)

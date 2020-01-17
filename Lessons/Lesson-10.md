@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+
 # FEW 2.5 - D3 Scales
 
 <!-- Put a link to the slides so that students can find them -->
@@ -29,7 +29,7 @@ D3 Scales provide a system for normalizing and scaling values for display on the
 
 <!-- > -->
 
-## Why you should know this or industry application (optional) (5 min)
+## Why you should know this
 
 Scaling and normalizing data is an important task you'll do it all the time. D3's scale tools provide great functionality.
 
@@ -68,7 +68,9 @@ Go through and review the following links on your own:
 - [scaleOrdinal Examples](https://bl.ocks.org/d3indepth/fabe4d1adbf658c0b73c74d3ea36d465)
 - [Scales functions in D3](https://d3indepth.com/scales/)
 
-With a partner, answer the following questions:
+<!-- v -->
+
+**With a partner, answer the following questions:**
 
 1. What is the scaleOrdinal example doing?
 1. What is one thing you learned about scaleOrdinal from the documentation?
@@ -82,7 +84,7 @@ Take a look at the D3 examples here:
 
 - https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
 
-With the above examples, do the following challenges:
+**With the above examples, do the following challenges:**
 
 1. Run all 7 examples and review the code. Make your own edits to see how to manipulate scaleOrdinal and scale functions
 1. Make 3 significant edits to each one that either manipulate the data, or show it in a different format/visualization

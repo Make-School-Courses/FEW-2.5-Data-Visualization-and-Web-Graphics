@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+
 # FEW 2.5 - Graphing charting libraries
 
 <!-- Put a link to the slides so that students can find them -->
@@ -56,6 +56,8 @@ Content Delivery Networks host files that you can link to. While you could host 
 - Caching - cached files don't need to be loaded again
 - Easier File Management - Files on the CDN are files you don't have to manage.
 
+<!-- v -->
+
 CDNs also have a some disadvantages:
 
 - Some restrictions
@@ -84,7 +86,9 @@ Be sure to read the documentation! Seriously, everything you need know is probab
 
 ## Making Charts
 
-Look at the types of charts available to us in ChartJS:
+Look at the types of charts available to us in ChartJS, and then **discuss what type of data works best for which type of chart**
+
+<!-- v -->
 
 - [Line](https://www.chartjs.org/docs/latest/charts/line.html)
 - [Bar](https://www.chartjs.org/docs/latest/charts/bar.html)
@@ -95,8 +99,6 @@ Look at the types of charts available to us in ChartJS:
 - [Scatter](https://www.chartjs.org/docs/latest/charts/scatter.html)
 - [Area](https://www.chartjs.org/docs/latest/charts/area.html)
 - [Mixed](https://www.chartjs.org/docs/latest/charts/mixed.html)
-
-**Discussion:** what type of data works best for which type of chart?
 
 <!-- v -->
 
@@ -111,6 +113,8 @@ Read the notes in these [examples](../lesson-07.html).
 You need to make graphs with ChartJS! You supply an array of values and some other options and the library draws the chart.
 
 First you will need to find some data to use in JSON format. For the most part this is not usable directly with either library. You will need to write code that extracts the values you want to graph, and supply these to the library.
+
+<!-- v -->
 
 You will also need to generate some other values. These other values are things like:
 
@@ -128,7 +132,7 @@ Width, height and DOM elements are easy to come up with. Labels and colors may t
 
 <!-- > -->
 
-# Lab
+## Lab
 
 Finish the ChartJS activity if you haven't already.
 
@@ -141,6 +145,8 @@ Make sure to read the documentation!
 - [Chartist Docs](https://gionkunz.github.io/chartist-js/api-documentation.html)
 
 Copied below is the same requirements from the ChartJS activity for reference:
+
+<!-- v -->
 
 First you will need to find some data to use in JSON format. For the most part this is not usable directly with either library. You will need to write code that extracts the values you want to graph, and supply these to the library.
 
@@ -170,6 +176,11 @@ Width, height and DOM elements are easy to come up with. Labels and colors may t
 - [Bar](https://www.chartjs.org/docs/latest/charts/bar.html)
 - [Radar](https://www.chartjs.org/docs/latest/charts/radar.html)
 - [Doughnut & Pie](https://www.chartjs.org/docs/latest/charts/doughnut.html)
+
+... more below!
+
+<!-- v -->
+
 - [Polar](https://www.chartjs.org/docs/latest/charts/polar.html)
 - [Bubble](https://www.chartjs.org/docs/latest/charts/bubble.html)
 - [Scatter](https://www.chartjs.org/docs/latest/charts/scatter.html)

@@ -17,13 +17,12 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# FEW 2.5 - Sorting and Filtering data interactively
+      <div class="slides"><section  data-markdown><script type="text/template"># FEW 2.5 - Sorting and Filtering data interactively
 
 <!-- Put a link to the slides so that students can find them -->
 
 ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-4.html ':ignore')
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section ><section data-markdown><script type="text/template">
 ## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
@@ -37,11 +36,16 @@
 | 1:10        | 0:15      | CSS Transforms      |
 | 1:25        | 0:10      | Closures      |
 | 1:35        | 0:10      | BREAK      |
+
+... More below!
+</script></section><section data-markdown><script type="text/template">
+| **Elapsed** | **Time**  | **Activity**              |
+| ----------- | --------- | ------------------------- |
 | 1:45        | 0:55      | Lab      |
 | 2:40        | 0:05      | Wrap up + Homework overview |
 | TOTAL       | 2:45      | -                         |
 
-</script></section><section  data-markdown><script type="text/template">
+</script></section></section><section  data-markdown><script type="text/template">
 ## Overview
 
 The earlier class brushed on the topic of sorting and filtering in this class we will cover sorting and filtering data interactively.
@@ -67,7 +71,7 @@ A distribution shows how many times a value appears. While seeing a list of peop
 A distribution shows how many times a value appears. For example we might have 891 passengers who each boarded the Titanic in a class. The distribution would show how many passengers were in each class.
 
 Often you won't know how many 'buckets' you will have for a group. For example in the case of the Titanic we might not know the number of classes.
-
+</script></section><section data-markdown><script type="text/template">
 An easy way to create a distribution is to use an object. Use the key to track 'buckets' and the value of the key to count the occurrence of a value.
 
 ```JS
@@ -108,7 +112,7 @@ arr.sort()
 console.log(arr) // Returns:
 // ["a", "a", "c", "i", "j", "p", "r", "s", "t", "v"]
 ```
-
+</script></section><section data-markdown><script type="text/template">
 For numbers this sorts on the **first digit** which may not be what you want!
 
 For all other cases supply `Array.sort()` with a sorting function that receives two params. These are values to compare. Your function should return -1, +1, or 0. This determines which value comes before the other.
@@ -147,7 +151,7 @@ Filter all Titanic passengers who were younger than 30
 Once you have created elements you might want to hold onto them. This is good if you have a fixed number of elements and you want to display different data points owned by each.
 
 Since you're making the elements based on your data, might as well save reference to those elements at the moment they are created!
-
+</script></section><section data-markdown><script type="text/template">
 Imagine you're starting with the Titanic dataset from the JSON. Add an element to each object:
 
 ```JS
@@ -188,7 +192,7 @@ You can optionally include a property to animate, ignoring other properties.
 Include a list of properties and times to assign a different time to each property that may change:
 
 `transition: height 400ms, color 1200ms;`
-
+</script></section><section data-markdown><script type="text/template">
 You can also include an _easing function_. This sets the curve of the change.
 
 A linear curve maintains a constant rate of change. This is a good for color and opacity changes.
@@ -214,12 +218,14 @@ For example:
 `transform: translate(100px, 200px)` translates an object `100px` on the x and `200px` on the y.
 
 `transform: translate3d(100px, 200px, 0)` same as above, but also translates `0` on the z while also taking advantage of hard acceleration. You should always use this when animating elements!
-
+</script></section><section data-markdown><script type="text/template">
 Only define `transform` once! it takes as many properties as needed. For example:
 
 `transform: translate3d(300px, 0, 0) rotate3d(0, 0, 45deg)`
 
 The order transforms are applied matters! The example above translates 300px to the right, then rotates 45 degrees on the z axis. Swapping the rotate and translate here would rotate first, then move the object down and to the right at a 45 degree angle!
+</script></section><section data-markdown><script type="text/template">
+### Helpful Documentation
 
 - [translate(x, y)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate)
 - [translate3d(x, y, z)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d)

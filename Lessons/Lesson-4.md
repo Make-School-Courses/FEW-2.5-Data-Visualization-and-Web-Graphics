@@ -1,4 +1,3 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # FEW 2.5 - Sorting and Filtering data interactively
 
 <!-- Put a link to the slides so that students can find them -->
@@ -20,6 +19,13 @@
 | 1:10        | 0:15      | CSS Transforms      |
 | 1:25        | 0:10      | Closures      |
 | 1:35        | 0:10      | BREAK      |
+
+... More below!
+
+<!-- v -->
+
+| **Elapsed** | **Time**  | **Activity**              |
+| ----------- | --------- | ------------------------- |
 | 1:45        | 0:55      | Lab      |
 | 2:40        | 0:05      | Wrap up + Homework overview |
 | TOTAL       | 2:45      | -                         |
@@ -58,6 +64,8 @@ A distribution shows how many times a value appears. While seeing a list of peop
 A distribution shows how many times a value appears. For example we might have 891 passengers who each boarded the Titanic in a class. The distribution would show how many passengers were in each class.
 
 Often you won't know how many 'buckets' you will have for a group. For example in the case of the Titanic we might not know the number of classes.
+
+<!-- v -->
 
 An easy way to create a distribution is to use an object. Use the key to track 'buckets' and the value of the key to count the occurrence of a value.
 
@@ -103,6 +111,8 @@ arr.sort()
 console.log(arr) // Returns:
 // ["a", "a", "c", "i", "j", "p", "r", "s", "t", "v"]
 ```
+
+<!-- v -->
 
 For numbers this sorts on the **first digit** which may not be what you want!
 
@@ -151,6 +161,8 @@ Once you have created elements you might want to hold onto them. This is good if
 
 Since you're making the elements based on your data, might as well save reference to those elements at the moment they are created!
 
+<!-- v -->
+
 Imagine you're starting with the Titanic dataset from the JSON. Add an element to each object:
 
 ```JS
@@ -196,6 +208,8 @@ Include a list of properties and times to assign a different time to each proper
 
 `transition: height 400ms, color 1200ms;`
 
+<!-- v -->
+
 You can also include an _easing function_. This sets the curve of the change.
 
 A linear curve maintains a constant rate of change. This is a good for color and opacity changes.
@@ -226,11 +240,17 @@ For example:
 
 `transform: translate3d(100px, 200px, 0)` same as above, but also translates `0` on the z while also taking advantage of hard acceleration. You should always use this when animating elements!
 
+<!-- v -->
+
 Only define `transform` once! it takes as many properties as needed. For example:
 
 `transform: translate3d(300px, 0, 0) rotate3d(0, 0, 45deg)`
 
 The order transforms are applied matters! The example above translates 300px to the right, then rotates 45 degrees on the z axis. Swapping the rotate and translate here would rotate first, then move the object down and to the right at a 45 degree angle!
+
+<!-- v -->
+
+### Helpful Documentation
 
 - [translate(x, y)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate)
 - [translate3d(x, y, z)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d)

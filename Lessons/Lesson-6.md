@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+
 # FEW 2.5 - Canvas Part 2, Circle Math
 
 <!-- Put a link to the slides so that students can find them -->
@@ -66,6 +66,8 @@ Think about the clock. To get the position of each hour divide the circle by 12.
 
 `const step = Math.PI * 2 / 12`
 
+<!-- v -->
+
 Decide what the radius of your clock face is. Imagine it's 200px.
 
 ```JS
@@ -83,6 +85,8 @@ numbers.forEach((n, i) => {
 The center of the clock face would be at 0, 0 with the numbers arranged in a 200 pixels radius circle around that point. Imagine the center of the clock in the upper left corner.
 
 You usually don't want to place everything in the upper left corner. To move the center of the clock face anywhere on the canvas you'll need to offset the x and y values.
+
+<!-- v -->
 
 ```JS
 const numbers = [1,2,3,4,5,6,7,8,9,10,11,12]
