@@ -124,7 +124,7 @@ Note that the angle is in radians!
 
 Circles are measured in **radians**. A complete circle is 2 * PI. Half a circle would be PI.
 
-![Radians](../images/radians.png)
+![Radians](Images/radians.png)
 
 <!-- v -->
 
@@ -138,9 +138,11 @@ If you want to draw an arc that represents a value follow this guide:
 
 <!-- v -->
 
-![Radians](../images/radians-2.png)
+![Radians](Images/radians-2.png)
 
-![Radians](../images/radians-3.png)
+<!-- v -->
+
+![Radians](Images/radians-3.png)
 
 <!-- > -->
 
