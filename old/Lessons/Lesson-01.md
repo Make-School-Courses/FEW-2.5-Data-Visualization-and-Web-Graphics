@@ -16,7 +16,7 @@ If you are interested in data, what it means, and how it communicates to people 
 - Load Data from JS
     - Identify and avoid CORs problems
 - Identify values in the Titanic dataset
-- Extract data relevant values 
+- Extract data and derive relevant values 
     - map, filter, reduce
     - min, max, average
 - Display data in the DOM
