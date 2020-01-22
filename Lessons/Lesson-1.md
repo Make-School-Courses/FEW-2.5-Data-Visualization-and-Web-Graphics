@@ -182,6 +182,7 @@ Solve these problems in code.
 - Write code to solve the problems above
  - Use foreach, map, filter, and reduce
 
+### Code Samples
 
 ```JS 
 fetch('titanic-passengers.json')
