@@ -182,6 +182,14 @@ Solve these problems in code.
 - Write code to solve the problems above
  - Use foreach, map, filter, and reduce
 
+
+```JS 
+fetch('titanic-passengers.json')
+    .then(res => res.json())
+    .then(json => handleData(json))
+    .catch(err => console.log(err.message))
+```
+
 ## Normalizing Data 
 
 Numbers are great but they aren't perfect for every situation. 
