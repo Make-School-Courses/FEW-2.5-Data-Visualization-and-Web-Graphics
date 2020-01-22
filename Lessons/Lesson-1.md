@@ -157,7 +157,7 @@ Using the Titanic dataset, we will be practicing the following techniques using 
     - get the length of the list
 - How many survived?
     - Loop over the list and count survived = Yes
-- How many died?
+- How many died? (diers?)
     - Loop over the list and count survived = No
 - How many passenger classes?
     - Loop over the list and look for each unique value
@@ -189,7 +189,43 @@ fetch('titanic-passengers.json')
     .then(json => handleData(json))
     .catch(err => console.log(err.message))
 
-function handleData(json) {
+function handleData(data) {
+    const fields = data.map(passenger => passenger.fields)
+    console.log(fields[0].name, fields[0].age, fields[0].fare)
+    console.log(fields.length)
+    console.log(fields.filter(passenger => passenger.age !== undefined))
+    console.log(fields.filter({ age } => age !== undefined))
+    let survivorCount = 0
+    fields.forEach((passenger) => {
+        if (passenger.survived === "Yes") {
+            survivorCount += 1
+        }
+    }) 
+
+    const survivors = fields.filter(passenger => passenger.survived === "Yes")
+    console.log(survivors.length)
+
+    // define an array of pclasses 
+    // loop through all passengers 
+        // look for pclass in pclasses 
+        // if not add to list 
+    
+    const pclasses = new Set()
+    const pc = {}
+    fields.forEach((passeneger) => {
+        pclasses.add(passengher.pclass)
+        pc[passengher.pclass] = 0 
+    })
+
+    const arrayofPC = pc.keys()
+
+    Math.min(5,4,3,7,8,2,9) // 2
+    Math.max(5,4,3,7,8,2,9) // 9
+    // const ages = [5,4,3,7,8,2,9]
+    const ages = fields.filter({ age } => age !== undefined).map({age} => age)
+    Math.min(...ages) // 2
+    Math.max(...ages) // 9
+    
     ...
 }
 ```
