@@ -188,6 +188,10 @@ fetch('titanic-passengers.json')
     .then(res => res.json())
     .then(json => handleData(json))
     .catch(err => console.log(err.message))
+
+function handleData(json) {
+    ...
+}
 ```
 
 ## Normalizing Data 
