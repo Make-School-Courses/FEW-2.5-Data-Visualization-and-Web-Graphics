@@ -27,11 +27,12 @@ If you are interested in data this your opportunity to show it.
 
 - Define data visualization
 - Load Data from JS
- - Identify and avoid CORs problems
+    - Identify and avoid CORs problems
 - Identify values in the Titanic dataset
 - Extract data and derive relevant values
- - map, filter, reduce
- - min, max, average
+    - map, filter, reduce
+    - min, max, average
+    - nomarlize data
 - Display data in the DOM
 
 <!-- > -->
@@ -105,7 +106,7 @@ Use the previous links to answer the following questions
 
 ## CORS
 
-CORS - Cross-Origin Resource Sharing, is a security feature built into the browser. It's also a headache for developers. In a nutshell, it prevents JavaScript in the browser from reading files on your file system.
+**CORS - Cross-Origin Resource Sharing**, is a security feature built into the browser. It's also a headache for developers. In a nutshell, it prevents JavaScript in the browser from reading files on your file system.
 
 The easy solution for you is to run your work from a local server. This is the solution that will work for all of the work in this class and will usually solve common CORS errors.
 
@@ -151,19 +152,19 @@ Using the Titanic dataset, we will be practicing the following techniques using 
 ### Interview Questions
 
 - Get data from the first passenger in the list
- - name, fare, pclass, survived, age
+    - name, fare, pclass, survived, age
 - How many total passengers? 
- - get the length of the list
+    - get the length of the list
 - How many survived?
- - Loop over the list and count survived = Yes
+    - Loop over the list and count survived = Yes
 - How many died?
- - Loop over the list and count survived = No
+    - Loop over the list and count survived = No
 - How many passenger classes?
- - Loop over the list and look for each unique value
- - You can use an object or a set for this
+    - Loop over the list and look for each unique value
+    - You can use an object or a set for this
 - How many passengers in each class?
- - Loop over the list and count the number of times each unique value appears
- - Use an object where the key is passenger class
+    - Loop over the list and count the number of times each unique value appears
+    - Use an object where the key is passenger class
 - How many died in each class?
 - Get all of the ages from the Titanic Dataset
 - Filter data points where the age is missing
