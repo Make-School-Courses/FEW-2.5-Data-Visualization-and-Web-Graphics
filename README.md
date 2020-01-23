@@ -32,8 +32,8 @@ Students by the end of the course will be able to ...
 | Class | Date | Topics | Assignments | Assignment Due
 |:-----:|:----:|:------:|:-----------:|:-----------:|
 |  - |  Mon, January 20  | **NO CLASS** - MLK Day | - |
-|  1 |  Wed, January 22  | [Intro to Data Visualization] | [Data Visualization 1](Assignments/Data-Visualization-1.md) | |
-|  2 |  Mon, January 27  | [Displaying Data graphically] |  | |
+|  1 |  Wed, January 22  | [Intro to Data Visualization] | [Data Visualization 1 pt 1](Assignments/Data-Visualization-1.md) | |
+|  2 |  Mon, January 27  | [Displaying Data graphically] | [Data Visualization 1 pt 2](Assignments/Data-Visualization-2.md) | |
 |  3 |  Wed, January 29  | [Animation and Interaction] |  | Data Visualization 1
 |  4 |  Mon, February 3  | [Sorting and Filtering data interactively] | [Data Visualization 2](Assignments/Data-Visualization-2.md) | |
 |  5 |  Wed, February 5  | [Working with Canvas] |  | |
