@@ -7,36 +7,6 @@
 
 <!-- > -->
 
-## Minute-by-Minute
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:10      | Overview + Learning Outcomes                |
-| 0:10        | 0:05      | Normalization                  |
-| 0:15        | 0:05      | Rectangles       |
-| 0:20        | 0:05      | Transform                     |
-| 0:25        | 0:10      | Rounding Corners / Circles      |
-| 0:35        | 0:05      | Strokes |
-| 0:40        | 0:10      | Compound Shapes |
-| 0:50        | 0:40      | Generating dynamic elements |
-| 1:30        | 0:10      | BREAK |
-
-... More below!
-
-<!-- v -->
-
-...
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 1:40        | 0:10      | Absolute Position |
-| 1:50        | 0:50      | Lab |
-| 2:40        | 0:05      | Wrapup + homework overview |
-| TOTAL       | 2:45      | -                         |
-
-
-<!-- > -->
-
 ## Overview
 
 This class you will take the values generated in the previous class and turn them into shapes on the screen. The goal of this lesson is to create DOM elements and apply styles. The values applied to styles will come from the Titanic data.
@@ -577,3 +547,33 @@ These functions should take in color and size parameters, and return a configure
 - [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
 - [CSS border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
 - [CSS position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+
+<!-- > -->
+
+## Minute-by-Minute
+
+| **Elapsed** | **Time**  | **Activity**              |
+| ----------- | --------- | ------------------------- |
+| 0:00        | 0:10      | Overview + Learning Outcomes                |
+| 0:10        | 0:05      | Normalization                  |
+| 0:15        | 0:05      | Rectangles       |
+| 0:20        | 0:05      | Transform                     |
+| 0:25        | 0:10      | Rounding Corners / Circles      |
+| 0:35        | 0:05      | Strokes |
+| 0:40        | 0:10      | Compound Shapes |
+| 0:50        | 0:40      | Generating dynamic elements |
+| 1:30        | 0:10      | BREAK |
+
+... More below!
+
+<!-- v -->
+
+...
+
+| **Elapsed** | **Time**  | **Activity**              |
+| ----------- | --------- | ------------------------- |
+| 1:40        | 0:10      | Absolute Position |
+| 1:50        | 0:50      | Lab |
+| 2:40        | 0:05      | Wrapup + homework overview |
+| TOTAL       | 2:45      | -                         |
+

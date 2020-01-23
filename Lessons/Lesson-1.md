@@ -33,7 +33,6 @@ If you are interested in data this your opportunity to show it.
     - map, filter, reduce
     - min, max, average
     - nomarlize data
-- Display data in the DOM
 
 <!-- > -->
 

@@ -1,19 +1,48 @@
-# FEW 2.5 Visualization 3
+# FEW 2.5 Visualization 2
 
-**Due Date:** Wednesday, 3/4, 9:30am
+**Due Date:** Wednesday, 2/12, 11:59pm
 
-Visualization with D3.
+The goal of this assignment is to make an interactive visualization. This will be a visualization that has options that change the way it is displayed via user interaction. For example clicking a button to sort on age or fare, or a button to hide and show passengers based on their gender or class.
 
-Your goal is to create a data visualization using D3. D3 has a steep learning curve and many features which make it a little overwhelming to get started with. Don't worry about this.
+## Why know how to do this?
 
-Start with a one of the example on the D3 page [here](https://github.com/d3/d3/wiki/Gallery). Choose one of these examples and recreate it with a different dataset.
+Interaction is the stock and trade of front end development. You should know how to make user interfaces that display data based on user input.
 
-Add to your visualization to your GitHub pages.
+## What is this visualization?
 
-**Stretch Challenges:**
+This visualization should use the Titanic dataset. You can visualize the data in any way you like. Don't worry about making the data understandable, instead strive to make it interesting to look at and fun to interact with!
 
-- Use D3's scale methods to scale and normalize data. Look at scaleOrdinal and try and make use of it in this visualization.
-- Use maps in your D3 visualization
+Interactions can be anything you like. Think about hiding, showing, sorting, and filtering elements as a good starting place.
+
+- Buttons show and hide elements
+    - By gender
+    - Siblings
+    - Passenger Class
+    - Embarkation
+- Buttons sort data
+    - By age
+    - Fare
+    - Embarkation
+    - Passenger Class
+- Hide and show elements
+    - Show/Hide passengers by gender
+    - Show/Hide passengers by survival
+    - Show/Hide passengers by class
+    - Show/Hide passengers by embarkation
+- Sort passengers
+    - Sort on survival
+    - Sort on gender
+    - Sort on fare
+    - Sort on age
+- Change a property
+
+You can also think of your own ideas.
+
+Use buttons, toggle buttons, and/or button groups.
+
+Add some animation by setting the transition property on elements and changing their styles.
+
+Add your visualization to your Github Pages collection of visualizations.
 
 | Expectation | Doe not meet | Meets | Exceeds |
 |:-------------|:------------------|:----------------|:-----------------|
