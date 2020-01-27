@@ -4,11 +4,13 @@
 
 **Due Date:** Wed, January 29
 
-Your goal is to create a visualization with HTML, CSS, and Javascript from the Titanic dataset.
+Your goal is to create a web page with 3 visualizations built with HTML, CSS, and Javascript from the Titanic dataset.
 
-For this assignment, the goal is to make the most interesting visualization that you can. Don't worry about telling a story or making the data understandable. **Instead focus on making visuals that are interesting and fun to look at.**
+For this assignment, the goal is to make the most interesting visualizations that you can. 
 
-Use the size, shape, and color to make your work interesting.
+Each visualization should inlcude a caption with a description of what is displayed. For example: All passengers who survived by gender, or: All passengers and fares paid. 
+
+Use size shape and color to show points of data. For example survived/died could be shown by color, fare paid could shown by width or height. 
 
 You should be writing your own code. Don't import any libraries. We will be talking about using libraries in class later. For this assignment the goal is get an idea of the code that is needed to turn numbers into pictures.
 
@@ -22,7 +24,9 @@ What to display? This is up to you try these challenges. Create one or more grap
 6. Show the embarkation of each passenger
 7. Show the number of siblings for each passenger
 
-You could create a 
+You should have three visualizations.
+
+![Assignment 2 wireframe](assignment2.png)
 
 ## Getting started
 
