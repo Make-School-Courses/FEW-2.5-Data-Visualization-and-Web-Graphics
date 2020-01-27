@@ -35,11 +35,11 @@ Beyond data science being able to draw shapes in HTML is a key skill to creating
 
 Values are almost always associated with a unit. For example
 
-- $ dollars
-- bpm beat per minute
-- Miles
+- $99 dollars
+- 120bpm beat per minute
+- 42 Miles
 
-To display things on the screen we need to convert units like $ into px or another unit used in CSS.
+To display things on the screen we need to convert units like $, BPM, and Miles into px or em or a color. 
 
 <!-- v -->
 
@@ -61,7 +61,77 @@ This works for any number.
 
 The two values above could now be used to create values that display on the screen. See the below example:
 
+<!-- > -->
+
+Looking at the Titanic dataset. 
+
+- max age = 80 
+– min age = 0 
+- max fare = 512.3292
+- min fare = 0
+
+With these numbers we could graph the age of **Watt, Mrs. James (Elizabeth \"Bessie\" Inglis Milne)**. Bessie is age 40. To normalize her age divide by the max age: 
+
+- Bessie's Age 40 Nromalized age 0.5 (40 / 80 = 0.5)
+
+<!-- > -->
+
+This same system applies to any value. Notmalize Bessi'es fare? 
+
+<!-- > -->
+
+15.75 / 512.3292 = 0.03074195264
+
+It appears that some people paid a lot more than everyone else!
+
+<!-- > -->
+
+Try that again with **Bengtsson, Mr. John Viktor**. 
+
+- Age 26
+- Fare 7.775
+
+<!-- > -->
+
+- Age 26 / 80 = 0.325
+- Fare 7.775 / 512.3292 = 0.01517578932
+
+<!-- > -->
+
+What if we wanted to convert these into pixels? 
+
+Any time we talke about pixels we are usually measuring things aon the screen. 
+
+Imagine you want to graph the ages of all of the passengers. You would know how big the box was where the graph would appear. Imagine it's 400px tall. 
+
+<!-- > -->
+
+You could multiply the normalized values by your target range. 
+
+- Bessie age (normalized) = 0.5 * 400px = 200px
+- John age (normalized) = 0.325 * 400px = 130px
+
+<!-- > -->
+
+If you were using CSS you could also use the % unit and multiply the normalized value by 100
+
+- Bessie age (normalized) = 0.5 * 100% = 50%
+- John age (normalized) = 0.325 * 100% = 32.5%
+
+<!-- > -->
+
+In code this might translate to roughly: 
+
+```JS
+const bessieAgeNormalized = 0.5
+const johnAgeNormalized = 0.325
+bessieDiv.style.height = `${bessieAgeNormalized * 400}px`
+johnDiv.style.height = `${johnAgeNormalized * 400}px`
+``` 
+
 <!-- v -->
+
+Here are a couple more examples:
 
 ```JavaScript
 const maxValue = 100
@@ -84,6 +154,9 @@ There is a limit to what can be drawn with HTML and CSS, a wide range of shapes 
 - set a stroke
 - rotate
 - skew
+- size
+- color
+- stroke
 
 <!-- v -->
 
@@ -126,6 +199,92 @@ The most common way data is displayed after showing it numerically is by drawing
 This block draws a group of rectangles and sizes the height with `%`. They are arranged horizontally using `flex`.
 
 <!-- v -->
+
+### Making elements
+
+You can generate elements with JS. In the same way you created elements were defined in HTML in the previous example. You might follow these steps: 
+
+- get a reference to a root element
+- loop through your data 
+		- make a new element
+		- set styles on your new element
+		- append the new element to the root element
+
+<!-- > -->
+
+Here are the steps in code:
+
+```JS
+const container = document.getElementById('id')
+
+for (let i = 0; i < data.length; i += 1) {
+	const el = document.createElement('div')
+	el.style.height = `${100 * data[age].age}%`
+	container.appendChild(el)
+}
+```
+<!-- > -->
+
+#### Setting Styles with JS
+
+All CSS styles are accessed through an element's style property. All styles are camelcase version of the CSS property name. For example: 
+
+- CSS: `width` -> JS `width`
+- CSS: `display` -> JS `display`
+- CSS: `background-color` -> JS `backgroundColor`
+- CSS: `margin-top` -> JS `marginTop`
+- CSS: `flex-wrap` -> JS `flex-wrap`
+
+<!-- > -->
+
+Values in CSS almost always have a unit. In JS you'll need to use a string that includes the unit. 
+
+- CSS: `width: 100px` -> JS `width = '100px'`
+- CSS: `display: flex` -> JS `display = 'flex'`
+- CSS: `background-color: red` -> JS `backgroundColor = 'red'`
+- CSS: `margin-top: 1px` -> JS `marginTop = '1px'`
+- CSS: `flex-wrap: no-wrap` -> JS `flex-wrap = 'no-wrap'`
+
+<!-- > -->
+
+**Exercise:**
+
+Try the code sample above with your data from the previous class. The goal will be to display all of the passengers as small boxes. 
+
+- Create a root element in your HTML document give it id
+- Define a reference to your root element
+- Set the 
+- loop through each passenger
+		- Create an element 
+		- Set the height and width to 30px for each element
+		- Set margin to 1px
+		- Set background color to red
+
+<!-- > -->
+
+Arrange all of the element inside the root element using flex box. Set the following properties on the root element:
+
+- display: flex - `container.style.display = 'flex'`
+- flex-direction: row - `container.style.flexDirection = 'row'`
+- flex-wrap: wrap - `container.style.flexWrap = 'wrap'`
+
+<!-- > -->
+
+Try these challenges:
+
+- Set the color of each passenger to red if they survived and black if they did not
+- Set the border radius for each passenger based on gender (sex). Use 0 for males and 50% for females.
+- Make a new container for the next set of challenges. The goal with these is to display fares paid as a bar graph. 
+		- create a new root element for this graph by adding a new div with a unique id to the DOM
+		- Get a reference to your new root element
+		- Loop through all of the passengers
+				- Create a new element
+				- append this new element to your new root element
+				- Set the width of the new element to `passenger.fare  maxFare`
+				- set the height to 2px (any value other than 0)
+				- set the bnackground color of the element to red if the passenger survived and black if they didn't
+
+<!-- > -->
 
 Besides setting the height and width what else do you think we can do?
 
