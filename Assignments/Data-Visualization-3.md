@@ -1,52 +1,54 @@
-# FEW 2.5 Visualization 2
+# FEW 2.5 Visualization 3
 
-**Due Date:** Wednesday, 2/12, 11:59pm
+## Sorting and filtering data
 
-The goal of this assignment is to make an interactive visualization. This will be a visualization that has options that change the way it is displayed via user interaction. For example clicking a button to sort on age or fare, or a button to hide and show passengers based on their gender or class.
+**Due Date:** Mon, February 3
 
-## Why know how to do this?
+The goal of this assignment is to sort and filter data. 
 
-Interaction is the stock and trade of front end development. You should know how to make user interfaces that display data based on user input.
+Use the Titanic dataset.
 
-## What is this visualization?
+In the last assignment you displayed all passengers in each of your visualizations. In this assignment you will sort and filter your data. 
 
-This visualization should use the Titanic dataset. You can visualize the data in any way you like. Don't worry about making the data understandable, instead strive to make it interesting to look at and fun to interact with!
+## Challenges 
 
-Interactions can be anything you like. Think about hiding, showing, sorting, and filtering elements as a good starting place.
+**Challenge sorting data**: Sort the data in the Titanic dataset. Try the following challenegs: 
 
-- Buttons show and hide elements
-    - By gender
-    - Siblings
-    - Passenger Class
-    - Embarkation
-- Buttons sort data
-    - By age
-    - Fare
-    - Embarkation
-    - Passenger Class
-- Hide and show elements
-    - Show/Hide passengers by gender
-    - Show/Hide passengers by survival
-    - Show/Hide passengers by class
-    - Show/Hide passengers by embarkation
-- Sort passengers
-    - Sort on survival
-    - Sort on gender
-    - Sort on fare
-    - Sort on age
-- Change a property
+- sort passengers by fare
+- sort passengers by age
+- sort passenges by gender (sex)
 
-You can also think of your own ideas.
+Apply this sorting your existing data visualizations. 
 
-Use buttons, toggle buttons, and/or button groups.
+**Challenge filtering data**: Filter data on one or more data point. Try these challenges: 
 
-Add some animation by setting the transition property on elements and changing their styles.
+- Show only the passengers who survived
+- Shoe only the passengers who died
+- Show only male passengers
+- Show only female passengers
+- Show only surviving male passengers
+- Show only surviving female passengers
 
-Add your visualization to your Github Pages collection of visualizations.
+## Getting started
 
-| Expectation | Doe not meet | Meets | Exceeds |
-|:-------------|:------------------|:----------------|:-----------------|
-| Aesthetics    | Uses few styles. Like background color and width or height | Uses a range of colors, adds radius and other styles | Uses a wide range of styles. Uses interesting shapes|
-| Depth        | Displays 2 values from the dataset | Displays 3 or 4 data points | Displays 5 or more data points |
-| Code quality | There is code... | Code uses functions and is well organized | Code makes use of functions to minimize redundancy |
-| Completion  | Seems incomplete, missing features from the description, is not on GitHub pages | Is on Github pages, has all feature from the homework description | Includes new features and expands on the homework description |
+
+
+### Evaluate your work
+
+The deliverable is a single web page that displays data graphically.
+
+Include all of your code in a GitHub Repo.
+
+Create a GitHub Page that displays your work live.
+
+The goal is to turn numbers into shapes and colors.
+
+| Aspect | Does not meet | Meets | Exceeds |
+|:------------|:-------------|:------|:--------|
+| | | | |
+
+### Learing Objectives 
+
+| Aspect | Does not meet | Meets | Exceeds |
+|:-------|:--------------|:------|:--------|
+| | | | |

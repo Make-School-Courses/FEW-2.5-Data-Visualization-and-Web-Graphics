@@ -2,7 +2,7 @@
 
 ## Collecting and Normalizing data
 
-**Due Date:** Wednesday, 1/29, 11:59pm
+**Due Date:** Mon, January 27
 
 Your goal with this assignment is prepare data for creating your visualization. 
 

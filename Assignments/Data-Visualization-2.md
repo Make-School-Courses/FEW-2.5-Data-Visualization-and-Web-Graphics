@@ -2,7 +2,7 @@
 
 ## Visualizing data with HTML, CSS, and JS
 
-**Due Date:** Wednesday, 1/29, 11:59pm
+**Due Date:** Wed, January 29
 
 Your goal is to create a visualization with HTML, CSS, and Javascript from the Titanic dataset.
 
