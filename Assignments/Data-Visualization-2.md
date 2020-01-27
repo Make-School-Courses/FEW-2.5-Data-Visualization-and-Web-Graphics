@@ -4,7 +4,7 @@
 
 **Due Date:** Wed, January 29
 
-Your goal is to create a web page with 3 visualizations built with HTML, CSS, and Javascript from the Titanic dataset.
+Your goal is to create a web page with **3 visualizations** built with HTML, CSS, and Javascript from the Titanic dataset.
 
 For this assignment, the goal is to make the most interesting visualizations that you can. 
 
@@ -34,6 +34,16 @@ Follow these two tutorials:
 
 - [Working with Data](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data)
 - [Visualizations with HTML, CSS, and JS](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-with-HTML-CSS-JS-Tutorial)
+
+## Deliverables
+
+Your deliverables for this assignment is a single web page that displays three data visualization built with HTML, CSS, and JS. Your page should be hosted on GitHub Pages. 
+
+Post a link to the progress tracker.
+
+## Due Date
+
+**Due Date:** Wed, January 29
 
 ### Evaluate your work
 
