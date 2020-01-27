@@ -39,6 +39,8 @@ Follow these two tutorials:
 
 Your deliverables for this assignment is a single web page that displays three data visualization built with HTML, CSS, and JS. Your page should be hosted on GitHub Pages. 
 
+Each visualization should include a caption describing the data that is being displayed. 
+
 Post a link to the progress tracker.
 
 ## Due Date
