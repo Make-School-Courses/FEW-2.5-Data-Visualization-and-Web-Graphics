@@ -49,7 +49,7 @@ In order to do _that_, it's often necessary to know the max value of your datase
 
 To normalize values: divide all of the values in a dataset by the max value.
 
-<!-- v -->
+<!-- > -->
 
 ### Example:
 
@@ -129,7 +129,7 @@ bessieDiv.style.height = `${bessieAgeNormalized * 400}px`
 johnDiv.style.height = `${johnAgeNormalized * 400}px`
 ``` 
 
-<!-- v -->
+<!-- > -->
 
 Here are a couple more examples:
 
@@ -158,7 +158,7 @@ There is a limit to what can be drawn with HTML and CSS, a wide range of shapes 
 - color
 - stroke
 
-<!-- v -->
+<!-- > -->
 
 ## Rectangles
 
@@ -179,7 +179,7 @@ height: 100px;
 background-color: red;
 ```
 
-<!-- v -->
+<!-- > -->
 
 ### Bar Graphs
 The most common way data is displayed after showing it numerically is by drawing bar graphs. A bar graph is easily created with HTML and CSS.
@@ -198,7 +198,7 @@ The most common way data is displayed after showing it numerically is by drawing
 
 This block draws a group of rectangles and sizes the height with `%`. They are arranged horizontally using `flex`.
 
-<!-- v -->
+<!-- > -->
 
 ### Making elements
 
@@ -296,7 +296,7 @@ CSS transform is a powerful tool that provides methods to translate (move, left 
 
 `transform: translate(10px, 30px) rotate(45deg) skew(10deg) scale(1.5);`
 
-<!-- v -->
+<!-- > -->
 
 ### Transform Rotate
 
@@ -309,6 +309,8 @@ background-color: red;
 transform: rotate(45deg)">
 </div>
 ```
+
+<!-- > -->
 
 Here the div is rotated with `transform: rotate(45deg);` Rotation works with units of radians (`rad`) or degrees (`deg`). There is also [Gradians](https://en.wikipedia.org/wiki/Gradian) (grad).  
 
@@ -327,7 +329,7 @@ How do we make circles from rectangles?
 
 Any of the four corners can have a radius. Round them all and you get a circle. Round a combination of the corners to get other shapes.
 
-<!-- v -->
+<!-- > -->
 
 ### Circles
 
@@ -348,14 +350,15 @@ background-color: red;
 border-radius: 50%;
 ```
 
-<!-- v -->
+<!-- > -->
+
 ### Eyes, Droplets and Leaves
 
 Rounding two or three corners to get shapes that look like eyes, lemmons, leaves, droplets, or map pointers.
 
 In this case you may also want to rotate the element to orient the shape correctly.
 
-<!-- v -->
+<!-- > -->
 
 **Take the code below and see what it draws!**
 
@@ -364,7 +367,7 @@ In this case you may also want to rotate the element to orient the shape correct
 height: 100px;
 background-color: red;
 border-radius: 50% 0">
-</div>\
+</div>
 ```
 
 ```css
@@ -373,6 +376,8 @@ height: 100px;
 background-color: red;
 border-radius: 50% 0;
 ```
+
+<!-- > -->
 
 ```html
 <div style="width: 100px;
@@ -389,7 +394,7 @@ background-color: red;
 border-radius: 50% 0 0 0;
 ```
 
-<!-- v -->
+<!-- > -->
 
 ```html
 <div style="width: 100px;
@@ -405,6 +410,8 @@ height: 100px;
 background-color: red;
 border-radius: 50% 50% 50% 0;
 ```
+
+<!-- > -->
 
 ```html
 <div style="width: 100px;
@@ -423,7 +430,7 @@ border-radius: 50% 50% 50% 0;
 transform: rotate(135deg);
 ```
 
-<!-- v -->
+<!-- > -->
 
 ```html
 <div style="width: 100px;
@@ -441,6 +448,8 @@ background-color: red;
 border-radius: 50% 50% 50% 0;
 transform: rotate(-45deg);
 ```
+
+<!-- > -->
 
 ```html
 <div style="width: 100px;
@@ -537,7 +546,7 @@ align-items: center">
 </div>
 ```
 
-<!-- v -->
+<!-- > -->
 
 ```css
 /* Outer "eye" shape */
@@ -574,7 +583,7 @@ align-items: center;
 
 **Your goal is to generate all of this HTML with JavaScript** and abstract the process into functions that do the work for you. This way you can just supply a dataset, usually an array of values and have your function do the work of creating DOM elements and assigning CSS styles.
 
-<!-- v -->
+<!-- > -->
 
 ### Creating DOM elements
 
@@ -588,7 +597,7 @@ Remember **to be visible an element must be the child of an element that is a de
 
 `parent.appendChild(el)`
 
-<!-- v -->
+<!-- > -->
 
 ### Activity - Interview Questions
 
@@ -596,7 +605,7 @@ Think in terms of interview questions. How would what we are doing in class tran
 
 **Attempt 2 of the questions below**
 
-<!-- v -->
+<!-- > -->
 
 - Easy
 	- Generate one element for each record in the Titanic Dataset
@@ -609,7 +618,7 @@ Think in terms of interview questions. How would what we are doing in class tran
 	- Show the ratio of men and women who survived vs men and women who did not survive.
 	- Show the ratio of passengers who survived vs those that did not by embarkation.
 
-<!-- v -->
+<!-- > -->
 
 ### Styling elements
 
@@ -629,7 +638,9 @@ Notice CSS `background-color` becomes `backgroundColor` in JS.
 <!-- > -->
 
 <!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
+## BREAK
+
+Take 10 Min break. 
 
 <!-- > -->
 
@@ -639,7 +650,7 @@ To position elements anywhere on the screen with numeric values, you'll want to 
 
 Sometimes you'll want to position an element using coordinates of a parent. In other words you want to measure `top` and `left` from the top left of the parent. To do this set the parent's position to `position: relative`.
 
-<!-- v -->
+<!-- > -->
 
 Here is an example:
 
@@ -655,13 +666,13 @@ Here is an example:
 </div>
 ```
 
-<!-- v -->
+<!-- > -->
 
 Notice each of the circles is a div with a style of `border-radius: 50%`. This makes them circles.
 
 The container div has been assigned the style `position: relative`. This makes the descendants use this div to determine where left, top, right, and bottom is.
 
-<!-- v -->
+<!-- > -->
 
 Each of the child divs has `position: absolute` with this the left and top can set to position the element.
 
@@ -673,7 +684,7 @@ I wrote this code by hand and it was a lot of work and not very accurate. You wa
 
 For this lab, you will work on writing functions to automate your visualizations. Keep these functions in a `utils.js` file that you can copy and reuse for your various assignments.
 
-<!-- v -->
+<!-- > -->
 
 These functions should take in color and size parameters, and return a configured object. You can make one of these functions for each shape for ease of creation for your assignments:
 - Rectangle
@@ -683,7 +694,7 @@ These functions should take in color and size parameters, and return a configure
 - Droplets
 - Leaves
 
-<!-- v -->
+<!-- > -->
 
 **Stretch Challenges**
 - Create functions for compound shapes, or any other shapes you may use
@@ -713,26 +724,12 @@ These functions should take in color and size parameters, and return a configure
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:10      | Overview + Learning Outcomes                |
-| 0:10        | 0:05      | Normalization                  |
-| 0:15        | 0:05      | Rectangles       |
-| 0:20        | 0:05      | Transform                     |
-| 0:25        | 0:10      | Rounding Corners / Circles      |
+| 0:00        | 0:10      | Overview + Learning Outcomes |
+| 0:10        | 0:05      | Normalization |
+| 0:15        | 0:05      | Rectangles |
+| 0:20        | 0:05      | Transform |
+| 0:25        | 0:10      | Rounding Corners / Circles |
 | 0:35        | 0:05      | Strokes |
 | 0:40        | 0:10      | Compound Shapes |
 | 0:50        | 0:40      | Generating dynamic elements |
 | 1:30        | 0:10      | BREAK |
-
-... More below!
-
-<!-- v -->
-
-...
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 1:40        | 0:10      | Absolute Position |
-| 1:50        | 0:50      | Lab |
-| 2:40        | 0:05      | Wrapup + homework overview |
-| TOTAL       | 2:45      | -                         |
-

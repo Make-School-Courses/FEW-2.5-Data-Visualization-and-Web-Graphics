@@ -38,7 +38,7 @@ A distribution shows how many times a value appears. For example we might have 8
 
 Often you won't know how many 'buckets' you will have for a group. For example in the case of the Titanic we might not know the number of classes.
 
-<!-- v -->
+<!-- > -->
 
 An easy way to create a distribution is to use an object. Use the key to track 'buckets' and the value of the key to count the occurrence of a value.
 
@@ -64,7 +64,7 @@ console.log(createDistribution('javascript'.split('')))
 // {j: 1, a: 2, v: 1, s: 1, c: 1, r:1, p: 1, t:1}
 ```
 
-<!-- v -->
+<!-- > -->
 
 ### Distributions Activity
 
@@ -85,7 +85,7 @@ console.log(arr) // Returns:
 // ["a", "a", "c", "i", "j", "p", "r", "s", "t", "v"]
 ```
 
-<!-- v -->
+<!-- > -->
 
 For numbers this sorts on the **first digit** which may not be what you want!
 
@@ -99,7 +99,7 @@ numbers.sort((a, b) => a - b) // Rearranges numbers to:
 // [4, 5, 5, 5, 5, 6, 6, 6, 7, 8, 8, 8, 9, 9, 10, 10, 10, 11, 11, 12]
 ```
 
-<!-- v -->
+<!-- > -->
 
 ### Sorting Activity
 
@@ -120,7 +120,7 @@ const class3Passengers = titanicData.filter((passenger) => passenger.fields.pcla
 // class3Passengers has only passengers where fields.pclass === 3
 ```
 
-<!-- v -->
+<!-- > -->
 
 ### Filtering Activity
 
