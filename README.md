@@ -32,31 +32,19 @@ Students by the end of the course will be able to ...
 | Class | Date | Topics | Assignments | Assignment Due
 |:-----:|:----:|:------:|:-----------:|:-----------:|
 |  - |  Mon, January 20  | **NO CLASS** - MLK Day | - |
-|  1 |  Wed, January 22  | [Intro to Data Visualization] | [Data Visualization 1 pt 1](Assignments/Data-Visualization-1.md) | |
-|  2 |  Mon, January 27  | [Displaying Data graphically] | [Data Visualization 1 pt 2](Assignments/Data-Visualization-2.md) | |
-|  3 |  Wed, January 29  | [Animation and Interaction] |  | Data Visualization 1
-|  4 |  Mon, February 3  | [Sorting and Filtering data interactively] | [Data Visualization 2](Assignments/Data-Visualization-2.md) | |
+|  1 |  Wed, January 22  | [Intro to Data Visualization](lessons/lesson-01.md) | [Data Visualization 1 pt 1](Assignments/Data-Visualization-1.md) | |
+|  2 |  Mon, January 27  | [Displaying Data graphically](lessons/lesson-02.md) | [Data Visualization 1 pt 2](Assignments/Data-Visualization-2.md) | |
+|  3 |  Wed, January 29  | [Animation and Interaction](lessons/lesson-03.md) |  | Data Visualization 1
+|  4 |  Mon, February 3  | [Sorting and Filtering](lesson/lesson-04.md) | [Data Visualization 3](Assignments/Data-Visualization-3.md) | |
 |  5 |  Wed, February 5  | [Working with Canvas] |  | |
 |  6 |  Mon, February 10 | [Canvas Part 2, Circle Math] |  | |
 |  7 |  Wed, February 12 | [Graphing charting libraries] |  | Data Visualization 2 |
 |  8 |  Mon, February 17 | [SVG] | [Final Data Visualization](Assignments/Data-Visualization-3.md) | | |
 |  9 |  Wed, February 19 | [D3] |  |
-| 10 |  Mon, February 24 | [D3 Scales]|  |
-| 11 |  Wed, February 26 | [D3 Maps]|  |
-| 12 |  Mon, March 2     | Final Exam|  |
+| 10 |  Mon, February 24 | [D3 Scales] | - |
+| 11 |  Wed, February 26 | [D3 Maps]| - |
+| 12 |  Mon, March 2     | Final Assessment| - |
 | 13 |  Wed, March 4     | Final Presentations |  | Final Data Visualization |
-
-[Intro to Data Visualization]: Lessons/Lesson-1.md
-[Displaying Data graphically]: Lessons/Lesson-2.md
-[Animation and Interaction]: Lessons/Lesson-3.md
-[Sorting and Filtering data interactively]: Lessons/Lesson-4.md
-[Working with Canvas]: Lessons/Lesson-5.md
-[Canvas Part 2, Circle Math]: Lessons/Lesson-6.md
-[Graphing charting libraries]: Lessons/Lesson-7.md
-[SVG]: Lessons/Lesson-8.md
-[D3]: Lessons/Lesson-9.md
-[D3 Scales]: Lessons/Lesson-10.md
-[D3 Maps]: Lessons/Lesson-11.md
 
 ## Evaluation
 
