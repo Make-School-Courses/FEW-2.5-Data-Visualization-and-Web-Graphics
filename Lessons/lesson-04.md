@@ -187,8 +187,8 @@ For the same Titanic dataset, create a bar graph that shows the number of passen
 
 ## After Class
 
-- Finish the [buttons and interaction tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Buttons-and-Interaction)
-- Finish [Visualization 1](Assignments/Data-Visualization-1.md) by 11:59pm tonight
+- https://github.com/soggybag/FEW-2-5-Data-Visualization-Sorting-and-Filtering
+- [Visualization 3](Assignments/Data-Visualization-3.md) 
 
 <!-- > -->
 
@@ -196,11 +196,11 @@ For the same Titanic dataset, create a bar graph that shows the number of passen
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Overview + Learning Outcomes                |
-| 0:05        | 0:30      | Buttons                  |
-| 0:35        | 0:20      | Colors       |
-| 0:55        | 0:20      | Motion       |
-| 1:15        | 0:10      | BREAK                     |
-| 1:25        | 1:15      | Lab                       |
+| 0:00        | 0:05      | Overview + Learning Outcomes |
+| 0:05        | 0:30      | Buttons |
+| 0:35        | 0:20      | Colors |
+| 0:55        | 0:20      | Motion |
+| 1:15        | 0:10      | BREAK |
+| 1:25        | 1:15      | Lab |
 | 2:40        | 0:05      | Wrap up + Homework Overview |
-| TOTAL       | 2:45      | -                         |
+| TOTAL       | 2:45      | - |
