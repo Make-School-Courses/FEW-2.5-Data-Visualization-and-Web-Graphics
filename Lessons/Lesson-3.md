@@ -296,13 +296,3 @@ Check out this [YouTube dataset](https://www.kaggle.com/datasnaek/youtube-new), 
 | 1:10        | 0:15      | CSS Transforms      |
 | 1:25        | 0:10      | Closures      |
 | 1:35        | 0:10      | BREAK      |
-
-... More below!
-
-<!-- v -->
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 1:45        | 0:55      | Lab      |
-| 2:40        | 0:05      | Wrap up + Homework overview |
-| TOTAL       | 2:45      | -                         |
