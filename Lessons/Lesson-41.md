@@ -1,5 +1,5 @@
 
-# FEW 2.5 - Filter and Sorting
+# FEW 2.5 - Animation and Interaction
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -9,136 +9,22 @@
 
 ## Overview
 
-Sorting and Filtering is an important step in organizing data. Organized data can reveal insights into th story of the data. 
+Showing data in the static form is a good start, but sometimes you can say more by adding motion and interaction.
 
 <!-- > -->
 
 ## Why do you need to know this?
 
-Sort and filter are two important operations that can be applied in a wide variety of uses in CS. 
+User interaction is a prime directive for front end developers. Handling complex user interaction is something every front end developer should know how to do.
 
 <!-- > -->
 
 ## Learning Objectives
 
-1. Use Array.sort()
-1. Use Array.filter()
-1. Adding interaction
-
-## Array.sort()
-
-Take a quick look at the documentastion: 
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-
-<!-- > -->
-
-- Sorts values in place (doesn't make a copy)
-- Sorts values based on String value
-- Optional Compare function
-    - Takes two params a, b
-    - Return value determines how a and b are indexed
-    - less than 0 a is indexed lower than b
-    - greater than 0 b is indexed lower than a
-    - 0 and the index of a and b is unchanged
-
-<!-- > -->
-
-Sort values less than 10 
-
-```JS 
-const a = [4,3,1,7,6,2]
-a.sort() // [1,2,3,4,6,7]
-```
-
-<!-- > -->
-
-Sorting larger numbers
-
-```JS 
-const a = [4,13,1,7,6,12]
-a.sort() // [1, 12, 13, 4, 6, 7]
-```
-
-<!-- > -->
-
-Use a compare function
-
-```JS 
-const a = [4,13,1,7,6,12]
-a.sort((a, b) => {
-  return a - b
-}) // [1, 4, 6, 7, 12, 13]
-```
-
-<!-- > -->
-
-What about non numeric data?
-
-```JS
-const months = ['March', 'Jan', 'Feb', 'Dec'];
-months.sort(); // ["Dec", "Feb", "Jan", "March"]
-```
-
-<!-- > -->
-
-What about Titanic data?
-
-```js
-fields.sort((a, b) => {
-    return a.survived === 'No'
-})
-```
-
-Sorts survivors first
-
-<!-- > -->
-
-### Challenges - Array.sort()
-
-- Sort fields on sex
-- Sort fields on survived
-- Sort fields on embarked
-- Sort on both sex and survived
-
-<!-- > -->
-
-## Array.filter()
-
-Take a look at the doce for array.filter(). 
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-
-<!-- > -->
-
-Array.filter() is similar to map() and reduce() it returns a new array. 
-
-Array.filter() takes a filter function. This function receives the element as a parameter and returns true if the element is included or false if not. 
-
-<!-- > -->
-
-```JS 
-const a = [4,13,1,7,6,12]
-const b = a.filter((val) => val < 5)
-// [4,1]
-```
-
-<!-- > -->
-
-Using the Titanic data
-
-```JS
-const fieldsMen = fields.filter((p) => p.sex === 'male')
-const fieldsWomen = fields.filter((p) =>  p.sex === 'female')
-```
-
-<!-- > -->
-
-### Array.filter() challenges 
-
-- display only women
-- display only men
-- display only pclass 1, 2, or 3
+1. Handle user interaction
+1. Use systems to manage user options and handle UI state
+1. Use querySelector, and querySelectorAll to work with DOM elements and collections of elements
+1. Sort and filter arrays
 
 <!-- > -->
 

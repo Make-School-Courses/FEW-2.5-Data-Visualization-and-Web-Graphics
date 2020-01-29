@@ -35,7 +35,7 @@ Apply this sorting your existing data visualizations.
 
 ### Evaluate your work
 
-The deliverable is a single web page that displays data graphically.
+Add three more visualizations to your Titanic project. There should be three from the previousd assignment. Add three more that show sorting and filtering of the data. 
 
 Include all of your code in a GitHub Repo.
 
