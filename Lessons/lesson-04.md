@@ -146,6 +146,7 @@ const fieldsWomen = fields.filter((p) =>  p.sex === 'female')
 - display only women
 - display only men
 - display only pclass 1, 2, or 3
+- display only the passengers whos embarkation is undefined
 
 <!-- > -->
 
