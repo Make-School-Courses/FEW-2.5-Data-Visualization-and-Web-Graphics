@@ -225,7 +225,7 @@ IF you sort the data you'll need to display it again in the DOM. Call your displ
 
 Radio buttons are buttons that work in a group where only one can be selected at a time. 
 
-
+To do this when clicking a button that is part of a group remove the `button-selected` class from all the button in the group and add the class to the selected button. 
 
 <!-- > -->
 
