@@ -94,17 +94,17 @@ Now when showGender is true the button has a black background and white text.
 
 ```js
 if (showGender) {
- e.target.classList.add('button-selected')
+  e.target.classList.add('button-selected')
 } else {
- e.target.classList.remove('button-selected')
+  e.target.classList.remove('button-selected')
 }
 ```
 Define the styles for the button-selected class in your stylesheet. 
 
 ```CSS
 .button-selected {
- background-color: black;
- color: white;
+  background-color: black;
+  color: white;
 }
 ```
 
@@ -112,13 +112,13 @@ Define the styles for the button-selected class in your stylesheet.
 
 ```JS 
 buttonGender.addEventListener('click', (e) => {
- showGender = !showGender
- selectButton(e.target, showGender) // 
+  showGender = !showGender
+  selectButton(e.target, showGender) // 
 })
 
 function selectButton(el, state) {
- // change the appearance of el 
- // based on state
+  // change the appearance of el 
+  // based on state
 }
 ```
 
@@ -142,14 +142,14 @@ const elements = []
 const passengerData = []
 
 function handleData(data) {
- const fields = data.map(({ fields }) => fields)
+  const fields = data.map(({ fields }) => fields)
 
- fields.forEach(passenger => {
- const el = document.createElement('div')
- passengers.appendChild(el)
- elements.push(el) // store the element
- passengerData.push(passenger) // Store the passenger
- });
+  fields.forEach(passenger => {
+    const el = document.createElement('div')
+    passengers.appendChild(el)
+    elements.push(el)             // store the element
+    passengerData.push(passenger) // Store the passenger
+  });
 }
 ```
 Loop over the Titanic data and create an element for each passeneger, and push each passenger object into the data array. 
@@ -160,13 +160,13 @@ Now that you made DOM elements for each object in your dataset give each element
 
 ```JS
 fields.forEach(passenger => {
- ...
- el.style.width = '14px'
- el.style.height = '14px'
- el.style.backgroundColor = 'black'
- el.style.margin = '1px'
- el.style.transition = '200ms' // use trasnsition to asnimate changes
- el.style.boxSizing = 'border-box'
+  ...
+  el.style.width = '14px'
+  el.style.height = '14px'
+  el.style.backgroundColor = 'black'
+  el.style.margin = '1px'
+  el.style.transition = '200ms' // use trasnsition to asnimate changes
+  el.style.boxSizing = 'border-box'
 });
 ```
 
@@ -186,11 +186,11 @@ Make a function that loops through your data and sets the appearance of an eleme
 
 ```JS
 function displayByGender() {
- passengerData.forEach((obj, i) => {
- const el = elements[i]
- const color = obj.sex === 'male' ? 'blue' : 'pink'
- el.style.backgroundColor = showGender ? color : 'black'
- })
+  passengerData.forEach((obj, i) => {
+    const el = elements[i]
+    const color = obj.sex === 'male' ? 'blue' : 'pink'
+    el.style.backgroundColor = showGender ? color : 'black'
+  })
 }
 ```
 
