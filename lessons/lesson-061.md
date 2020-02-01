@@ -1,5 +1,5 @@
 
-# FEW 2.5 - Review and Present
+# FEW 2.5 - Canvas Part 2, Circle Math
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -7,9 +7,24 @@
 
 <!-- > -->
 
+## Minute-by-Minute
+
+| **Elapsed** | **Time**  | **Activity**              |
+| ----------- | --------- | ------------------------- |
+| 0:00        | 0:05      | Objectives                |
+| 0:05        | 0:15      | Overview                  |
+| 0:20        | 0:30      | In Class Activity I       |
+| 0:50        | 0:10      | BREAK                     |
+| 1:00        | 0:45      | In Class Activity II      |
+| 1:45        | 0:05      | Wrap up review objectives |
+| TOTAL       | 1:50      | -                         |
+
+
+<!-- > -->
+
 ## Overview
 
-This class will take a look at your work 
+Today we'll learn how to draw circles and calculate coords in circles.
 
 ### Why?
 
@@ -116,18 +131,4 @@ Check out the [Example code](../lesson-06.html) linked here and see how you can 
 
 - [Example code](../lesson-06.html)
 - [Sine/Cosine](https://en.wikipedia.org/wiki/Sine)
-
-<!-- > -->
-
-## Minute-by-Minute
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:30      | In Class Activity I       |
-| 0:50        | 0:10      | BREAK                     |
-| 1:00        | 0:45      | In Class Activity II      |
-| 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | -                         |
 

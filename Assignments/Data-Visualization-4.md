@@ -20,21 +20,36 @@ You should at least **three buttons**. Each button should display a different as
 
 You can sort on any feature in the dataset gender, embarked, survived etc. 
 
+**Challenge** Publish your work to GitHub Pages. Be sure to name your root file index.html. 
+
 **Stretch challenge** create some buttons that filter the data displayed. 
+
+If you filter the data your data array will be shorter than the number of elements in the DOM array. You should loop through the DOM array and get each item in the data array until you are out of range. For the remaining DOM elements either hide or give them neutral display style so we can tell they are not part of the data displayed. 
+
+**Stretch Challenge** Display details about each passenger. You can make this work if you can get the index of the passenger from the element in the DOM. 
+
+You can assign each DOM element you create `data-index` attribute when you create it. 
+
+Handle clicking on the DOM elements adding an eventlistener to the parent element. 
+
+```JS
+passengers.addEventListener('click', (e) => {
+  const index = e.target.dataset.index
+  if (index !== undefined) {
+    // Show data here
+  }
+})
+```
+
+Use the index to get the data to show from the data array. You can show the data in the DOM by creating an element and using `innerHTML` to set it's content. 
 
 ### Evaluate your work
 
-Add three more visualizations to your Titanic project. There should be three from the previousd assignment. Add three more that show sorting and filtering of the data. 
 
-Include all of your code in a GitHub Repo.
-
-Create a GitHub Page that displays your work live.
-
-The goal is to turn numbers into shapes and colors.
 
 | Aspect | Does not meet | Meets | Exceeds |
 |:------------|:-------------|:------|:--------|
-| **Completion** | Did not complete three visualizations (of 6) | Completed 3 visualizations (of 6) | The completed visualization elicited wonder and awe from viewers who can't help but say how beautiful they are |
+| **Completion** | Did not complete | Completed interactive visualization challenges | Completed stretch challenges |
 | **Code Quality** | Your code is sloppy and inconsistent | Your code is well formatted and consistently styled | You have linted your code | 
 | **Code Craft** | Your code is not DRY | Your code is DRY you are using functions to do your work | Your code has a plan, you know what it is, and you could use it to take over the world |
 

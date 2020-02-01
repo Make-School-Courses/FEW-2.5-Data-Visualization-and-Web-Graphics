@@ -22,7 +22,7 @@ Handling interaction is an important skill for front end developers. It's your j
 ## Learning Objectives
 
 - Handle user interactions with events
-- Create dynmaic views
+- Create dynamic views
 - Style views dynamically
 - Displaying your work with GitHub Pages
 
@@ -44,7 +44,7 @@ If one of these variables is true we can show the data and if false the data is 
 
 <!-- > -->
 
-Next we need some buttons to toggle the state of each of these features. 
+Next, we need some buttons to toggle the state of each of these features. 
 
 ```HTML
 <button id="button-gender">Gender</button>
@@ -60,7 +60,7 @@ Add event listeners to each of the buttons that toggle the property.
 
 ```JS
 buttonGender.addEventListener('click', (e) => {
-  showGender = !showGender
+ showGender = !showGender
 })
 ```
 Here `showGender` will change from true to false to true again with each click. 
@@ -86,37 +86,39 @@ Now when showGender is true the button has a black background and white text.
 
 <!-- > -->
 
+### Challenges 1
+
 **Challenge:** Abstract the code from the previous section. Here are two ideas you can try: 
 
 **Option 1:** use a class name to change the appearance of the button. Replace the iff statement in the previous code with:
 
 ```js
 if (showGender) {
-  e.target.classList.add('button-selected')
+ e.target.classList.add('button-selected')
 } else {
-  e.target.classList.remove('button-selected')
+ e.target.classList.remove('button-selected')
 }
 ```
 Define the styles for the button-selected class in your stylesheet. 
 
 ```CSS
 .button-selected {
-  background-color: black;
-  color: white;
+ background-color: black;
+ color: white;
 }
 ```
 
-**Option 2:** Create a function to abstract the code in the if else. 
+**Option 2:** Create a function to abstract the code in the if-else. 
 
 ```JS 
 buttonGender.addEventListener('click', (e) => {
-  showGender = !showGender
-  selectButton(e.target, showGender) // 
+ showGender = !showGender
+ selectButton(e.target, showGender) // 
 })
 
 function selectButton(el, state) {
-  // change the appearance of el 
-  // based on state
+ // change the appearance of el 
+ // based on state
 }
 ```
 
@@ -131,7 +133,7 @@ const elements = []
 const passengerData = []
 ```
 
-Make two arrays. One to hold the DOM elements that will dipslay passengers. And the other to hold the passenger data loaded from the Titanic data set. 
+Make two arrays. One to hold the DOM elements that will display passengers. And the other to hold the passenger data loaded from the Titanic data set. 
 
 <!-- > -->
 
@@ -140,31 +142,31 @@ const elements = []
 const passengerData = []
 
 function handleData(data) {
-  const fields = data.map(({ fields }) => fields)
+ const fields = data.map(({ fields }) => fields)
 
-  fields.forEach(passenger => {
-    const el = document.createElement('div')
-    passengers.appendChild(el)
-    elements.push(el) // store the element
-    passengerData.push(passenger) // Store the passenger
-  });
+ fields.forEach(passenger => {
+ const el = document.createElement('div')
+ passengers.appendChild(el)
+ elements.push(el) // store the element
+ passengerData.push(passenger) // Store the passenger
+ });
 }
 ```
 Loop over the Titanic data and create an element for each passeneger, and push each passenger object into the data array. 
 
 <!-- > -->
 
-Now that you made a DOM elements for each object in your dataset give each element a few default properties
+Now that you made DOM elements for each object in your dataset give each element a few default properties
 
 ```JS
 fields.forEach(passenger => {
-  ...
-  el.style.width = '14px'
-  el.style.height = '14px'
-  el.style.backgroundColor = 'black'
-  el.style.margin = '1px'
-  el.style.transition = '200ms' // use trasnsition to asnimate changes
-  el.style.boxSizing = 'border-box'
+ ...
+ el.style.width = '14px'
+ el.style.height = '14px'
+ el.style.backgroundColor = 'black'
+ el.style.margin = '1px'
+ el.style.transition = '200ms' // use trasnsition to asnimate changes
+ el.style.boxSizing = 'border-box'
 });
 ```
 
@@ -172,11 +174,11 @@ fields.forEach(passenger => {
 
 ### Display data in the DOM
 
-You should have an array of elements for each passeneger and an array of passenger data. Time to connect the two. 
+You should have an array of elements for each passenger and an array of passenger data. Time to connect the two. 
 
 The index of each data item will map to the index of the DOM element.
 
-Keeping two arrays allows the DOM to be unaffected by changhes to data. This is important since sorting the data will not rearrange the DOM. 
+Keeping two arrays allows the DOM to be unaffected by changes to data. This is important since sorting the data will not rearrange the DOM. 
 
 <!-- > -->
 
@@ -184,23 +186,25 @@ Make a function that loops through your data and sets the appearance of an eleme
 
 ```JS
 function displayByGender() {
-  passengerData.forEach((obj, i) => {
-    const el = elements[i]
-    const color = obj.sex === 'male' ? 'blue' : 'pink'
-    el.style.backgroundColor = showGender ? color : 'black'
-  })
+ passengerData.forEach((obj, i) => {
+ const el = elements[i]
+ const color = obj.sex === 'male' ? 'blue' : 'pink'
+ el.style.backgroundColor = showGender ? color : 'black'
+ })
 }
 ```
 
-If `showGender` is true the color is displayed otherwise the color is black. 
+If `showGender` is `true` the color is displayed otherwise the color is black. 
 
 Call this function from the button event handler. 
 
 <!-- > -->
 
+### Challenges 2
+
 **Challenges** 
 
-Create functions to display embarked and survival. You can decide how these will be displayed. You can use background color, border, border radius or other. 
+Create functions to display embarked and survival. You can decide how these will be displayed. You can use background color, border, border-radius or other. 
 
 The function should use the variable `showSurvival` or `showEmbarked` to either display the feature or use a neutral value to not display that feature. 
 
@@ -213,9 +217,9 @@ The function should use the variable `showSurvival` or `showEmbarked` to either 
 
 ### Sorting 
 
-We can sort the data on any of the fields. Sort will rearrange the data array 
+We can sort the data on any of the fields. Sorting will rearrange the data array 
 
-Use the sorting ideas from the previouse lesson. 
+Use the sorting ideas from the previous lesson. 
 
 IF you sort the data you'll need to display it again in the DOM. Call your display functions. 
 
@@ -225,7 +229,7 @@ IF you sort the data you'll need to display it again in the DOM. Call your displ
 
 Radio buttons are buttons that work in a group where only one can be selected at a time. 
 
-To do this when clicking a button that is part of a group remove the `button-selected` class from all the button in the group and add the class to the selected button. 
+To do this when clicking a button that is part of a group remove the `button-selected` class from all the buttons in the group and add the class to the selected button.
 
 <!-- > -->
 
@@ -235,7 +239,7 @@ Use GitHub Pages to host your work. Each of your visualizations should exist on 
 
 Take some time to do the following:
 
-1. Follow the guide [here](https://pages.github.com) to setup your GitHub Pages.
+1. Follow the guide [here](https://pages.github.com) to set up your GitHub Pages.
 1. Add a link to your GitHub Pages repo in the project tracker.
 
 For inspiration, here are some [example visualizations](https://github.com/soggybag/data-visualizations) on GitHub Pages.
@@ -244,32 +248,30 @@ For inspiration, here are some [example visualizations](https://github.com/soggy
 
 ## After Class
 
-Complete assignment 4 
+Complete assignment 4
 
 <!-- > -->
 
 ## Resources
 
-
-
-<!-- v -->
-
-
+- [Assignment 4](../Assignments/Data-Visualization-4.md)
 
 <!-- > -->
 
 ## Minute-by-Minute
 
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Admin |
-| 0:05        | 0:25      | Overview |
-| 0:30        | 0:40      | Learning objectives |
-| 1:10        | 0:10      |  |
-| 1:20        | 0:10      | Sets      |
-| 1:30        | 0:10      | BREAK      |
-| 1:40        | 1:00      | Lab      |
-| 2:40        | 0:05      | Wrap up + Homework Overview |
-| TOTAL       | 2:45      | -                         |
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | --------- | ----------- |
+| 0:05 | 0:05 | Admin |
+| 0:05 | 0:10 | [Overview](#overview) |
+| 0:05 | 0:15 | [Learning objectives](#learning-objectives) |
+| 0:10 | 0:25 | [Defining State](#defining-state) |
+| 0:30 | 0:55 | [Challenges 1](#challenges-1) |
+| 0:10 | 1:05 | [Elements and data](#elements-and-data) |
+| 0:30 | 0:35 | [Challenges 2](#challenges-2) |
+| 0:10 | 1:55 | [BREAK](#break) |
+| 0:10 | 2:05 | [Sorting](#sorting) |
+| 0:40 | 2:45 | [Lab](#lab) |
+| 0:05 | 2:50 | [wrap up](#wrap-up) |
 
 
