@@ -221,6 +221,14 @@ IF you sort the data you'll need to display it again in the DOM. Call your displ
 
 <!-- > -->
 
+### Button Group
+
+Radio buttons are buttons that work in a group where only one can be selected at a time. 
+
+
+
+<!-- > -->
+
 ## Your work on GitHub Pages
 
 Use GitHub Pages to host your work. Each of your visualizations should exist on GitHub Pages.
@@ -234,13 +242,9 @@ For inspiration, here are some [example visualizations](https://github.com/soggy
 
 <!-- > -->
 
-## Lab
-
-<!-- > -->
-
 ## After Class
 
-
+Complete assignment 4 
 
 <!-- > -->
 

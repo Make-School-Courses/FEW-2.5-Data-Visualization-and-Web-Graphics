@@ -1,52 +1,46 @@
-# FEW 2.5 Visualization 2
+# FEW 2.5 Visualization 4
 
-**Due Date:** Wednesday, 2/12, 11:59pm
+## Interactive Data
 
-The goal of this assignment is to make an interactive visualization. This will be a visualization that has options that change the way it is displayed via user interaction. For example clicking a button to sort on age or fare, or a button to hide and show passengers based on their gender or class.
+**Due Date:** Wed, February 5
 
-## Why know how to do this?
+Create an interactive visualization. 
 
-Interaction is the stock and trade of front end development. You should know how to make user interfaces that display data based on user input.
+## Challenges 
 
-## What is this visualization?
+**Challenge display data**
 
-This visualization should use the Titanic dataset. You can visualize the data in any way you like. Don't worry about making the data understandable, instead strive to make it interesting to look at and fun to interact with!
+Use a button to display data. Clicking the button should show or hide one featur. For example gender, or embarked. 
 
-Interactions can be anything you like. Think about hiding, showing, sorting, and filtering elements as a good starting place.
+The button should display itself in an active state when it's in effect.
 
-- Buttons show and hide elements
-    - By gender
-    - Siblings
-    - Passenger Class
-    - Embarkation
-- Buttons sort data
-    - By age
-    - Fare
-    - Embarkation
-    - Passenger Class
-- Hide and show elements
-    - Show/Hide passengers by gender
-    - Show/Hide passengers by survival
-    - Show/Hide passengers by class
-    - Show/Hide passengers by embarkation
-- Sort passengers
-    - Sort on survival
-    - Sort on gender
-    - Sort on fare
-    - Sort on age
-- Change a property
+You should at least **three buttons**. Each button should display a different aspect of the data.
 
-You can also think of your own ideas.
+**Challenge sort data** Clicking a button should sort or filter the data shown. Only one of these buttons should be active at a time. Clicking any one of these should deactivate the others. 
 
-Use buttons, toggle buttons, and/or button groups.
+You can sort on any feature in the dataset gender, embarked, survived etc. 
 
-Add some animation by setting the transition property on elements and changing their styles.
+**Stretch challenge** create some buttons that filter the data displayed. 
 
-Add your visualization to your Github Pages collection of visualizations.
+### Evaluate your work
 
-| Expectation | Doe not meet | Meets | Exceeds |
-|:-------------|:------------------|:----------------|:-----------------|
-| Aesthetics    | Uses few styles. Like background color and width or height | Uses a range of colors, adds radius and other styles | Uses a wide range of styles. Uses interesting shapes|
-| Depth        | Displays 2 values from the dataset | Displays 3 or 4 data points | Displays 5 or more data points |
-| Code quality | There is code... | Code uses functions and is well organized | Code makes use of functions to minimize redundancy |
-| Completion  | Seems incomplete, missing features from the description, is not on GitHub pages | Is on Github pages, has all feature from the homework description | Includes new features and expands on the homework description |
+Add three more visualizations to your Titanic project. There should be three from the previousd assignment. Add three more that show sorting and filtering of the data. 
+
+Include all of your code in a GitHub Repo.
+
+Create a GitHub Page that displays your work live.
+
+The goal is to turn numbers into shapes and colors.
+
+| Aspect | Does not meet | Meets | Exceeds |
+|:------------|:-------------|:------|:--------|
+| **Completion** | Did not complete three visualizations (of 6) | Completed 3 visualizations (of 6) | The completed visualization elicited wonder and awe from viewers who can't help but say how beautiful they are |
+| **Code Quality** | Your code is sloppy and inconsistent | Your code is well formatted and consistently styled | You have linted your code | 
+| **Code Craft** | Your code is not DRY | Your code is DRY you are using functions to do your work | Your code has a plan, you know what it is, and you could use it to take over the world |
+
+### Learing Objectives 
+
+| Aspect | Does not meet | Meets | Exceeds |
+|:-------|:--------------|:------|:--------|
+| **Sort** | You could not use array.sort() without the docs | You can use array sort without the docs to sort strings and numeric values| You could sort just about anything any time or any place, array.sort() is a tool in your utility belt |
+| **filter** | You could not use array.filter() without the docs | You can use Array.filter() without the docs | You can filter anything anytime or any place and frequently sort the wheat from the chaff (figuratively speaking) |
