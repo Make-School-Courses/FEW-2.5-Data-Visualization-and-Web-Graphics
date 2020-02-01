@@ -1,5 +1,5 @@
 
-# FEW 2.5 - Working with Canvas
+# FEW 2.5 - Making an interactive view
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -7,43 +7,217 @@
 
 <!-- > -->
 
-## Minute-by-Minute
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Overview + Learning Outcomes                |
-| 0:05        | 0:25      | GitHub Pages                  |
-| 0:30        | 0:40      | Canvas       |
-| 1:10        | 0:10      | Blocks                     |
-| 1:20        | 0:10      | Sets      |
-| 1:30        | 0:10      | BREAK      |
-| 1:40        | 1:00      | Lab      |
-| 2:40        | 0:05      | Wrap up + Homework Overview |
-| TOTAL       | 2:45      | -                         |
-
-
-<!-- > -->
-
 ## Overview
 
-This session will work with canvas. HTML offers some interesting possibilities but also has some limitations. Canvas gives you the power to draw with pixels directly to the screen.
+The goal of this session is to focus on making interactive views. 
 
 <!-- > -->
 
 ## Why you should know this
 
-Canvas is the only way to draw something. Anytime you are working with images and image generation canvas will be behind it all.
+Handling interaction is an important skill for front end developers. It's your job to handle user interaction and interface user input with software logic. 
 
 <!-- > -->
 
 ## Learning Objectives
 
-- Use canvas to create images
-    - Use data to draw a rectangle of any size and any position
-    - Use data to draw circles anywhere on the screen
-    - Use data to draw arcs anywhere with any radius
-- Use trigonometry concepts to describe circles and arcs
-- Using GitHub Pages
+- Handle user interactions with events
+- Create dynmaic views
+- Style views dynamically
+- Displaying your work with GitHub Pages
+
+<!-- > -->
+
+## Defining State
+
+Using the Titanic Data you have displayed gender, embarkation, and survival. The goal now will be to show these dynamically. 
+
+To turn the display of a property on or off you can use a variable. 
+
+```JS
+let showGender = false
+let showEmbarked = false 
+let showSurvived = false
+```
+
+If one of these variables is true we can show the data and if false the data is not shown. 
+
+<!-- > -->
+
+Next we need some buttons to toggle the state of each of these features. 
+
+```HTML
+<button id="button-gender">Gender</button>
+<button id="button-embarked">Embarked</button>
+<button id="button-survived">Survived</button>
+```
+
+Define a few buttons in the DOM with id names to connect them with JS. 
+
+<!-- > -->
+
+Add event listeners to each of the buttons that toggle the property. 
+
+```JS
+buttonGender.addEventListener('click', (e) => {
+  showGender = !showGender
+})
+```
+Here `showGender` will change from true to false to true again with each click. 
+
+<!-- > -->
+
+Show the state of the button: 
+
+```JS 
+buttonGender.addEventListener('click', (e) => {
+  showGender = !showGender
+  if (showGender) {
+    e.target.style.backgroundColor = 'black'
+    e.target.style.color = 'white'
+  } else {
+    e.target.style.backgroundColor = 'white'
+    e.target.style.color = 'black'
+  }
+})
+```
+
+Now when showGender is true the button has a black background and white text. 
+
+<!-- > -->
+
+**Challenge:** Abstract the code from the previous section. Here are two ideas you can try: 
+
+**Option 1:** use a class name to change the appearance of the button. Replace the iff statement in the previous code with:
+
+```js
+if (showGender) {
+  e.target.classList.add('button-selected')
+} else {
+  e.target.classList.remove('button-selected')
+}
+```
+Define the styles for the button-selected class in your stylesheet. 
+
+```CSS
+.button-selected {
+  background-color: black;
+  color: white;
+}
+```
+
+**Option 2:** Create a function to abstract the code in the if else. 
+
+```JS 
+buttonGender.addEventListener('click', (e) => {
+  showGender = !showGender
+  selectButton(e.target, showGender) // 
+})
+
+function selectButton(el, state) {
+  // change the appearance of el 
+  // based on state
+}
+```
+
+<!-- > -->
+
+### Elements and data
+
+The next step is connecting the data with the DOM. A good approach might be to create a DOM for each passenger in the Titanic dataset. 
+
+```JS
+const elements = []
+const passengerData = []
+```
+
+Make two arrays. One to hold the DOM elements that will dipslay passengers. And the other to hold the passenger data loaded from the Titanic data set. 
+
+<!-- > -->
+
+```JS
+const elements = []
+const passengerData = []
+
+function handleData(data) {
+  const fields = data.map(({ fields }) => fields)
+
+  fields.forEach(passenger => {
+    const el = document.createElement('div')
+    passengers.appendChild(el)
+    elements.push(el) // store the element
+    passengerData.push(passenger) // Store the passenger
+  });
+}
+```
+Loop over the Titanic data and create an element for each passeneger, and push each passenger object into the data array. 
+
+<!-- > -->
+
+Now that you made a DOM elements for each object in your dataset give each element a few default properties
+
+```JS
+fields.forEach(passenger => {
+  ...
+  el.style.width = '14px'
+  el.style.height = '14px'
+  el.style.backgroundColor = 'black'
+  el.style.margin = '1px'
+  el.style.transition = '200ms' // use trasnsition to asnimate changes
+  el.style.boxSizing = 'border-box'
+});
+```
+
+<!-- > -->
+
+### Display data in the DOM
+
+You should have an array of elements for each passeneger and an array of passenger data. Time to connect the two. 
+
+The index of each data item will map to the index of the DOM element.
+
+Keeping two arrays allows the DOM to be unaffected by changhes to data. This is important since sorting the data will not rearrange the DOM. 
+
+<!-- > -->
+
+Make a function that loops through your data and sets the appearance of an element at the same index in the elements array. 
+
+```JS
+function displayByGender() {
+  passengerData.forEach((obj, i) => {
+    const el = elements[i]
+    const color = obj.sex === 'male' ? 'blue' : 'pink'
+    el.style.backgroundColor = showGender ? color : 'black'
+  })
+}
+```
+
+If `showGender` is true the color is displayed otherwise the color is black. 
+
+Call this function from the button event handler. 
+
+<!-- > -->
+
+**Challenges** 
+
+Create functions to display embarked and survival. You can decide how these will be displayed. You can use background color, border, border radius or other. 
+
+The function should use the variable `showSurvival` or `showEmbarked` to either display the feature or use a neutral value to not display that feature. 
+
+<!-- > -->
+
+<!-- .slide: data-background="#087CB8" -->
+## [**10m**] BREAK
+
+<!-- > -->
+
+### Sorting 
+
+We can sort the data on any of the fields. Sort will rearrange the data array 
+
+Use the sorting ideas from the previouse lesson. 
+
+IF you sort the data you'll need to display it again in the DOM. Call your display functions. 
 
 <!-- > -->
 
@@ -60,206 +234,38 @@ For inspiration, here are some [example visualizations](https://github.com/soggy
 
 <!-- > -->
 
-## Canvas Intro
-
-What is Canvas? **Canvas** is a rectangular area filled with pixels. The canvas object has methods that allow you to access the pixel data and draw images.
-
-See the sample code for these concepts here: [lesson-05.html](../lesson-05.html).
-
-<!-- v -->
-
-### Drawing things with canvas
-
-**Context** - All of the drawing methods are accessed through the context. The context is a single shared object that acts like a toolbox.
-
-**Coords** - Canvas is mapped out in a grid that starts from the upper left corner. Grid coordinates are measured in pixels.
-
-The horizontal axis is **x**
-
-The vertical axis is **y**
-
-Usually, functions will ask for an x and y value to position something.
-
-<!-- v -->
-
-**Paths** - Using the drawing tools you will often be creating paths. Paths are not visible until you stroke and or fill them with pixels.
-
-Usually you will begin a new path, draw a path, stroke and fill the path, then close the path. In code that might look like:
-
-```JS
-ctx.beginPath()    // Start a new path
-ctx.moveTo(50, 350) // move to a starting point
-ctx.lineTo(550, 50) // draw a line to this point
-ctx.lineWidth = 13 // set the width of a stroke
-ctx.strokeStyle = 'red' // set the color of the stroke
-ctx.stroke() // draw the stroke
-```
-
-<!-- v -->
-
-**Rectangles** - You can draw rectangles with `moveTo()` and `lineTo()` the `rect()` function is a short cut.
-
-```JS
-ctx.beginPath()    // Begin a path
-ctx.rect(200, 120, 100, 140) // draw a rectangle
-ctx.fillStyle = 'red' // set the fill style
-ctx.fill() // fill the rectangle
-```
-
-<!-- v -->
-
-**Strokes and Fills** - When you want to see a path on the screen you'll need to stroke or fill it. To do this set the `fillStyle`, and or `strokeStyle` to the color, and the `lineWidth`, then call `fill()` or `stroke()`
-
-**Arcs and Circles** - Use the `arc()` method to draw arcs and circles.
-
-`arc(centerX, centerY, radius, startingAngle, endingAngle)`
-
-The signature describes how the method draws. The first two parameters are like planting the point of a compass at a location. Then you need to set the radius and starting and ending angle.
-
-Note that the angle is in radians!
-
-<!-- v -->
-
-## Quick note about radians
-
-Circles are measured in **radians**. A complete circle is 2 * PI. Half a circle would be PI.
-
-![Radians](Images/radians.png)
-
-<!-- v -->
-
-If you want to draw an arc that represents a value follow this guide:
-
-- Normalize your value (convert it to a range of 0 - 1 by dividing by the largest value in the set)
-- Decide on the range of the arc.
-    - If you want 100% to be a full circle multiply by `Math.PI * 2`
-    - If you want 100% to be a half circle multiply by `Math.PI`
-- Decide on the starting angle. The default will start drawing from 0 in the diagram above and follow the arrow. Find the starting position in the diagram and add that value to both the starting angle and ending angle.
-
-<!-- v -->
-
-![Radians](Images/radians-2.png)
-
-<!-- v -->
-
-![Radians](Images/radians-3.png)
-
-<!-- > -->
-
-## Blocks
-
-A block is a block of code. Often you define these as part of a function, if statements, and loops. The block is defined with `{}`.
-
-```JS
-function() { ...block... }
-
-if () { ...block... }
-
-for () { ...block... }
-```
-
-You can also define standalone blocks that are not part of `statement`.
-
-```JS
-{ ...block... }
-```
-
-<!-- v -->
-
-Why do this? **Scope!** Variables defined with `const` or `let` are block scoped!
-
-```JS
-{
-    let i = 0
-    const step = 600 / 12
-    ...
-}
-
-console.log(i) // undefined
-```
-
-In the example above `i` and `step` would only be available inside the `{ block }`
-
-<!-- > -->
-
-## Sets
-
-A **set** is like an array but may only contain unique values. Sets are more efficient than arrays and may add a slight performance boost in some cases.
-
-```JS
-// Create a new set
-const mySet = new Set() // or new Set([1,2,3])
-// Add elements
-mySet.add(1)
-mySet.add(2)
-mySet.add(3)
-mySet.add(1)
-console.log(mySet) // Set(3) [1, 2, 3]
-// Count the set -> mySet.length 0
-console.log(mySet.size) // 3
-// Iterate over the set
-mySet.forEach((val, key) => {
-    console.log(val) // 1, 2, 3
-})
-// Check if an value exists
-console.log(mySet.has(1)) // true
-console.log(mySet.has(5)) // false
-// Remove an element from the set
-mySet.delete(2) // returns true
-console.log(mySet.has(2))    // false
-```
-
-The examples in the code sample for this class uses Set.
-
-<!-- > -->
-
-<!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
-
-<!-- > -->
-
 ## Lab
-
-You might remember these interview questions from a previous lesson. We're going to answer those same questions on the Titanic dataset, but this time using Canvas!
-
-**Attempt at least 4 of the questions below. Stretch challenge to get more**
-
-<!-- v -->
-
-- Easy
-	- Generate one element for each record in the Titanic Dataset
-	- Create one element for each male passenger
-	- Create one element for each female passenger
-- Moderate
-	- Create two elements that show the ratio of passengers who survived vs those that didn't.
-	- Create elements showing the ratio of passengers by `pclass`
-- Hard
-	- Show the ratio of men and women who survived vs men and women who did not survive.
-	- Show the ratio of passengers who survived vs those that did not by embarkation.
 
 <!-- > -->
 
 ## After Class
 
-- Continue working on [Visualization 2](Assignments/Data-Visualization-2.md), due 2/12 11:59pm
+
 
 <!-- > -->
 
 ## Resources
 
-- [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/prototype)
-    - [Set.size](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/size)
-    - [Set.add()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/add)
-    - [Set.delete()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/delete)
-    - [Set.has()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/has)
+
 
 <!-- v -->
 
-- [Canvas](https://developer.mozilla.org/en-US/docs/Glossary/Canvas)
-    - [ctx.arc()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc)
-    - [ctx.lineWidth](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineWidth)
-    - [ctx.fillStyle](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillStyle)
-    - [ctx.strokeStyle](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/strokeStyle)
-    - [arc.lineTo()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineTo)
-    - [ctx.moveTo()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/moveTo)
-    - [ctx.rec()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/rect)
+
+
+<!-- > -->
+
+## Minute-by-Minute
+
+| **Elapsed** | **Time**  | **Activity**              |
+| ----------- | --------- | ------------------------- |
+| 0:00        | 0:05      | Admin |
+| 0:05        | 0:25      | Overview |
+| 0:30        | 0:40      | Learning objectives |
+| 1:10        | 0:10      |  |
+| 1:20        | 0:10      | Sets      |
+| 1:30        | 0:10      | BREAK      |
+| 1:40        | 1:00      | Lab      |
+| 2:40        | 0:05      | Wrap up + Homework Overview |
+| TOTAL       | 2:45      | -                         |
+
+
