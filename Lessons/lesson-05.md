@@ -254,6 +254,8 @@ Complete assignment 4
 
 ## Resources
 
+- https://javascript.info/introduction-browser-events
+- https://javascript.info/array-methods#sort-fn
 - [Assignment 4](../Assignments/Data-Visualization-4.md)
 
 <!-- > -->
