@@ -35,9 +35,9 @@ Students by the end of the course will be able to ...
 |  1 |  Wed, January 22  | [Intro to Data Visualization](lessons/lesson-01.md) | [Data Visualization 1 pt 1](Assignments/Data-Visualization-1.md) | |
 |  2 |  Mon, January 27  | [Displaying Data graphically](lessons/lesson-02.md) | [Data Visualization 1 pt 2](Assignments/Data-Visualization-2.md) | |
 |  3 |  Wed, January 29  | [Animation and Interaction](lessons/lesson-03.md) |  | Data Visualization 1
-|  4 |  Mon, February 3  | [Sorting and Filtering](lesson/lesson-04.md) | [Data Visualization 3](Assignments/Data-Visualization-3.md) | |
-|  5 |  Wed, February 5  | [Working with Canvas] | - | - |
-|  6 |  Mon, February 10 | [Canvas Part 2, Circle Math] | - | - |
+|  4 |  Mon, February 3  | [Sorting and Filtering](lesson/lesson-04.md) | [Data Visualization 3](Assignments/Data-Visualization-3.md) | - |
+|  5 |  Wed, February 5  | [Interactive Data](lessons/lesson-05.md) | [Data Visualization 4](Assignments/Data-Visualization-4.md) | - |
+|  6 |  Mon, February 10 | [Wrap up Project](lessons/lesson-06.md) | [Data Visualization 5](Assignments/Data-Visualization-5.md) | - | - |
 |  7 |  Wed, February 12 | [Graphing charting libraries] | - | Data Visualization 2 |
 |  8 |  Mon, February 17 | [SVG] | [Final Data Visualization](Assignments/Data-Visualization-3.md) | | |
 |  9 |  Wed, February 19 | [D3] | - |

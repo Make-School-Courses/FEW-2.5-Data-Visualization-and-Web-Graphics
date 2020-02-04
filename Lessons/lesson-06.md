@@ -9,22 +9,18 @@
 
 ## Overview
 
-This class will take a look at your work 
+This class will take a look at your work, find the things that need improvement, and create a trategy to wrap up the project and make it a good portfolio piece.
 
 ### Why?
 
-Circles are used all the time in visualizations (pie chart, scatter plot, dot plot, cluster analysis, etc.) and it's important to know how to draw them in order to properly convey your analysis.
-
-Plus they're cool!
+Takinga  critical look at your work is important. Adding things to your portfolio is important. looking for ways to measure your progress is important. 
 
 <!-- > -->
 
 ## Learning Objectives
 
-- Use Math functions and simple trigonometry
-	- `Math.PI`
-	- `Math.sin(radians)` -1 to +1
-	- `Math.cos(radians)` -1 to +1
+- Identify areas areas for improvement
+- Identify places where 
 
 <!-- > -->
 

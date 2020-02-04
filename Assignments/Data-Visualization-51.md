@@ -1,16 +1,19 @@
 # FEW 2.5 Visualization 5
 
-The goal of this assignment is to wrap up the first project. 
+**Due Date:** Wednesday, 3/4, 9:30am
 
-## Goals 
+Visualization with D3.
 
-**Identify three areas to improve**
+Your goal is to create a data visualization using D3. D3 has a steep learning curve and many features which make it a little overwhelming to get started with. Don't worry about this.
 
-**Write a read me**
+Start with a one of the example on the D3 page [here](https://github.com/d3/d3/wiki/Gallery). Choose one of these examples and recreate it with a different dataset.
 
-**Publish to GitHub Pages**
+Add to your visualization to your GitHub pages.
 
-## Evaluate your progress
+**Stretch Challenges:**
+
+- Use D3's scale methods to scale and normalize data. Look at scaleOrdinal and try and make use of it in this visualization.
+- Use maps in your D3 visualization
 
 | Expectation | Doe not meet | Meets | Exceeds |
 |:-------------|:------------------|:----------------|:-----------------|
