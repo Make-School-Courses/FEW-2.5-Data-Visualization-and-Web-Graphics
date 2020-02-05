@@ -6,15 +6,25 @@ The goal of this assignment is to wrap up the first project.
 
 **Identify three areas to improve**
 
+Address and solve the improvements identified in class. 
+
 **Write a read me**
 
+Write a readme. Include the following:
+
+- Description of the project
+- Background information
+- Getting started/how to run the project
+- Link to the live project
+
 **Publish to GitHub Pages**
+
+Publish to GitHub Pages. 
 
 ## Evaluate your progress
 
 | Expectation | Doe not meet | Meets | Exceeds |
 |:-------------|:------------------|:----------------|:-----------------|
-| Aesthetics    | Uses few styles. Like background color and width or height | Uses a range of colors, adds radius and other styles | Uses a wide range of styles. Uses interesting shapes|
-| Depth        | Displays 2 values from the dataset | Displays 3 or 4 data points | Displays 5 or more data points |
-| Code quality | There is code... | Code uses functions and is well organized | Code makes use of functions to minimize redundancy |
-| Completion  | Seems incomplete, missing features from the description, is not on GitHub pages | Is on Github pages, has all feature from the homework description | Includes new features and expands on the homework description |
+| **Aesthetics** | Visitors are not sure what they are looking at | Viewers easily understand the facts and figures contained in teh Titanic data | Viewers are intrgued and interested by the data presented |
+| **Completion** | Contains fewer than 7 charts | Contains 7 charts including an interactive chart | Contains charts that go beyond what was described in the homework description |
+| **Code quality** | The code is sloppy and unorganized or throws errors and warnings | Code is well organized and works without errors | Shows no linter errors or warnings |

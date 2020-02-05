@@ -45,8 +45,6 @@ Use the index to get the data to show from the data array. You can show the data
 
 ### Evaluate your work
 
-
-
 | Aspect | Does not meet | Meets | Exceeds |
 |:------------|:-------------|:------|:--------|
 | **Completion** | Did not complete | Completed interactive visualization challenges | Completed stretch challenges |
