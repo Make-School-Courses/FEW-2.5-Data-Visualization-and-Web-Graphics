@@ -21,6 +21,61 @@ Taking a critical look at your work is important. Adding things to your portfoli
 
 - Identify areas areas for improvement
 - Strategize problem solving
+- Use Events
+- Identify and use and explain event delegation
+- Explain Event bubbling
+
+<!-- > -->
+
+## Events
+
+Events are things that happen in the program. Usually they are things that happen in the browser. These are things like: 
+
+- mouse clicks
+- form input 
+- resources loaded
+- keyboard button pressed!
+
+Events can happen at DOM nodes. For example a mouse click might happen at a button or list item. 
+
+### addEventListener
+
+Use addEventListener to listen for events at an object. 
+
+```JS
+const button = document.getElementById('button')
+button.addEventListener('click', (e) => { ... })
+
+element.addEventListener(eventName, handler)
+
+p.addEventListener('click', () => { alert('P') })
+p.addEventListener('click', () => {})
+p.onclick = () => { ... }
+```
+
+Event name is the name of the event, it's always a string. Handler is a function that handles the event when it occurs.  
+
+### Bubbling
+
+Since the DOM is a tree structure events move up from their target through their ancestors this is called bubbling. 
+
+```HTML
+<body>
+		<div class="container">
+			<div data-id="1">
+			...
+			<div data-id="891">
+			<ul>
+					<li>
+							<div>
+								<strong>
+```
+
+Name: Apple
+
+Imagine you are listening for an event at the `<li>` tag but the click occured at the `<strong>` or `<div>`. Bubbling passes the event up the tree each of the parent elements. This gives each containing element a chance to handle the event. 
+
+https://javascript.info/bubbling-and-capturing
 
 <!-- > -->
 
