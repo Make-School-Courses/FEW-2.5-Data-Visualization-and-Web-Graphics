@@ -21,16 +21,8 @@ Plus they're cool!
 
 ## Learning Objectives
 
-- Use Math functions and simple trigonometry
-	- `Math.PI`
-	- `Math.sin(radians)` -1 to +1
-	- `Math.cos(radians)` -1 to +1
-
-<!-- > -->
-
-## Initial Exercise (15 min)
-
-
+- Use Math functions and trigonometry
+- Draw images with circles and code
 
 <!-- > -->
 
@@ -38,9 +30,15 @@ Plus they're cool!
 
 Sometimes you'll want to place things in a circle. Imagine the numbers around a clock. If you had to make this yourself you'd need to place each of the numbers equally spaced around a center point.
 
-To do this, use `Math.sin()` and `Math.cos()`. Each of these takes a value in radians and return a number between -1 and +1. Multiply the return value by the radius.
+Imagine you know where the center of the circle is and imagine that it is x 0 and y 0. To place the 12 it would be 0 x and y - the radius of the circle. For the 3, 6, and 9 you could follow a similar pattern. 
 
-A full circle is `Math.PI * 2`.
+When it's time to place the 1, 2, 4, and other numbers it's hard to caluclate the their x and y. 
+
+There are a few Math functions that can help with this.
+
+You are probably used to looking at a circle as 360 degrees. In trigonmetry we look at a circle radians. There are  Pi radians in a circle. Or you could think of 2 Pi as 360 in degrees.
+
+`Math.sin()` and `Math.cos()` can be used to map an x and y value from radians. Each of these functions takes a value in radians and return a number between -1 and +1. Multiply the return value by the radius to get the x and y around the center.
 
 Think about the clock. To get the position of each hour divide the circle by 12.
 
@@ -51,7 +49,7 @@ Think about the clock. To get the position of each hour divide the circle by 12.
 Decide what the radius of your clock face is. Imagine it's 200px.
 
 ```JS
-const numbers = [1,2,3,4,5,6,7,8,9,10,11,12]
+const numbers = [3,4,5,6,7,8,9,10,11,12,1,2]
 const step = Math.PI * 2 / numbers.length
 const radius = 200
 numbers.forEach((n, i) => {
@@ -98,6 +96,10 @@ Check out the [Example code](../lesson-06.html) linked here and see how you can 
 <!-- > -->
 
 ## Lab
+
+Continue working on the audio visualizer project. 
+
+Use the lab to time complete the challenges and stretch challenges. 
 
 <!-- > -->
 
