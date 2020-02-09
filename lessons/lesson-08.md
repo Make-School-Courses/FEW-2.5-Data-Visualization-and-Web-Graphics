@@ -1,9 +1,116 @@
 
-# FEW 2.5 - SVG
+# FEW 2.5 - Canvas Part 2, Circle Math
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-8.html ':ignore')
+➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-6.html ':ignore')
+
+<!-- > -->
+
+## Overview
+
+This class will be a workshop to work on and finsih up the audio visualizer project and study the Math of Circles. 
+
+### Why?
+
+Circles are used all the time in visualizations (pie chart, scatter plot, dot plot, cluster analysis, etc.) and it's important to know how to draw them in order to properly convey your analysis.
+
+Plus they're cool!
+
+<!-- > -->
+
+## Learning Objectives
+
+- Use Math functions and simple trigonometry
+	- `Math.PI`
+	- `Math.sin(radians)` -1 to +1
+	- `Math.cos(radians)` -1 to +1
+
+<!-- > -->
+
+## Initial Exercise (15 min)
+
+
+
+<!-- > -->
+
+## Intro
+
+Sometimes you'll want to place things in a circle. Imagine the numbers around a clock. If you had to make this yourself you'd need to place each of the numbers equally spaced around a center point.
+
+To do this, use `Math.sin()` and `Math.cos()`. Each of these takes a value in radians and return a number between -1 and +1. Multiply the return value by the radius.
+
+A full circle is `Math.PI * 2`.
+
+Think about the clock. To get the position of each hour divide the circle by 12.
+
+`const step = Math.PI * 2 / 12`
+
+<!-- v -->
+
+Decide what the radius of your clock face is. Imagine it's 200px.
+
+```JS
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12]
+const step = Math.PI * 2 / numbers.length
+const radius = 200
+numbers.forEach((n, i) => {
+	const x = Math.sin(step * i) * radius
+	const y = Math.cos(step * i) * radius
+
+	// draw number at x, y
+})
+```
+
+The center of the clock face would be at 0, 0 with the numbers arranged in a 200 pixels radius circle around that point. Imagine the center of the clock in the upper left corner.
+
+You usually don't want to place everything in the upper left corner. To move the center of the clock face anywhere on the canvas you'll need to offset the x and y values.
+
+<!-- v -->
+
+```JS
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12]
+const step = Math.PI * 2 / numbers.length
+const radius = 200
+const offsetX = 300
+const offsetY = 250
+numbers.forEach((n, i) => {
+	const x = Math.sin(step * i) * radius + offsetX
+	const y = Math.cos(step * i) * radius + offsetY
+
+	// draw number at x, y
+})
+```
+
+Just add the offset to the x and y. In this case the center of the clock face is at 300, 250 on the canvas.
+
+<!-- > -->
+
+## Playing with Circles
+
+Check out the [Example code](../lesson-06.html) linked here and see how you can manipulate the circles!
+
+<!-- > -->
+
+<!-- .slide: data-background="#087CB8" -->
+## [**10m**] BREAK
+
+<!-- > -->
+
+## Lab
+
+<!-- > -->
+
+## After class
+
+- Continue working on [Visualization 2](Assignments/Data-Visualization-2.md), due 2/12 11:59pm
+
+<!-- > -->
+
+## Additional Resources
+
+- [Example code](../lesson-06.html)
+- [Sine/Cosine](https://en.wikipedia.org/wiki/Sine)
 
 <!-- > -->
 
@@ -18,113 +125,3 @@
 | 1:00        | 0:45      | In Class Activity II      |
 | 1:45        | 0:05      | Wrap up review objectives |
 | TOTAL       | 1:50      | -                         |
-
-<!-- > -->
-
-## Overview
-
-Scalable Vector Graphics (SVGs) are written in a language like HTML and produce images on the screen. They also support many other features, can be styled with CSS, and manipulated with JavaScript.
-
-<!-- > -->
-
-## Why you should know this
-
-You should learn them because they an important tool that will give you more capabilities and more answers to development problems you will encounter in the future.
-
-<!-- > -->
-
-## Learning Outcomes
-
-- Understand the benefits and drawbacks to using SVGs
-- Practice working with SVGs to make data visualizations
-
-<!-- > -->
-
-## SVG
-
-SVG is a file format and a language. You can create SVG files in popular apps like Sketch.
-
-Think of SVG as a language that describes a drawing. The computer reads an SVG file calculates the shapes and paths in the description, then fills the shapes and strokes the paths with pixels.
-
-<!-- v -->
-
-**Pros:**
-
-- Smaller file size
-- Separate elements
-- Elements are accessible from code
-- Crisp and scalable/responsive images
-
-**Cons:**
-
-- More processor overhead
-- Images can't create some detail available to raster images
-
-<!-- > -->
-
-## Working with SVG
-
-You can save the files and import them like images.
-
-`<img src="my-image.svg">`
-
-When using SVG in this way images are rendered but you don't have access to underlying SVG code.
-
-<!-- v -->
-
-You can also use SVG code directly in your work. just copy and paste some SVG code into an HTML document or write the code from scratch!
-
-```SVG
-<svg width="454px" height="432px" viewBox="0 0 454 432" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Star" stroke="#FFCC00"
-        stroke-width="43" fill="#FF9500"
-        points="227 334 115.320802 392.713229
-        136.649631 268.356614 46.2992619
-        180.286771 171.160401 162.143386 227 49
-        282.839599 162.143386 407.700738
-        180.286771 317.350369 268.356614
-        338.679198 392.713229"></polygon>
-    </g>
-</svg>
-```
-
-The code above draws a star.
-
-<!-- v -->
-
-Generally speaking you usually don't want to write SVG code from scratch. Instead, use an application such as Sketch.
-
-Here's some guidelines to consider when working with SVGs:
-
-- If you need to make a drawing of something like a logo or icon use Sketch.
-- If you need to generate shapes dynamically, use a library.
-
-<!-- > -->
-
-<!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
-
-<!-- > -->
-
-## Lab
-
-<!-- > -->
-
-## Wrap Up
-
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
-
-<!-- > -->
-
-## After Class
-
-- Start working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am
-
-<!-- > -->
-
-## Additional Resources
-
-1. Links to additional readings and videos
