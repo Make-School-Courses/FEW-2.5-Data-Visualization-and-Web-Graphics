@@ -1,5 +1,5 @@
 
-# FEW 2.5 - Real Time Data
+# FEW 2.5 - Real-Time Data
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -15,7 +15,7 @@ Sometimes data changes moment by moment you can display that!
 
 ## Why you should know this?
 
-Experimenting weith real time data is expands your skills into new areas. 
+Experimenting with real-time data is expands your skills into new areas. 
 
 <!-- > -->
 
@@ -23,15 +23,15 @@ Experimenting weith real time data is expands your skills into new areas.
 
 - Use canvas to draw data
 - Use the audio object
-- draw real time data
+- draw real-time data
 
 <!-- > -->
 
-## Real Time Data
+## Real-Time Data
 
-Real time data is data that changes from moment to moment, micro-second to micro-second even! 
+Real-time data is data that changes from moment to moment, micro-second to micro-second even! 
 
-This can be stock prices, exchange rates, interstellar noise, tectonic motion, heart rates, and more. For this example you will work with audio data. 
+This can be stock prices, exchange rates, interstellar noise, tectonic motion, heart rates, and more. For this example, you will work with audio data. 
 
 <!-- > -->
 
@@ -44,17 +44,17 @@ Create a new folder for this project. Add an HTML file with two elements:
 <button id="button-play">Play</button>
 ```
 
-The canvas will display the visualization and the button will be used start playing the audio. 
+The canvas will display the visualization and the button will be used to start playing the audio. 
 
 ## Audio
 
-The Audio Object loads audio data. The Audio object does many things. It can play and modify audio, and generate new audio sources and process audio. 
+The Audio Object loads audio data. The Audio object does many things. It can play and modify audio and generate new audio sources and process audio. 
 
-It can also analyse audio and provide information about the audio source. 
+It can also analyze audio and provide information about the audio source. 
 
 ### Load Audio 
 
-The code snippet below uses the Audio object to load sound file and play it.
+The code snippet below uses the Audio object to load a sound file and play it.
 
 ```JS
 function startAudio() {
@@ -62,7 +62,7 @@ function startAudio() {
   const audioContext = new (window.AudioContext || window.webkitAudioContext)()
 
   audio.src = 'bird-whistling-a.wav'
-  
+
   audio.play()
 }
 ```
@@ -83,12 +83,12 @@ playButton.addEventListener('click', (e) => {
 
 ### Analysing Audio
 
-The Audio object can do many things with an audio source. For a visualization we need to create an analyzer. 
+The Audio object can do many things with an audio source. For visualization, we need to create an analyzer. 
 
 Add two variables to hold a reference to the analyzer and 
 
 ```JS
-let analyser
+let analyzer
 let frequencyArray
 
 function startAudio() {
@@ -96,13 +96,13 @@ function startAudio() {
 }
 ```
 
-Add a couple lines of code to your 
+Add a couple of lines of code to your 
 
 ```JS
 function startAudio() {
   const audio = new Audio()
   const audioContext = new (window.AudioContext || window.webkitAudioContext)()
-  
+
   audio.src = 'bird-whistling-a.wav'
 
   // --------------------------------------------------------
@@ -112,26 +112,26 @@ function startAudio() {
   analyser.connect(audioContext.destination)
   frequencyArray = new Uint8Array(analyser.frequencyBinCount)
   // --------------------------------------------------------
-  
+
   audio.play()
 }
 ```
 
 These lines: 
 
-- Create the `analyser`
+- Create the `analyzer`
 - get a `source` 
-- connect the source to the analyser
-- define `freqeuncyArray` as an array of frequencies from the audio analyser
+- connect the source to the analyzer
+- define `freqeuncyArray` as an array of frequencies from the audio analyzer
 
 ### Rendering Audio
 
 The process of rendering audio will need to follow these steps: 
 
 - clear the canvas 
-- get an array of frequency values from the analyser
+- get an array of frequency values from the analyzer
 - for each frequency in the array
-  - draw a shape influenced by each frquency
+ - draw a shape influenced by each frequency
 
 All of the steps above will be repeated each time the browser redraws. 
 
@@ -171,9 +171,9 @@ function render() {
 }
 ```
 
-Define a couple variables that will be used to drasw the bars. 
+Define a couple of variables that will be used to draw the bars. 
 
-Get an array of freqwuncies from the analyser. 
+Get an array of frequencies from the analyzer. 
 
 ```JS
 function render() {
@@ -190,13 +190,13 @@ function render() {
   analyser.getByteFrequencyData(frequencyArray)
   // --------------------------------------------
 
-  
+
 
   requestAnimationFrame(render)
 }
 ```
 
-For each frequency you'll draw a line. To do this we need to the starting point: x1 and y1, and the ending point x2, y2. Each line is drawn as a path the last step is to stroke the paths. 
+For each frequency, you'll draw a line. To do this we need to the starting point: x1 and y1, and the ending point x2, y2. Each line is drawn as a path the last step is to stroke the paths. 
 
 ```JS
 function render() {
@@ -210,17 +210,17 @@ function render() {
   const step = Math.PI * 2 / bars
 
   analyser.getByteFrequencyData(frequencyArray)
-  
+
   // --------------------------------------------
   frequencyArray.forEach((f, i) => {
-    const barLength = frequencyArray[i] * 0.5
-    const x1 = (Math.cos(step * i) * radius) + centerX
-    const y1 = (Math.sin(step * i) * radius) + centerY
-    const x2 = (Math.cos(step * i) * (radius + barLength)) + centerX
-    const y2 = (Math.sin(step * i) * (radius + barLength)) + centerY
+  const barLength = frequencyArray[i] * 0.5
+  const x1 = (Math.cos(step * i) * radius) + centerX
+  const y1 = (Math.sin(step * i) * radius) + centerY
+  const x2 = (Math.cos(step * i) * (radius + barLength)) + centerX
+  const y2 = (Math.sin(step * i) * (radius + barLength)) + centerY
 
-    ctx.moveTo(x1, y1)
-    ctx.lineTo(x2, y2)
+  ctx.moveTo(x1, y1)
+  ctx.lineTo(x2, y2)
   })
 
   ctx.stroke()
@@ -234,13 +234,11 @@ function render() {
 
 1. Follow the tutorial steps above and get this working. 
 2. Customize the drawing code from the last step.
-  - change the color.
-  - change the color of each line. To do this you'll need to: 
-    - set the `ctx.strokeStyle` inside the loop and call `ctx.stroke()` inside the loop.
-  - Change the lines drawn. Currently they are mapped around the circle. Change the x1, y1, and x2, y2 vaslues to something else. 
-
-
-
+ - change the color.
+ - change the color of each line. To do this you'll need to: 
+ - set the `ctx.strokeStyle` inside the loop and call `ctx.stroke()` inside the loop.
+ - Change the lines drawn. Currently they are mapped around the circle. Change the x1, y1, and x2, y2 values to something else.
+ - Draw rectangles or circles. Draw one circle for each frequency. You could set the width, height, or radius based on the frequency value. 
 
 
 <!-- .slide: data-background="#087CB8" -->
@@ -267,13 +265,13 @@ function render() {
 
 ## Minute-by-Minute
 
-| **Elapsed** | **Time**  | **Activity**              |
+| **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Overview and Learning Outcomes |
-| 0:05        | 0:10      | CDNs |
-| 0:15        | 1:00      | ChartJS |
-| 1:15        | 0:10      | BREAK |
-| 1:25        | 1:15      | Lab |
-| 2:40        | 0:05      | Wrap up and review homework |
-| TOTAL       | 2:45      | - |
+| 0:00 | 0:05 | Overview and Learning Outcomes |
+| 0:05 | 0:10 | CDNs |
+| 0:15 | 1:00 | ChartJS |
+| 1:15 | 0:10 | BREAK |
+| 1:25 | 1:15 | Lab |
+| 2:40 | 0:05 | Wrap up and review homework |
+| TOTAL | 2:45 | - |
 
