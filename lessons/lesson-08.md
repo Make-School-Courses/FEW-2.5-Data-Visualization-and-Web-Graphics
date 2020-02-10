@@ -9,7 +9,7 @@
 
 ## Overview
 
-This class will be a workshop to work on and finsih up the audio visualizer project and study the Math of Circles. 
+This class will be a workshop to work on and finish up the audio visualizer project and study the Math of Circles. 
 
 ### Why?
 
