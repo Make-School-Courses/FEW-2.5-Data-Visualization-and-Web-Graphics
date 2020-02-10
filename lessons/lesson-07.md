@@ -77,7 +77,7 @@ playButton.addEventListener('click', (e) => {
 })
 ```
 
-**You can't play audio with user interaction** Read this rationale https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
+**You can't play audio without user interaction** Read this rationale https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
 
 <!-- > -->
 
