@@ -213,14 +213,14 @@ function render() {
 
   // --------------------------------------------
   frequencyArray.forEach((f, i) => {
-  const barLength = frequencyArray[i] * 0.5
-  const x1 = (Math.cos(step * i) * radius) + centerX
-  const y1 = (Math.sin(step * i) * radius) + centerY
-  const x2 = (Math.cos(step * i) * (radius + barLength)) + centerX
-  const y2 = (Math.sin(step * i) * (radius + barLength)) + centerY
+    const barLength = frequencyArray[i] * 0.5
+    const x1 = (Math.cos(step * i) * radius) + centerX
+    const y1 = (Math.sin(step * i) * radius) + centerY
+    const x2 = (Math.cos(step * i) * (radius + barLength)) + centerX
+    const y2 = (Math.sin(step * i) * (radius + barLength)) + centerY
 
-  ctx.moveTo(x1, y1)
-  ctx.lineTo(x2, y2)
+    ctx.moveTo(x1, y1)
+    ctx.lineTo(x2, y2)
   })
 
   ctx.stroke()
