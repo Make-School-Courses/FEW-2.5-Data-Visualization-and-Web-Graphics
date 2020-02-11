@@ -38,8 +38,8 @@ Students by the end of the course will be able to ...
 |  4 |  Mon, February 3  | [Sorting and Filtering](lessons/lesson-04.md) | [Data Visualization 3](Assignments/Data-Visualization-3.md) | - |
 |  5 |  Wed, February 5  | [Interactive Data](lessons/lesson-05.md) | [Data Visualization 4](Assignments/Data-Visualization-4.md) | - |
 |  6 |  Mon, February 10 | [Wrap up Project](lessons/lesson-06.md) | [Data Visualization 5](Assignments/Data-Visualization-5.md) | - | - |
-|  7 |  Wed, February 12 | [Graphing charting libraries] | - | Data Visualization 2 |
-|  8 |  Mon, February 17 | [SVG] | [Final Data Visualization](Assignments/Data-Visualization-3.md) | | |
+|  7 |  Wed, February 12 | [Real Time Data](https://github.com/Make-School-Courses/FEW-2.5-Data-Visualization-and-Web-Graphics/blob/master/lessons/lesson-07.md) | [Data Visualization 6](Assignments/Data-Visualization-6.md) | - |
+|  8 |  Mon, February 17 | [Real Time Data part 2] | [Data Visualization 6](Assignments/Data-Visualization-6.md) | - | - |
 |  9 |  Wed, February 19 | [D3] | - |
 | 10 |  Mon, February 24 | [D3 Scales] | - |
 | 11 |  Wed, February 26 | [D3 Maps]| - |
