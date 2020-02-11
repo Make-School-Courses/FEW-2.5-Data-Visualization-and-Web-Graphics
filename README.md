@@ -36,9 +36,9 @@ Students by the end of the course will be able to ...
 |  2 |  Mon, January 27  | [Displaying Data graphically](lessons/lesson-02.md) | [Data Visualization 1 pt 2](Assignments/Data-Visualization-2.md) | |
 |  3 |  Wed, January 29  | [Animation and Interaction](lessons/lesson-03.md) |  | Data Visualization 1
 |  4 |  Mon, February 3  | [Sorting and Filtering](lessons/lesson-04.md) | [Data Visualization 3](Assignments/Data-Visualization-3.md) | - |
-|  5 |  Wed, February 5  | [Interactive Data](lessons/lesson-05.md) | [Data Visualization 4](Assignments/Data-Visualization-4.md) | - |
-|  6 |  Mon, February 10 | [Wrap up Project](lessons/lesson-06.md) | [Data Visualization 5](Assignments/Data-Visualization-5.md) | - | - |
-|  7 |  Wed, February 12 | [Real Time Data](lessons/lesson-07.md) | [Data Visualization 6](Assignments/Data-Visualization-6.md) | - |
+|  5 |  Wed, February 5  | [Interactive Data](lessons/lesson-05.md) | [Data Visualization 4](Assignments/Data-Visualization-4.md) | Data Visualization 3 |
+|  6 |  Mon, February 10 | [Wrap up Project](lessons/lesson-06.md) | [Data Visualization 5](Assignments/Data-Visualization-5.md) | - | Data Visualization 4 |
+|  7 |  Wed, February 12 | [Real Time Data](lessons/lesson-07.md) | [Data Visualization 6](Assignments/Data-Visualization-6.md) | Data Visualization 5 |
 |  8 |  Mon, February 17 | [Real Time Data pt. 2](lessons/lesson-08.md) | [Data Visualization 6](Assignments/Data-Visualization-6.md) | - | - |
 |  9 |  Wed, February 19 | [D3] | Data Visualization 6 |
 | 10 |  Mon, February 24 | [D3 Scales] | - |
