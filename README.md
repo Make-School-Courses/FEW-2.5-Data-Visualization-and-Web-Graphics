@@ -40,7 +40,7 @@ Students by the end of the course will be able to ...
 |  6 |  Mon, February 10 | [Wrap up Project](lessons/lesson-06.md) | [Data Visualization 5](Assignments/Data-Visualization-5.md) | - | Data Visualization 4 |
 |  7 |  Wed, February 12 | [Real Time Data](lessons/lesson-07.md) | [Data Visualization 6](Assignments/Data-Visualization-6.md) | Data Visualization 5 |
 |  8 |  Mon, February 17 | [Real Time Data pt. 2](lessons/lesson-08.md) | [Data Visualization 6](Assignments/Data-Visualization-6.md) | - | - |
-|  9 |  Wed, February 19 | [D3] | Data Visualization 6 |
+|  9 |  Wed, February 19 | [D3] | - |
 | 10 |  Mon, February 24 | [D3 Scales] | - |
 | 11 |  Wed, February 26 | [D3 Maps]| - |
 | 12 |  Mon, March 2     | Final Assessment| - |
