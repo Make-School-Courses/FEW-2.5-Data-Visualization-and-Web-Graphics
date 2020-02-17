@@ -7,27 +7,9 @@
 
 <!-- > -->
 
-## Minute-by-Minute
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Overview and Learning Outcomese                |
-| 0:05        | 0:05      | D3 Intro                  |
-| 0:10        | 0:10      | Explore D3       |
-| 0:20        | 0:30      | Getting Started                     |
-| 0:50        | 0:10      | Loading Data      |
-| 1:00        | 0:30      | SVG      |
-| 1:30        | 0:10      | BREAK      |
-| 1:40        | 1:00      | Lab      |
-| 2:40        | 0:05      | Wrap up review objectives |
-| TOTAL       | 2:45      | -                         |
-
-
-<!-- > -->
-
 ## Overview
 
-D3 is a library that has been around for a long time. It's more of a toolkit for making visualizations with JavaScript. It's the first namer that comes when conversation turns to making data visualizations with JS.
+D3 is a library that has been around for a long time. It's more of a toolkit for making visualizations with JavaScript. It's the first name that comes when conversation turns to making data visualizations with JS.
 
 ## Why you should know this
 
@@ -85,7 +67,7 @@ Select an element to work with. You will be adding or modifying elements within 
 d3.select('body')
 ```
 
-<!-- v -->
+<!-- > -->
 
 Next select the elements you want to modify or create. In this case we are selecting divs. It doesn't matter that there no existing divs.
 
@@ -94,7 +76,7 @@ d3.select('body')
 	.selectAll('div')
 ```
 
-<!-- v -->
+<!-- > -->
 
 Next add some data. Data can be an array containing any type of data. Each element of the array will be processed. For this example I've used an array of numbers.
 
@@ -104,7 +86,7 @@ d3.select('body')
 	.data([5,6,2,8,4,9,1])
 ```
 
-<!-- v -->
+<!-- > -->
 
 Next call `enter()`. Calling this method tells D3 to add new elements if they don't exist.  
 
@@ -115,7 +97,7 @@ d3.select('body')
 	.enter()
 ```
 
-<!-- v -->
+<!-- > -->
 
 Use `append()` to tell D3 what type of element to append.
 
@@ -127,7 +109,7 @@ d3.select('body')
 	.append('div')
 ```
 
-<!-- v -->
+<!-- > -->
 
 Set the text of each new node. This method takes a function which receives one of the data values and should return the text to display in the node.
 
@@ -140,7 +122,7 @@ d3.select('body')
 	.text((d) => d)
 ```
 
-<!-- v -->
+<!-- > -->
 
 The `style()` method takes two parameters. First is the style attribute to set, and second is either a function or a primitive value.
 
@@ -193,7 +175,7 @@ The earlier example used HTML, created HTML elements, and set CSS styles on thos
 
 SVG and HTML are closely related. Imagine HTML as a language for sharing and displaying text documents, and SVG as a language for sharing and displaying graphical images. Both languages share the same parent language.  
 
-<!-- v -->
+<!-- > -->
 
 Remember these SVG tags to get started:
 
@@ -208,13 +190,13 @@ Remember these SVG tags to get started:
 
 Take a look at the list of SVG tags what do you see there?
 
-<!-- v -->
+<!-- > -->
 
 ### Activity
 
 **Pair up and explore a section of the SVG tag list.**
 
-<!-- v -->
+<!-- > -->
 
 ### Making SVG happen
 
@@ -224,23 +206,82 @@ SVG tags have different names and many new and different attributes!
 
 Try it for yourself with these challenges:
 
-- Make an svg tag
-	- `<svg id="svg" width="500" height="500"></svg>`
-- Make an array of objects
-	- Give each object three properties, each assigned a random value.
+Make an SVG Object. You can write SVG into your HTML documents just like you would write a div or other tag. 
 
-<!-- v -->
+Make an svg tag:
+
+`<svg id="svg" width="500" height="500"></svg>`
+
+Inside an SVG tag you can add other tags but these need to be SVG elements. SVG has it's own tags/elements that are different from HTML tags/elements. 
+
+SVG elements have their own attributes also. Try it yourself, make a circle. 
+
+```HTML
+<svg id="svg" width="500" height="500">
+	<circle cx="250" cy="250" r="123" fill="#0ff"/>
+</svg>
+```
+
+This should make a cyan circle in the center of the SVG document. 
+
+- `cx` - center x
+- `cy` - center y
+- `r` - radius
+- `fill` - fill color
+
+Time to make some SVG elements with D3. 
+
+Make an array of objects. Give each object three properties, each assigned a random value.
+
+This function takes a parameter `n` and returns an array of n objects. Each object properties a, b, and c with random values from 0 - 1. 
+
+```JS
+function makeRandomData(n) {
+	const array = []
+	for (let i = 0; i < n; i += 1) {
+		array.push({ a: Math.random(), b: Math.random(), c: Math.random() })
+	}
+	return array
+}
+```
+
+<!-- > -->
+
+Use this function to generate random data for testing. 
+
+```JS
+const data = makeRandomData(11)
+```
+
+<!-- > -->
 
 Select the SVG element by its id name and give it a CSS style.
 
 ```JS
+// Select #svg
 d3.select('#svg')
-	.style('border', '1px solid')
+	// Style #svg
+	.style('border', '1px solid #000')
 ```
 
-<!-- v -->
+Adding a border will help idenitfy where SVG is in the window. If you don't see the border check your work. 
 
-Select all of the `rect`s. None exist yet. Add data. Then call enter to start creating elements from the dataset.
+<!-- > -->
+
+Select all of the `circle`s. None exist yet. Add `data`. Then call `enter()` to start creating elements from the data.
+
+```JS
+d3.select('#svg')
+	.style('border', '1px solid')
+	// select all <circle>s in #svg
+	.selectAll('circle')
+	.data(data)
+	.enter()
+```
+
+<!-- > -->
+
+Set attributes on SVG `circle`. Below we've set the `cx`, `cy`, `r`, and `fill` to the values in the data.
 
 ```JS
 d3.select('#svg')
@@ -248,25 +289,47 @@ d3.select('#svg')
 	.selectAll('rect')
 	.data(data)
 	.enter()
+	// Style all <circle>s in #svg
+	.append('circle')
+	.attr('cx', (d, i) => i * 500 / data.length)
+  .attr('cy', (d, i) => d.a * 500)
+	.attr('r', (d) => d.c * 100)
+	.attr('fill', (d) => 'green')
+	.attr('opacity', () => 0.5)
 ```
 
-<!-- v -->
+Notice that the `.attr()` method takes two parameters. The first is a string and should the name of the attribute. The second is a callback functiom that receives one data element and returns the value you want to assign to the attribute. 
 
-Set attributes on SVG rect. Below we've set the height and width to the value at the `c` key in the data, and used transform to move the rect `x` and `y` position based on the values at keys `a` and `b`.
+Notice I've used an arrow function here, written on a single line the return is implicit. 
 
-```JS
-d3.select('#svg')
-	.style('border', '1px solid')
-	.selectAll('rect')
-	.data(data)
-	.enter()
-	.append('rect')
-	.attr('height', (d) => d.c * 50)
-	.attr('width', (d) => d.c * 50)
-	.attr('transform', (d, i) => `translate(${500 / 50 * i}, ${500 - d.a * 500})`)
-```
+<!-- > -->
 
-<!-- v -->
+### SVG and Sketch
+
+Sketch can export SVG. Anything you draw in Sketch can be copied and pasted as SVG code. 
+
+Try it out. 
+
+- Open Sketch
+- Draw something
+	- If you drew multiple shapes group them together
+- Right click on the object you drew and choose "Copy SVG Code"
+- Paste this code into the body of your HTML document
+
+You can now inspect the code and it will render in your HTML document. 
+
+<!-- > -->
+
+Try these challenges
+
+- Change the color of all of the circles
+- Change the opacity of the circle
+- Make the radius of all circles 50
+- Give each circle a stroke, you'll need to add two more attributes:
+	- stroke - set a color 
+	- stroke-width - set the width of the stroke in pixels
+
+<!-- > -->
 
 ### Activity
 
@@ -294,3 +357,21 @@ Choose an example or tutorial from the D3 site and recreate that example with yo
 ## After class
 
 - Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am
+
+<!-- > -->
+
+## Minute-by-Minute
+
+| **Elapsed** | **Time**  | **Activity**              |
+| ----------- | --------- | ------------------------- |
+| 0:00        | 0:05      | Overview and Learning Outcomese                |
+| 0:05        | 0:05      | D3 Intro                  |
+| 0:10        | 0:10      | Explore D3       |
+| 0:20        | 0:30      | Getting Started                     |
+| 0:50        | 0:10      | Loading Data      |
+| 1:00        | 0:30      | SVG      |
+| 1:30        | 0:10      | BREAK      |
+| 1:40        | 1:00      | Lab      |
+| 2:40        | 0:05      | Wrap up review objectives |
+| TOTAL       | 2:45      | -                         |
+
