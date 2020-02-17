@@ -5,6 +5,13 @@
 
 ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-10.html ':ignore')
 
+
+## Lab
+
+Choose an example or tutorial from the D3 site and recreate that example with your own dataset.
+
+**Stretch Challenge:** Recreate a second example. The goal here is to get familiar with D3 to use later in your projects
+
 <!-- > -->
 
 ## Minute-by-Minute

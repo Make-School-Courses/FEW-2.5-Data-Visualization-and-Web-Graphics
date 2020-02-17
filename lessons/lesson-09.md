@@ -348,9 +348,23 @@ Answer the following questions:
 
 ## Lab
 
-Choose an example or tutorial from the D3 site and recreate that example with your own dataset.
+Get started with D3. Try working with the Titanic Dataset. Make a new project and load the Titanic data. 
 
-**Stretch Challenge:** Recreate a second example. The goal here is to get familiar with D3 to use later in your projects
+```js 
+d3.json('./titanic-passengers.json')
+	.then((data) => {
+		const fields = data.map((obj) => obj.fields)
+		console.log(fields)
+		handleData(fields)
+	})
+
+function handleData(data) {
+	// do the stuff from the example above
+}
+```
+
+
+
 
 <!-- > -->
 
