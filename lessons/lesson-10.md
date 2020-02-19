@@ -123,12 +123,12 @@ Choose one of the D3 example/tutorials to recreate. Look for the scale in use.
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Overview + Learning Outcomes                |
-| 0:05        | 0:10      | Scale and normalization                  |
-| 0:15        | 0:20      | Get started with scaleOrdinal       |
-| 0:35        | 0:55      | Example code                     |
-| 1:30        | 0:10      | Break      |
-| 1:40        | 1:00      | Lab      |
-| 2:40        | 0:05      | Wrap up  |
-| TOTAL       | 2:45      | -                         |
+| 0:00        | 0:05      | Overview + Learning Outcomes |
+| 0:05        | 0:10      | Scale and normalization |
+| 0:15        | 0:20      | Get started with scaleOrdinal |
+| 0:35        | 0:55      | Example code |
+| 1:30        | 0:10      | Break |
+| 1:40        | 1:00      | Lab |
+| 2:40        | 0:05      | Wrap up |
+| TOTAL       | 2:45      | - |
 
