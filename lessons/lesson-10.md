@@ -10,7 +10,7 @@
 
 Choose an example or tutorial from the D3 site and recreate that example with your own dataset.
 
-**Stretch Challenge:** Recreate a second example. The goal here is to get familiar with D3 to use later in your projects
+**Stretch Challenge:** Recreate a second example. The goal here is to get familiar with D3 to use later in your projects.
 
 <!-- > -->
 
@@ -60,6 +60,39 @@ Go through and review the following links on your own:
 
 <!-- > -->
 
+### Ordinal Scale Example
+
+Looking at the Titanic Dataset emabrked is expressed as a letter. D3 has a ordinal scale that allows mapping aribitrary values. 
+
+```JS
+// Creates an array of unique values 
+const embarked = Array.from(new Set(data.map((p) => p.embarked === undefined ? '?' : p.embarked)))
+// Create an  ordinal scale
+const embarkedScale = d3.scaleOrdinal()
+  .domain(embarked)
+  .range(['#ff00ff66', '#ffff0066', '#00ffff66', 'black'])
+```
+
+Use the ordinal scale 
+
+```JS
+d3.select('#svg')
+  .selectAll('circle')
+  .data(data)
+  .enter()
+  .append('circle')
+  .attr('cx', (d, i) => i * 600 / data.length)
+  .attr('cy', (d, i) => {
+    const n = 500 - d.age
+    return isNaN(n) ? 500 : n
+  })
+  .attr('r', (d) => 5)
+  // Apply the ordinal scale to embarked for each 
+  .attr('fill', (d) => embarkedScale(d.embarked))
+```
+
+<!-- > -->
+
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
 
@@ -67,7 +100,7 @@ Go through and review the following links on your own:
 
 ## Lab
 
-Create one data visualization using scaleOrdinal and D3 Scales with a data source of your choosing. Use the previous examples to help you get started. You should build with either HTML/CSS or SVG.
+Choose one of the D3 example/tutorials to recreate. Look for the scale in use. 
 
 <!-- > -->
 
