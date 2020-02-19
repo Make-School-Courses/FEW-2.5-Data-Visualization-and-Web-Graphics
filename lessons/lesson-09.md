@@ -363,9 +363,6 @@ function handleData(data) {
 }
 ```
 
-
-
-
 <!-- > -->
 
 ## After class
