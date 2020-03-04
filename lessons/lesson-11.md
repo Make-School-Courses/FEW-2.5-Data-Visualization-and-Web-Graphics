@@ -15,7 +15,7 @@ You should be working on your individual project and it will have problems to so
 
 ## D3 in Depth Guide 
 
-use this in depth guide to D3 to solve problems and find solutions. 
+Use this in depth guide to D3 to solve problems and find solutions. 
 
 https://www.d3indepth.com
 
