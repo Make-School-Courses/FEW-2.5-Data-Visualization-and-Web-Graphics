@@ -14,6 +14,12 @@ If you want to practice the craft of making web applications with HTML, CSS, and
 
 - [FEW 1.2](https://github.com/Make-School-Courses/FEW-1.2-JavaScript-Foundations)
 
+## Course Specifics
+
+**Course Delivery**: online | 7 weeks | 14 sessions
+
+**Course Credits**: 3 units | 37.5 Seat Hours | 75 Total Hours
+
 ## Learning Outcomes
 
 Students by the end of the course will be able to ...
@@ -47,15 +53,19 @@ Students by the end of the course will be able to ...
 | 13    | Wed, Mar 3 | Final Presentations |  | Final Data Visualization |
 
 ## Evaluation
-
 To pass this course you must meet the following requirements:
 
-- Complete all required assignments
-- Pass all projects according to the associated project rubric
+- Pass 70% projects according to the associated project rubric
 - Pass the final summative assessment according to the rubric as specified in this class
-    - This will be further explained in the [study guide](ADD_STUDY_GUIDE_LNK)
+    - This will be further explained in the [study guide](study-guide.md)
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
+
+##  Information Resources
+
+Any additional resources you may need (online books, etc.) can be found here. You can also find additional resources through the library linked below:
+
+- [make.sc/library](http://make.sc/library)
 
 ## Make School Course Policies
 
