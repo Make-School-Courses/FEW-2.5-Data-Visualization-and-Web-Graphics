@@ -3,7 +3,7 @@
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-1.html ':ignore')
+<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-1.html ':ignore') -->
 
 <!-- > -->
 
@@ -27,28 +27,28 @@ If you are interested in data this your opportunity to show it.
 
 - Define data visualization
 - Load Data from JS
-    - Identify and avoid CORs problems
+  - Identify and avoid CORs problems
 - Identify values in the Titanic dataset
 - Extract data and derive relevant values
-    - map, filter, reduce
-    - min, max, average
-    - nomarlize data
+  - map, filter, reduce
+  - min, max, average
+  - nomarlize data
 
 <!-- > -->
 
 ## Overview
 
 - What is data visualization?
- - Some examples of Data visualization
+  - Some examples of Data visualization
 - Titanic Dataset
- - What does it contain?
- - How can this be visualized?
- - min, max, average
- - Styles
- - width
- - height
- - backgroundColor
- - Using Flex
+  - What does it contain?
+  - How can this be visualized?
+  - min, max, average
+  - Styles
+  - width
+  - height
+  - backgroundColor
+  - Using Flex
 
 <!-- > -->
 

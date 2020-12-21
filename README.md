@@ -25,26 +25,26 @@ Students by the end of the course will be able to ...
 
 ## Schedule
 
-**Course Dates:** Monday, January 20 – Wednesday, March 4, 2020 (7 weeks)
+**Course Dates:** Wednesday, January 20 – Wednesday, March 3, 2020
 
-**Class Times:** Monday and Wednesday at 9:30–12:15pm (13 class sessions)
+**Class Times:** Monday, Wednesday at 9:30am–12:15pm (13 class sessions)
 
 | Class | Date | Topics | Assignments | Assignment Due
 |:-----:|:----:|:------:|:-----------:|:-----------:|
-|  - |  Mon, January 20  | **NO CLASS** - MLK Day | - |
-|  1 |  Wed, January 22  | [Intro to Data Visualization](lessons/lesson-01.md) | [Data Visualization 1 pt 1](Assignments/Data-Visualization-1.md) | |
-|  2 |  Mon, January 27  | [Displaying Data graphically](lessons/lesson-02.md) | [Data Visualization 1 pt 2](Assignments/Data-Visualization-2.md) | |
-|  3 |  Wed, January 29  | [Animation and Interaction](lessons/lesson-03.md) |  | Data Visualization 1
-|  4 |  Mon, February 3  | [Sorting and Filtering](lessons/lesson-04.md) | [Data Visualization 3](Assignments/Data-Visualization-3.md) | - |
-|  5 |  Wed, February 5  | [Interactive Data](lessons/lesson-05.md) | [Data Visualization 4](Assignments/Data-Visualization-4.md) | Data Visualization 3 |
-|  6 |  Mon, February 10 | [Wrap up Project](lessons/lesson-06.md) | [Data Visualization 5](Assignments/Data-Visualization-5.md) | - | Data Visualization 4 |
-|  7 |  Wed, February 12 | [Real Time Data](lessons/lesson-07.md) | [Data Visualization 6](Assignments/Data-Visualization-6.md) | Data Visualization 5 |
-|  8 |  Mon, February 17 | [Real Time Data pt. 2](lessons/lesson-08.md) | [Data Visualization 6](Assignments/Data-Visualization-6.md) | - | - |
-|  9 |  Wed, February 19 | [D3] | - |
-| 10 |  Mon, February 24 | [D3 Scales] | - |
-| 11 |  Wed, February 26 | [D3 Maps]| - |
-| 12 |  Mon, March 2     | Final Assessment| - |
-| 13 |  Wed, March 4     | Final Presentations |  | Final Data Visualization |
+|  -    | Mon, Jan 18 | **NO CLASS** - MLK Day | - |
+|  1    | Wed, Jan 20 | [Intro to Data Visualization](lessons/lesson-01.md) | [Data Visualization 1 pt 1](Assignments/Data-Visualization-1.md) | |
+|  2    | Mon, Jan 25 | [Displaying Data graphically](lessons/lesson-02.md) | [Data Visualization 1 pt 2](Assignments/Data-Visualization-2.md) | |
+|  3    | Wed, Jan 27 | [Animation and Interaction](lessons/lesson-03.md) |  | Data Visualization 1
+|  4    | Mon, Feb 1 | [Sorting and Filtering](lessons/lesson-04.md) | [Data Visualization 3](Assignments/Data-Visualization-3.md) | - |
+|  5    | Wed, Feb 3 | [Interactive Data](lessons/lesson-05.md) | [Data Visualization 4](Assignments/Data-Visualization-4.md) | Data Visualization 3 |
+|  6    | Mon, Feb 8 | [Wrap up Project](lessons/lesson-06.md) | [Data Visualization 5](Assignments/Data-Visualization-5.md) | - | Data Visualization 4 |
+|  7    | Wed, Feb 10 | [Real Time Data](lessons/lesson-07.md) | [Data Visualization 6](Assignments/Data-Visualization-6.md) | Data Visualization 5 |
+|  8    | Mon, Feb 15 | [Real Time Data pt. 2](lessons/lesson-08.md) | [Data Visualization 6](Assignments/Data-Visualization-6.md) | - | - |
+|  9    | Wed, Feb 17 | [D3] | - |
+| 10    | Mon, Feb 22 | [D3 Scales] | - |
+| 11    | Wed, Feb 24 | [D3 Maps]| - |
+| 12    | Mon, Mar 1 | Final Assessment| - |
+| 13    | Wed, Mar 3 | Final Presentations |  | Final Data Visualization |
 
 ## Evaluation
 
