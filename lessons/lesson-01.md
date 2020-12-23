@@ -221,6 +221,7 @@ Complete the Challenges: [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-
 
 <!-- > -->
 
+<!-- 
 ## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |
@@ -237,4 +238,5 @@ Complete the Challenges: [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-
 | 1:00 | 1:10 | [Exercise: Finding meaning in Data](#exercise-finding-meaning-in-data) |
 | 1:10 | 2:00 | [Lab Activity](#lab-activity) |
 | 2:00 | 2:10 | [After Class](#after-class) |
-| TOTAL | 2:45 | - |
+| TOTAL | 2:45 | - | 
+-->
