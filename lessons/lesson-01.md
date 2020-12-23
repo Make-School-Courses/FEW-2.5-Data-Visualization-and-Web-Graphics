@@ -199,17 +199,13 @@ Using the Titanic dataset, we will be practicing the following techniques using 
 
 ## Lab Activity
 
-Work through the following activities in this order to practice your JS visualization skills:
-
-Follow this [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/tree/master) and solve all of the challenges.
+Work through the following activities: [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/tree/master)
 
 <!-- > -->
 
 ## After Class
 
-Start on [Visualization 1](Assignments/Data-Visualization-1.md). This first assignment will use the Titanic Dataset.
-
-Before you can visualize data you need to have data. Follow this [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/tree/master) and solve all of the challenges.
+Complete the Challenges: [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/tree/master)
 
 <!-- > -->
 
