@@ -201,9 +201,7 @@ Using the Titanic dataset, we will be practicing the following techniques using 
 
 ## Lab Activity
 
-Start working on the homework assignment. 
-
-- [Assignment 1](../assignments/assignment-1.md)
+Start the Challenges here: [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/)
 
 <!-- > -->
 
