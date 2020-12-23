@@ -186,10 +186,9 @@ If we had an array of paessenger what questions could you ask the data? Pair up 
 Using the Titanic dataset, we will be practicing the following techniques using JS:
 
 - Counting values, how hany...
-- Find the min, max, and range
-- Filter
-- Make elements on screen that visualize information
-- Aggregate data
+- Find the min, max, range, median values
+- Filter, look at a subset
+- Aggregate values, finding the total and average
 
 <!-- > -->
 
@@ -202,13 +201,7 @@ Using the Titanic dataset, we will be practicing the following techniques using 
 
 Work through the following activities in this order to practice your JS visualization skills:
 
-1. Finish up the activities and challenges presented earlier in class today if you haven't already
-1. Follow this [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/tree/master) and solve all of the challenges.
-1. **Stretch Challenge** [Download this Netflix data set](https://www.kaggle.com/shivamb/netflix-shows) and answer the following questions through visualizations:
- 1. What is the ratio of TV Shows to Movies?
- 1. How many movies had the release year of 2005? 2019?
- 1. How many TV shows had more than 3 seasons?
- 1. How many Comedies does India have?
+Follow this [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/tree/master) and solve all of the challenges.
 
 <!-- > -->
 
