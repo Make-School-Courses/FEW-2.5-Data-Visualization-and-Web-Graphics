@@ -201,13 +201,13 @@ Using the Titanic dataset, we will be practicing the following techniques using 
 
 ## Lab Activity
 
-Start the Challenges here: [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/)
+Start the Challenges here: [Challenges](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/)
 
 <!-- > -->
 
 ## After Class
 
-Complete the Challenges: [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/tree/master)
+Complete the Challenges from lab: [Challenges](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/)
 
 <!-- > -->
 
