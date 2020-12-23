@@ -9,25 +9,22 @@
 
 ## Welcome to Data Visualization!
 
-The goal of this lesson is to get started with data visualization. You will look at the features of making information visible and represented graphically using HTML, CSS, and JavaScript.
+The goal of this lesson is to get started with data visualization. You will look at needed to make information visible.
+
+The first step in the process is asking questions of the data you're working with. The code you'll write in this assignment will answer those questions. 
 
 <!-- > -->
 
 ## Why you should know this or industry application
 
-Being able to display things on the screen is a core feature of computer software. Having this skill in your back pocket is important for making software that is engaging and compelling to your users.
+To make data visible you need to measure and quantify the data. While many programs have function built in that handle these operations it goof to know how they work and how to implement them yourself. 
 
-The skills learned to make data visualizations will translate to making you a better programmer and give you new ideas on how to problems on the computer.
-
-If you are interested in data this your opportunity to show it.
+The tools you will use for this are some of the most important tools to have in your tool box. 
 
 <!-- > -->
 
 ## Learning Objectives
 
-- Define data visualization
-- Load Data from JS
-  - Identify and avoid CORs problems
 - Identify values in the Titanic dataset
 - Extract data and derive relevant values
   - map, filter, reduce
@@ -38,89 +35,93 @@ If you are interested in data this your opportunity to show it.
 
 ## Overview
 
-- What is data visualization?
-  - Some examples of Data visualization
 - Titanic Dataset
   - What does it contain?
   - How can this be visualized?
   - min, max, average
-  - Styles
-  - width
-  - height
-  - backgroundColor
-  - Using Flex
+- map, filter, and reduce
 
-<!-- > -->
+## JSON
 
-## Infographic vs Data Visualization
+JSON is a common format for storing structured data for use with JavaScript. JSON stands for JavaScript Object Notation. 
 
-Let's clarify what you are expected to make.
+JSON is not code. JSON is a plain text format. The JSON format looks like standard JavaScript Objects and can easily be converted to and from JavaScript Objects. This often happens automatically. 
 
-- An infographic provides information in the form of an image. These are often more comic strip and less abstract. The goal is to inform.
-- A data visualization is more abstract showing data in visual form.
+Here are a few rules for JSON. JSON supports the following data types: 
 
-<!-- v -->
+- Number
+- String - Must be quoted with double quotes
+- Boolean - either of the vlaues `true` or `false`
+- Array 
+- Object - property names must appear in the double quotes
+- null
 
-Some examples
+What doe's JSON not support? While JSON is JS objects and is easily converted to JS object there are a few things that JSON connot represent: 
 
-- [Info Graphic](https://venngage.com/blog/what-is-an-infographic/)
+- functions 
+- comments
+- All properties must be quoted with double quotes
+- Strings must quoted with double quotes
 
-- Data visualizations Examples
- - [What is data visualization](https://www.tableau.com/learn/articles/data-visualization)
- - [Tableau Best Data viz examples](https://www.tableau.com/learn/articles/best-beautiful-data-visualization-examples)
- - [Best Data Visualizations 2018](https://visme.co/blog/best-data-visualizations/)
- - [James Round](https://www.jamesrounddesign.com)
- - [Data visualization](https://datavizcatalogue.com)
- - [Examples](https://www.maptive.com/17-impressive-data-visualization-examples-need-see/)
+JSON files should always have the .json file extension. 
 
-Generative art and Data: 
-- https://www.ted.com/playlists/201/art_from_data
-- https://joshuadavis.com
-- https://www.theatlantic.com/entertainment/archive/2015/05/the-rise-of-the-data-artist/392399/
-- https://techcrunch.com/2016/05/08/the-digital-age-of-data-art/
+```JSON
+[{
+  "id": 1,
+  "name": "Hadleigh",
+  "says": "Pre-emptive didactic forecast"
+}, {
+  "id": 2,
+  "name": "Hersh",
+  "says": "Compatible secondary methodology"
+}, {
+  "id": 3,
+  "name": "Shelly",
+  "says": "Robust mission-critical strategy"
+}, {
+  "id": 4,
+  "name": "Erina",
+  "says": "Reactive next generation customer loyalty"
+}]
+```
 
-<!-- v -->
+## CSV
 
-## Activity
+CSV or Comma Separated Values, is a text format for managing organized information. So it's information with each value separated by a comma.
 
-Use the previous links to answer the following questions
+In a CSV file each line is one row of data with each value separated by a comma. The first line is special as it holds a list of keys each separated by a comma. 
 
-- What is data visualization?
-- What is data?
+Below is the same data we looked at in JSON format above but in CSV format this time. 
 
-<!-- > -->
+```CSV
+id,name,says
+1,Hadleigh,Pre-emptive didactic forecast
+2,Hersh,Compatible secondary methodology
+3,Shelly,Robust mission-critical strategy
+4,Erina,Reactive next generation customer loyalty 
+```
 
-## Getting started
+## CSV vs JSON
 
-- JSON
- - All of the sample data is JSON
- - What is JSON?
- - Validating and formatting JSON
- - Loading JSON with Fetch
- - CORS
- - What is CORS
- - How to deal with it
+JSON more human readable and works seemlessly with JavaScript because of built in support. 
 
-<!-- > -->
+CSV is notably smaller in file size. It takes fewer characters to express data in CSV format. The JSON sample above is 314 characters, the same data in CSV is only 183 characters. 
 
-## CORS
+JSON has the ability to express structured data. For example a JSON file can express objects and arrays nested within other objects and arrays. CSV has a flat structure and only represents a single level, imagine an array of values (numbers and strings.) 
 
-**CORS - Cross-Origin Resource Sharing**, is a security feature built into the browser. It's also a headache for developers. In a nutshell, it prevents JavaScript in the browser from reading files on your file system.
+Why use JSON? Use JSON when you need structure beyond a simple array or object. Use JSON when you need seemlessly exchange data with JavaScript programs. 
 
-The easy solution for you is to run your work from a local server. This is the solution that will work for all of the work in this class and will usually solve common CORS errors.
-
-For more info read these articles.
-
-- https://medium.com/@baphemot/understanding-cors-18ad6b478e2b
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+Why use CSV? Use CSV when you have lots of data and that data is organized in a flat file structure. 
 
 <!-- > -->
 
 ## The Titanic Dataset
 
-Take a look at the [Titanic Dataset](https://www.kaggle.com/c/titanic/data). This link points to the Titanic dataset on Kaggle. There is also a copy in the tutorial repo.
+Take a look at the [Titanic Dataset](https://www.kaggle.com/c/titanic/data). This link points to the Titanic dataset on Kaggle. Kaggle is a web site that shares dtaasets for data science and other studies. 
 
-(You can download the Titanic dataset in JSON or CSV here: https://public.opendatasoft.com/explore/dataset/titanic-passengers/export/)
+The Titanic dataset is the starting point for studying dtaascience. It's sort of the Hello World of datsets. It's large enough to provide meaningful information, but also small enough to be managable. 
+
+The Titanic data on Kaggle is in CSV format which makes it harder to work with. You can download the Titanic dataset in JSON here: https://public.opendatasoft.com/explore/dataset/titanic-passengers/export/
 
 Take a look at the data, ask yourself what you see?
 
@@ -136,198 +137,59 @@ Pair and discuss. Come up with a list of things you find interesting. **Write th
 
 <!-- v -->
 
-## Exercise
+## Exercise: Finding meaning in Data
+
+The Titanic dataset is an array of objects each of which describes a single passenger. 
+
+What can the array tell you about the Titanic and it's passengers? 
+
+```JS
+[{
+  "datasetid": "titanic-passengers", 
+  "recordid": "398286223e6c4c16377d2b81d5335ac6dcc2cafb", 
+  "record_timestamp": "2016-09-20T15:34:51-07:00",
+  "fields": {
+    "fare": 7.3125, 
+    "name": "Olsen, Mr. Ole Martin", 
+    "age": 40.0,
+    "embarked": "S", 
+    "parch": 0, 
+    "pclass": 3, 
+    "sex": "male", 
+    "survived": "No", 
+    "ticket": "Fa 265302", 
+    "passengerid": 155, 
+    "sibsp": 0,
+    "cabin": "F4"
+  }
+},
+  {
+    ...
+  }
+]
+```
+
+Above is a single passenger what does this tell us about this passenger? 
+
+Name three things you can say about this passenger? 
+
+- ? 
+- ? 
+- ? 
+
+If we had an array of paessenger what questions could you ask the data? Pair up and make a list of at least 3 questions: 
+
+- ? 
+- ? 
+- ?
 
 Using the Titanic dataset, we will be practicing the following techniques using JS:
 
+- Counting values, how hany...
 - Find the min, max, and range
 - Filter
-- Counting values
 - Make elements on screen that visualize information
 - Aggregate data
-
-<!-- v -->
-
-### Interview Questions
-
-- Get data from the first passenger in the list
-    - name, fare, pclass, survived, age
-- How many total passengers? 
-    - get the length of the list
-- How many survived?
-    - Loop over the list and count survived = Yes
-- How many died? (diers?)
-    - Loop over the list and count survived = No
-- How many passenger classes?
-    - Loop over the list and look for each unique value
-    - You can use an object or a set for this
-- How many passengers in each class?
-    - Loop over the list and count the number of times each unique value appears
-    - Use an object where the key is passenger class
-- How many died in each class?
-- Get all of the ages from the Titanic Dataset
-- Filter data points where the age is missing
-- How many passengers embarked from Queenstown
-- How many people traveled with a nanny?
-- Find the min and max-age
-- Find min and max fare
-- How many siblings were there?
-- What is the survival rate of siblings vs only children?
-- How many ages were estimated?
-
-Solve these problems in code. 
-
-- Use JS to read the Titanic Dataset.
-- Write code to solve the problems above
- - Use foreach, map, filter, and reduce
-
-### Code Samples
-
-```JS 
-fetch('titanic-passengers.json')
-    .then(res => res.json())
-    .then(json => handleData(json))
-    .catch(err => console.log(err.message))
-
-function handleData(data) {
-    // Get an array of relevant objects from the data
-    const fields = data.map(passenger => passenger.fields)
-    console.log(fields[0].name, fields[0].age, fields[0].fare)
-
-    // number of passengers
-    console.log(fields.length) 
-    // filter ages for all ages that are not undefined
-    console.log(fields.filter(passenger => passenger.age !== undefined).map(({age}) => age))
-    // filter for all fares that were not undefined
-    console.log(fields.filter(({ fare }) => fare !== undefined).map(({fare}) => fare))
-
-    // Count survivors
-    let survivorCount = 0
-    fields.forEach((passenger) => {
-        if (passenger.survived === "Yes") {
-            survivorCount += 1
-        }
-    })
-    // Alternate way to count survivors
-    const survivors = fields.filter(passenger => passenger.survived === "Yes")
-
-    console.log(survivorCount)
-    console.log(survivors.length)
-
-    // Count notSurvivors
-    const notSurvivors = fields.filter(({ survived }) => survived === "No")
-    console.log(notSurvivors.length)
-
-    // define an array of pclasses 
-    // loop through all passengers 
-        // look for pclass in pclasses 
-        // if not add to list 
-    
-    // Two methods to pull unique values out of data.
-    // The code below gets passenger classes. 
-    // Method 1: use a Set, each value in a set is unique
-    // Method 2: use an object assigning each value to a key
-    const pclasses = new Set()
-    const pc = {}
-    fields.forEach((passenger) => {
-        pclasses.add(passenger.pclass) // add value to a set (method 1)
-        pc[passenger.pclass] = 0 // set value as a key (method 2)
-    })
-
-    const arrayofPC = Object.keys(pc) // Get array of keys (method 2)
-    console.log(pclasses)
-    console.log(arrayofPC)
-    console.log(pc)
-
-    Math.min(5,4,3,7,8,2,9) // 2
-    Math.max(5,4,3,7,8,2,9) // 9
-    // const ages = [5,4,3,7,8,2,9]
-    const ages = fields.filter(({ age }) => age !== undefined).map(({age}) => age)
-    console.log(Math.min(...ages)) // Min age
-    console.log(Math.max(...ages)) // Max age
-    
-    // ...
-}
-```
-
-## Normalizing Data 
-
-Numbers are great but they aren't perfect for every situation. 
-
-For example, imagine you want to graph the ages of Titanic passengers. They range from 0 to 80. Translated to the screen in pixels. 80px might be too small to display in the space available. 
-
-Here's another example. Imagine graphing the US budget which is measured in millions, billions and trillions of dollars. Millions, billions, and trillions would be far too large in pixels. 
-
-We need a system to convert values in one range into values in another range. For example ages 0 to 80 years into 0 to 400 px. Or 600 billion dollars into 12 rems. 
-
-The solution is normalization. This is the process of converting values from their original ranges into a range of 0 to 1. Think of this as an intermediate step that is easily converted to any other range by multiplication. 
-
-The formula for normalizing is: value / maxValue
-
-<!-- > -->
-
-## Normalizing challenges 
-
-Normalizing applies to numeric data. With the Titanic dataset it would be good to normalize: 
-
-- fare
-- age
-
-Try this on your own
-
-## Scales 
-
-Some values would fall on a scale. A scale is a measure with fixed zones. In the Titanic, dataset scales apply to:
-
-- gender - [male, female]
-- survived - [Yes, No]
-- siblings - [true, false]
-- embarked - [C, Q, S]
-
-<!-- > -->
-
-## Display things on the screen
-
-It's one thing to find the answer to questions, but this class is about visualizing the answer, so we need a way to put our information on the screen! Below are some useful methods to do this:
-
-- document.createElement()
-- element.appendChild()
-- element.style
- - height, width
- - backgroundColor
- - border
- - borderRadius
-
-```JS 
-for (let item of data) {
- const { fields } = item
- const { fare, name, age, embarked, parch, pclass, sex, sibsp, survived } = fields
- 
- const bgColor = survived === 'Yes' ? 'rgba(51, 208, 45, 0.125)' : 'rgba(195, 52, 52, 0.125)'
- 
- const el = document.createElement('div')
- const br = sex === 'male' ? '50% 50% 50% 0' : '50% 0 50% 50%'
-
- el.style.width = `${size}px`
- el.style.backgroundColor = bgColor
- 
- container.prepend(el)
-} 
-```
-
-<!-- > -->
-
-## Challenges
-
-- Make a div for each passenger
- - Give it a width, height, and background color
-- Give each div different background color for survivors
-- Set the width of each div based on the fare paid
-- Show the gender of the passenger
- - This could be done with color or?
-- Show the fare paid 
-- Show passenger class
-- Show the embarkation 
 
 <!-- > -->
 
@@ -365,9 +227,6 @@ Before you can visualize data you need to have data. Follow this [Tutorial](http
 - [Array.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 - [Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
 - [Math.min()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
-- [document.createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
-- [Node.appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
-- [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
 
 <!-- > -->
 
