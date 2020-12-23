@@ -35,6 +35,8 @@ The tools you will use for this are some of the most important tools to have in 
 
 ## Overview
 
+The goal today is to look at the Titanic dataset and use JavaScript to extract relevant data from it. You'll use all of the regular CS tools with a focus on map, filter, and reduce. 
+
 - Titanic Dataset
   - What does it contain?
   - How can this be visualized?
@@ -135,6 +137,11 @@ What could this data tell you?
 
 Pair and discuss. Come up with a list of things you find interesting. **Write the list on the board.**
 
+<!-- > -->
+
+<!-- .slide: data-background="#087CB8" -->
+## [**10m**] BREAK
+
 <!-- v -->
 
 ## Exercise: Finding meaning in Data
@@ -192,11 +199,6 @@ Using the Titanic dataset, we will be practicing the following techniques using 
 
 <!-- > -->
 
-<!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
-
-<!-- > -->
-
 ## Lab Activity
 
 Work through the following activities: [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/tree/master)
@@ -223,12 +225,16 @@ Complete the Challenges: [Tutorial](https://github.com/MakeSchool-Tutorials/FEW-
 
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------------------- |
-| 0:00 | 0:10 | Overview + Learning Outcomes |
-| 0:10 | 0:10 | Infographic vs Data Visualization |
-| 0:20 | 0:10 | Activity |
-| 0:30 | 0:10 | JSON and CORS |
-| 0:40 | 0:50 | Titanic Dataset |
-| 1:30 | 0:10 | Break |
-| 1:40 | 1:00 | Lab |
-| 2:40 | 0:05 | Wrap-up + homework overview |
-| TOTAL | 2:45 | |
+| 0:00 | 0:05 | [Welcome to Data Visualization!](#welcome-to-data-visualization) |
+| 0:05 | 0:10 | [Why you should know this or industry application](#why-you-should-know-this-or-industry-application) |
+| 0:10 | 0:15 | [Learning Objectives](#learning-objectives) |
+| 0:15 | 0:20 | [Overview](#overview) |
+| 0:20 | 0:25 | [JSON](#json) |
+| 0:25 | 0:30 | [CSV](#csv) | 
+| 0:30 | 0:40 | [CSV vs JSON](#csv-vs-json) |  
+| 0:40 | 0:50 | [The Titanic Dataset](#the-titanic-dataset) | 
+| 0:50 | 1:00 | Break |
+| 1:00 | 1:10 | [Exercise: Finding meaning in Data](#exercise-finding-meaning-in-data) |
+| 1:10 | 2:00 | [Lab Activity](#lab-activity) |
+| 2:00 | 2:10 | [After Class](#after-class) |
+| TOTAL | 2:45 | - |
