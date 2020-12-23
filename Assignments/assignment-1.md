@@ -1,8 +1,8 @@
-# FEW 2.5 Visualization 1
+# FEW 2.5 Assignment 1
 
 ## Answering questions with Data
 
-
+The values in a dataset tell a story. Reading the story is the process of sorting, filtering, and looking at the data in different ways. 
 
 ## Learning Objectives
 
