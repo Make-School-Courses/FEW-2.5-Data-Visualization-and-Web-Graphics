@@ -11,6 +11,12 @@ The values in a dataset tell a story. Reading the story is the process of sortin
 - Find aggregate values
 - Find median value
 
+## What to do
+
+Complete the challenges here: https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/
+
+Work through the challenges in `challenges-1.js`. Follow the instructions in the ReadMe.
+
 ## What will you turn in?
 
 Post a link to the GitHub repo containing your work to GradeScope. 
