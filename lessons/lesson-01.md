@@ -1,5 +1,5 @@
 
-# FEW 2.5 - Intro to Data Visualization
+# FEW 2.5 - Lesson 1
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -25,23 +25,128 @@ The tools you will use for this are some of the most important tools to have in 
 
 ## Learning Objectives
 
+- define with arrow functions 
+- Use callbacks
 - Identify values in the Titanic dataset
 - Extract data and derive relevant values
-  - map, filter, reduce
-  - min, max, average
-  - nomarlize data
 
 <!-- > -->
 
 ## Overview
 
-The goal today is to look at the Titanic dataset and use JavaScript to extract relevant data from it. You'll use all of the regular CS tools with a focus on map, filter, and reduce. 
+The goal today is to look at the Titanic dataset and use JavaScript to extract relevant data from it.
 
-- Titanic Dataset
-  - What does it contain?
-  - How can this be visualized?
-  - min, max, average
-- map, filter, and reduce
+## Arrow functions 
+
+Arrow functions are great to use when passing a function as a parameter. Understanding the syntax used by arrow functions can make your shorter and easier to read, taht is if you understand the syntax. 
+
+Take a look at a map example: 
+
+```JS 
+// A regular function 
+
+function world() {
+  console.log('World')
+} 
+
+world() // invoke this function
+
+
+// An arrow function
+
+const hello = () => {
+  console.log('Hello')
+}
+
+hello()
+
+// Parameters go in the ()
+
+const foo = (x, y) => {
+  console.log(x * y)
+}
+
+foo(4, 3)
+
+
+// If the function is on a single line the 
+// {} can be omitted
+
+const bar = (x, y) => console.log(x / y)
+
+bar(3, 4)
+
+
+// If there is only a single parameter the 
+// () can be omitted
+
+const func = x => x * 2 // Value is returned!
+
+console.log( func(3) ) // -> 6
+
+
+// If there are no parameters you need to inlcude
+// () or a _
+
+const pi = () => 3.14
+
+console.log( pi() ) // -> 3.14
+```
+
+Study up! Here's an article on Arraow functions: https://www.freecodecamp.org/news/when-and-why-you-should-use-es6-arrow-functions-and-when-you-shouldnt-3d851d7f0b26/
+
+Where do Arrow function work best? 
+
+Arrow functions work best for callbacks and functions that do not have identity. 
+
+## Callbacks
+
+What's a callback? 
+
+A callback is a function that is passed to another function as a parameter. Arrow functions are good here since these functions are often written inline and the Arrow function's compact syntax works well.
+
+When writing JS you'll callbacks everywhere. Here are a few JS examples: 
+
+`setTimeout` takes a callback and invokes it a number of milliseconds in teh future. This callback takes no parameters. 
+
+```JS
+// Set time out takes a callback it will 
+// execute in the future. 
+setTimeout(() => console.log('1 sec later (8)'), 1000)
+
+// Notice the arrow function used here! 
+```
+
+`forEach` takes a callback and invokes the callback once for each item in the array. It also passes each item in the array to the calback as the first parameter of the callback.
+
+```JS
+// Array forEach takes a function an executes 
+// it once for each item in an Array
+const arr = [11,22,33,44]
+arr.forEach((item) => console.log(item * 3))
+```
+
+`forEach` has a couple more optional parameters it provides to the callback. 
+
+```JS
+console.log('9 ------------------------------')
+// forEach has a couple optional parameters
+const numbers = [11,22,33,44]
+numbers.forEach((item, index, arr) => {
+  // Use the index if needed
+  console.log(item * index)
+})
+```
+
+### Arrow function challenges
+
+Try these challenges:
+
+https://repl.it/join/hmsbpizt-mitchellhudson
+
+<!-- .slide: data-background="#087CB8" -->
+## [**10m**] BREAK
+
 
 ## JSON
 
@@ -137,11 +242,6 @@ What could this data tell you?
 
 Pair and discuss. Come up with a list of things you find interesting. **Write the list on the board.**
 
-<!-- > -->
-
-<!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
-
 <!-- v -->
 
 ## Exercise: Finding meaning in Data
@@ -230,11 +330,14 @@ Complete the Challenges from lab: [Challenges](https://github.com/MakeSchool-Tut
 | 0:05 | 0:10 | [Why you should know this or industry application](#why-you-should-know-this-or-industry-application) |
 | 0:10 | 0:15 | [Learning Objectives](#learning-objectives) |
 | 0:15 | 0:20 | [Overview](#overview) |
+| 0:00 | 0:00 | [Arrow Functions](#arrow-functions) |
+| 0:00 | 0:00 | [Callbacks](#callbacks) |
+| 0:00 | 0:00 | [Arrow function challenges](#arrow-function-challenges) |
+| 0:50 | 1:00 | Break |
 | 0:20 | 0:25 | [JSON](#json) |
 | 0:25 | 0:30 | [CSV](#csv) | 
 | 0:30 | 0:40 | [CSV vs JSON](#csv-vs-json) |  
 | 0:40 | 0:50 | [The Titanic Dataset](#the-titanic-dataset) | 
-| 0:50 | 1:00 | Break |
 | 1:00 | 1:10 | [Exercise: Finding meaning in Data](#exercise-finding-meaning-in-data) |
 | 1:10 | 2:00 | [Lab Activity](#lab-activity) |
 | 2:00 | 2:10 | [After Class](#after-class) |
