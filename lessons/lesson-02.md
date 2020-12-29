@@ -5,48 +5,6 @@
 
 <!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-2.html ':ignore') -->
 
-
-
-
-
-
-
-<!-- 
-
-## Infographic vs Data Visualization
-
-Let's clarify what you are expected to make.
-
-An infographic provides information in the form of an image. These are often more comic strip and less abstract. The goal is to inform.
-
-A data visualization is more abstract showing data in visual form.
-
-
-Some examples
-
-- [Info Graphic](https://venngage.com/blog/what-is-an-infographic/)
-
-- Data visualizations Examples
-  - [What is data visualization](https://www.tableau.com/learn/articles/data-visualization)
-  - [Tableau Best Data viz examples](https://www.tableau.com/learn/articles/best-beautiful-data-visualization-examples)
-  - [Best Data Visualizations 2018](https://visme.co/blog/best-data-visualizations/)
-  - [James Round](https://www.jamesrounddesign.com)
-  - [Data visualization](https://datavizcatalogue.com)
-  - [Examples](https://www.maptive.com/17-impressive-data-visualization-examples-need-see/)
-
-Generative art and Data: 
-- https://www.ted.com/playlists/201/art_from_data
-- https://joshuadavis.com
-- https://www.theatlantic.com/entertainment/archive/2015/05/the-rise-of-the-data-artist/392399/
-- https://techcrunch.com/2016/05/08/the-digital-age-of-data-art/
- -->
-
-
-
-
-
-
-
 <!-- > -->
 
 ## Overview
@@ -284,7 +242,7 @@ Reduce examples: https://repl.it/join/svmjizdu-mitchellhudson
 
 Take a 10 minute break!
 
-## Back to the Titanic data
+## The Titanic data
 
 Time to apply map, filter, and reduce to the Titanic data. Let's start with this Repl.it: https://repl.it/join/wrtihkha-mitchellhudson
 
@@ -296,10 +254,7 @@ Continue working on the [Assignment 1](../assignments/assignment-1.md). Use Map,
 
 Continue working on the [Assignment 1](../assignments/assignment-1.md)
 
-
 ## Resources
-
-
 
 <!-- 
 
@@ -307,14 +262,18 @@ Continue working on the [Assignment 1](../assignments/assignment-1.md)
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:10      | Overview + Learning Outcomes |
-| 0:10        | 0:05      | Normalization |
-| 0:15        | 0:05      | Rectangles |
-| 0:20        | 0:05      | Transform |
-| 0:25        | 0:10      | Rounding Corners / Circles |
-| 0:35        | 0:05      | Strokes |
-| 0:40        | 0:10      | Compound Shapes |
-| 0:50        | 0:40      | Generating dynamic elements |
-| 1:30        | 0:10      | BREAK |
+| 0:00        | 0:10      | [Overview](#overview) |
+| 0:10        | 0:05      | [Why you should know this?](#why-you-should-know-this) |
+| 0:15        | 0:05      | [Learning Objectives](#learning-objectives) |
+| 0:20        | 0:05      | [Looping over Arrays](#looping-over-arrays) |
+| 0:25        | 0:10      | [Map, Filter, and Reduce](#map-filter-and-reduce) |
+| 0:35        | 0:05      | [Map](#map) |
+| 0:35        | 0:05      | [Filter](#filter) |
+| 0:35        | 0:05      | [Reduce](#reduce) |
+| 0:40        | 0:10      | [Break](#break) |
+| 0:40        | 0:10      | [The Titanic data](#the-titanic-data) |
+| 0:50        | 0:40      | [Lab](#lab) |
+| 1:30        | 0:10      | [After Class](#after-class) |
 
  -->
+ 

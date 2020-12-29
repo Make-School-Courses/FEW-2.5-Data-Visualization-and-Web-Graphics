@@ -1,32 +1,73 @@
-# FEW 2.5 - Sorting and Filtering data interactively
+# FEW 2.5 - Lesson 3
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-4.html ':ignore')
+<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-4.html ':ignore') -->
 
 <!-- > -->
 
 ## Overview
 
-The earlier class brushed on the topic of sorting and filtering in this class we will cover sorting and filtering data interactively.
+In the last lesson you organized and extracted values from a dataset. The next step is to make this data visible. The goal now is take all of the values and tunr them into something that can be displayed. 
 
 <!-- > -->
 
 ## Why is this important?
 
-Everything you do will work with collections of objects. This is really just an extension of all of those things. Looking at ways to structure data will build your toolbox of skills that you can apply to many future projects.
+Turning data into something that people can easily understand is why we make websites! 
 
 <!-- > -->
 
 ## Learning Objectives
 
-1. Build collections of elements and data
-1. Apply changes to all members of a collection
-1. Sort and filter collections
-1. Use CSS transform: translate, rotate, scale
-1. Use CSS transform: translate3d
-1. Create a distribution of values
-1. Identifying context and using closures
+
+
+
+
+
+
+
+
+
+## Infographic vs Data Visualization
+
+Let's clarify what you are expected to make.
+
+An infographic provides information in the form of an image. These are often more comic strip and less abstract. The goal is to inform.
+
+A data visualization is more abstract showing data in visual form.
+
+
+Some examples
+
+- [Info Graphic](https://venngage.com/blog/what-is-an-infographic/)
+
+- Data visualizations Examples
+  - [What is data visualization](https://www.tableau.com/learn/articles/data-visualization)
+  - [Tableau Best Data viz examples](https://www.tableau.com/learn/articles/best-beautiful-data-visualization-examples)
+  - [Best Data Visualizations 2018](https://visme.co/blog/best-data-visualizations/)
+  - [James Round](https://www.jamesrounddesign.com)
+  - [Data visualization](https://datavizcatalogue.com)
+  - [Examples](https://www.maptive.com/17-impressive-data-visualization-examples-need-see/)
+
+Generative art and Data: 
+- https://www.ted.com/playlists/201/art_from_data
+- https://joshuadavis.com
+- https://www.theatlantic.com/entertainment/archive/2015/05/the-rise-of-the-data-artist/392399/
+- https://techcrunch.com/2016/05/08/the-digital-age-of-data-art/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- > -->
 
