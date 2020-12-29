@@ -319,9 +319,7 @@ Complete the Challenges from lab: [Challenges](https://github.com/MakeSchool-Tut
 - [Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
 - [Math.min()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
 
-<!-- > -->
-
-<!-- 
+<!--
 ## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |

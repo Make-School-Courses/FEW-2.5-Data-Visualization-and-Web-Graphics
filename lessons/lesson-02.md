@@ -7,6 +7,12 @@
 
 
 
+
+
+
+
+<!-- 
+
 ## Infographic vs Data Visualization
 
 Let's clarify what you are expected to make.
@@ -15,7 +21,6 @@ An infographic provides information in the form of an image. These are often mor
 
 A data visualization is more abstract showing data in visual form.
 
-<!-- v -->
 
 Some examples
 
@@ -34,9 +39,7 @@ Generative art and Data:
 - https://joshuadavis.com
 - https://www.theatlantic.com/entertainment/archive/2015/05/the-rise-of-the-data-artist/392399/
 - https://techcrunch.com/2016/05/08/the-digital-age-of-data-art/
-
-<!-- v -->
-
+ -->
 
 
 
@@ -66,9 +69,9 @@ The problems in the challenges for today will help you develop your coding skill
 
 ## Looping over Arrays
 
-Looping over each element in an array is a common operation. The code you write will need to do this often. 
+Looping over each element in an array is a common operation. Expect to do this often. 
 
-Imagine you have an array and need to log each number ot the console. 
+Imagine you have an array and need to log each number to the console. 
 
 Loop over an array with a for loop:
 
@@ -88,7 +91,7 @@ arr.forEach((item, index) => {
 })
 ```
 
-Challenge: Write a function that works like forEach. 
+Challenge: Write a function that works like forEach.
 
 ```JS
 function forEvery(arr, callBack) {
@@ -100,6 +103,8 @@ forEvery(numbers, (item, i) => {
 	console.log(item, i) 
 })
 ```
+
+Take a look at this Repl.it and try the challenges here: https://repl.it/join/qvbkyifb-mitchellhudson
 
 ## Map, Filter, and Reduce
 
@@ -115,40 +120,181 @@ Running code on each element in an array is common. Often you'll want to perform
 > `[🍿, 🍔, 🍳].filter(isVegetarian)` -> `[🍿, 🍳]`
 > `[🍿, 🍳].reduce(eat)` -> `💩`
 
-When working with map, filter, and reduce arrow functions are your friend! They make their syntax makes the code you write compact and easy to read. 
+Some examples: 
 
-Consider the example below: 
+### Map
 
-```JS 
-// This is about as verbose as you cna get
-arr.filter(function(item) {
-	if (item > 5) {
-		return true
-	}
-	return false
-})
+What is transforming an array and why would you do this? Any time you have an array of one kind of thing and you need to make an array of another kind from the first. You'll do this more often most other operations. 
 
-// This is very compact
-arr.filter(item => item > 5)
+React - transform an array of objects or values into an array of components. 
+
+Objects to Strings - Often you you'll have objects and want to turn them into something you display. Imagine these: 
+
+- Array date objects to an array date strings
+- An array of numbers into formatted numbers
+- An array of objects into an array of simple values like numbers or strings
+- Turn an array of strings into an array of objects like Date objects
+
+**Facts about map**
+
+- Map returns a new array (it does not mutate the source array)
+- The returned array has the same number of items as the source array
+
+**Examples of map**
+
+Abstract example. 
+
+```JS
+// map takes one parameter a callback function
+const newArray = array.map(callbackFunction)
+
+// The callback receives each item of the array as a parameter
+const newArray = array.map((item) => { ... })
+
+// Optionally map also provides the index of the item and the array itself
+const newArray = array.map((item, index, arr) => { ... }) 
 ```
 
-If you have a strong understanding of arrow function syntax the second example has a lot of advantages. It's easier to read and shorter to type. It's probably less error prone for these reasons. 
-
-### Map 
-
-Use map to transform an array. Here you are making a new array of new things made from the things in the original array. 
-
+Here's a practical example: 
 
 ```JS 
-
+// Imagine you had some date strings 
+const dateStrings = ['9/26/1965', '2/6/1971', '10/27/2005']
+// Turn these into date objects because reasons 
+const dates = dateStrings.map( str => new Date(str) )
+// Turn these Date objects into formatted dates
+const datesFormatted = dates.map( date => date.toDateString() )
+// The new array: ['Sun Sep 26 1965', 'Sat Feb 06 1971', 'Thu Oct 27 2005']
+// Maybe you just need the years for some reason: 
+const years = dates.map( date => date.getFullYear() )
+// years: [1965, 1971, 2005]
 ```
+
+Keep in mind that in each example a new array was created at each step! 
+
+To go from the first step to the formsatted dates requied two steps: making a date object from a string and then making a formatted date from the date object. Since map returns an array you can do that by chaining the calls to map together. 
+
+```JS
+// Chain calls to map together to work through several steps
+const datesFormatted = dateStrings.map(str => new Date(str)).map(date => date.toDateString())
+
+// Maybe it's easier to break this up onto separate lines
+const datesFormatted = dateStrings
+	.map(str => new Date(str))
+	.map(date => date.toDateString())
+```
+
+Take a look at the Repl.it here and try the challenges: https://repl.it/join/zcutdjnu-mitchellhudson
+
+### Filter 
+
+Use filter to create a new array containing a subset of the elements from the original array. 
+
+- Filter takes a callback that it expects to return a boolean
+- Filter calls the callback once for each element in the source array
+- If callback returns true the element is inlcuded in the output array
+
+**Facts about filter**
+
+- Filter returns a new array
+- The ouput array may have some, all or, none of the elements from the original array
+- The callback shouls only return true or false 
+
+**Examples of Filter**
+
+Abstract example:
+
+```JS
+// Start with an array, make a new array, use a callback function
+const newArray = array.filter(callbackFunction)
+
+// The callback receives each item of the array and asks should we keep it? 
+const newArray = array.filter( (item) => { ... } )
+
+// Optionally the callback gest the index, and array also
+const newArray = array.filter( (item, index, arr) => { ... } )
+```
+
+Practical example:
+
+```JS
+// Imagine you have an array of numbers 
+const numbers = [11,32,45,66,76,78,36]
+// No you want only the even numbers
+// If n % 2 === 0 is true that number is included in evenNumbers
+const evenNumbers = numbers.filter(n => n % 2 === 0)
+```
+
+### Reduce 
+
+Reduce takes an array and reduces it to a single value. A value can be anything including arrays an objects. 
+
+Reduce always passes the running total or accumulated value to the callback.
+
+Unlike map and filter reduce takes a second optional parameter which is the starting value for the accumulator.
+
+**The facts about reduce:**
+
+- Reduce returns a new array
+- The callback receives the accumulator and an item from the source array
+- The call back returns the accumulator
+- If you don't supply the starting value reduce uses the first value from the source array as accumulator.
+
+Abstract example: 
+
+```JS
+// Reduce takes a callback
+const newValue = array.reduce(callback)
+
+// The callback takes the accumulator and the item
+const newValue = array.reduce((acc, item) => {...})
+
+// Set the starting value as the second  parameter
+const newValue = array.reduce((acc, item) => {...}, startingAccumulator)
+```
+
+Practical example: 
+
+```JS
+// An array of values
+const values = [49,28,67,1,73]
+// Add up all values
+const total = values.reduce((acc, n)=> acc + n)
+// No need for the second parameter here
+
+// What if you had an array objects? 
+const items = [
+	{name: 'Goo', price: 2.99},
+	{name: 'Foo', price: 1.99},
+	{name: 'Bar', price: 5.99},
+]
+
+// Add up all of the prices
+const total = items.reduce((acc, item) => acc + item.price, 0)
+// MUST include the second parameter here! 0
+
+// Note the example above could also have been mapped first 
+// to get all of the prices before reducing
+const total = items.map(item => item.price).reduce((acc, price) => acc + price)
+```
+
+Reduce examples: https://repl.it/join/svmjizdu-mitchellhudson
+
+## Break
+
+Take a 10 minute break!
+
+## Back to the Titanic data
+
+Time to apply map, filter, and reduce to the Titanic data. Let's start with this Repl.it: https://repl.it/join/wrtihkha-mitchellhudson
 
 ## Lab
 
-
+Continue working on the [Assignment 1](../assignments/assignment-1.md). Use Map, Filter, and Reduce to the solve these problems! 
 
 ## After Class
 
+Continue working on the [Assignment 1](../assignments/assignment-1.md)
 
 
 ## Resources
