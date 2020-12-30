@@ -31,295 +31,195 @@ Turning data into something that people can easily understand is why we make web
 
 ## Infographic vs Data Visualization
 
-Let's clarify what you are expected to make.
+Your goal is to make a **data visualization**. This is an or visual representation of data. It's not an info graphic or generative art though all three are related. Take a look at the two articles below for examples of info graphics and data visualizations. 
 
-An infographic provides information in the form of an image. These are often more comic strip and less abstract. The goal is to inform.
-
-A data visualization is more abstract showing data in visual form.
-
-
-Some examples
+Take a look at these examples:
 
 - [Info Graphic](https://venngage.com/blog/what-is-an-infographic/)
+- [Tableau Best Data viz examples](https://www.tableau.com/learn/articles/best-beautiful-data-visualization-examples)
+
+More Examples: 
 
 - Data visualizations Examples
   - [What is data visualization](https://www.tableau.com/learn/articles/data-visualization)
-  - [Tableau Best Data viz examples](https://www.tableau.com/learn/articles/best-beautiful-data-visualization-examples)
   - [Best Data Visualizations 2018](https://visme.co/blog/best-data-visualizations/)
   - [James Round](https://www.jamesrounddesign.com)
   - [Data visualization](https://datavizcatalogue.com)
   - [Examples](https://www.maptive.com/17-impressive-data-visualization-examples-need-see/)
+- Generative art and Data: 
+	- https://www.ted.com/playlists/201/art_from_data
+	- https://joshuadavis.com
+	- https://www.theatlantic.com/entertainment/archive/2015/05/the-rise-of-the-data-artist/392399/
+	- https://techcrunch.com/2016/05/08/the-digital-age-of-data-art/
 
-Generative art and Data: 
-- https://www.ted.com/playlists/201/art_from_data
-- https://joshuadavis.com
-- https://www.theatlantic.com/entertainment/archive/2015/05/the-rise-of-the-data-artist/392399/
-- https://techcrunch.com/2016/05/08/the-digital-age-of-data-art/
+## Modules
 
+Whats' a module?
 
+A module is a block of code that defiens it's own scope. 
 
+What's scope? 
 
+Scope defines where a varaible is visible to the rest of the program. 
 
+How to use a module in a browser project? 
 
+In the browser you'll use the script tag and the type attribute to define a module. 
 
-
-
-
-
-
-
-
-<!-- > -->
-
-## Distributions
-
-A distribution shows how many times a value appears. While seeing a list of people who survived and did not survive is interesting, showing how many survived by class, fare, or gender might add insight to the data.
-
-A distribution shows how many times a value appears. For example we might have 891 passengers who each boarded the Titanic in a class. The distribution would show how many passengers were in each class.
-
-Often you won't know how many 'buckets' you will have for a group. For example in the case of the Titanic we might not know the number of classes.
-
-<!-- > -->
-
-An easy way to create a distribution is to use an object. Use the key to track 'buckets' and the value of the key to count the occurrence of a value.
-
-```JS
-// Create a distribution
-function createDistribution(data) {
-  return data.reduce((acc, value) => {
-    if (acc[value] !== undefined) {
-      acc[value] += 1
-    } else {
-      acc[value] = 1
-    }
-    return acc
-  }, {})
-}
-
-const d = [0, 1, 1, 3, 6, 6, 6, 7, 7, 8, 8, 8, 9, 9, 9, 10, 11, 12, 12, 12]
-createDistribution(d) // returns:
-// {0: 1, 1: 2, 3: 1, 6: 3, 7: 2, 8: 3, 9: 3, 10: 1, 11: 1, 12: 3}
-// This says the number 7 appears 2 times in d.
-// The numbers 8 and 9 appear 3 times etc.
-console.log(createDistribution('javascript'.split('')))
-// {j: 1, a: 2, v: 1, s: 1, c: 1, r:1, p: 1, t:1}
+```HTML
+<!-- This script is a module -->
+<script type="module"></script>
+<!-- This script is not a module -->
+<script></script>
 ```
 
-<!-- > -->
+Why use a module?
 
-### Distributions Activity
+Code in the browser in past has always been global. Variables defined in any script were seen all other scripts. This creates bugs and errors. It also led to a lot of strange looking constructs to avoid global variables while still allowing code to be shared across scopes. 
 
-Make a distribution for our previous example! Your distribution should show how many Titanic passengers were in each class
+Here is an example of a problem. Imagine there were two different scripts in your project. These could in different files. Imagine that one or more of your files was imported from somewhere else and you don't know what's in it. 
 
-<!-- > -->
-
-## Sorting
-
-[`Array.sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sorts an array alphabetically (UTF-16 code units values), in place. This applies to numbers, by sorting on the first digit. For example 10, 200, 3000 etc.
-
-Use a compare function – `Array.sort([sorting-func])` – to sort on your own criteria. This function receives two parameters, which are two elements ``(a, b)`` from the array. It should returns -1 (`a` should be sorted before `b`), +1 (`b` should sorted before `a`), or 0 (the elements should remain in place).
-
-```JS
-const arr = 'javascript'.split('')
-arr.sort()
-console.log(arr) // Returns:
-// ["a", "a", "c", "i", "j", "p", "r", "s", "t", "v"]
+```HTML
+<!-- Imagine there are two different scripts in your project -->
+<script>
+	var data = [...]
+	function getData() { ... }
+</script>
+<!-- Imagine this second file you are writing and you happen to use 
+the names that have already been defined in another script! -->
+<script>
+	var data = { ... }
+	function getData() { ... }
+</script>
 ```
 
-<!-- > -->
+In a module code would not "escape" it's module. Take a quick read about modules here: 
 
-For numbers this sorts on the **first digit** which may not be what you want!
+https://javascript.info/modules-intro
 
-For all other cases supply `Array.sort()` with a sorting function that receives two params. These are values to compare. Your function should return -1, +1, or 0. This determines which value comes before the other.
+Challenge: Fix the code here by making some modules: 
 
-For example:
+https://repl.it/join/xmpbhmez-mitchellhudson
+
+Hint: add `type="module"`
+
+### import, export, and default 
+
+Separating code into separaste files is good but sometimes you need to share code across files. Modules allow this with the keywords: `import`, `export`, and `default`
+
+- `import` - imports an export from another module
+- `export` - exports a value from a module
+- `default` - declare a single export as the "default" export for easier importing
+
+## Making Data Visible
+
+The goal of this section it display the Titanic data with HTML, CSS and JS. You'll do everything with the code you write. Later we will use code libraries to to more. Writing the code yourself is important to understand programming, problem solving, and a step along the way to writing you writing your own libraries.
+
+These examples can be applied and tested in this Repl.it:  
+
+https://repl.it/join/gnjigkyl-mitchellhudson
+
+## Creating HTML elements
+
+You cna generate HTML elements with code! 
 
 ```JS
-const numbers = [10, 9, 8, 4, 12, 5, 7, 9, 6, 8, 10, 8, 5, 6, 10, 11, 6, 5, 11, 5]
-numbers.sort((a, b) => a - b) // Rearranges numbers to:
-// [4, 5, 5, 5, 5, 6, 6, 6, 7, 8, 8, 8, 9, 9, 10, 10, 10, 11, 11, 12]
+// Creates a new <div>
+const el = document.createElement('div')
 ```
 
-<!-- > -->
+An element is not displayed unless it is added to the DOM
 
-### Sorting Activity
-
-Write a sorting function that sorts in reverse order (so for numbers, sorts largest to smallest, or for letters, reverse alphabetically).
-
-<!-- > -->
-
-## Filtering
-
-[`Array.filter()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) returns a new array which is a subset of the original array.
-
-You can supply a filter function that receives an element from the array, and returns `true` if that element should be included or `false` if it should not be included.
-
-The filter function should return true when an item is to be included and false when it is not included.
-
-```JS
-const class3Passengers = titanicData.filter((passenger) => passenger.fields.pclass === 3)
-// class3Passengers has only passengers where fields.pclass === 3
+```JS 
+// Add the element to the body
+document.body.appendChild(el)
 ```
 
-<!-- > -->
+## Styling HTML Elements 
 
-### Filtering Activity
+All CSS styles can be applied in via code. All CSS style properties are available through JavaScript. 
 
-Filter all Titanic passengers who were younger than 30
+Set any property on an elements style property. All CSS property names convert to camel for their JS name. 
 
-<!-- > -->
-
-## Holding Elements
-
-Once you have created elements you might want to hold onto them. This is good if you have a fixed number of elements and you want to display different data points owned by each.
-
-Since you're making the elements based on your data, might as well save reference to those elements at the moment they are created!
-
-<!-- v -->
-
-Imagine you're starting with the Titanic dataset from the JSON. Add an element to each object:
+Since CSS values usually include a unit you'll always use a string when setting the value in JS. 
 
 ```JS
-// Set up your elements and save them to objects in data
-data.forEach((passenger, i) => {
-	const el = document.createElement('div')
-	...
-	passenger.el = el
-	...
+// set the width and height
+el.style.width = '100px'
+el.style.height = '200px'
+// Set the background-color
+el.style.backgroundColor = '#f0f'
+// Make an element display as a grid
+el.style.display = 'grid'
+el.style.gridTemplateColumns = 'repeat(6, 100px)'
+el.style.gridGap = '2px'
+```
+
+### What types of styles?
+
+- `backgroundColor` 
+- `opacity`
+- size: `width` and `height`
+- `border`, width, color, style, radius
+
+What can you draw with these properties? It seems limitted but there are lots of possiblities. You can use different properties to represent different aspects of the data.
+
+## Turning data into HTML elements
+
+HTML elements are objects native to the browser that can be displayed. This is a transformation. Use Map! 
+
+You can do this with a loop for an array of data: 
+
+```JS 
+// Imagine we have an array of objects
+const data = [{}, {}, ... ]
+
+// Imagine there is an element in the DOM with this id name
+const titanic = document.querySelector('#titanic')
+
+// Loop over your data and make an array of passenger elements 
+const passengers = data.map(passenger => {
+	return document.createElement('div')
 })
-```
 
-After you can access the elements from your data.
+// Let's loop over the passengers appeand them to the DOM and add some styles
+passengers.forEach((p, i) => {
+	// Append each to the titanic element
+	titanic.appendChild(p)
 
-```JS
-// From here you could
-data.forEach((passenger, i) => {
-	...
-	passenger.el.style.height = `${passenger.fields.age / maxAge * 400}px`
-	...
-})
-```
+	// Set some styles
+	p.style.width = '10px'
+	p.style.height = '10px'
 
-<!-- v -->
-
-### Holding Elements Activity
-
-Create a `div` for each passenger, and use their `fare` as a factor in calculating the width of their `div`. Look at the previous example to help guide you.
-
-<!-- > -->
-
-## Animating changes
-
-Use CSS transitions to set the time it takes for changes in all CSS properties to take place. You can set the time in milliseconds `ms` or seconds `secs`. For example:
-
-`transition: 400ms;`
-
-You can optionally include a property to animate, ignoring other properties.
-
-`transition: height 400ms;`
-
-Include a list of properties and times to assign a different time to each property that may change:
-
-`transition: height 400ms, color 1200ms;`
-
-<!-- v -->
-
-You can also include an _easing function_. This sets the curve of the change.
-
-A linear curve maintains a constant rate of change. This is a good for color and opacity changes.
-
-`Ease In` accelerates the change over time.
-
-`Ease out` decelerates change over time.
-
-`transition: height 400ms ease-out, color 1200ms linear;`
-
-The [timing function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) has a lot of options.
-
-<!-- v -->
-
-### Animation Activity
-
-Create a transition for the `div`s you made in the previous activity.
-
-<!-- > -->
-
-## CSS transform
-
-The CSS transform property provides methods to move, scale, rotate, and skew elements. There are also a set of 3d transforms. The 3d transforms use the hardware acceleration and should be used when possible, even if you are not thinking of transforming an element in 3 dimensions.
-
-For example:
-
-`transform: translate(100px, 200px)` translates an object `100px` on the x and `200px` on the y.
-
-`transform: translate3d(100px, 200px, 0)` same as above, but also translates `0` on the z while also taking advantage of hard acceleration. You should always use this when animating elements!
-
-<!-- v -->
-
-Only define `transform` once! it takes as many properties as needed. For example:
-
-`transform: translate3d(300px, 0, 0) rotate3d(0, 0, 45deg)`
-
-The order transforms are applied matters! The example above translates 300px to the right, then rotates 45 degrees on the z axis. Swapping the rotate and translate here would rotate first, then move the object down and to the right at a 45 degree angle!
-
-<!-- v -->
-
-### Helpful Documentation
-
-- [translate(x, y)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate)
-- [translate3d(x, y, z)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d)
-- [scale(x, y)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale)
-- [scale3d(x, y, z)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale3d)
-- [rotate(angle)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate)
-- [rotate3d(angleX, angleY, angleZ)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d)
-- [skew(angleX, angleY)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew)
-
-<!-- v -->
-
-### Transform Activity
-
-Take at least 3 of the transform functions above and manipulate some Titanic data with it!
-
-<!-- > -->
-
-## Using closures for fun and profit!
-
-Remember that you can utilize the properties of items within closures to help you dynamically create elements. Check out this example below where we take an array of data, and use it to create `div` objects:
-
-```JS
-// Data is an array of objects
-const data = [{a:45, b:88, c:'group-a'}, {}, ...]
-
-data.forEach((item) => {
-	const el = document.createElement('div')
-	el.setHeight = () => {
-		el.style.height = `${item.a}%`
+	// We can match each element to some data by it's index data[i]
+	if (data[i].embarked === 'S') {
+		p.style.backgroundColor = 'cornflowerblue'
+	} else if (data[i].embarked === 'C') {
+		p.style.backgroundColor = 'orange'
+	} else if (data[i].embarked === 'Q') {
+		p.style.backgroundColor = 'limegreen'
+	} else {
+		p.style.backgroundColor = 'black'
 	}
+
+	// Use a ternary to set a property to one of two values 
+	p.style.borderRadius = data[i].sex === 'male' ? '0' : '50%'
 })
 ```
 
-<!-- > -->
+## Break 
 
-<!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
+Take a 10 minute break.
 
-<!-- > -->
+## Lab 
 
-## Lab
+Use this Repl.it as a starting place to test the ideas from earlier. 
 
-Check out this [YouTube dataset](https://www.kaggle.com/datasnaek/youtube-new), and use it to perform the following operations:
-
-1. Get the top 100 most liked videos, and sort them by number of dislikes
-1. Filter the videos to only display videos that have over 600,000 views
-1. Display the top 100 most liked videos in rectangle `div` to make a bar graph, and vary their color by number of dislikes
-1. Animate the colors of the bar graph in the previous question
-1. Make the bars in the graph grow when rendered using transforms/transitions
-
-<!-- > -->
+https://repl.it/join/gnjigkyl-mitchellhudson
 
 ## After Class
 
-- Start [Visualization 2](Assignments/Data-Visualization-2.md), due 2/12 11:59pm
+- Start [Visualization 2](assignments/assignment-2.md)
 
 
 <!-- > -->

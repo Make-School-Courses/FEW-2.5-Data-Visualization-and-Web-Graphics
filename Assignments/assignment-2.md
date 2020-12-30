@@ -1,21 +1,35 @@
 # FEW 2.5 Assignment 2
 
-## Answering questions with Data
+## Displaying data
 
-The values in a dataset tell a story. Reading the story is the process of sorting, filtering, and looking at the data in different ways. 
+The goal of this assignment is display the Titanic data. In the previous assignment you examined the data and processed it for useful information. Here the goal is make that information visible. 
 
 ## Learning Objectives
 
-- Find the Min value and Max value
-- Counting records
-- Find aggregate values
-- Find median value
+- Create HTML element with JS
+- Style HTML element with JS
+- Use array methods to control the display of elements
 
 ## What to do
 
-Complete the challenges here: https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/
+Use the ideas in this Reapl.it as a starting point. https://repl.it/join/gnjigkyl-mitchellhudson. Copy the titanic-data.js from this Repl.it, create a new file and paste the data. The data is exported from this file. You'll need to be sure to use type="module" when you import your script. You'll also need to import the titanic data at the of your script. This all happens in this Repl.it look at it closely. 
 
-Work through the challenges in `challenges-2.js`. Follow the instructions in the ReadMe.
+**Your assignment should be turned in via GitHub.**
+
+What to make? 
+
+Your projectr should be a web pages that displays the information graphically. Your page should try and answer as many of these questions as possible. You can get creative. The images can be abstract. Have fun with the number! 
+
+- How many passengers? 
+- How many survived? 
+- How many died? 
+- How many men? 
+- Hoe many wonmen? 
+- Where did each passenger embark? 
+- what class did each passenger travel? 
+- How much did each passenger pay? 
+- Did more men or women survive?
+- Did passenger class affect survival? 
 
 ## What will you turn in?
 
