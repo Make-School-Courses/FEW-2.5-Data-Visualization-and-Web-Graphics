@@ -1,5 +1,5 @@
 
-# FEW 2.5 - Review and Present
+# FEW 2.5 - Canvas Part 2, Circle Math
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -9,107 +9,84 @@
 
 ## Overview
 
-This class will take a look at your work, find the things that need improvement, and create a trategy to wrap up the project and make it a good portfolio piece.
+This class will be a workshop to work on and finish up the audio visualizer project and study the Math of Circles. 
 
 ### Why?
 
-Taking a critical look at your work is important. Adding things to your portfolio is important. looking for ways to measure your progress is important. 
+Circles are used all the time in visualizations (pie chart, scatter plot, dot plot, cluster analysis, etc.) and it's important to know how to draw them in order to properly convey your analysis.
+
+Plus they're cool!
 
 <!-- > -->
 
 ## Learning Objectives
 
-- Identify areas areas for improvement
-- Strategize problem solving
-- Use Events
-- Identify and use and explain event delegation
-- Explain Event bubbling
+- Use Math functions and trigonometry
+- Draw images with circles and code
 
 <!-- > -->
 
-## Events
+## Intro
 
-Events are things that happen in the program. Usually they are things that happen in the browser. These are things like: 
+Sometimes you'll want to place things in a circle. Imagine the numbers around a clock. If you had to make this yourself you'd need to place each of the numbers equally spaced around a center point.
 
-- mouse clicks
-- form input 
-- resources loaded
-- keyboard button pressed!
+Imagine you know where the center of the circle is and imagine that it is x 0 and y 0. To place the 12 it would be 0 x and y - the radius of the circle. For the 3, 6, and 9 you could follow a similar pattern. 
 
-Events can happen at DOM nodes. For example a mouse click might happen at a button or list item. 
+When it's time to place the 1, 2, 4, and other numbers it's hard to caluclate the their x and y. 
 
-### addEventListener
+There are a few Math functions that can help with this.
 
-Use addEventListener to listen for events at an object. 
+You are probably used to looking at a circle as 360 degrees. In trigonmetry we look at a circle radians. There are  Pi radians in a circle. Or you could think of 2 Pi as 360 in degrees.
+
+`Math.sin()` and `Math.cos()` can be used to map an x and y value from radians. Each of these functions takes a value in radians and return a number between -1 and +1. Multiply the return value by the radius to get the x and y around the center.
+
+Think about the clock. To get the position of each hour divide the circle by 12.
+
+`const step = Math.PI * 2 / 12`
+
+<!-- v -->
+
+Decide what the radius of your clock face is. Imagine it's 200px.
 
 ```JS
-const button = document.getElementById('button')
-button.addEventListener('click', (e) => { ... })
+const numbers = [3,4,5,6,7,8,9,10,11,12,1,2]
+const step = Math.PI * 2 / numbers.length
+const radius = 200
+numbers.forEach((n, i) => {
+	const x = Math.sin(step * i) * radius
+	const y = Math.cos(step * i) * radius
 
-element.addEventListener(eventName, handler)
-
-p.addEventListener('click', () => { alert('P') })
-p.addEventListener('click', () => {})
-p.onclick = () => { ... }
+	// draw number at x, y
+})
 ```
 
-Event name is the name of the event, it's always a string. Handler is a function that handles the event when it occurs.  
+The center of the clock face would be at 0, 0 with the numbers arranged in a 200 pixels radius circle around that point. Imagine the center of the clock in the upper left corner.
 
-### Bubbling
+You usually don't want to place everything in the upper left corner. To move the center of the clock face anywhere on the canvas you'll need to offset the x and y values.
 
-Since the DOM is a tree structure events move up from their target through their ancestors this is called bubbling. 
+<!-- v -->
 
-```HTML
-<body>
-		<div class="container">
-			<div data-id="1">
-			...
-			<div data-id="891">
-			<ul>
-					<li>
-							<div>
-								<strong>
+```JS
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12]
+const step = Math.PI * 2 / numbers.length
+const radius = 200
+const offsetX = 300
+const offsetY = 250
+numbers.forEach((n, i) => {
+	const x = Math.sin(step * i) * radius + offsetX
+	const y = Math.cos(step * i) * radius + offsetY
+
+	// draw number at x, y
+})
 ```
 
-Name: Apple
-
-Imagine you are listening for an event at the `<li>` tag but the click occured at the `<strong>` or `<div>`. Bubbling passes the event up the tree each of the parent elements. This gives each containing element a chance to handle the event. 
-
-https://javascript.info/bubbling-and-capturing
+Just add the offset to the x and y. In this case the center of the clock face is at 300, 250 on the canvas.
 
 <!-- > -->
 
-## Review your work
+## Playing with Circles
 
-Look at your work as a finished presentation on the data it presents. View it with a critical eye and identify three things you can improve.
-
-Pair up and discuss your projects with someone else. Find three areas things that you can improve. 
-
-<!-- > -->
-
-## Publish your Work
-
-To make your work a good portfolio item it should be live and it should be documented. 
-
-- Publish your work to GitHub pages
-- Write a Readme
-
-<!-- > -->
-
-### Project Readme
-
-The project Readme should include: 
-
-- A short description of the project
-- Some background information
-- A link to the project
-- Getting Started
-- Badges!
-
-<!-- > -->
-
-## 
-
+Check out the [Example code](../lesson-06.html) linked here and see how you can manipulate the circles!
 
 <!-- > -->
 
@@ -120,25 +97,33 @@ The project Readme should include:
 
 ## Lab
 
-Use lab time to finish up your project and write your readme. 
+Continue working on the audio visualizer project. 
+
+Use the lab to time complete the challenges and stretch challenges. 
 
 <!-- > -->
 
 ## After class
 
-- [Data Visualization 5](../Assignments/Data-Visualization-5.md)
+- Continue working on [Visualization 2](Assignments/Data-Visualization-2.md), due 2/12 11:59pm
+
+<!-- > -->
+
+## Additional Resources
+
+- [Example code](../lesson-06.html)
+- [Sine/Cosine](https://en.wikipedia.org/wiki/Sine)
 
 <!-- > -->
 
 ## Minute-by-Minute
 
-| **Elapsed** | **Time**  | **Activity** |
-| ----------- | --------- | ------------ |
-| 0:00        | 0:05      | Objectives |
-| 0:05        | 0:15      | Overview |
-| 0:20        | 0:30      | In Class Activity I |
-| 0:50        | 0:10      | BREAK |
-| 1:00        | 0:45      | In Class Activity II |
+| **Elapsed** | **Time**  | **Activity**              |
+| ----------- | --------- | ------------------------- |
+| 0:00        | 0:05      | Objectives                |
+| 0:05        | 0:15      | Overview                  |
+| 0:20        | 0:30      | In Class Activity I       |
+| 0:50        | 0:10      | BREAK                     |
+| 1:00        | 0:45      | In Class Activity II      |
 | 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | - |
-
+| TOTAL       | 1:50      | -                         |

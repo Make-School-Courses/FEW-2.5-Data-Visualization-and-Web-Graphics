@@ -1,95 +1,97 @@
 
-# FEW 2.5 - D3 Scales
+# FEW 2.5 - D3 Maps
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-10.html ':ignore')
-
-
-## Lab
-
-Choose an example or tutorial from the D3 site and recreate that example with your own dataset.
-
-**Stretch Challenge:** Recreate a second example. The goal here is to get familiar with D3 to use later in your projects.
+➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-11.html ':ignore')
 
 <!-- > -->
 
 ## Overview
 
-D3 Scales provide a system for normalizing and scaling values for display on the screen.
+You should be working on your individual project and it will have problems to solve that will be unique to your ideas and dataset. Today we will have a workshop to solve problems. 
 
 <!-- > -->
 
-## Why you should know this
+## D3 in Depth Guide 
 
-Scaling and normalizing data is an important task you'll do it all the time. D3's scale tools provide great functionality.
+Use this in depth guide to D3 to solve problems and find solutions. 
+
+https://www.d3indepth.com
+
+See the sections at the bottom of the page. 
+
+If you're working with maps see the notes below. 
 
 <!-- > -->
 
 ## Learning Objectives
 
-1. Identify scales and uses for normalizing
-1. Define a scale for each axis
-1. Use the d3.scaleLinear() and
-1. Differentiate between scaleLinear and scaleOrdinal
+1. Solve problems with D3
+1. Find and make use of resources
 
 <!-- > -->
 
-## Scale and normalization
+## How to measure the world?
 
-Scaling and normalizing allows us to convert values of any range into values that can be displayed on the screen.
+The world is a globe and we've divided it into latitude and longitude.
 
-Scaling and normalizing works best when working with numbers. Sometimes you'll have values that don't normalize easily. For example names of countries and key words don't translate easily to numbers. Also there are situations where you want to categorize values into buckets. [D3 scaleOrdinal](https://observablehq.com/@d3/d3-scaleordinal) does this for you.
+**Read the following articles to better understand latitude and longitude**
 
-<!-- > -->
-
-Use scaleOrdinal for:
-
-- Converting values to colors
-- Converting values into key words
-- Converting keywords into a values, colors, or other things
+- https://www.maptools.com/tutorials/lat_lon/definitions
+- https://gisgeography.com/utm-universal-transverse-mercator-projection/
 
 <!-- > -->
 
-## Get Started with scaleOrdinal
+**In pairs, discuss why you would use latitude and longitude, and when you would use UTM**
 
-Go through and review the following links on your own:
+Fun site: find geo-coordinates for your home town:
 
-- [Documentation](https://d3-wiki.readthedocs.io/zh_CN/master/Ordinal-Scales/)
-- [Scales functions in D3](https://d3indepth.com/scales/)
+- https://www.latlong.net/
 
 <!-- > -->
 
-### Ordinal Scale Example
+## Maps
 
-Looking at the Titanic Dataset emabrked is expressed as a letter. D3 has a ordinal scale that allows mapping aribitrary values. 
+Computer screens are flat. Maps displayed on computer screens are flat. If the world is described in coordinates, and the map is a globe, then it needs to be projected onto a flat surface. This is accomplished through some tricky math involving trigonometry.
 
-```JS
-// Creates an array of unique values 
-const embarked = Array.from(new Set(data.map((p) => p.embarked === undefined ? '?' : p.embarked)))
-// Create an  ordinal scale
-const embarkedScale = d3.scaleOrdinal()
-  .domain(embarked)
-  .range(['#ff00ff66', '#ffff0066', '#00ffff66', 'black'])
-```
+_Luckily D3 provides a suite of functions that handle map projections for you!_
 
-Use the ordinal scale 
+While it is great you don't have work out the math yourself you do have to understand that these projections are not perfect. Flattening a sphere onto a flat surface will always be imperfect.
 
-```JS
-d3.select('#svg')
-  .selectAll('circle')
-  .data(data)
-  .enter()
-  .append('circle')
-  .attr('cx', (d, i) => i * 600 / data.length)
-  .attr('cy', (d, i) => {
-    const n = 500 - d.age
-    return isNaN(n) ? 500 : n
-  })
-  .attr('r', (d) => 5)
-  // Apply the ordinal scale to embarked for each 
-  .attr('fill', (d) => embarkedScale(d.embarked))
-```
+<!-- > -->
+
+## Discussion
+
+In pairs, discuss the following:
+
+- What is geojson?
+	- https://geojson.org/
+- Why do we need special projection models?
+	- https://d3indepth.com/geographic/
+
+We'll discuss as a class after 5 minutes of paired discussion.
+
+<!-- > -->
+
+## Mapping with D3 tutorial
+
+This is a great tutorial on mapping with D3. It uses v5 so it's up to date. Besides that it was written by a cartographer!
+
+- https://petrichor.studio/2018/05/21/get-started-creating-d3-maps/
+
+**Read the blog post. Then create a map of your own. Use the sample code provided in the codepen example to recreate the example on your desktop.**
+
+<!-- > -->
+
+Be sure to follow up with the links at the bottom of the post, as these have valuable info on creating and using maps.
+
+**Challenges**
+
+- Make the map work using the same TopoJSON that the tutorial uses
+- Try different projections
+	- https://github.com/d3/d3-geo#geoAzimuthalEqualArea
+- Edit the CSS to change the color of the fill and stroke
 
 <!-- > -->
 
@@ -100,22 +102,23 @@ d3.select('#svg')
 
 ## Lab
 
-Choose one of the D3 example/tutorials to recreate. Look for the scale in use. 
+Work on your final project/presentations
 
 <!-- > -->
 
-## After class
+## After Class
 
-- Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am
+- Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am **Before Class!**
 
 <!-- > -->
 
 ## Additional Resources
 
-- https://d3-wiki.readthedocs.io/zh_CN/master/Ordinal-Scales/
-- https://bl.ocks.org/d3indepth/fabe4d1adbf658c0b73c74d3ea36d465
-- https://d3indepth.com/scales/
-- https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
+- https://petrichor.studio/2018/05/21/get-started-creating-d3-maps/
+- https://github.com/d3/d3-geo
+- https://observablehq.com/@d3/projection-comparison
+- https://observablehq.com/collection/@d3/d3-geo
+- https://d3indepth.com/geographic/
 
 <!-- > -->
 
@@ -123,12 +126,11 @@ Choose one of the D3 example/tutorials to recreate. Look for the scale in use.
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Overview + Learning Outcomes |
-| 0:05        | 0:10      | Scale and normalization |
-| 0:15        | 0:20      | Get started with scaleOrdinal |
-| 0:35        | 0:55      | Example code |
-| 1:30        | 0:10      | Break |
-| 1:40        | 1:00      | Lab |
-| 2:40        | 0:05      | Wrap up |
-| TOTAL       | 2:45      | - |
-
+| 0:00        | 0:05      | Overview + Learning Outcomes                |
+| 0:05        | 0:15      | How to measure the world                  |
+| 0:20        | 0:15      | Maps + Discussion       |
+| 0:35        | 0:45      | Mapping with D3 tutorial       |
+| 1:20        | 0:10      | BREAK                     |
+| 1:30        | 1:10      | Lab      |
+| 2:40        | 0:05      | Wrap up  |
+| TOTAL       | 2:45      | -                         |

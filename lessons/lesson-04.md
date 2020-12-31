@@ -9,21 +9,22 @@
 
 ## Overview
 
-Sorting and Filtering is an important step in organizing data. Organized data can reveal insights into th story of the data. 
 
-<!-- > -->
+Sort
+filter
+add interaction
+add transitions
+
+
+
 
 ## Why do you need to know this?
 
-Sort and filter are two important operations that can be applied in a wide variety of uses in CS. 
 
-<!-- > -->
 
 ## Learning Objectives
 
-1. Use Array.sort()
-1. Use Array.filter()
-1. Adding interaction
+
 
 ## Array.sort()
 
@@ -100,8 +101,6 @@ Sorts survivors first
 - Sort fields on survived
 - Sort fields on embarked
 - Sort on both sex and survived
-
-<!-- > -->
 
 <!-- .slide: data-background="#087CB8" -->
 ## BREAK
@@ -188,10 +187,9 @@ For the same Titanic dataset, create a bar graph that shows the number of passen
 
 ## After Class
 
-- https://github.com/soggybag/FEW-2-5-Data-Visualization-Sorting-and-Filtering
-- [Visualization 3](Assignments/Data-Visualization-3.md) 
 
-<!-- > -->
+
+<!-- 
 
 ## Minute-by-Minute
 
@@ -205,3 +203,5 @@ For the same Titanic dataset, create a bar graph that shows the number of passen
 | 1:25        | 1:15      | Lab |
 | 2:40        | 0:05      | Wrap up + Homework Overview |
 | TOTAL       | 2:45      | - |
+
+-->

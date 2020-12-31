@@ -1,92 +1,95 @@
 
-# FEW 2.5 - Canvas Part 2, Circle Math
+# FEW 2.5 - D3 Scales
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-6.html ':ignore')
+➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-10.html ':ignore')
+
+
+## Lab
+
+Choose an example or tutorial from the D3 site and recreate that example with your own dataset.
+
+**Stretch Challenge:** Recreate a second example. The goal here is to get familiar with D3 to use later in your projects.
 
 <!-- > -->
 
 ## Overview
 
-This class will be a workshop to work on and finish up the audio visualizer project and study the Math of Circles. 
+D3 Scales provide a system for normalizing and scaling values for display on the screen.
 
-### Why?
+<!-- > -->
 
-Circles are used all the time in visualizations (pie chart, scatter plot, dot plot, cluster analysis, etc.) and it's important to know how to draw them in order to properly convey your analysis.
+## Why you should know this
 
-Plus they're cool!
+Scaling and normalizing data is an important task you'll do it all the time. D3's scale tools provide great functionality.
 
 <!-- > -->
 
 ## Learning Objectives
 
-- Use Math functions and trigonometry
-- Draw images with circles and code
+1. Identify scales and uses for normalizing
+1. Define a scale for each axis
+1. Use the d3.scaleLinear() and
+1. Differentiate between scaleLinear and scaleOrdinal
 
 <!-- > -->
 
-## Intro
+## Scale and normalization
 
-Sometimes you'll want to place things in a circle. Imagine the numbers around a clock. If you had to make this yourself you'd need to place each of the numbers equally spaced around a center point.
+Scaling and normalizing allows us to convert values of any range into values that can be displayed on the screen.
 
-Imagine you know where the center of the circle is and imagine that it is x 0 and y 0. To place the 12 it would be 0 x and y - the radius of the circle. For the 3, 6, and 9 you could follow a similar pattern. 
-
-When it's time to place the 1, 2, 4, and other numbers it's hard to caluclate the their x and y. 
-
-There are a few Math functions that can help with this.
-
-You are probably used to looking at a circle as 360 degrees. In trigonmetry we look at a circle radians. There are  Pi radians in a circle. Or you could think of 2 Pi as 360 in degrees.
-
-`Math.sin()` and `Math.cos()` can be used to map an x and y value from radians. Each of these functions takes a value in radians and return a number between -1 and +1. Multiply the return value by the radius to get the x and y around the center.
-
-Think about the clock. To get the position of each hour divide the circle by 12.
-
-`const step = Math.PI * 2 / 12`
-
-<!-- v -->
-
-Decide what the radius of your clock face is. Imagine it's 200px.
-
-```JS
-const numbers = [3,4,5,6,7,8,9,10,11,12,1,2]
-const step = Math.PI * 2 / numbers.length
-const radius = 200
-numbers.forEach((n, i) => {
-	const x = Math.sin(step * i) * radius
-	const y = Math.cos(step * i) * radius
-
-	// draw number at x, y
-})
-```
-
-The center of the clock face would be at 0, 0 with the numbers arranged in a 200 pixels radius circle around that point. Imagine the center of the clock in the upper left corner.
-
-You usually don't want to place everything in the upper left corner. To move the center of the clock face anywhere on the canvas you'll need to offset the x and y values.
-
-<!-- v -->
-
-```JS
-const numbers = [1,2,3,4,5,6,7,8,9,10,11,12]
-const step = Math.PI * 2 / numbers.length
-const radius = 200
-const offsetX = 300
-const offsetY = 250
-numbers.forEach((n, i) => {
-	const x = Math.sin(step * i) * radius + offsetX
-	const y = Math.cos(step * i) * radius + offsetY
-
-	// draw number at x, y
-})
-```
-
-Just add the offset to the x and y. In this case the center of the clock face is at 300, 250 on the canvas.
+Scaling and normalizing works best when working with numbers. Sometimes you'll have values that don't normalize easily. For example names of countries and key words don't translate easily to numbers. Also there are situations where you want to categorize values into buckets. [D3 scaleOrdinal](https://observablehq.com/@d3/d3-scaleordinal) does this for you.
 
 <!-- > -->
 
-## Playing with Circles
+Use scaleOrdinal for:
 
-Check out the [Example code](../lesson-06.html) linked here and see how you can manipulate the circles!
+- Converting values to colors
+- Converting values into key words
+- Converting keywords into a values, colors, or other things
+
+<!-- > -->
+
+## Get Started with scaleOrdinal
+
+Go through and review the following links on your own:
+
+- [Documentation](https://d3-wiki.readthedocs.io/zh_CN/master/Ordinal-Scales/)
+- [Scales functions in D3](https://d3indepth.com/scales/)
+
+<!-- > -->
+
+### Ordinal Scale Example
+
+Looking at the Titanic Dataset emabrked is expressed as a letter. D3 has a ordinal scale that allows mapping aribitrary values. 
+
+```JS
+// Creates an array of unique values 
+const embarked = Array.from(new Set(data.map((p) => p.embarked === undefined ? '?' : p.embarked)))
+// Create an  ordinal scale
+const embarkedScale = d3.scaleOrdinal()
+  .domain(embarked)
+  .range(['#ff00ff66', '#ffff0066', '#00ffff66', 'black'])
+```
+
+Use the ordinal scale 
+
+```JS
+d3.select('#svg')
+  .selectAll('circle')
+  .data(data)
+  .enter()
+  .append('circle')
+  .attr('cx', (d, i) => i * 600 / data.length)
+  .attr('cy', (d, i) => {
+    const n = 500 - d.age
+    return isNaN(n) ? 500 : n
+  })
+  .attr('r', (d) => 5)
+  // Apply the ordinal scale to embarked for each 
+  .attr('fill', (d) => embarkedScale(d.embarked))
+```
 
 <!-- > -->
 
@@ -97,22 +100,22 @@ Check out the [Example code](../lesson-06.html) linked here and see how you can 
 
 ## Lab
 
-Continue working on the audio visualizer project. 
-
-Use the lab to time complete the challenges and stretch challenges. 
+Choose one of the D3 example/tutorials to recreate. Look for the scale in use. 
 
 <!-- > -->
 
 ## After class
 
-- Continue working on [Visualization 2](Assignments/Data-Visualization-2.md), due 2/12 11:59pm
+- Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am
 
 <!-- > -->
 
 ## Additional Resources
 
-- [Example code](../lesson-06.html)
-- [Sine/Cosine](https://en.wikipedia.org/wiki/Sine)
+- https://d3-wiki.readthedocs.io/zh_CN/master/Ordinal-Scales/
+- https://bl.ocks.org/d3indepth/fabe4d1adbf658c0b73c74d3ea36d465
+- https://d3indepth.com/scales/
+- https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
 
 <!-- > -->
 
@@ -120,10 +123,12 @@ Use the lab to time complete the challenges and stretch challenges.
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:30      | In Class Activity I       |
-| 0:50        | 0:10      | BREAK                     |
-| 1:00        | 0:45      | In Class Activity II      |
-| 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | -                         |
+| 0:00        | 0:05      | Overview + Learning Outcomes |
+| 0:05        | 0:10      | Scale and normalization |
+| 0:15        | 0:20      | Get started with scaleOrdinal |
+| 0:35        | 0:55      | Example code |
+| 1:30        | 0:10      | Break |
+| 1:40        | 1:00      | Lab |
+| 2:40        | 0:05      | Wrap up |
+| TOTAL       | 2:45      | - |
+

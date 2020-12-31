@@ -1,279 +1,277 @@
 
-# FEW 2.5 - Lesson 5
+# FEW 2.5 - Real-Time Data
 
 <!-- Put a link to the slides so that students can find them -->
 
-<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-5.html ':ignore') -->
+➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-7.html ':ignore')
 
 <!-- > -->
 
 ## Overview
 
-The goal of this session is to focus on making interactive views. 
+Sometimes data changes moment by moment you can display that! 
 
 <!-- > -->
 
-## Why you should know this
+## Why you should know this?
 
-Handling interaction is an important skill for front end developers. It's your job to handle user interaction and interface user input with software logic. 
+Experimenting with real-time data is expands your skills into new areas. 
 
 <!-- > -->
 
 ## Learning Objectives
 
-- Handle user interactions with events
-- Create dynamic views
-- Style views dynamically
-- Displaying your work with GitHub Pages
+- Use canvas to draw data
+- Use the audio object
+- draw real-time data
 
 <!-- > -->
 
-## Defining State
+## Real-Time Data
 
-Using the Titanic Data you have displayed gender, embarkation, and survival. The goal now will be to show these dynamically. 
+Real-time data is data that changes from moment to moment, micro-second to micro-second even! 
 
-To turn the display of a property on or off you can use a variable. 
-
-```JS
-let showGender = false
-let showEmbarked = false 
-let showSurvived = false
-```
-
-If one of these variables is true we can show the data and if false the data is not shown. 
+This can be stock prices, exchange rates, interstellar noise, tectonic motion, heart rates, and more. For this example, you will work with audio data. 
 
 <!-- > -->
 
-Next, we need some buttons to toggle the state of each of these features. 
+## Getting started 
+
+Create a new folder for this project. Add an HTML file with two elements: 
 
 ```HTML
-<button id="button-gender">Gender</button>
-<button id="button-embarked">Embarked</button>
-<button id="button-survived">Survived</button>
+<canvas id="canvas" width="300" height="300"></canvas>
+<button id="button-play">Play</button>
 ```
 
-Define a few buttons in the DOM with id names to connect them with JS. 
+The canvas will display the visualization and the button will be used to start playing the audio. 
 
-<!-- > -->
+## Audio
 
-Add event listeners to each of the buttons that toggle the property. 
+The Audio Object loads audio data. The Audio object does many things. It can play and modify audio and generate new audio sources and process audio. 
+
+It can also analyze audio and provide information about the audio source. 
+
+### Load Audio 
+
+The code snippet below uses the Audio object to load a sound file and play it.
 
 ```JS
-buttonGender.addEventListener('click', (e) => {
- showGender = !showGender
+function startAudio() {
+  const audio = new Audio()
+  const audioContext = new (window.AudioContext || window.webkitAudioContext)()
+
+  audio.src = 'bird-whistling-a.wav'
+
+  audio.play()
+}
+```
+
+Call the function above with a button: 
+
+```JS
+const playButton = document.getElementById('button-play')
+
+playButton.addEventListener('click', (e) => {
+  startAudio()
 })
 ```
-Here `showGender` will change from true to false to true again with each click. 
+
+**You can't play audio without user interaction** Read this rationale https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
 
 <!-- > -->
 
-Show the state of the button: 
+### Analysing Audio
 
-```JS 
-buttonGender.addEventListener('click', (e) => {
-  showGender = !showGender
-  if (showGender) {
-    e.target.style.backgroundColor = 'black'
-    e.target.style.color = 'white'
-  } else {
-    e.target.style.backgroundColor = 'white'
-    e.target.style.color = 'black'
-  }
-})
-```
+The Audio object can do many things with an audio source. For visualization, we need to create an analyzer. 
 
-Now when showGender is true the button has a black background and white text. 
-
-<!-- > -->
-
-### Challenges 1
-
-**Challenge:** Abstract the code from the previous section. Here are two ideas you can try: 
-
-**Option 1:** use a class name to change the appearance of the button. Replace the iff statement in the previous code with:
-
-```js
-if (showGender) {
-  e.target.classList.add('button-selected')
-} else {
-  e.target.classList.remove('button-selected')
-}
-```
-Define the styles for the button-selected class in your stylesheet. 
-
-```CSS
-.button-selected {
-  background-color: black;
-  color: white;
-}
-```
-
-**Option 2:** Create a function to abstract the code in the if-else. 
-
-```JS 
-buttonGender.addEventListener('click', (e) => {
-  showGender = !showGender
-  selectButton(e.target, showGender) // 
-})
-
-function selectButton(el, state) {
-  // change the appearance of el 
-  // based on state
-}
-```
-
-<!-- > -->
-
-### Elements and data
-
-The next step is connecting the data with the DOM. A good approach might be to create a DOM for each passenger in the Titanic dataset. 
+Add two variables to hold a reference to the analyzer and 
 
 ```JS
-const elements = []
-const passengerData = []
-```
+let analyzer
+let frequencyArray
 
-Make two arrays. One to hold the DOM elements that will display passengers. And the other to hold the passenger data loaded from the Titanic data set. 
-
-<!-- > -->
-
-```JS
-const elements = []
-const passengerData = []
-
-function handleData(data) {
-  const fields = data.map(({ fields }) => fields)
-
-  fields.forEach(passenger => {
-    const el = document.createElement('div')
-    passengers.appendChild(el)
-    elements.push(el)             // store the element
-    passengerData.push(passenger) // Store the passenger
-  });
-}
-```
-Loop over the Titanic data and create an element for each passeneger, and push each passenger object into the data array. 
-
-<!-- > -->
-
-Now that you made DOM elements for each object in your dataset give each element a few default properties
-
-```JS
-fields.forEach(passenger => {
+function startAudio() {
   ...
-  el.style.width = '14px'
-  el.style.height = '14px'
-  el.style.backgroundColor = 'black'
-  el.style.margin = '1px'
-  el.style.transition = '200ms' // use trasnsition to asnimate changes
-  el.style.boxSizing = 'border-box'
-});
-```
-
-<!-- > -->
-
-### Display data in the DOM
-
-You should have an array of elements for each passenger and an array of passenger data. Time to connect the two. 
-
-The index of each data item will map to the index of the DOM element.
-
-Keeping two arrays allows the DOM to be unaffected by changes to data. This is important since sorting the data will not rearrange the DOM. 
-
-<!-- > -->
-
-Make a function that loops through your data and sets the appearance of an element at the same index in the elements array. 
-
-```JS
-function displayByGender() {
-  passengerData.forEach((obj, i) => {
-    const el = elements[i]
-    const color = obj.sex === 'male' ? 'blue' : 'pink'
-    el.style.backgroundColor = showGender ? color : 'black'
-  })
 }
 ```
 
-If `showGender` is `true` the color is displayed otherwise the color is black. 
+Add a couple of lines of code to your 
 
-Call this function from the button event handler. 
+```JS
+function startAudio() {
+  const audio = new Audio()
+  const audioContext = new (window.AudioContext || window.webkitAudioContext)()
 
-<!-- > -->
+  audio.src = 'bird-whistling-a.wav'
 
-### Challenges 2
+  // --------------------------------------------------------
+  analyser = audioContext.createAnalyser()
+  const source = audioContext.createMediaElementSource(audio)
+  source.connect(analyser)
+  analyser.connect(audioContext.destination)
+  frequencyArray = new Uint8Array(analyser.frequencyBinCount)
+  // --------------------------------------------------------
 
-**Challenges** 
+  audio.play()
+}
+```
 
-Create functions to display embarked and survival. You can decide how these will be displayed. You can use background color, border, border-radius or other. 
+These lines: 
 
-The function should use the variable `showSurvival` or `showEmbarked` to either display the feature or use a neutral value to not display that feature. 
+- Create the `analyzer`
+- get a `source` 
+- connect the source to the analyzer
+- define `freqeuncyArray` as an array of frequencies from the audio analyzer
 
-<!-- > -->
+### Rendering Audio
+
+The process of rendering audio will need to follow these steps: 
+
+- clear the canvas 
+- get an array of frequency values from the analyzer
+- for each frequency in the array
+ - draw a shape influenced by each frequency
+
+All of the steps above will be repeated each time the browser redraws. 
+
+Add some references to the canvas and some variables we can use for drawing. 
+
+```JS
+const canvas = document.getElementById('canvas')
+const ctx = canvas.getContext('2d')
+
+const centerX = 300 / 2
+const centerY = 300 / 2
+const radius = 300 / 5
+```
+
+Add a new function: 
+
+```JS
+function render() {
+
+  requestAnimationFrame(render)
+}
+```
+
+Add a few lines to clear the canvas and draw a circle in the center.
+
+```JS
+function render() {
+  // -----------------------------------------------
+  ctx.clearRect(0, 0, 300, 300)
+  ctx.beginPath()
+  ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI)
+  ctx.strokeStyle = 'red'
+  ctx.stroke()
+  // ----------------------------------------------
+
+  requestAnimationFrame(render)
+}
+```
+
+Define a couple of variables that will be used to draw the bars. 
+
+Get an array of frequencies from the analyzer. 
+
+```JS
+function render() {
+  ctx.clearRect(0, 0, 300, 300)
+  ctx.beginPath()
+  ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI)
+  ctx.strokeStyle = 'red'
+  ctx.stroke()
+
+  // -------------------------------------------------
+  const bars = 200
+  const step = Math.PI * 2 / bars
+
+  analyser.getByteFrequencyData(frequencyArray)
+  // --------------------------------------------
+
+
+
+  requestAnimationFrame(render)
+}
+```
+
+For each frequency, you'll draw a line. To do this we need to the starting point: x1 and y1, and the ending point x2, y2. Each line is drawn as a path the last step is to stroke the paths. 
+
+```JS
+function render() {
+  ctx.clearRect(0, 0, 300, 300)
+  ctx.beginPath()
+  ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI)
+  ctx.strokeStyle = 'red'
+  ctx.stroke()
+
+  const bars = 200
+  const step = Math.PI * 2 / bars
+
+  analyser.getByteFrequencyData(frequencyArray)
+
+  // --------------------------------------------
+  frequencyArray.forEach((f, i) => {
+    const barLength = frequencyArray[i] * 0.5
+    const x1 = (Math.cos(step * i) * radius) + centerX
+    const y1 = (Math.sin(step * i) * radius) + centerY
+    const x2 = (Math.cos(step * i) * (radius + barLength)) + centerX
+    const y2 = (Math.sin(step * i) * (radius + barLength)) + centerY
+
+    ctx.moveTo(x1, y1)
+    ctx.lineTo(x2, y2)
+  })
+
+  ctx.stroke()
+  // -------------------------------------------------
+
+  requestAnimationFrame(render)
+}
+```
+
+### Challenges 
+
+1. Follow the tutorial steps above and get this working. 
+2. Customize the drawing code from the last step.
+ - change the color.
+ - change the color of each line. To do this you'll need to: 
+ - set the `ctx.strokeStyle` inside the loop and call `ctx.stroke()` inside the loop.
+ - Change the lines drawn. Currently they are mapped around the circle. Change the x1, y1, and x2, y2 values to something else.
+ - Draw rectangles or circles. Draw one circle for each frequency. You could set the width, height, or radius based on the frequency value. 
+
 
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
 
 <!-- > -->
 
-### Sorting 
 
-We can sort the data on any of the fields. Sorting will rearrange the data array 
-
-Use the sorting ideas from the previous lesson. 
-
-IF you sort the data you'll need to display it again in the DOM. Call your display functions. 
-
-<!-- > -->
-
-### Button Group
-
-Radio buttons are buttons that work in a group where only one can be selected at a time. 
-
-To do this when clicking a button that is part of a group remove the `button-selected` class from all the buttons in the group and add the class to the selected button.
-
-<!-- > -->
-
-## Your work on GitHub Pages
-
-Use GitHub Pages to host your work. Each of your visualizations should exist on GitHub Pages.
-
-Take some time to do the following:
-
-1. Follow the guide [here](https://pages.github.com) to set up your GitHub Pages.
-1. Add a link to your GitHub Pages repo in the project tracker.
-
-For inspiration, here are some [example visualizations](https://github.com/soggybag/data-visualizations) on GitHub Pages.
 
 <!-- > -->
 
 ## After Class
 
-Complete assignment 4
+- Finish [Visualization 2](Assignments/Data-Visualization-6.md), due TONIGHT, 11:59pm
 
 <!-- > -->
 
-## Resources
+## Additional Resources
 
-- https://javascript.info/introduction-browser-events
-- https://javascript.info/array-methods#sort-fn
-- [Assignment 4](../Assignments/Data-Visualization-4.md)
+- https://www.kkhaydarov.com/audio-visualizer/
+- https://medium.com/@duraraxbaccano/computer-art-visualize-your-music-in-javascript-with-your-browser-part-2-fa1a3b73fdc6
 
 <!-- > -->
 
 ## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |
-| ----------- | --------- | ----------- |
-| 0:05 | 0:05 | Admin |
-| 0:05 | 0:10 | [Overview](#overview) |
-| 0:05 | 0:15 | [Learning objectives](#learning-objectives) |
-| 0:10 | 0:25 | [Defining State](#defining-state) |
-| 0:30 | 0:55 | [Challenges 1](#challenges-1) |
-| 0:10 | 1:05 | [Elements and data](#elements-and-data) |
-| 0:30 | 0:35 | [Challenges 2](#challenges-2) |
-| 0:10 | 1:55 | [BREAK](#break) |
-| 0:10 | 2:05 | [Sorting](#sorting) |
-| 0:40 | 2:45 | [Lab](#lab) |
-| 0:05 | 2:50 | [wrap up](#wrap-up) |
-
+| ----------- | --------- | ------------------------- |
+| 0:00 | 0:05 | Overview and Learning Outcomes |
+| 0:05 | 0:10 | CDNs |
+| 0:15 | 1:00 | ChartJS |
+| 1:15 | 0:10 | BREAK |
+| 1:25 | 1:15 | Lab |
+| 2:40 | 0:05 | Wrap up and review homework |
+| TOTAL | 2:45 | - |
 

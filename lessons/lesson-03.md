@@ -217,7 +217,7 @@ https://repl.it/join/gnjigkyl-mitchellhudson
 - Start [Visualization 2](assignments/assignment-2.md)
 
 
-<!-- > -->
+<!--
 
 ## Minute-by-Minute
 
@@ -232,3 +232,5 @@ https://repl.it/join/gnjigkyl-mitchellhudson
 | 1:10        | 0:15      | CSS Transforms      |
 | 1:25        | 0:10      | Closures      |
 | 1:35        | 0:10      | BREAK      |
+
+-->

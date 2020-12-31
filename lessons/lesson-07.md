@@ -1,277 +1,388 @@
 
-# FEW 2.5 - Real-Time Data
+# FEW 2.5 - D3 Intro
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-7.html ':ignore')
+➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-9.html ':ignore')
 
 <!-- > -->
 
 ## Overview
 
-Sometimes data changes moment by moment you can display that! 
+D3 is a library that has been around for a long time. It's more of a toolkit for making visualizations with JavaScript. It's the first name that comes when conversation turns to making data visualizations with JS.
 
-<!-- > -->
+## Why you should know this
 
-## Why you should know this?
-
-Experimenting with real-time data is expands your skills into new areas. 
+It's the tool that wrote the book on data visualization with JS. You can do just about anything with D3. It has huge flexibility and deep toolset. It also has a steep learning curve.
 
 <!-- > -->
 
 ## Learning Objectives
 
-- Use canvas to draw data
-- Use the audio object
-- draw real-time data
+- Identify use cases for D3
+- Define data used by D3
+- Create simple visualizations with D3
 
 <!-- > -->
 
-## Real-Time Data
+## D3
 
-Real-time data is data that changes from moment to moment, micro-second to micro-second even! 
+D3 - Data Driven Documents describes itself as:
 
-This can be stock prices, exchange rates, interstellar noise, tectonic motion, heart rates, and more. For this example, you will work with audio data. 
+> D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.
+
+What does it do? Data visualization! You could say D3 wrote the book on data visualization with JavaScript.
 
 <!-- > -->
 
-## Getting started 
+## How does it work?
 
-Create a new folder for this project. Add an HTML file with two elements: 
+D3 does so much it's hard to answer that. It draws things from data. It binds to data, meaning it will update when the data changes. It handles animation and interactions. It can load data and manipulate the DOM.
+
+D3 is more of a toolbox with tools that are focussed on drawing things on the screen from a datasets.
+
+<!-- > -->
+
+## Explore D3.
+
+Go to the [D3 hompage](https://d3js.org), and take a look at the examples on the D3 home and [examples pages](https://github.com/d3/d3/wiki/Gallery).
+
+**Find an example that you think is interesting to show to the group and answer the question: _why is this interesting?_**
+
+D3 is complex. With that complexity comes a lot of flexibility. Expect a steep learning curve!
+
+<!-- > -->
+
+## Getting started
+
+Link to the library from the CDN:
+
+`<script src="https://d3js.org/d3.v5.min.js"></script>`
+
+You can find this link on the [D3 hompage](https://d3js.org)
+
+Select an element to work with. You will be adding or modifying elements within this one. Here we are selecting the body:
+
+```JS
+d3.select('body')
+```
+
+<!-- > -->
+
+Next select the elements you want to modify or create. In this case we are selecting divs. It doesn't matter that there no existing divs.
+
+```JS
+d3.select('body')
+	.selectAll('div')
+```
+
+<!-- > -->
+
+Next add some data. Data can be an array containing any type of data. Each element of the array will be processed. For this example I've used an array of numbers.
+
+```JS
+d3.select('body')
+	.selectAll('div')
+	.data([5,6,2,8,4,9,1])
+```
+
+<!-- > -->
+
+Next call `enter()`. Calling this method tells D3 to add new elements if they don't exist.  
+
+```JS
+d3.select('body')
+	.selectAll('div')
+	.data([5,6,2,8,4,9,1])
+	.enter()
+```
+
+<!-- > -->
+
+Use `append()` to tell D3 what type of element to append.
+
+```JS
+d3.select('body')
+	.selectAll('div')
+	.data([5,6,2,8,4,9,1])
+	.enter()
+	.append('div')
+```
+
+<!-- > -->
+
+Set the text of each new node. This method takes a function which receives one of the data values and should return the text to display in the node.
+
+```JS
+d3.select('body')
+	.selectAll('div')
+	.data([5,6,2,8,4,9,1])
+	.enter()
+	.append('div')
+	.text((d) => d)
+```
+
+<!-- > -->
+
+The `style()` method takes two parameters. First is the style attribute to set, and second is either a function or a primitive value.
+
+```JS
+d3.select('body')
+	.selectAll('div')
+	.data([5,6,2,8,4,9,1])
+	.enter()
+	.append('div')
+	.text((d) => d)
+	// When the second parameter is a primitive value, the value is returned.
+	// Look at: padding, background-color, and margin.
+	.style('padding', '1em')
+	.style('background-color', 'red')
+	.style('margin', '1px')
+	// When the second parameter is a function, the function receives
+	// a data value and returns a value.
+	// See the width. Here the value is normalized and returned as a %.
+	.style('width', (d) => `${d / 10 * 100}%`)
+```
+
+<!-- > -->
+
+## Loading Data
+
+D3 has its own data loaders built in. D3 works with: JSON, CSV, and a few other data types. Read more [here](https://github.com/d3/d3/blob/master/API.md#fetches-d3-fetch).
+
+See the loading data example below. Notice this uses a Promise:
+
+Load a JSON Object:
+
+```JS
+d3.json('metal.json')
+		.then(json => console.log(json))
+```
+
+Load a CSV object.
+
+```JS
+// CSV
+	d3.csv('metal_bands_2017.csv')
+		.then(csv => console.log(csv))
+```
+
+<!-- > -->
+
+## SVG
+
+The earlier example used HTML, created HTML elements, and set CSS styles on those elements. D3 is also happy to work with SVG.
+
+SVG and HTML are closely related. Imagine HTML as a language for sharing and displaying text documents, and SVG as a language for sharing and displaying graphical images. Both languages share the same parent language.  
+
+<!-- > -->
+
+Remember these SVG tags to get started:
+
+- rect - Rectangle
+- circle - Circle
+- ellipse - Elipse
+- g - Group
+- line - Line
+- path - Path
+- polygon - Polygon
+- and [many more...](https://developer.mozilla.org/en-US/docs/Web/SVG/Element)
+
+Take a look at the list of SVG tags what do you see there?
+
+<!-- > -->
+
+### Activity
+
+**Pair up and explore a section of the SVG tag list.**
+
+<!-- > -->
+
+### Making SVG happen
+
+D3 writes SVG for us!
+
+SVG tags have different names and many new and different attributes!
+
+Try it for yourself with these challenges:
+
+Make an SVG Object. You can write SVG into your HTML documents just like you would write a div or other tag. 
+
+Make an svg tag:
+
+`<svg id="svg" width="500" height="500"></svg>`
+
+Inside an SVG tag you can add other tags but these need to be SVG elements. SVG has it's own tags/elements that are different from HTML tags/elements. 
+
+SVG elements have their own attributes also. Try it yourself, make a circle. 
 
 ```HTML
-<canvas id="canvas" width="300" height="300"></canvas>
-<button id="button-play">Play</button>
+<svg id="svg" width="500" height="500">
+	<circle cx="250" cy="250" r="123" fill="#0ff"/>
+</svg>
 ```
 
-The canvas will display the visualization and the button will be used to start playing the audio. 
+This should make a cyan circle in the center of the SVG document. 
 
-## Audio
+- `cx` - center x
+- `cy` - center y
+- `r` - radius
+- `fill` - fill color
 
-The Audio Object loads audio data. The Audio object does many things. It can play and modify audio and generate new audio sources and process audio. 
+Time to make some SVG elements with D3. 
 
-It can also analyze audio and provide information about the audio source. 
+Make an array of objects. Give each object three properties, each assigned a random value.
 
-### Load Audio 
-
-The code snippet below uses the Audio object to load a sound file and play it.
+This function takes a parameter `n` and returns an array of n objects. Each object properties a, b, and c with random values from 0 - 1. 
 
 ```JS
-function startAudio() {
-  const audio = new Audio()
-  const audioContext = new (window.AudioContext || window.webkitAudioContext)()
-
-  audio.src = 'bird-whistling-a.wav'
-
-  audio.play()
+function makeRandomData(n) {
+	const array = []
+	for (let i = 0; i < n; i += 1) {
+		array.push({ a: Math.random(), b: Math.random(), c: Math.random() })
+	}
+	return array
 }
 ```
-
-Call the function above with a button: 
-
-```JS
-const playButton = document.getElementById('button-play')
-
-playButton.addEventListener('click', (e) => {
-  startAudio()
-})
-```
-
-**You can't play audio without user interaction** Read this rationale https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
 
 <!-- > -->
 
-### Analysing Audio
-
-The Audio object can do many things with an audio source. For visualization, we need to create an analyzer. 
-
-Add two variables to hold a reference to the analyzer and 
+Use this function to generate random data for testing. 
 
 ```JS
-let analyzer
-let frequencyArray
-
-function startAudio() {
-  ...
-}
+const data = makeRandomData(11)
 ```
 
-Add a couple of lines of code to your 
+<!-- > -->
+
+Select the SVG element by its id name and give it a CSS style.
 
 ```JS
-function startAudio() {
-  const audio = new Audio()
-  const audioContext = new (window.AudioContext || window.webkitAudioContext)()
-
-  audio.src = 'bird-whistling-a.wav'
-
-  // --------------------------------------------------------
-  analyser = audioContext.createAnalyser()
-  const source = audioContext.createMediaElementSource(audio)
-  source.connect(analyser)
-  analyser.connect(audioContext.destination)
-  frequencyArray = new Uint8Array(analyser.frequencyBinCount)
-  // --------------------------------------------------------
-
-  audio.play()
-}
+// Select #svg
+d3.select('#svg')
+	// Style #svg
+	.style('border', '1px solid #000')
 ```
 
-These lines: 
+Adding a border will help idenitfy where SVG is in the window. If you don't see the border check your work. 
 
-- Create the `analyzer`
-- get a `source` 
-- connect the source to the analyzer
-- define `freqeuncyArray` as an array of frequencies from the audio analyzer
+<!-- > -->
 
-### Rendering Audio
-
-The process of rendering audio will need to follow these steps: 
-
-- clear the canvas 
-- get an array of frequency values from the analyzer
-- for each frequency in the array
- - draw a shape influenced by each frequency
-
-All of the steps above will be repeated each time the browser redraws. 
-
-Add some references to the canvas and some variables we can use for drawing. 
+Select all of the `circle`s. None exist yet. Add `data`. Then call `enter()` to start creating elements from the data.
 
 ```JS
-const canvas = document.getElementById('canvas')
-const ctx = canvas.getContext('2d')
-
-const centerX = 300 / 2
-const centerY = 300 / 2
-const radius = 300 / 5
+d3.select('#svg')
+	.style('border', '1px solid')
+	// select all <circle>s in #svg
+	.selectAll('circle')
+	.data(data)
+	.enter()
 ```
 
-Add a new function: 
+<!-- > -->
+
+Set attributes on SVG `circle`. Below we've set the `cx`, `cy`, `r`, and `fill` to the values in the data.
 
 ```JS
-function render() {
-
-  requestAnimationFrame(render)
-}
+d3.select('#svg')
+	.style('border', '1px solid')
+	.selectAll('rect')
+	.data(data)
+	.enter()
+	// Style all <circle>s in #svg
+	.append('circle')
+	.attr('cx', (d, i) => i * 500 / data.length)
+  .attr('cy', (d, i) => d.a * 500)
+	.attr('r', (d) => d.c * 100)
+	.attr('fill', (d) => 'green')
+	.attr('opacity', () => 0.5)
 ```
 
-Add a few lines to clear the canvas and draw a circle in the center.
+Notice that the `.attr()` method takes two parameters. The first is a string and should the name of the attribute. The second is a callback functiom that receives one data element and returns the value you want to assign to the attribute. 
 
-```JS
-function render() {
-  // -----------------------------------------------
-  ctx.clearRect(0, 0, 300, 300)
-  ctx.beginPath()
-  ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI)
-  ctx.strokeStyle = 'red'
-  ctx.stroke()
-  // ----------------------------------------------
+Notice I've used an arrow function here, written on a single line the return is implicit. 
 
-  requestAnimationFrame(render)
-}
-```
+<!-- > -->
 
-Define a couple of variables that will be used to draw the bars. 
+### SVG and Sketch
 
-Get an array of frequencies from the analyzer. 
+Sketch can export SVG. Anything you draw in Sketch can be copied and pasted as SVG code. 
 
-```JS
-function render() {
-  ctx.clearRect(0, 0, 300, 300)
-  ctx.beginPath()
-  ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI)
-  ctx.strokeStyle = 'red'
-  ctx.stroke()
+Try it out. 
 
-  // -------------------------------------------------
-  const bars = 200
-  const step = Math.PI * 2 / bars
+- Open Sketch
+- Draw something
+	- If you drew multiple shapes group them together
+- Right click on the object you drew and choose "Copy SVG Code"
+- Paste this code into the body of your HTML document
 
-  analyser.getByteFrequencyData(frequencyArray)
-  // --------------------------------------------
+You can now inspect the code and it will render in your HTML document. 
 
+<!-- > -->
 
+Try these challenges
 
-  requestAnimationFrame(render)
-}
-```
+- Change the color of all of the circles
+- Change the opacity of the circle
+- Make the radius of all circles 50
+- Give each circle a stroke, you'll need to add two more attributes:
+	- stroke - set a color 
+	- stroke-width - set the width of the stroke in pixels
 
-For each frequency, you'll draw a line. To do this we need to the starting point: x1 and y1, and the ending point x2, y2. Each line is drawn as a path the last step is to stroke the paths. 
+<!-- > -->
 
-```JS
-function render() {
-  ctx.clearRect(0, 0, 300, 300)
-  ctx.beginPath()
-  ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI)
-  ctx.strokeStyle = 'red'
-  ctx.stroke()
+### Activity
 
-  const bars = 200
-  const step = Math.PI * 2 / bars
+Answer the following questions:
 
-  analyser.getByteFrequencyData(frequencyArray)
+- What happened in the examples above?
+- How would you incorporate data from another source?
+- How would you modify the appearance?
 
-  // --------------------------------------------
-  frequencyArray.forEach((f, i) => {
-    const barLength = frequencyArray[i] * 0.5
-    const x1 = (Math.cos(step * i) * radius) + centerX
-    const y1 = (Math.sin(step * i) * radius) + centerY
-    const x2 = (Math.cos(step * i) * (radius + barLength)) + centerX
-    const y2 = (Math.sin(step * i) * (radius + barLength)) + centerY
-
-    ctx.moveTo(x1, y1)
-    ctx.lineTo(x2, y2)
-  })
-
-  ctx.stroke()
-  // -------------------------------------------------
-
-  requestAnimationFrame(render)
-}
-```
-
-### Challenges 
-
-1. Follow the tutorial steps above and get this working. 
-2. Customize the drawing code from the last step.
- - change the color.
- - change the color of each line. To do this you'll need to: 
- - set the `ctx.strokeStyle` inside the loop and call `ctx.stroke()` inside the loop.
- - Change the lines drawn. Currently they are mapped around the circle. Change the x1, y1, and x2, y2 values to something else.
- - Draw rectangles or circles. Draw one circle for each frequency. You could set the width, height, or radius based on the frequency value. 
-
+<!-- > -->
 
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
 
 <!-- > -->
 
+## Lab
 
+Get started with D3. Try working with the Titanic Dataset. Make a new project and load the Titanic data. 
+
+```js 
+d3.json('./titanic-passengers.json')
+	.then((data) => {
+		const fields = data.map((obj) => obj.fields)
+		console.log(fields)
+		handleData(fields)
+	})
+
+function handleData(data) {
+	// do the stuff from the example above
+}
+```
 
 <!-- > -->
 
-## After Class
+## After class
 
-- Finish [Visualization 2](Assignments/Data-Visualization-6.md), due TONIGHT, 11:59pm
-
-<!-- > -->
-
-## Additional Resources
-
-- https://www.kkhaydarov.com/audio-visualizer/
-- https://medium.com/@duraraxbaccano/computer-art-visualize-your-music-in-javascript-with-your-browser-part-2-fa1a3b73fdc6
+- Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am
 
 <!-- > -->
 
 ## Minute-by-Minute
 
-| **Elapsed** | **Time** | **Activity** |
+| **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00 | 0:05 | Overview and Learning Outcomes |
-| 0:05 | 0:10 | CDNs |
-| 0:15 | 1:00 | ChartJS |
-| 1:15 | 0:10 | BREAK |
-| 1:25 | 1:15 | Lab |
-| 2:40 | 0:05 | Wrap up and review homework |
-| TOTAL | 2:45 | - |
+| 0:00        | 0:05      | Overview and Learning Outcomese                |
+| 0:05        | 0:05      | D3 Intro                  |
+| 0:10        | 0:10      | Explore D3       |
+| 0:20        | 0:30      | Getting Started                     |
+| 0:50        | 0:10      | Loading Data      |
+| 1:00        | 0:30      | SVG      |
+| 1:30        | 0:10      | BREAK      |
+| 1:40        | 1:00      | Lab      |
+| 2:40        | 0:05      | Wrap up review objectives |
+| TOTAL       | 2:45      | -                         |
 
