@@ -1,9 +1,9 @@
 
-# FEW 2.5 - Making an interactive view
+# FEW 2.5 - Lesson 5
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-5.html ':ignore')
+<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-5.html ':ignore') -->
 
 <!-- > -->
 

@@ -20,14 +20,9 @@ Turning data into something that people can easily understand is why we make web
 
 ## Learning Objectives
 
-
-
-
-
-
-
-
-
+- Create HTML elements with JavaScript 
+- Use JavaScript to style elements
+- Use Map to transform data into HTML elements
 
 ## Infographic vs Data Visualization
 

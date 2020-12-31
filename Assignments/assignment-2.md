@@ -31,6 +31,13 @@ Your project should be a web pages that displays the information graphically. Yo
 - Did more men or women survive?
 - Did passenger class affect survival?
 
+Stretch challenges! Try these challenges if you've completed the challenges above. 
+
+- What was the most common fare paid? 
+- What were the ages of the passengers? 
+- How many passengers embarked at each of the three stops? 
+- 
+
 ## What will you turn in?
 
 Post a link to the GitHub repo containing your work to GradeScope. 
