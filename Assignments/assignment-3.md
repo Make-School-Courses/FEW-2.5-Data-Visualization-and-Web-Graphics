@@ -1,4 +1,4 @@
-# FEW 2.5 Visualization 6
+# FEW 2.5 Real time visualization
 
 Real Time data: Audio Visualizer
 
@@ -6,7 +6,7 @@ Real Time data: Audio Visualizer
 
 Your Goal create an ausio visualizer with JavaScript. 
 
-**Challenge 1** follow the tutorial and notes from lesson 7. Get the base visualizer working. 
+**Challenge 1** follow the tutorial and notes from lesson. Get the base visualizer working. 
 
 **Challenge 2** modify the HTML and CSS that presents the visualizer. Design the page. 
 

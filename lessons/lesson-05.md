@@ -1,21 +1,21 @@
 
-# FEW 2.5 - Real-Time Data
+# FEW 2.5 - Lesson
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-7.html ':ignore')
+<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-7.html ':ignore') -->
 
 <!-- > -->
 
 ## Overview
 
-Sometimes data changes moment by moment you can display that! 
+Sometimes data changes moment by moment. The goal of this nest assignment is to display data in real time. 
 
 <!-- > -->
 
 ## Why you should know this?
 
-Experimenting with real-time data is expands your skills into new areas. 
+Experimenting with real-time data is expands your skills into new areas. Tracking frame updates and workign with canvas and large datasets. 
 
 <!-- > -->
 
@@ -117,7 +117,7 @@ function startAudio() {
 }
 ```
 
-These lines: 
+These lines:
 
 - Create the `analyzer`
 - get a `source` 
@@ -244,11 +244,7 @@ function render() {
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
 
-<!-- > -->
 
-
-
-<!-- > -->
 
 ## After Class
 
