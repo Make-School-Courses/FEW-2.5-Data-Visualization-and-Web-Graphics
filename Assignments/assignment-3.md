@@ -1,4 +1,4 @@
-# FEW 2.5 Real time visualization
+# FEW 2.5 Assignment 3 - Real time visualization
 
 Real Time data: Audio Visualizer
 
