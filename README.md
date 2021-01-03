@@ -12,7 +12,7 @@ If you want to practice the craft of making web applications with HTML, CSS, and
 
 ## Prerequisites:  
 
-- [FEW 1.2](https://github.com/Make-School-Courses/FEW-1.2-JavaScript-Foundations)
+- [FEW 1.2](https://github.com/Make-School-Courses/FEW-1.2-JavaScript-Foundations) Due Feb. 17
 
 ## Course Specifics
 
