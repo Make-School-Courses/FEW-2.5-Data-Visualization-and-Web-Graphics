@@ -133,7 +133,14 @@ Try this out in the Repl.it: https://repl.it/join/mnsudqlm-mitchellhudson
 - Sort fields on sex
 - Sort fields on survived
 - Sort fields on embarked
-- Sort on both sex and survived
+
+Using this Repl.it: https://repl.it/join/gnjigkyl-mitchellhudson Sort the passenger data. 
+
+Challenges: 
+
+- Set the color of each square based on gender. Then sort the data based on sex. 
+- use two colors one for survivors and the other for casualities. Sort on survived. 
+- Use three colors one for each of the embarked values. Sort on embarked. 
 
 <!-- .slide: data-background="#087CB8" -->
 ## BREAK
@@ -220,7 +227,7 @@ For the same Titanic dataset, create a bar graph that shows the number of passen
 
 ## After Class
 
-
+Continue working on the current assignment. 
 
 <!-- 
 
