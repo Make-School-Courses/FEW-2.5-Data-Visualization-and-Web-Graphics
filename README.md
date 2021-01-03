@@ -38,10 +38,10 @@ Students by the end of the course will be able to ...
 | Class | Date | Topics | Assignments | Assignment Due
 |:-----:|:----:|:------:|:-----------:|:-----------:|
 |  -    | Mon, Jan 18 | **NO CLASS** - MLK Day | - |
-|  1    | Wed, Jan 20 | [Intro to Data Viz](lessons/lesson-01.md) | [Assignment 1](assignments/assignment-1.md) | - |
+|  1    | Wed, Jan 20 | [Intro to Data Viz](lessons/lesson-01.md) | [Assignment 1](Assignments/assignment-1.md) | - |
 |  2    | Mon, Jan 25 | [Collecting Data](lessons/lesson-02.md)   | -                                           | - |
-|  3    | Wed, Jan 27 | [Making data visible](lessons/lesson-03.md) | [Assignment 2](assignments/assignment-2.md) | [Assignment 1](assignments/assignment-1.md) |
-|  4    | Mon, Feb 1  | [Sorting and Filtering](lessons/lesson-04.md) | [Assignment 3](assignments/assignment-3.md) | - |
+|  3    | Wed, Jan 27 | [Making data visible](lessons/lesson-03.md) | [Assignment 2](Assignments/assignment-2.md) | [Assignment 1](assignments/assignment-1.md) |
+|  4    | Mon, Feb 1  | [Sorting and Filtering](lessons/lesson-04.md) | [Assignment 3](Assignments/assignment-3.md) | - |
 |  5    | Wed, Feb 3  | [Interactive Data](lessons/lesson-05.md) | [Data Visualization 4](Assignments/Data-Visualization-4.md) | Data Visualization 3 |
 |  6    | Mon, Feb 8 | [Wrap up Project](lessons/lesson-06.md) | [Data Visualization 5](Assignments/Data-Visualization-5.md) | - | Data Visualization 4 |
 |  7    | Wed, Feb 10 | [Real Time Data](lessons/lesson-07.md) | [Data Visualization 6](Assignments/Data-Visualization-6.md) | Data Visualization 5 |
