@@ -6,7 +6,7 @@ D3 final project
 
 Your goal is to choose your own dataset and create a visualization from that dataset. You should use D3 for this assignment. Thopugh we can negotiate if your planned project would be better off using another system. 
 
-## Why this project? 
+## Why this project?
 
 This is another opportunity to practice your JavaScript skills. 
 

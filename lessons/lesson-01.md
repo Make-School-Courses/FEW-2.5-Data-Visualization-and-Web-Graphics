@@ -309,6 +309,9 @@ Start the Challenges here: [Challenges](https://github.com/MakeSchool-Tutorials/
 
 Complete the Challenges from lab: [Challenges](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/)
 
+- Complete the challenges above and submit your solutions to gradescope. 
+- Due Jan 27
+
 <!-- > -->
 
 ## Additional Resources

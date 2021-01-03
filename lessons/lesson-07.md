@@ -1,9 +1,9 @@
 
-# FEW 2.5 - D3 Intro
+# FEW 2.5 - Lesson 7
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-9.html ':ignore')
+<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-9.html ':ignore') -->
 
 <!-- > -->
 
@@ -370,7 +370,7 @@ function handleData(data) {
 - Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am
 
 <!-- > -->
-
+<!-- 
 ## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
@@ -385,4 +385,4 @@ function handleData(data) {
 | 1:40        | 1:00      | Lab      |
 | 2:40        | 0:05      | Wrap up review objectives |
 | TOTAL       | 2:45      | -                         |
-
+ -->
