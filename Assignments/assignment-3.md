@@ -20,6 +20,11 @@ This challenge is open ended you can appy yourself to any area that interests yo
 - geometry of the lines and fills
 - line width
 
+### Submission and Due Date 
+
+- Due Feb. 17 
+- Submit your GitHub Project on GradeScope. 
+
 ## Evaluate your progress
 
 | Expectation | Doe not meet | Meets | Exceeds |

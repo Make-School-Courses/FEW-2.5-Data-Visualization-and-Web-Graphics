@@ -10,7 +10,7 @@ You should take this class if you have a desire to express ideas visually on a c
 
 If you want to practice the craft of making web applications with HTML, CSS, and javascript this class will give you ample opportunity to stretch these skills in new directions.
 
-## Prerequisites:  
+## Prerequisites:
 
 - [FEW 1.2](https://github.com/Make-School-Courses/FEW-1.2-JavaScript-Foundations) Due Feb. 17
 

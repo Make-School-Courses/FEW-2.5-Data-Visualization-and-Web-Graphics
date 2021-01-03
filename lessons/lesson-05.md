@@ -315,6 +315,8 @@ Take a 10 minute break
 ## After Class
 
 - [Audio Visualization](assignments/assignment-3.md)
+- Due Feb. 17 
+- Submit your GitHub Project via GradeScope
 
 <!-- > -->
 

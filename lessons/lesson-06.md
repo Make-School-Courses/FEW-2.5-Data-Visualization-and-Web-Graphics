@@ -1,9 +1,9 @@
 
-# FEW 2.5 - Canvas Part 2, Circle Math
+# FEW 2.5 - Lesson 6
 
 <!-- Put a link to the slides so that students can find them -->
-
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-6.html ':ignore')
+<!-- 
+➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-6.html ':ignore') -->
 
 <!-- > -->
 
@@ -93,6 +93,8 @@ Check out the [Example code](../lesson-06.html) linked here and see how you can 
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
 
+Take 10 minute break
+
 <!-- > -->
 
 ## Lab
@@ -105,7 +107,7 @@ Use the lab to time complete the challenges and stretch challenges.
 
 ## After class
 
-- Continue working on [Visualization 2](Assignments/Data-Visualization-2.md), due 2/12 11:59pm
+- Continue working on - [Audio Visualization](assignments/assignment-3.md) Due Feb. 17. Submit on GradeScope.
 
 <!-- > -->
 
@@ -118,6 +120,7 @@ Use the lab to time complete the challenges and stretch challenges.
 
 ## Minute-by-Minute
 
+<!-- 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
 | 0:00        | 0:05      | Objectives                |
@@ -126,4 +129,5 @@ Use the lab to time complete the challenges and stretch challenges.
 | 0:50        | 0:10      | BREAK                     |
 | 1:00        | 0:45      | In Class Activity II      |
 | 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | -                         |
+| TOTAL       | 1:50      | -                         | 
+-->
