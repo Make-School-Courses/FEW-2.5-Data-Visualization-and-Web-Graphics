@@ -44,7 +44,7 @@ Students by the end of the course will be able to ...
 |  4    | Mon, Feb 1  | [Sorting and Filtering](lessons/lesson-04.md) | - | - |
 |  5    | Wed, Feb 3  | [Real Time Data](lessons/lesson-05.md)        | [Assignment 3](Assignments/assignment-3.md) | [Assignment 2](Assignments/assignment-2.md) |
 |  6    | Mon, Feb 8  | [Lab Day](lessons/lesson-06.md)               | - | - |
-|  7    | Wed, Feb 10 | [Real Time Data](lessons/lesson-07.md) | []() | Data Visualization 5 |
+|  7    | Wed, Feb 10 | [Real Time Data](lessons/lesson-07.md) | []() | [Assignment 3](Assignments/assignment-3.md) |
 |  8    | Mon, Feb 15 | [Real Time Data pt. 2](lessons/lesson-08.md) | []() | - | - |
 |  9    | Wed, Feb 17 | [D3] | - |
 | 10    | Mon, Feb 22 | [D3 Scales] | - |
