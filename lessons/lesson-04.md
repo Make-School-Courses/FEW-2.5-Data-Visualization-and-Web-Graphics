@@ -1,6 +1,8 @@
 
 # FEW 2.5 - Lesson 4 
 
+Sorting data. 
+
 <!-- Put a link to the slides so that students can find them -->
 
 <!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-3.html ':ignore') -->
@@ -9,22 +11,17 @@
 
 ## Overview
 
-
-Sort
-filter
-add interaction
-add transitions
-
-
-
+Arrangeing data to make the facts and meanings more visible. 
 
 ## Why do you need to know this?
 
-
+Managing data in arrays is an important skill. The way data is ordered can also reveal hidden meaning. 
 
 ## Learning Objectives
 
-
+- Use Array sort
+- Use Array filter
+- Apply sort and filter to your visualizations
 
 ## Array.sort()
 
