@@ -1,5 +1,7 @@
 # FEW 2.5 - Lesson 3
 
+Making data visible with HTML, CSS, JavaScript. 
+
 <!-- Put a link to the slides so that students can find them -->
 
 <!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-4.html ':ignore') -->
