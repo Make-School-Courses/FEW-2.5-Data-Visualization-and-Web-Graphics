@@ -88,7 +88,43 @@ fields.sort((a, b) => {
 })
 ```
 
-Sorts survivors first
+Sorts survivors first but, it's not a good example to understand how Array.sort works. 
+
+Array.sort looks at the two values, `a` and `b` in the example code snippet, and does one of three things: 
+
+- places `a` before `b`
+- places `a` after `b`
+- does not change the order
+
+Without a callback the values are compared numerically. Every character has a numeric value. 
+
+- 0: 48
+- 1: 49
+- 2: 50
+- 3: 51
+- 4: 52
+- 5: 53
+- 6: 54
+- 7: 55
+- 8: 56
+- 9: 57
+- - -
+- A: 65
+- B: 66
+- C: 67
+- D: 68
+- - -
+- a: 97
+- b: 98
+- c: 99
+
+Check the whole list here: https://www.w3schools.com/charsets/ref_html_ascii.asp
+
+Sort is really just comparing each character agains it's number in the list to determine how it is sorted. Numbers are sorted much like you would sort a word by starting with the first character. 
+
+Sort also takes a callback function to determine the sorting order. This callback receives two of the elements from the array. Let's call these a and b. You don't know where in the array they came from. Sort expects the callback to return a number less than 0 if a should come before b, a number greater than 0 if b should be sorted before a, and return 0 if the place of the two elements should not change. 
+
+Try this out in the Repl.it: https://repl.it/join/mnsudqlm-mitchellhudson
 
 <!-- > -->
 
