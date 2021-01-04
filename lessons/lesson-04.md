@@ -84,11 +84,11 @@ What about Titanic data?
 
 ```js
 fields.sort((a, b) => {
-    return a.survived === 'No'
+    return a.survived === 'Yes' ? -1 : 1
 })
 ```
 
-Sorts survivors first but, it's not a good example to understand how Array.sort works. 
+Sorts survivors first. This example may not make sense without some background. 
 
 Array.sort looks at the two values, `a` and `b` in the example code snippet, and does one of three things: 
 
@@ -96,7 +96,9 @@ Array.sort looks at the two values, `a` and `b` in the example code snippet, and
 - places `a` after `b`
 - does not change the order
 
-Without a callback the values are compared numerically. Every character has a numeric value. 
+Without a callback the values are compared numerically. Every character has a numeric value. You can see a few of the value in the list below. The numbers 0 - 9 have values 48 to 57. These come before the uppercase letters A to Z (65 - 96), later are lowercase letters a to z (97 to 122). 
+
+Without a callbasck Array sort compares these numeric values. This is why 111 and would come before 99. Looking at the first character, 1 hsa a value of 49 and 9 has a value of 57. 
 
 - 0: 48
 - 1: 49
