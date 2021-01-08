@@ -109,7 +109,7 @@ A callback is a function that is passed to another function as a parameter. Arro
 
 When writing JS you'll callbacks everywhere. Here are a few JS examples: 
 
-`setTimeout` takes a callback and invokes it a number of milliseconds in teh future. This callback takes no parameters. 
+`setTimeout` takes a callback and invokes it a number of milliseconds in the future. This callback takes no parameters. 
 
 ```JS
 // Set time out takes a callback it will 
