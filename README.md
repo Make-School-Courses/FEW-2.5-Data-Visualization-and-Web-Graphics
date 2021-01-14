@@ -31,7 +31,7 @@ Students by the end of the course will be able to ...
 
 ## Schedule
 
-**Course Dates:** Wednesday, January 20 – Wednesday, March 3, 2020
+**Course Dates:** Wednesday, January 20 – Wednesday, March 3, 2021
 
 **Class Times:** Monday, Wednesday at 9:30am–12:15pm (13 class sessions)
 
