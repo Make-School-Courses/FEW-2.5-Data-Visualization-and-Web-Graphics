@@ -38,21 +38,22 @@ Students by the end of the course will be able to ...
 | Class | Date | Topics | Assignments | Assignment Due
 |:-----:|:----:|:------:|:-----------:|:-----------:|
 |  -    | Mon, Jan 18 | **NO CLASS** - MLK Day | - |
-|  1    | Wed, Jan 20 | [Intro to Data Viz](lessons/lesson-01.md)     | [Assignment 1](Assignments/assignment-1.md) | - |
+|  1    | Wed, Jan 20 | [Intro to Data Viz](lessons/lesson-01.md)     | [Assignment 1 - challenges-1.js](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) | - |
 |  2    | Mon, Jan 25 | [Collecting Data](lessons/lesson-02.md)       | - | - |
-|  3    | Wed, Jan 27 | [Making data visible](lessons/lesson-03.md)   | [Assignment 2](Assignments/assignment-2.md) | [Assignment 1](Assignments/assignment-1.md) |
+|  3    | Wed, Jan 27 | [Making data visible](lessons/lesson-03.md)   | [Assignment 2 - challenges-2.js](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) | [Assignment 1](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data)  - [GradeScope](https://www.gradescope.com/courses/218919) |
 |  4    | Mon, Feb 1  | [Sorting and Filtering](lessons/lesson-04.md) | - | - |
-|  5    | Wed, Feb 3  | [Real Time Data](lessons/lesson-05.md)        | [Assignment 3](Assignments/assignment-3.md) | [Assignment 2](Assignments/assignment-2.md) |
+|  5    | Wed, Feb 3  | [Real Time Data](lessons/lesson-05.md)        | [Assignment 3](Assignments/assignment-3.md) | [Assignment 2](Assignments/assignment-2.md)  - [GradeScope](https://www.gradescope.com/courses/218919) |
 |  6    | Mon, Feb 8  | [Lab Day](lessons/lesson-06.md)               | - | - |
-|  7    | Wed, Feb 10 | [Real Time Data](lessons/lesson-07.md) | []() | [Assignment 3](Assignments/assignment-3.md) |
-|  8    | Mon, Feb 15 | [Real Time Data pt.2](lessons/lesson-08.md) | []() | - | - |
-|  9    | Wed, Feb 17 | [D3] | - |
-| 10    | Mon, Feb 22 | [D3 Scales] | - |
-| 11    | Wed, Feb 24 | [D3 Maps]| - |
-| 12    | Mon, Mar 1 | Final Assessment| - |
-| 13    | Wed, Mar 3 | Final Presentations |  | Final Data Visualization |
+|  7    | Wed, Feb 10 | [Real Time Data](lessons/lesson-07.md)        | - | [Assignment 3](Assignments/assignment-3.md) - [GradeScope](https://www.gradescope.com/courses/218919) |
+|  8    | Mon, Feb 15 | [Real Time Data pt.2](lessons/lesson-08.md)   | []() | - | - |
+|  9    | Wed, Feb 17 | [D3](#)                                       | - | - |
+| 10    | Mon, Feb 22 | [D3 Scales](#)                                | - | - |
+| 11    | Wed, Feb 24 | [D3 Maps](#)                                  | - | - |
+| 12    | Mon, Mar 1  | Final Assessment                              | - | - |
+| 13    | Wed, Mar 3  | Final Presentations                           | - | Final Data Visualization |
 
 ## Evaluation
+
 To pass this course you must meet the following requirements:
 
 - Pass 70% projects according to the associated project rubric

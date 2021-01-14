@@ -1,7 +1,7 @@
 
 # FEW 2.5 - Lesson 2
 
-Higher order functions and callbacks.
+Higher order functions and callbacks. 
 
 <!-- Put a link to the slides so that students can find them -->
 
