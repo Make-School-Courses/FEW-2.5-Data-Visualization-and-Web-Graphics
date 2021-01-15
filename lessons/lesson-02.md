@@ -86,12 +86,10 @@ Some examples:
 
 ### Map
 
-What is transforming an array and why would you do this? Any time you have an array of one kind of thing and you need to make an array of another kind from the first. You'll do this more often most other operations. 
+What is transforming an array and why would you do this? When you map an array you take each item from the original array and transform it in some way. Here are a few examples: 
 
-React - transform an array of objects or values into an array of components. 
-
-Objects to Strings - Often you you'll have objects and want to turn them into something you display. Imagine these: 
-
+- React - transform an array of objects or values into an array of components. 
+- Objects to Strings - It's not uncommon to have an array of objects that you want to display. You might want to combine one or more fields on the object into a string that will be displayed. 
 - Array date objects to an array date strings
 - An array of numbers into formatted numbers
 - An array of objects into an array of simple values like numbers or strings
@@ -115,6 +113,10 @@ const newArray = array.map((item) => { ... })
 
 // Optionally map also provides the index of the item and the array itself
 const newArray = array.map((item, index, arr) => { ... }) 
+
+// The callback is responsible for transforming the item and returning the transformed value
+// Here all items are formatted and returned. 
+const newArray = array.map((item) => item.toFixed(2))
 ```
 
 Here's a practical example: 
@@ -134,7 +136,7 @@ const years = dates.map( date => date.getFullYear() )
 
 Keep in mind that in each example a new array was created at each step! 
 
-To go from the first step to the formsatted dates requied two steps: making a date object from a string and then making a formatted date from the date object. Since map returns an array you can do that by chaining the calls to map together. 
+To go from the first step to the formatted dates required two steps: making a date object from a string and then making a formatted date from the date object. Since map returns an array you can do that by chaining the calls to map together. 
 
 ```JS
 // Chain calls to map together to work through several steps
@@ -145,6 +147,23 @@ const datesFormatted = dateStrings
 	.map(str => new Date(str))
 	.map(date => date.toDateString())
 ```
+
+The callback provided to `map` can be any function that takes in a value and returns a value. 
+
+```JS
+// Consider these functions: 
+const timesTwo = n => n * 2
+const squared = n => n * n
+const moneyFormat = n => `$${n.toFixed(2)}`
+
+// An array of numbers
+const arr = [5, 3, 6, 9]
+const wth = arr.map(timesTwo)
+	.map(squared)
+	.map(moneyFormat)
+```
+
+This starts to show the ideas behind functional programming. Above the first three functions all take a value and return a value. The map function takes a function as a parameter and returns an array. Combining theee together we create a system of functions that all work together. 
 
 Take a look at the Repl.it here and try the challenges: https://repl.it/join/zcutdjnu-mitchellhudson
 
@@ -186,6 +205,8 @@ const numbers = [11,32,45,66,76,78,36]
 // If n % 2 === 0 is true that number is included in evenNumbers
 const evenNumbers = numbers.filter(n => n % 2 === 0)
 ```
+
+Write your own filter function: https://repl.it/join/ffdybxac-mitchellhudson
 
 ### Reduce 
 
@@ -252,11 +273,11 @@ Time to apply map, filter, and reduce to the Titanic data. Let's start with this
 
 ## Lab
 
-Continue working on the [Assignment 1](../assignments/assignment-1.md). Use Map, Filter, and Reduce to the solve these problems! 
+Continue working on the Assignment 1. Think about refactoring your solutions to take advantage of map filter and reduce.
 
 ## After Class
 
-Continue working on the [Assignment 1](../assignments/assignment-1.md)
+Continue working on assignment 1. You should be finishing up challenges 1 and starting on challenges 2. 
 
 ## Resources
 
