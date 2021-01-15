@@ -24,7 +24,7 @@ Your project should be a web pages that displays the information graphically. Yo
 - How many survived? 
 - How many died? 
 - How many men? 
-- Hoe many wonmen? 
+- Hoe many wonmen?
 - Where did each passenger embark? 
 - what class did each passenger travel? 
 - How much did each passenger pay? 
