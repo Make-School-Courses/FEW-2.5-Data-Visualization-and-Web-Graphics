@@ -1,7 +1,7 @@
 
 # FEW 2.5 - Lesson 1
 
-Collecting and axamining data. 
+Telling stories with data. 
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -149,28 +149,29 @@ https://repl.it/join/hmsbpizt-mitchellhudson
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
 
+Take a ten minute break.
 
 ## JSON
 
 JSON is a common format for storing structured data for use with JavaScript. JSON stands for JavaScript Object Notation. 
 
-JSON is not code. JSON is a plain text format. The JSON format looks like standard JavaScript Objects and can easily be converted to and from JavaScript Objects. This often happens automatically. 
+JSON is not code. JSON is a plain text format. The JSON format looks like standard JavaScript Objects and can easily be converted to and from JavaScript Objects. This often happens automatically. JSON itself is not JavaScript. 
 
 Here are a few rules for JSON. JSON supports the following data types: 
 
 - Number
 - String - Must be quoted with double quotes
-- Boolean - either of the vlaues `true` or `false`
-- Array 
-- Object - property names must appear in the double quotes
-- null
+- Boolean - Either of the vlaues `true` or `false`
+- Array - A list of values
+- Object - Property names must appear in the double quotes
+- null - Represents a lack of a value
 
-What doe's JSON not support? While JSON is JS objects and is easily converted to JS object there are a few things that JSON connot represent: 
+What are the differences between JSON and JavaScript Objects? 
 
-- functions 
-- comments
-- All properties must be quoted with double quotes
-- Strings must quoted with double quotes
+- functions - JavaScript objects can have functions as properties not so with JSON
+- comments - JSON text does not allow comments
+- All properties must be quoted with double quotes - JavaScript object properties as strings or as unquoted identifiers/symbols 
+- Strings must quoted with double quotes - JavaScript allows either single or double quote
 
 JSON files should always have the .json file extension. 
 
@@ -216,7 +217,7 @@ JSON more human readable and works seemlessly with JavaScript because of built i
 
 CSV is notably smaller in file size. It takes fewer characters to express data in CSV format. The JSON sample above is 314 characters, the same data in CSV is only 183 characters. 
 
-JSON has the ability to express structured data. For example a JSON file can express objects and arrays nested within other objects and arrays. CSV has a flat structure and only represents a single level, imagine an array of values (numbers and strings.) 
+JSON has the ability to express structured data. For example a JSON file can express objects and arrays nested within other objects and arrays. CSV has a flat structure and only represents a single level, imagine an array of values (numbers and strings.)
 
 Why use JSON? Use JSON when you need structure beyond a simple array or object. Use JSON when you need seemlessly exchange data with JavaScript programs. 
 
@@ -292,12 +293,12 @@ If we had an array of paessenger what questions could you ask the data? Pair up 
 - ? 
 - ?
 
-Using the Titanic dataset, we will be practicing the following techniques using JS:
+Using the Titanic dataset, you will be practicing the following techniques using JS:
 
-- Counting values, how hany...
-- Find the min, max, range, median values
-- Filter, look at a subset
-- Aggregate values, finding the total and average
+- Counting values - this asks: how many?
+- Find the min, max, and median values - this asks: what is the range? 
+- Filtering - Looks add subsets of the data
+- Aggregate values - Asks how much? and what is the average? 
 
 <!-- > -->
 
