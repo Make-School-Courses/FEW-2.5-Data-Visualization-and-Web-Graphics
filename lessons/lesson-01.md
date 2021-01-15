@@ -297,7 +297,7 @@ Using the Titanic dataset, you will be practicing the following techniques using
 
 - Counting values - this asks: how many?
 - Find the min, max, and median values - this asks: what is the range? 
-- Filtering - Looks add subsets of the data
+- Filtering - Looks at subsets of the data
 - Aggregate values - Asks how much? and what is the average? 
 
 <!-- > -->
