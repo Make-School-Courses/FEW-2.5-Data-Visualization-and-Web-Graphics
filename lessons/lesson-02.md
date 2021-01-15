@@ -258,6 +258,11 @@ Continue working on the [Assignment 1](../assignments/assignment-1.md)
 
 ## Resources
 
+- [Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [Array.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+
+
 <!-- 
 
 ## Minute-by-Minute

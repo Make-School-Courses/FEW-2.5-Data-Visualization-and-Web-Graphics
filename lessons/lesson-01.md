@@ -313,11 +313,11 @@ Complete the Challenges from lab: [Challenges](https://github.com/MakeSchool-Tut
 
 ## Additional Resources
 
-- [Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-- [Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-- [Array.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-- [Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
-- [Math.min()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
+- Arrow functions - https://javascript.info/arrow-functions-basics
+- Arrays - https://javascript.info/array-methods
+- forEach - https://javascript.info/array-methods#iterate-foreach
+- Math.max() - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
+- Math.min() - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min
 
 <!--
 ## Minute-by-Minute
