@@ -77,7 +77,9 @@ Running code on each element in an array is common. Often you'll want to perform
 > Map/filter/reduce in a tweet:
 >
 > `[🌽, 🐮, 🐔].map(cook)` -> `[🍿, 🍔, 🍳]`
+>
 > `[🍿, 🍔, 🍳].filter(isVegetarian)` -> `[🍿, 🍳]`
+>
 > `[🍿, 🍳].reduce(eat)` -> `💩`
 
 Some examples: 
