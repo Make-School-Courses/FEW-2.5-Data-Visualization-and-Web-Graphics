@@ -1,10 +1,20 @@
 # FEW 2.5 Assignment 3 - Real time visualization
 
-Real Time data: Audio Visualizer
+Real Time data: Audio Visualizer. 
+
+## Learning Objectives 
+
+1. Use canvas to display data
+1. Draw data in real time
+1. Use normalization
 
 ## Goals 
 
-Your Goal create an ausio visualizer with JavaScript. 
+Your Goal create an audio visualizer with JavaScript. You'll be drawing audio data onto canvas with JavaScript. The audio analyzer provides an array of 1024 8 bit integers. Your job is to turn these into something that can be drawn on canvas. The values represent the magnitude of a audio at one of 1024 frequency bands. 
+
+Frequncy band is represented as the index in the array for each value. At each frquency band you will also have a value of 0 to 255. 
+
+On canvas you will be displaying pixels. You can draw them at an x and y coordinate, and you can set the color. You can draw shapes like lines, circles and rectangles. These might have a location positioned at an x and y, and might have a length, width, and height.
 
 **Challenge 1** follow the tutorial and notes from lesson. Get the base visualizer working. Use the sample code here: 
 
