@@ -42,9 +42,9 @@ Students by the end of the course will be able to ...
 |  2    | Mon, Jan 25 | [Collecting Data](lessons/lesson-02.md)       | - | - |
 |  3    | Wed, Jan 27 | [Making data visible](lessons/lesson-03.md)   | Assignment 1 <br>- [challenges-2.js](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) | - |
 |  4    | Mon, Feb 1  | [Sorting and Filtering](lessons/lesson-04.md) | Assignment 2 <br>- [Visualize Titanic data](https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization) | [Assignment 1](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) - [GradeScope](https://www.gradescope.com/courses/218919) |
-|  5    | Wed, Feb 3  | [Real Time Data](lessons/lesson-05.md)        | - | [Assignment 2](https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization)  - [GradeScope](https://www.gradescope.com/courses/218919) |
-|  6    | Mon, Feb 8  | [Lab Day](lessons/lesson-06.md)               | - | - |
-|  7    | Wed, Feb 10 | [Real Time Data](lessons/lesson-07.md)        | [Assignment 4 - ](https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data) | - [GradeScope](https://www.gradescope.com/courses/218919) |
+|  5    | Wed, Feb 3  | [Real Time Data](lessons/lesson-05.md)        | Lab | - |
+|  6    | Mon, Feb 8  | [Lab Day](lessons/lesson-06.md)               | Assignment 3 <br>- [Real Time Data](https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data) | [Assignment 2](https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization)  - [GradeScope](https://www.gradescope.com/courses/218919) |
+|  7    | Wed, Feb 10 | [Real Time Data](lessons/lesson-07.md)        | - | - [GradeScope](https://www.gradescope.com/courses/218919) |
 |  8    | Mon, Feb 15 | [Real Time Data pt.2](lessons/lesson-08.md)   | []() | - | - |
 |  9    | Wed, Feb 17 | [D3](#)                                       | - | - |
 | 10    | Mon, Feb 22 | [D3 Scales](#)                                | - | - |
