@@ -45,12 +45,12 @@ Students by the end of the course will be able to ...
 |  5    | Wed, Feb 3  | [Real Time Data](lessons/lesson-05.md)        | Lab | - |
 |  6    | Mon, Feb 8  | [Lab Day](lessons/lesson-06.md)               | Assignment 3 <br>- [Real Time Data](https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data) | [Assignment 2](https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization)  - [GradeScope](https://www.gradescope.com/courses/218919) |
 |  7    | Wed, Feb 10 | [Real Time Data](lessons/lesson-07.md)        | - | - |
-|  8    | Mon, Feb 15 | [Real Time Data pt.2](lessons/lesson-08.md)   | - | [Assignment 3](https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data) - [GradeScope](https://www.gradescope.com/courses/218919) |
-|  9    | Wed, Feb 17 | [D3](#)                                       | - | - |
+|  8    | Mon, Feb 15 | [Real Time Data pt.2](lessons/lesson-08.md)   | Assignment 4 <br>- D3 Tutotial | [Assignment 3](https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data) - [GradeScope](https://www.gradescope.com/courses/218919) |
+|  9    | Wed, Feb 17 | [D3](#)                                       | Assignment 5 <br>- D3 Final Project | Assignment 4 D3 Tutorial - [GradeScope](https://www.gradescope.com/courses/218919) |
 | 10    | Mon, Feb 22 | [D3 Scales](#)                                | - | - |
 | 11    | Wed, Feb 24 | [D3 Maps](#)                                  | - | - |
 | 12    | Mon, Mar 1  | Final Assessment                              | - | - |
-| 13    | Wed, Mar 3  | Final Presentations                           | - | Final Data Visualization |
+| 13    | Wed, Mar 3  | Final Presentations                           | Final Data Visualization | - [GradeScope](https://www.gradescope.com/courses/218919) |
 
 ## Evaluation
 
