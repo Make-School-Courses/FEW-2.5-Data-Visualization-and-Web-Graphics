@@ -263,6 +263,32 @@ const total = items.map(item => item.price).reduce((acc, price) => acc + price)
 
 Reduce examples: https://repl.it/join/svmjizdu-mitchellhudson
 
+### Use Reduce to create a histogram
+
+A histogram is a distribution of values. Think of a historgram as a list of buckes or bins and the value in each bin is how many times value or range of values appears in your dataset. Here are a few examples from the Titanic data: 
+
+- `sex` - buckets would be male and female and the number passengers would be the value. This would have two buckets and each passenger would be put into one or the other.
+- `pclass` - Each passenger travelled in one of three classes: 1, 2, or 3. There would three buckets and the value of each would be the number of passengers who travelled in that class. 
+- `age` - If we made a bucket for each age we'd have almost as many buckets as passengers. Here you use a range. Imagine buckets being ages of: 0-10, 10-20, 20-30, 30-40, 40-50, 50-60 etc. 
+
+What would a histogram look like in code? An object would work well. Imagine something like: `{ apples: 23, oranges: 57 }`. 
+
+How would you make a histogram? Use reduce!
+
+```JS 
+const passengersByClass = data.reduce((acc, p) => {
+	// Check if this property exists
+	if (acc[p.fields.pclass] === undefined) {
+		// If not add the property and give it a value of 1
+		acc[p.fields.pclass] = 1
+	} else {
+		// Otherwise add 1 to the current value
+		acc[p.fields.pclass] = acc[p.fields.pclass] + 1
+	}
+	return acc
+}, {}) // Be sure to set the default value to an object! 
+```
+
 ## Break
 
 Take a 10 minute break!
