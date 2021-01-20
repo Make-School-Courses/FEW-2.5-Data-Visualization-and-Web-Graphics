@@ -27,12 +27,20 @@ The tools you will use for this are some of the most important tools to have in 
 
 ## Learning Objectives
 
-- define with arrow functions 
+- Define with arrow functions 
 - Use callbacks
 - Identify values in the Titanic dataset
 - Extract data and derive relevant values
 
 <!-- > -->
+
+## What is Data visualization? 
+
+What do you picture when you think of data visualization? 
+
+- Pair up and look for examples of data visualzation. 
+- Share with your partner
+- Share with the class
 
 ## Overview
 
@@ -82,9 +90,10 @@ bar(3, 4)
 // If there is only a single parameter the 
 // () can be omitted
 
+// const func = (x) => { return x * 2 }
 const func = x => x * 2 // Value is returned!
 
-console.log( func(3) ) // -> 6
+console.log( func(3) ) // 6
 
 
 // If there are no parameters you need to inlcude
@@ -99,7 +108,7 @@ Study up! Here's an article on Arraow functions: https://www.freecodecamp.org/ne
 
 Where do Arrow function work best? 
 
-Arrow functions work best for callbacks and functions that do not have identity. 
+Arrow functions work best for callbacks and situations where a function doesn't need identity. 
 
 ## Callbacks
 
@@ -125,7 +134,7 @@ setTimeout(() => console.log('1 sec later (8)'), 1000)
 // Array forEach takes a function an executes 
 // it once for each item in an Array
 const arr = [11,22,33,44]
-arr.forEach((item) => console.log(item * 3))
+arr.forEach(item => console.log(item * 3))
 ```
 
 `forEach` has a couple more optional parameters it provides to the callback. 
@@ -308,6 +317,20 @@ Complete the Challenges from lab: [Challenges](https://github.com/MakeSchool-Tut
 
 - Complete the challenges above and submit your solutions to gradescope. 
 - Due Jan 27
+
+Video Lessons: 
+- https://youtu.be/hRhXWI2IpI0
+- https://youtu.be/F3c5tnvODyI
+- https://youtu.be/vDIPl9sPeDY
+- https://youtu.be/r43ugP5EmtI
+- https://youtu.be/xsvLslDQCls
+- https://youtu.be/2R_pVXGwApg
+- https://youtu.be/cBbcVQm2PK8
+- https://youtu.be/RcS51jl-LBg
+
+
+JavaScript, data visualization, titanic, titanic data, array, map, filter, reduce, callbacks, arrow functions
+
 
 <!-- > -->
 

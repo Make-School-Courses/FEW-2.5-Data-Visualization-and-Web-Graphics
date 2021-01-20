@@ -113,7 +113,27 @@ d3.select('body')
 	.append('div')
 ```
 
+### D3 Cheatsheet
+
+Here's the forumula for getting started with D3. 
+
+```JS
+d3.select('body')        // select() an element to host 
+	.selectAll('div')			 // selectAll() the elements you want to work with
+	.data([5,6,2,8,4,9,1]) // define your data()
+	.enter()               // enter() your data 
+	.append('div')         // append() elements
+```
+
+- `d3.select('#someId')` - Select an element to host the elements you will create. This element will contain all of the elements d3 creates. This element should exist and you will probably want identify it with an id. 
+- `.selectAll('someEl')` - Select all elements you will be working with. These elements don't need to exist and will be created if they don't exist. 
+- `.data(someArray)` - Add an array of data
+- `enter()` - Enter identifies elements that need to be added to the DOM when there is more data than elements. 
+- `.append('someEl')` - Appends elements to the DOM for each piece of data.
+
 <!-- > -->
+
+## D3 Working with elements and data
 
 Set the text of each new node. This method takes a function which receives one of the data values and should return the text to display in the node.
 
