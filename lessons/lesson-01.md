@@ -27,7 +27,7 @@ The tools you will use for this are some of the most important tools to have in 
 
 ## Learning Objectives
 
-- Define with arrow functions 
+- Write with arrow functions 
 - Use callbacks
 - Identify values in the Titanic dataset
 - Extract data and derive relevant values
@@ -90,18 +90,22 @@ bar(3, 4)
 // If there is only a single parameter the 
 // () can be omitted
 
-// const func = (x) => { return x * 2 }
-const func = x => x * 2 // Value is returned!
+const apples = (x) => { return x * 2 }
+const oranges = x => x * 2 // Value is returned!
 
-console.log( func(3) ) // 6
+console.log( oranges(3) ) // 6
+console.log( apples(3) ) // 6
 
 
-// If there are no parameters you need to inlcude
+// If there are no parameters you need to include
 // () or a _
 
 const pi = () => 3.14
 
 console.log( pi() ) // -> 3.14
+
+const euler = _ => 2.7182
+console.log( euler() ) // 2.7182
 ```
 
 Study up! Here's an article on Arraow functions: https://www.freecodecamp.org/news/when-and-why-you-should-use-es6-arrow-functions-and-when-you-shouldnt-3d851d7f0b26/
@@ -122,16 +126,27 @@ When writing JS you'll callbacks everywhere. Here are a few JS examples:
 
 ```JS
 // Set time out takes a callback it will 
+setTimeout(callback, time)
 // execute in the future. 
 setTimeout(() => console.log('1 sec later (8)'), 1000)
 
 // Notice the arrow function used here! 
 ```
 
+The previous example could have been written in a longer form like this: 
+
+```JS
+// Written across more lines
+setTimeout(() => {
+  console.log('1 sec later (8)')
+}, 1000)
+```
+
+
 `forEach` takes a callback and invokes the callback once for each item in the array. It also passes each item in the array to the calback as the first parameter of the callback.
 
 ```JS
-// Array forEach takes a function an executes 
+// Array forEach takes a function and executes 
 // it once for each item in an Array
 const arr = [11,22,33,44]
 arr.forEach(item => console.log(item * 3))

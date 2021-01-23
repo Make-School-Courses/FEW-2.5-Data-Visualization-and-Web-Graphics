@@ -38,19 +38,30 @@ Students by the end of the course will be able to ...
 | Class | Date | Topics | Assignments | Assignment Due |
 |:-----:|:----:|:------:|:-----------:|:--------------:|
 |  -    | Mon, Jan 18 | **NO CLASS** - MLK Day | - | - |
-|  1    | Wed, Jan 20 | [Intro to Data Viz](lessons/lesson-01.md) | Assignment 1 <br>- [challenges-1.js](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) | - |
-|  2    | Mon, Jan 25 | [Collecting Data](lessons/lesson-02.md) | - | - |
-|  3    | Wed, Jan 27 | [Making data visible](lessons/lesson-03.md) | Assignment 1 <br>- [challenges-2.js](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) | - |
-|  4    | Mon, Feb 1  | [Sorting and Filtering](lessons/lesson-04.md) | Assignment 2 <br>- [Visualize Titanic data](https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization) | [Assignment 1](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) - [GradeScope](https://www.gradescope.com/courses/218919) |
+|  1    | Wed, Jan 20 | [Intro to Data Viz] | Assignment 1 <br>- [challenges-1.js](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) | - |
+|  2    | Mon, Jan 25 | [Collecting Data] | - | - |
+|  3    | Wed, Jan 27 | [Making data visible] | Assignment 1 <br>- [challenges-2.js](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) | - |
+|  4    | Mon, Feb 1  | [Sorting and Filtering] | Assignment 2 <br>- [Visualize Titanic data](https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization) | [Assignment 1](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) - [GradeScope](https://www.gradescope.com/courses/218919) |
 |  5    | Wed, Feb 3  | - | Lab | - |
-|  6    | Mon, Feb 8  | [Real Time Data](lessons/lesson-06.md) | Assignment 3 <br>- [Real Time Data](https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data) | [Assignment 2](https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization) - [GradeScope](https://www.gradescope.com/courses/218919) |
-|  7    | Wed, Feb 10 | [Drawing Data](lessons/lesson-07.md) | - | - |
-|  8    | Mon, Feb 15 | [D3 Intro](lessons/lesson-08.md) | Assignment 4 <br>- D3 Tutotial | [Assignment 3](https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data) - [GradeScope](https://www.gradescope.com/courses/218919) |
-|  9    | Wed, Feb 17 | [D3 Scales](lessons/lesson-09.md) | Assignment 5 <br>- D3 Final Project | Assignment 4 D3 Tutorial - [GradeScope](https://www.gradescope.com/courses/218919) |
-| 10    | Mon, Feb 22 | [D3 Maps](lessons/lesson-10.md) | - | - |
+|  6    | Mon, Feb 8  | [Real Time Data] | Assignment 3 <br>- [Real Time Data](https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data) | [Assignment 2](https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization) - [GradeScope](https://www.gradescope.com/courses/218919) |
+|  7    | Wed, Feb 10 | [Drawing Data] | - | - |
+|  8    | Mon, Feb 15 | [D3 Intro] | Assignment 4 <br>- D3 Tutotial | [Assignment 3](https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data) - [GradeScope](https://www.gradescope.com/courses/218919) |
+|  9    | Wed, Feb 17 | [D3 Scales] | Assignment 5 <br>- D3 Final Project | Assignment 4 D3 Tutorial - [GradeScope](https://www.gradescope.com/courses/218919) |
+| 10    | Mon, Feb 22 | [D3 Maps] | - | - |
 | 11    | Wed, Feb 24 | Lab | - | - |
 | 12    | Mon, Mar 1  | Final Assessment | - | - |
 | 13    | Wed, Mar 3  | Final Presentations | Final Data Visualization | - [GradeScope](https://www.gradescope.com/courses/218919) |
+
+<!-- Lessons -->
+[Intro to Data Viz]: lessons/lesson-01.md
+[Collecting Data]: lessons/lesson-02.md
+[Making data visible]: lessons/lesson-03.md
+[Sorting and Filtering]: lessons/lesson-04.md
+[Real Time Data]: lessons/lesson-06.md
+[Drawing Data]: lessons/lesson-07.md
+[D3 Intro]: lessons/lesson-08.md
+[D3 Scales]: lessons/lesson-09.md
+[D3 Maps]: lessons/lesson-10.md
 
 ## Evaluation
 
