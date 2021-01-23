@@ -39,8 +39,8 @@ Students by the end of the course will be able to ...
 |:-----:|:----:|:------:|:-----------:|:--------------:|
 |  -    | Mon, Jan 18 | **NO CLASS** - MLK Day | - | - |
 |  1    | Wed, Jan 20 | [Intro to Data Viz] | Assignment 1 <br>- [challenges-1.js](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) | - |
-|  2    | Mon, Jan 25 | [Collecting Data] | - | - |
-|  3    | Wed, Jan 27 | [Making data visible] | Assignment 1 <br>- [challenges-2.js](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) | - |
+|  2    | Mon, Jan 25 | [Collecting Data] | Assignment 1 <br>- [challenges-2.js](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) | - |
+|  3    | Wed, Jan 27 | [Making data visible] | - | - |
 |  4    | Mon, Feb 1  | [Sorting and Filtering] | Assignment 2 <br>- [Visualize Titanic data](https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization) | [Assignment 1](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data) - [GradeScope](https://www.gradescope.com/courses/218919) |
 |  5    | Wed, Feb 3  | - | Lab | - |
 |  6    | Mon, Feb 8  | [Real Time Data] | Assignment 3 <br>- [Real Time Data](https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data) | [Assignment 2](https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization) - [GradeScope](https://www.gradescope.com/courses/218919) |
