@@ -35,22 +35,22 @@ Students by the end of the course will be able to ...
 
 **Class Times:** Monday, Wednesday at 9:30am–12:15pm (13 class sessions)
 
-| Class | Date | Topics | Assignments | Assignment Due |
-|:-----:|:----:|:------:|:-----------:|:--------------:|
-|  -    | Mon, Jan 18 | **NO CLASS** - MLK Day | - | - |
-|  1    | Wed, Jan 20 | [Intro to Data Viz] | Assignment 1 <br>- [challenges-1.js] | - |
-|  2    | Mon, Jan 25 | [Collecting Data] | Assignment 1 <br>- [challenges-2.js] | - |
-|  3    | Wed, Jan 27 | [Making data visible] | - | - |
+| Class | Date        | Topics                 | Assignments | Assignment Due |
+|:-----:|:-----------:|:----------------------:|:-----------:|:--------------:|
+|  -    | Mon, Jan 18 | **NO CLASS** - MLK Day | -           | -              |
+|  1    | Wed, Jan 20 | [Intro to Data Viz]    | Assignment 1 <br>- [challenges-1.js] | - |
+|  2    | Mon, Jan 25 | [Collecting Data]      | Assignment 1 <br>- [challenges-2.js] | - |
+|  3    | Wed, Jan 27 | [Making data visible]  | -           | - |
 |  4    | Mon, Feb 1  | [Sorting and Filtering] | Assignment 2 <br>- [Visualize Titanic data] | [Assignment 1] - [GradeScope] |
-|  5    | Wed, Feb 3  | - | Lab | - |
-|  6    | Mon, Feb 8  | [Real Time Data] | Assignment 3 <br>- [Real Time Data] | [Assignment 2] - [GradeScope] |
-|  7    | Wed, Feb 10 | [Drawing Data] | - | - |
-|  8    | Mon, Feb 15 | [D3 Intro] | Assignment 4 <br>- D3 Tutotial | [Assignment 3] - [GradeScope] |
-|  9    | Wed, Feb 17 | [D3 Scales] | Assignment 5 <br>- D3 Final Project | Assignment 4 D3 Tutorial - [GradeScope] |
-| 10    | Mon, Feb 22 | [D3 Maps] | - | - |
-| 11    | Wed, Feb 24 | Lab | - | - |
-| 12    | Mon, Mar 1  | Final Assessment | - | - |
-| 13    | Wed, Mar 3  | Final Presentations | Final Data Visualization | - [GradeScope] |
+|  5    | Wed, Feb 3  | -                      | Lab         | - |
+|  6    | Mon, Feb 8  | [Real Time Data]       | Assignment 3 <br>- [Real Time Data] | [Assignment 2] - [GradeScope] |
+|  7    | Wed, Feb 10 | [Drawing Data]         | -           | - |
+|  8    | Mon, Feb 15 | [D3 Intro]             | Assignment 4 <br>- D3 Tutotial | [Assignment 3] - [GradeScope] |
+|  9    | Wed, Feb 17 | [D3 Scales]            | Assignment 5 <br>- D3 Final Project | Assignment 4 D3 Tutorial - [GradeScope] |
+| 10    | Mon, Feb 22 | [D3 Maps]              | -           | - |
+| 11    | Wed, Feb 24 | Lab                    | -           | - |
+| 12    | Mon, Mar 1  | Final Assessment       | -           | - |
+| 13    | Wed, Mar 3  | Final Presentations    | Final Data Visualization | - [GradeScope] |
 
 <!-- Lessons -->
 [Intro to Data Viz]: lessons/lesson-01.md
