@@ -47,9 +47,33 @@ Running code for each element in an array is so common Array provides a method f
 ```JS
 const arr = [1,2,3,4]
 arr.forEach((item, index) => {
-	console.log(item)
+	console.log(`${index}: ${item}`)
 })
 ```
+
+For each takes a callback. The callback is a function. You can use anything that references a function here. 
+
+```JS
+const arr = [1,2,3,4]
+const timesTwo = n => n * 2
+arr.forEach(timesTwo)
+```
+
+How does forEach work? Its a function that takes another function as a parameter! 
+
+```JS
+function thrice(callback) {
+	callback(1)
+	callback(2)
+	callback(3)
+}
+
+thrice(() => console.log('hello world'))
+thrice(i => `${12}px`) // 12px 24px 36px
+```
+
+The function above executes the callback three times, and passes the number of iteration as a parameter.
+
 
 Challenge: Write a function that works like forEach.
 
@@ -286,7 +310,7 @@ const passengersByClass = data.reduce((acc, p) => {
 		acc[p.fields.pclass] = acc[p.fields.pclass] + 1
 	}
 	return acc
-}, {}) // Be sure to set the default value to an object! 
+}, {}) // Be sure to set the default value to an object!
 ```
 
 ## Break
@@ -306,6 +330,16 @@ Continue working on the Assignment 1. Think about refactoring your solutions to 
 Continue working on assignment 1. You should be finishing up challenges 1 and starting on challenges 2. 
 
 ## Resources
+
+Video Lectures: 
+
+- https://youtu.be/sWcW9iNkMgw
+- https://youtu.be/qrHO0kKWOBc
+- https://youtu.be/rLxgeN1OhP8
+- https://youtu.be/VAvaMeSBeLs
+- https://youtu.be/WERvwbQ98dY
+- https://youtu.be/hGpQ7kQVafg
+
 
 - [Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 - [Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
