@@ -40,8 +40,8 @@ Students by the end of the course will be able to ...
 |  -    | Mon, Jan 18 | **NO CLASS** - MLK Day | -           | -              |
 |  1    | Wed, Jan 20 | [Intro to Data Viz]    | Assignment 1 <br>- [challenges-1.js] | - |
 |  2    | Mon, Jan 25 | [Collecting Data]      | Assignment 1 <br>- [challenges-2.js] | - |
-|  3    | Wed, Jan 27 | [Making data visible]  | -           | - |
-|  4    | Mon, Feb 1  | [Sorting and Filtering] | Assignment 2 <br>- [Visualize Titanic data] | [Assignment 1] - [GradeScope] |
+|  3    | Wed, Jan 27 | [Making data visible]  | Assignment 2 <br>- [Visualize Titanic data] | - |
+|  4    | Mon, Feb 1  | [Sorting and Filtering] | - | [Assignment 1] - [GradeScope] |
 |  5    | Wed, Feb 3  | -                      | Lab         | - |
 |  6    | Mon, Feb 8  | [Real Time Data]       | Assignment 3 <br>- [Real Time Data] | [Assignment 2] - [GradeScope] |
 |  7    | Wed, Feb 10 | [Drawing Data]         | -           | - |
