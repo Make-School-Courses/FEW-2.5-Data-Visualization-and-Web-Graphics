@@ -98,7 +98,13 @@ d3.select('#svg')
 
 <!-- > -->
 
-## Lab
+## Lab - Part 1
+
+Go to [make.sc/d3-challenges](https://make.sc/d3-challenges). Clone the repo, and work through the challenges in the `D3Scales` folder. You will find the challenges as comments in the corresponding HTML and JS files
+
+<!-- > -->
+
+## Lab Part 2
 
 Choose one of the D3 example/tutorials to recreate. Look for the scale in use. 
 
@@ -106,6 +112,7 @@ Choose one of the D3 example/tutorials to recreate. Look for the scale in use.
 
 ## After class
 
+- Finish the `D3Scales` challenges
 - Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am
 
 <!-- > -->
