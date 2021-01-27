@@ -223,6 +223,8 @@ https://repl.it/join/gnjigkyl-mitchellhudson
 
 - https://youtu.be/BgCRqcwZ4TA
 - https://youtu.be/iwYmA0HISSQ
+- https://youtu.be/SxNpz23yaKs
+- https://youtu.be/lNPbtl0K860
 
 <!--
 
