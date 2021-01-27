@@ -216,8 +216,13 @@ https://repl.it/join/gnjigkyl-mitchellhudson
 
 ## After Class
 
-- Start [Visualization 2](assignments/assignment-2.md)
+- https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization
 
+
+## Video lessons
+
+- https://youtu.be/BgCRqcwZ4TA
+- https://youtu.be/iwYmA0HISSQ
 
 <!--
 
