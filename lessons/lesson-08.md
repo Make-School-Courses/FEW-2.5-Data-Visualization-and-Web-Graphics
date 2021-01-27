@@ -1,5 +1,5 @@
 
-# FEW 2.5 - Lesson 8
+# FEW 2.5 - D3 Intro
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -479,9 +479,17 @@ Answer the following questions:
 
 <!-- > -->
 
-## Lab
+## Lab - Part 1
 
-The goal for the lab is to use the Titanic dataset with D3. You can also improve on the code above in a few ways. Try the challenges below: 
+Go to [make.sc/d3-challenges](https://make.sc/d3-challenges). Clone the repo, and work through the challenges in the `D3Intro` folder. You will find the challenges as comments in the corresponding HTML and JS files
+
+<!-- > -->
+
+## Lab - Part 2
+
+The goal for the lab is to use the Titanic dataset with D3. You can also improve on the code above in a few ways. Try the challenges below:
+
+<!-- v --> 
 
 **Challenge** 
 
@@ -505,6 +513,8 @@ Create an HTML file and add the link to the D3 source code and another script fo
 </html>
 ```
 
+<!-- v --> 
+
 **Challenge**
 
 Copy the `titanic-passengers.json` file into the folder where you are working. Here's link to the titanic data if you don't have it somewhere: 
@@ -519,6 +529,8 @@ d3.json('./titanic-passengers.json')
 		// 
 	})
 ```
+
+<!-- v --> 
 
 **Challenge**
 
@@ -553,6 +565,8 @@ function handleData(data) {
 }
 ```
 
+<!-- v --> 
+
 **Challenge**
 
 In the handledata function initialize a D3 drawing and display the titanic passengers. Here is some starter code that plans to draw some circles in the svg. 
@@ -575,6 +589,8 @@ function handleData(data) {
 
 This should create some small black circles that are spread evenly on the horizontal axis and positioned vertically based on the fare. 
 
+<!-- v --> 
+
 **Challenge**
 
 This is a good start but needs some color. Rewrite the last line from the previous code snippet to set a different color for each passenger based on sex property. 
@@ -585,6 +601,8 @@ Replace the color string `'#00)'`with a callback that will handle figuring out w
 ...
 .attr('fill', p => ... )
 ```
+
+<!-- v --> 
 
 **Challenge** 
 
@@ -597,6 +615,7 @@ Try these challenges:
 
 ## After class
 
+- Finish D3Intro challenges
 
 
 <!-- > -->
