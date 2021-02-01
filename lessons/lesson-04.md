@@ -7,6 +7,11 @@ Sorting data.
 
 <!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-3.html ':ignore') -->
 
+## Video 
+
+- https://youtu.be/m8K1LxEemG4
+- https://youtu.be/CswNWqXgnrE
+
 <!-- > -->
 
 ## Overview
