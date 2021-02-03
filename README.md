@@ -43,7 +43,7 @@ Students by the end of the course will be able to ...
 |  3    | Wed, Jan 27 | [Making data visible]  | Assignment 2 <br>- [Visualize Titanic data] | - |
 |  4    | Mon, Feb 1  | [Sorting and Filtering] | -          | [Assignment 1] - [GradeScope] |
 |  5    | Wed, Feb 3  | -                      | Lab         | - |
-|  6    | Mon, Feb 8  | [Real Time Data]       | Assignment 3 <br>- [Real Time Data] | [Assignment 2] - [GradeScope] |
+|  6    | Mon, Feb 8  | [Real Time Data]       | [Assignment 3] <br>- Audio Vidualizer | [Assignment 2] - [GradeScope] |
 |  7    | Wed, Feb 10 | [Drawing Data]         | -           | - |
 |  8    | Mon, Feb 15 | [D3 Intro]             | Assignment 4 <br>- D3 Tutotial | [Assignment 3] - [GradeScope] |
 |  9    | Wed, Feb 17 | [D3 Scales]            | Assignment 5 <br>- D3 Final Project | Assignment 4 D3 Tutorial - [GradeScope] |
