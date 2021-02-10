@@ -1,5 +1,5 @@
 
-# FEW 2.5 - Lesson 6
+# FEW 2.5 - Lesson 7
 
 <!-- Put a link to the slides so that students can find them -->
 <!-- 
@@ -82,11 +82,11 @@ numbers.forEach((n, i) => {
 
 Just add the offset to the x and y. In this case the center of the clock face is at 300, 250 on the canvas.
 
-<!-- > -->
 
-## Playing with Circles
 
-Check out the [Example code](../lesson-06.html) linked here and see how you can manipulate the circles!
+<!-- ## Playing with Circles
+
+Check out the [Example code](../lesson-06.html) linked here and see how you can manipulate the circles!  -->
 
 <!-- > -->
 
