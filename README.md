@@ -45,7 +45,7 @@ Students by the end of the course will be able to ...
 |  5    | Wed, Feb 3  | -                      | Lab         | - |
 |  6    | Mon, Feb 8  | [Real Time Data]       | [Assignment 3] <br>- Audio Vidualizer | [Assignment 2] - [GradeScope] |
 |  7    | Wed, Feb 10 | [Drawing Data]         | -           | - |
-|  8    | Mon, Feb 15 | [D3 Intro]             | Assignment 4 <br>- D3 Tutotial | [Assignment 3] - [GradeScope] |
+|  8    | Mon, Feb 15 | [D3 Intro]             | Assignment 4 <br>- [D3 Tutorial] | [Assignment 3] - [GradeScope] |
 |  9    | Wed, Feb 17 | [D3 Scales]            | Assignment 5 <br>- D3 Final Project | Assignment 4 D3 Tutorial - [GradeScope] |
 | 10    | Mon, Feb 22 | [D3 Maps]              | -           | - |
 | 11    | Wed, Feb 24 | Lab                    | -           | - |
@@ -73,6 +73,7 @@ Students by the end of the course will be able to ...
 [Real Time Data]: https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data
 [Assignment 2]: https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization
 [Assignment 3]: https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data
+[D3 Tutorial]: https://github.com/Make-School-Labs/D3.js-Mini-Challenges
 
 ## Evaluation
 
