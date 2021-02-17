@@ -1,12 +1,12 @@
 # FEW 2.5 Visualization 5
 
-**Due Date:** Wednesday, 3/4, 9:30am
-
 Visualization with D3.
 
-Your goal is to create a data visualization using D3. D3 has a steep learning curve and many features which make it a little overwhelming to get started with. Don't worry about this.
+Your goal is to create a data visualization using D3. You should choose your won data set for this project. 
 
-Start with a one of the example on the D3 page [here](https://github.com/d3/d3/wiki/Gallery). Choose one of these examples and recreate it with a different dataset.
+Browse https://www.kaggle.com for datasets. Look at the values provided by each dataset your are interested in and ask yourself how you plan to display those values visually. 
+
+To get an idea of what is possible lookat the examples on the D3 home page [here](https://github.com/d3/d3/wiki/Gallery). Choose one of these examples and recreate it with a different dataset.
 
 Add to your visualization to your GitHub pages.
 
