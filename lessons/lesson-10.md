@@ -1,136 +1,124 @@
 
-# FEW 2.5 - D3 Maps
+# FEW 2.5 - D3 Examples
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-11.html ':ignore')
+<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-10.html ':ignore') -->
+
+
+## Lab
+
+Todays goal is to start your final project. It's important for you to identify a dataset you will use for the project, identify the values you will display and in what axis, color, shape etc. and to get started coding. 
 
 <!-- > -->
 
 ## Overview
 
-You should be working on your individual project and it will have problems to solve that will be unique to your ideas and dataset. Today we will have a workshop to solve problems. 
+- Look at data visualization types 
+  - What type of data works best for each type?
+- Look at data
+  - Look for the value and how you will display them?
+- Look at the examples and find a starting point for your project!
 
 <!-- > -->
 
-## D3 in Depth Guide 
+## Why you should know this
 
-Use this in depth guide to D3 to solve problems and find solutions. 
-
-https://www.d3indepth.com
-
-See the sections at the bottom of the page. 
-
-If you're working with maps see the notes below. 
+D3 is the data visualization library it does most everything. Besides working with D3 you will also need to work with your chosen dataset sorting, filtering, and aggregating data. Besides being job skills solving these challenges will make you better at your craft. 
 
 <!-- > -->
 
 ## Learning Objectives
 
-1. Solve problems with D3
-1. Find and make use of resources
+1. Identify data visualization types 
+1. Identify values and connect them to visuals
+1. Form a strategy to complete the final 
 
 <!-- > -->
 
-## How to measure the world?
+## Visualization Types 
 
-The world is a globe and we've divided it into latitude and longitude.
+Quick study this: https://www.data-to-viz.com
 
-**Read the following articles to better understand latitude and longitude**
+Question: How many values can you display in chart/graph/visualization?
 
-- https://www.maptools.com/tutorials/lat_lon/definitions
-- https://gisgeography.com/utm-universal-transverse-mercator-projection/
+Question: Which charts show ordered data? 
 
-<!-- > -->
+Question: What's the difference between a histogram and density plot?
 
-**In pairs, discuss why you would use latitude and longitude, and when you would use UTM**
-
-Fun site: find geo-coordinates for your home town:
-
-- https://www.latlong.net/
+Question: What's the difference between line and area charts/graphs?
 
 <!-- > -->
 
-## Maps
+## Datasets 
 
-Computer screens are flat. Maps displayed on computer screens are flat. If the world is described in coordinates, and the map is a globe, then it needs to be projected onto a flat surface. This is accomplished through some tricky math involving trigonometry.
+You need to find a dataset for the final project. Take a look at https://www.kaggle.com
 
-_Luckily D3 provides a suite of functions that handle map projections for you!_
+Look for a dataset you want to work with. When considering a dataset ask yourself what values does it provide? How will display these values? What will you have to do to arrange, sort, or filter the data to display it?
 
-While it is great you don't have work out the math yourself you do have to understand that these projections are not perfect. Flattening a sphere onto a flat surface will always be imperfect.
+## D3 Examples
 
-<!-- > -->
+Take a look at these D3 examples: 
 
-## Discussion
+- https://github.com/soggybag/d3-examples
+- https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
 
-In pairs, discuss the following:
-
-- What is geojson?
-	- https://geojson.org/
-- Why do we need special projection models?
-	- https://d3indepth.com/geographic/
-
-We'll discuss as a class after 5 minutes of paired discussion.
-
-<!-- > -->
-
-## Mapping with D3 tutorial
-
-This is a great tutorial on mapping with D3. It uses v5 so it's up to date. Besides that it was written by a cartographer!
-
-- https://petrichor.studio/2018/05/21/get-started-creating-d3-maps/
-
-**Read the blog post. Then create a map of your own. Use the sample code provided in the codepen example to recreate the example on your desktop.**
-
-<!-- > -->
-
-Be sure to follow up with the links at the bottom of the post, as these have valuable info on creating and using maps.
-
-**Challenges**
-
-- Make the map work using the same TopoJSON that the tutorial uses
-- Try different projections
-	- https://github.com/d3/d3-geo#geoAzimuthalEqualArea
-- Edit the CSS to change the color of the fill and stroke
-
-<!-- > -->
-
-<!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
 
 <!-- > -->
 
-## Lab
+## Lab - Part 1
 
-Work on your final project/presentations
+Strategize your project plan:
+
+- Find a dataset
+- Identify the values you will display
+- Decide what graph/chart style you will use to display them
 
 <!-- > -->
 
-## After Class
+## Lab Part 2
 
-- Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am **Before Class!**
+Start coding: 
+
+- Find an example to work from
+- Organize your data
+  - filter values 
+  - map values 
+  - reduce values
+  - sort 
+- Plan the svg structure of the project
+  - Investigate your example 
+  - Plan the element structure/hierarchy of the svg document
+
+<!-- > -->
+
+## After class
+
+
 
 <!-- > -->
 
 ## Additional Resources
 
-- https://petrichor.studio/2018/05/21/get-started-creating-d3-maps/
-- https://github.com/d3/d3-geo
-- https://observablehq.com/@d3/projection-comparison
-- https://observablehq.com/collection/@d3/d3-geo
-- https://d3indepth.com/geographic/
+- https://www.d3indepth.com
+- https://www.data-to-viz.com
+- https://github.com/soggybag/d3-examples
+- https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
 
 <!-- > -->
 
+<!-- 
 ## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Overview + Learning Outcomes                |
-| 0:05        | 0:15      | How to measure the world                  |
-| 0:20        | 0:15      | Maps + Discussion       |
-| 0:35        | 0:45      | Mapping with D3 tutorial       |
-| 1:20        | 0:10      | BREAK                     |
-| 1:30        | 1:10      | Lab      |
-| 2:40        | 0:05      | Wrap up  |
-| TOTAL       | 2:45      | -                         |
+| 0:00        | 0:05      | Overview + Learning Outcomes |
+| 0:05        | 0:10      | Scale and normalization |
+| 0:15        | 0:20      | Get started with scaleOrdinal |
+| 0:35        | 0:55      | Example code |
+| 1:30        | 0:10      | Break |
+| 1:40        | 1:00      | Lab |
+| 2:40        | 0:05      | Wrap up |
+| TOTAL       | 2:45      | - |
+ -->
