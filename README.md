@@ -75,7 +75,7 @@ Students by the end of the course will be able to ...
 [Assignment 2]: https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization
 [Assignment 3]: https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data
 [D3 Tutorial]: https://github.com/Make-School-Labs/D3.js-Mini-Challenges
-[D3 Final Project]: assignments/assignment-41.md
+[D3 Final Project]: assignments/assignment-1.md
 
 ## Evaluation
 

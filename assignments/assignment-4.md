@@ -1,26 +1,51 @@
 # FEW 2.5 Visualization 7
 
-D3 final project
+Final project
 
 ## Goals 
 
-Your goal is to choose your own dataset and create a visualization from that dataset. You should use D3 for this assignment. Thopugh we can negotiate if your planned project would be better off using another system. 
+Your goal is to choose your own dataset and create a visualization from that dataset. You should use D3 for this assignment. Though we can negotiate if your planned project would be better off using another system. 
 
 ## Why this project?
 
 This is another opportunity to practice your JavaScript skills. 
 
-D3 is large library that has been around for a long time it's the defato tool for visualizing. It can be used for more than visualizing data. 
-
-Adding another interesting portfolio project. 
+D3 is large library that has been around for a long time it's the defato tool for visualizing. It can be used for more than visualizing data. Adding another interesting portfolio project.
 
 ## Choosing a dataset
 
-You can choose any dataset you like. Choose something that it's interesting to you. Choose something that will inspire you to make great work. 
+You can choose any dataset you like. Choose something that it's interesting to you. Choose something that will inspire you to make great work!
 
 Keep in mind that you'll be loading data into the browser, datasets can be very large, take note of the file size of the data you want to work with. 
 
 Do your best to take this project as far as you can. 
+
+Also keep in mind that you'll need to display the data. This means you need to idenitify the values in your chosen dataset and decide how these will get translated into pixels on the screen. Think about this carefully before starting to code!
+
+## Getting started 
+
+Your data may need some work before you will be able to display it. Some chart types require a plain list while others require a hierarchy or other arrangement. To reveal some stories about data you may need to sort or filter your data. Do all of this first! 
+
+## Looking for ideas
+
+Think about what type of chart you want to create. Not all charts are good for all data. Take a look at the charts here and read the notes: 
+
+- https://www.data-to-viz.com
+
+Take a look at the examples here to get an idea of how to get started with D3:
+
+- https://github.com/soggybag/d3-examples
+	- line
+	- area
+	- pack
+	- hierarchy
+	- pie/arc
+- https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
+	- maps
+
+## Starting to code
+
+
 
 ## Deliverable
 
