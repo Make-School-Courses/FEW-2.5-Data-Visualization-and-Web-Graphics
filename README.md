@@ -47,7 +47,7 @@ Students by the end of the course will be able to ...
 |  7    | Wed, Feb 10 | [Drawing Data]         | -           | - |
 |  8    | Mon, Feb 15 | [D3 Intro]             | Assignment 4 <br>- [D3 Tutorial] | [Assignment 3] - [GradeScope] |
 |  9    | Wed, Feb 17 | [D3 Scales]            | Assignment 5 <br>- [D3 Final Project] | [D3 Tutorial] - [GradeScope] |
-| 10    | Mon, Feb 22 | [D3 Examples      ]    | -           | - |
+| 10    | Mon, Feb 22 | [D3 Examples]          | -           | - |
 | 11    | Wed, Feb 24 | [D3 Maps]              | -           | - |
 | 12    | Mon, Mar 1  | Final Assessment       | -           | - |
 | 13    | Wed, Mar 3  | Final Presentations    | Final Data Visualization | [D3 Final Project] - [GradeScope] |
@@ -61,6 +61,7 @@ Students by the end of the course will be able to ...
 [Drawing Data]: lessons/lesson-07.md
 [D3 Intro]: lessons/lesson-08.md
 [D3 Scales]: lessons/lesson-09.md
+[D3 Examples]: lessons/lesson-10.md
 [D3 Maps]: lessons/lesson-10.md
 
 <!-- Assignments -->
