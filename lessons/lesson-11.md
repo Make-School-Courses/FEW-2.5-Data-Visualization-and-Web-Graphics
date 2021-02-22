@@ -3,7 +3,7 @@
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-11.html ':ignore')
+<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-11.html ':ignore') -->
 
 <!-- > -->
 
@@ -27,8 +27,9 @@ If you're working with maps see the notes below.
 
 ## Learning Objectives
 
-1. Solve problems with D3
-1. Find and make use of resources
+1. Build data visualizations with geojson
+1. Explain latitude and longitude
+1. Describe geo projections
 
 <!-- > -->
 
