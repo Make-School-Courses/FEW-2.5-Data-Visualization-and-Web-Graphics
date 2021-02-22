@@ -1,4 +1,4 @@
-# FEW 2.5 Visualization 7
+# FEW 2.5 Visualization Final Project
 
 Final project
 
