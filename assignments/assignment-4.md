@@ -35,11 +35,15 @@ Think about what type of chart you want to create. Not all charts are good for a
 Take a look at the examples here to get an idea of how to get started with D3:
 
 - https://github.com/soggybag/d3-examples
-	- line
-	- area
-	- pack
-	- hierarchy
-	- pie/arc
+	- Line
+	- Area
+	- Pack
+	- Bubble
+	- Hierarchy
+	- Treemap
+	- Pie/Arc
+	- Axis
+	- Scales
 - https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
 	- maps
 
@@ -54,4 +58,7 @@ For the first stage of the project you need to define your project and find a da
 | Expectation | Doe not meet | Meets | Exceeds |
 |:-------------|:------------------|:----------------|:-----------------|
 | **Dataset** | You don't have a dataset | You have a dataset | Your dataset inspires ideas for different ways you can express the data |
+| **Strategy** | The data in your dataset doesn't work with the type of chart you're trying to create. For example Your data contains non-numeric dtaa and you want to create a line chart | Your dataset matches your chart type | You've studied https://www.data-to-viz.com to confirm your data is good fit for your chart type  |
 | **Details** | You don't really know much about the data | Your data is a reasonable size and you understand the values it contains. | You have researched the data in your dataset and know the history and background. |
+| **Story** | The chart you have created doesn't reveal anything new about your dataset | Your chart reveals new ideas about the data | Your chart tells a story about the data suggesting ideas that were not apparent in the numbers alone |
+| **D3** | You can't explain or recreate what you have made with D3 | You can recreate and explain what you have created with D3 | You could recreate your work in D3 with another dataset or chart type |
