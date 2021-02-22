@@ -62,7 +62,7 @@ Students by the end of the course will be able to ...
 [D3 Intro]: lessons/lesson-08.md
 [D3 Scales]: lessons/lesson-09.md
 [D3 Examples]: lessons/lesson-10.md
-[D3 Maps]: lessons/lesson-10.md
+[D3 Maps]: lessons/lesson-11.md
 
 <!-- Assignments -->
 [GradeScope]:https://www.gradescope.com/courses/218919
