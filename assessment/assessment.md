@@ -19,6 +19,13 @@ The goal of this assignment is to display the world happiness data. Beyond that 
 
 The data has 150+ countries you will only show the top 10 countries! 
 
+This challenge is open ended you can develop your own solutions. That said try and use these following: 
+
+- D3
+- SVG
+- scales 
+- axis 
+
 ### Challenge 1
 
 Make a web page to display your work. Imagine you'd be presenting your work when it is completed.
